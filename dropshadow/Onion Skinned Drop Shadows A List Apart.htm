@@ -1,0 +1,657 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0045)http://www.alistapart.com/articles/onionskin/ -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>Onion Skinned Drop Shadows: A List Apart</TITLE>
+<STYLE type=text/css media=screen>@import url( /c/ala.css );
+</STYLE>
+
+<STYLE type=text/css media=projection>@import url( /c/ala.css );
+</STYLE>
+<LINK media=print href="Onion Skinned Drop Shadows A List Apart_files/print.css" 
+type=text/css rel=stylesheet>
+<META http-equiv=Content-type content="text/html; charset=iso-8859-1">
+<META http-equiv=Content-Language content=en-us>
+<META content=ALL name=ROBOTS>
+<META 
+content="Copyright (c) 2005 A List Apart Magazine, Happy Cog Studios LLC, Jeffrey Zeldman, and the respective authors" 
+name=Copyright>
+<META http-equiv=imagetoolbar content=no>
+<META content=true name=MSSmartTagsPreventParsing>
+<SCRIPT language=JavaScript 
+src="Onion Skinned Drop Shadows A List Apart_files/auto.js" 
+type=text/javascript></SCRIPT>
+<LINK href="/favicon.ico" type=image/x-icon rel="Shortcut Icon"><LINK title=RSS 
+href="/rss.xml" type=application/rss+xml rel=alternate>
+<META content="Using CSS to create extensible onion skinned drop shadows" 
+name=description>
+<META content="CSS, drop shadows, extensible, onion skin" name=keywords><LINK 
+title="Site info." href="http://www.alistapart.com/about/" rel=help><LINK 
+title="Produced by Happy Cog Studios LLC: web design, consulting, and publishing." 
+rev=happycog href="http://www.happycog.com/"><LINK 
+title="Directed by Jeffrey Zeldman, bringing web designers The Daily Report since 1995." 
+rev=zeldman href="http://www.zeldman.com/">
+<META content=General name=Rating>
+<META content="5 Days" name=revisit-after>
+<META content="Living Document" name=doc-class>
+<STYLE type=text/css>.wrap1 {
+	DISPLAY: block
+}
+.wrap2 {
+	DISPLAY: block
+}
+.wrap3 {
+	DISPLAY: block
+}
+.wrap1 {
+	BACKGROUND: url(/d/onionskin/images/shadows/v1/shadow.gif) no-repeat right bottom; FLOAT: left
+}
+.wrap2 {
+	BACKGROUND: url(/d/onionskin/images/shadows/v1/corner_bl.gif) no-repeat left bottom
+}
+.wrap3 {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 0px; BACKGROUND: url(/d/onionskin/images/shadows/v1/corner_tr.gif) no-repeat right top; PADDING-BOTTOM: 4px; PADDING-TOP: 0px
+}
+.wrap3 IMG {
+	DISPLAY: block
+}
+.fig-parent {
+	WIDTH: 340px; POSITION: relative; HEIGHT: 280px
+}
+.fig-parent DIV {
+	LEFT: 0px; WIDTH: 340px; BACKGROUND-REPEAT: no-repeat; POSITION: absolute; TOP: 0px; HEIGHT: 100%
+}
+.fig-small {
+	BACKGROUND: url(/d/onionskin/images/fig-small.gif)
+}
+.fig-wrap1 {
+	BACKGROUND: url(/d/onionskin/images/fig-wrap1.gif)
+}
+.fig-wrap2 {
+	BACKGROUND: url(/d/onionskin/images/fig-wrap2.gif)
+}
+.fig-wrap3 {
+	BACKGROUND: url(/d/onionskin/images/fig-wrap3.gif)
+}
+.fig-object {
+	BACKGROUND: url(/d/onionskin/images/fig-object.gif)
+}
+.fig-text-wrap1 {
+	BACKGROUND: url(/d/onionskin/images/fig-text-wrap1.gif)
+}
+.fig-text-wrap2 {
+	BACKGROUND: url(/d/onionskin/images/fig-text-wrap2.gif)
+}
+.fig-text-wrap3 {
+	BACKGROUND: url(/d/onionskin/images/fig-text-wrap3.gif)
+}
+.fig-text-sh {
+	BACKGROUND: url(/d/onionskin/images/fig-text-sh.gif)
+}
+.fig-text-bl {
+	BACKGROUND: url(/d/onionskin/images/fig-text-bl.gif)
+}
+.fig-text-tr {
+	BACKGROUND: url(/d/onionskin/images/fig-text-tr.gif)
+}
+.fig-text-object {
+	BACKGROUND: url(/d/onionskin/images/fig-text-object.gif)
+}
+.fig-ghost {
+	BACKGROUND: url(/d/onionskin/images/fig-ghost.gif)
+}
+.fig-composite {
+	BACKGROUND: url(/d/onionskin/images/fig-composite.gif) no-repeat
+}
+#fig1 .wrap1 {
+	MARGIN-TOP: 30px
+}
+#fig1 .wrap2 {
+	BACKGROUND: url(/d/onionskin/images/shadows/v1/corner_bl.gif) no-repeat -5px 100%
+}
+#fig7 .wrap2 {
+	BACKGROUND: url(/d/onionskin/images/shadows/v1/corner_bl.gif) no-repeat -5px 100%
+}
+#fig1 .wrap3 {
+	BACKGROUND: url(/d/onionskin/images/shadows/v1/corner_tr.gif) no-repeat 100% -5px
+}
+#fig7 .wrap3 {
+	BACKGROUND: url(/d/onionskin/images/shadows/v1/corner_tr.gif) no-repeat 100% -5px
+}
+#fig2 {
+	OVERFLOW: hidden; HEIGHT: 130px
+}
+#fig5 {
+	OVERFLOW: hidden; HEIGHT: 130px
+}
+#fig7 {
+	OVERFLOW: hidden; HEIGHT: 130px
+}
+#fig2 .fig-parent {
+	TOP: -150px
+}
+#fig3 {
+	OVERFLOW: hidden; HEIGHT: 175px
+}
+#fig3 .fig-parent {
+	TOP: -105px
+}
+#fig4 {
+	OVERFLOW: hidden; HEIGHT: 215px
+}
+#fig4 .fig-parent {
+	TOP: -40px
+}
+#fig5 .fig-parent {
+	TOP: -50px
+}
+#fig7 .fig-parent {
+	MARGIN-TOP: 10px
+}
+.a {
+	WIDTH: 100px
+}
+.b {
+	WIDTH: 100px
+}
+.c {
+	WIDTH: 100px
+}
+.fig6 .wrap1 {
+	BACKGROUND-IMAGE: url(/d/onionskin/images/shadows/v4/shadow.gif)
+}
+.fig6 .wrap2 {
+	BACKGROUND-IMAGE: url(/d/onionskin/images/shadows/v4/corner_bl.gif)
+}
+.fig6 .wrap3 {
+	BACKGROUND-IMAGE: url(/d/onionskin/images/shadows/v4/corner_tr.gif)
+}
+.a .wrap3 {
+	PADDING-RIGHT: 8px; BACKGROUND-POSITION: 100% -18px; PADDING-LEFT: 0px; PADDING-BOTTOM: 8px; PADDING-TOP: 0px
+}
+.a .wrap2 {
+	BACKGROUND-POSITION: -18px 100%
+}
+.b .wrap3 {
+	PADDING-RIGHT: 12px; BACKGROUND-POSITION: 100% -18px; PADDING-LEFT: 0px; PADDING-BOTTOM: 12px; PADDING-TOP: 0px
+}
+.b .wrap2 {
+	BACKGROUND-POSITION: -18px 100%
+}
+.c .wrap3 {
+	PADDING-RIGHT: 18px; BACKGROUND-POSITION: 100% -18px; PADDING-LEFT: 0px; PADDING-BOTTOM: 18px; PADDING-TOP: 0px
+}
+.c .wrap2 {
+	BACKGROUND-POSITION: -18px 100%
+}
+.d .wrap3 {
+	PADDING-RIGHT: 8px; BACKGROUND-POSITION: 100% -18px; PADDING-LEFT: 0px; PADDING-BOTTOM: 8px; PADDING-TOP: 0px
+}
+.d .wrap2 {
+	BACKGROUND-POSITION: -18px 100%
+}
+.e .wrap3 {
+	PADDING-RIGHT: 12px; BACKGROUND-POSITION: 100% -14px; PADDING-LEFT: 0px; PADDING-BOTTOM: 12px; PADDING-TOP: 0px
+}
+.e .wrap2 {
+	BACKGROUND-POSITION: -14px 100%
+}
+.f .wrap3 {
+	PADDING-RIGHT: 18px; BACKGROUND-POSITION: 100% -10px; PADDING-LEFT: 0px; PADDING-BOTTOM: 18px; PADDING-TOP: 0px
+}
+.f .wrap2 {
+	BACKGROUND-POSITION: -10px 100%
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2800.1491" name=GENERATOR></HEAD>
+<BODY id=sectiontwo 
+onload="window.defaultStatus='A List Apart, for people who make websites.'">
+<DIV id=wrapper>
+<P class=hide><A 
+href="http://www.alistapart.com/articles/onionskin/#maincontent">Skip 
+navigation</A>.</P>
+<DIV id=header><A title="A List Apart Home - current issue." 
+href="http://www.alistapart.com/"><IMG height=75 
+alt="A List Apart front page: HOME" 
+src="Onion Skinned Drop Shadows A List Apart_files/8.gif" width=597 
+border=0></A></DIV>
+<DIV id=menu>
+<UL>
+  <LI id=one><A title="A List Apart Home - current issue." 
+  href="http://www.alistapart.com/">up front</A></LI>
+  <LI id=two><A title="Design, code, content." 
+  href="http://www.alistapart.com/articles/">articles</A></LI>
+  <LI id=three><A title="Everything you wanted to know about A List Apart." 
+  href="http://www.alistapart.com/about/">about ala</A></LI>
+  <LI id=four><A title="We may be coming to your town." 
+  href="http://www.alistapart.com/live/">live events</A></LI>
+  <LI id=five><A title="RSS feeds, headlines and summaries." 
+  href="http://www.alistapart.com/xmlfeed/">xml feeds</A></LI></UL></DIV>
+<DIV id=pagebody>
+<DIV id=maincontent>
+<H6>ISSN: 1534-0295. 21 May 2004 – Issue No. <A 
+title="Permanent location for this issue." 
+href="http://www.alistapart.com/issues/182/">182</A></H6>
+<H1><A href="http://www.alistapart.com/articles/onionskin/">Onion Skinned Drop 
+Shadows</A></H1>
+<H3 class=byline>by <A title="View all articles by this author." 
+href="http://www.alistapart.com/authors/brianwilliams/">Brian Williams</A></H3>
+<P class=callbox><SMALL><EM>Editor’s Note:</EM> The techniques demonstrated in 
+this tutorial are not for everyone. The design method works its magic by nesting 
+divs that have no semantic or structural value. If that bothers you (and there 
+are good reasons why it might), this is not the tutorial for you. On the other 
+hand, if you wish to create visual effects that expand and contract to fit any 
+object, require no image manipulation, and render the same across all browsers, 
+then “Onion Skinned Drop Shadows” may be just what you’ve been looking 
+for.</SMALL> </P>
+<H2>Onion skinned drop shadows?</H2>
+<P>Yes, onion skinned. Animators use onion skinning to render what is impossible 
+to see otherwise: a snapshot of motion across time. Now, web designers can use 
+it to render another seeming impossibility: the truly extensible CSS-based drop 
+shadow.</P>
+<P><IMG height=177 alt="Read about onion skinning with div stacks." 
+src="Onion Skinned Drop Shadows A List Apart_files/onionskin_cover.gif" 
+width=340></P>
+<H2>Enough Already</H2>
+<P>Tired of reading technique after technique outlining the many ways to skin 
+this cat? Just consider this a demonstration of the capacity of CSS to surprise. 
+Just when it looks as though the <A 
+href="http://www.alistapart.com/articles/cssdropshadows/">method is clear</A> 
+and the <A href="http://www.alistapart.com/articles/cssdrop2/">way is 
+defined</A>, one more wandering mind reveals another creative approach. If all 
+you glean from this article is a deeper appreciation for the diversity of 
+solutions CSS affords, then you’ve benefited far more than any one technique 
+could deliver. Read on. </P>
+<H2>What’s different</H2>
+<P>There are several differences between this technique and those offered 
+previously, both here and elsewhere. Some may find it simpler than others, some 
+more stable; but no matter how you look at it, it is more extensible. With just 
+one set of simple rules, these new drop shadows: </P>
+<UL class=markers>
+  <LI>Automatically expand and contract to fit any object, without specifying 
+  widths. 
+  <LI>Allow you to modify the shadow depth with <EM>no image manipulation.</EM> 
+  <LI>Render the same <A 
+  href="http://www.alistapart.com/d/onionskin/browsers.html">across all 
+  browsers</A> without cutting any corners. </LI></UL>
+<H2>Peeling the onion</H2>
+<P>Onion skinning refers to a technique in time-based arts of overlaying several 
+frames in a sequence to discern the subtle differences between them. The 
+animator is simply looking through a stack of layers to see one whole motion 
+through a composite of its parts. What is opaque on one layer can be seen 
+through the transparent areas on a layer above it. We can do the same thing with 
+<CODE>div</CODE>s. Using CSS, we can stack <CODE>div</CODE>s together in 
+concentric fashion, like the layers of an onion, to form a composite of anything 
+we like. Today, we are making drop shadows.</P>
+<H4>Isometric view of an onion skinned drop shadow:</H4>
+<DIV id=fig1>
+<DIV class=wrap1>
+<DIV class=wrap2>
+<DIV class=wrap3><IMG height=30 
+alt="Demonstration image used for drop shadow illustration" 
+src="Onion Skinned Drop Shadows A List Apart_files/fig-4pxoffset.gif" width=30> 
+</DIV></DIV></DIV>
+<DIV class=fig-parent>
+<DIV class=fig-wrap1></DIV>
+<DIV class=fig-wrap2></DIV>
+<DIV class=fig-wrap3></DIV>
+<DIV class=fig-object></DIV>
+<DIV class=fig-text-object></DIV></DIV></DIV>
+<P>Three divs, each containing a different shadow image component (<A 
+href="http://www.alistapart.com/d/onionskin/shadowparts.html">illustration</A>), 
+overlay one another to form a composite drop shadow. The markup couldn’t be 
+simpler. Just wrap your object inside three <CODE>div</CODE>s, one inside the 
+other, and give each a class name which corresponds to its role. Since we’re 
+“wrapping” the object, the classes we’ll assign for demonstration purposes are 
+named <CODE>wrap1</CODE>, <CODE>wrap2</CODE>, and <CODE>wrap3</CODE> 
+(<CODE>.wrap1</CODE> assigned to the outer, and <CODE>.wrap3</CODE> the 
+innermost <CODE>div</CODE>).</P><PRE>&lt;div class="wrap1"&gt;
+ &lt;div class="wrap2"&gt;
+  &lt;div class="wrap3"&gt;
+   &lt;img
+    src="object.gif"
+    alt="The object casting a shadow"
+   /&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</PRE>
+<P>The CSS is a bit more complicated — but not much. There are basically three 
+things that the style rules must accomplish for the shadow:</P>
+<UL>
+  <LI><STRONG>Make it show.</STRONG> Assign each of the three shadow image 
+  components (shadow + two corners) to a different layer in the onion skin 
+  stack. 
+  <LI><STRONG>Make it drop.</STRONG> Create an offset which moves the drop 
+  shadow down, and to the right of the object. 
+  <LI><STRONG>Make it shrink-to-fit.</STRONG> Force the <CODE>div</CODE>s 
+  surrounding the object to collapse upon it. </LI></UL>
+<H3>Step one: rendering the shadow</H3>
+<P>The basic idea is to assign one of the three shadow image components to each 
+of the <CODE>div</CODE>s through its corresponding <CODE>class</CODE>. The 
+sequence of which <CODE>div</CODE> gets which component is crucial, though. The 
+purpose for having three image components is to use the two small ones at the 
+top-right and bottom-left positions to mask the clipped edges of the large 
+shadow revealing only soft, rounded edges all around.</P>
+<P>In order for one image to mask another, it must reside above it in the 
+z-index. We don’t have to worry so much about indexing the stack, since the 
+nested structure of our <CODE>div</CODE>s carry’s an intrinsic stacking order 
+that works for us. We simply assign the class with the shadow to the outermost 
+<CODE>div</CODE> at the bottom of the stack. Since the <CODE>div</CODE>s inside 
+it will naturally sit on top, we’ll give the classes with the corner images to 
+them.</P><PRE>.wrap1 {
+  background-image:url(shadow.gif);
+  }
+.wrap2 {
+  background-image:url(corner_bl.gif);
+  }
+.wrap3 {
+  background-image:url(corner_tr.gif);
+  }</PRE>
+<P>Once we’ve assigned the right images to the right classes, we need to give 
+them position — <CODE>background-position</CODE>, that is. If we left the rules 
+alone at this point, all we would see is a tiled background of “corner_tr.gif” 
+since it’s sitting highest in the stacking order. Remember, onion skinning 
+requires transparency in the upper layers so that we can see what’s beneath. To 
+do this, we’ll cancel the repeating property of all the background images with 
+<CODE>no-repeat</CODE>, and position them where they belong to form the 
+composite of our drop shadow.</P>
+<P>Common sense tells us that an image named “corner_tr.gif” should reside in a 
+corner — probably the top-right; ditto for “corner_bl.gif” (bottom-left). But, 
+what about the large shadow image? Does it even need position? Yes — more than 
+any other, in fact. If we want our shadow to fall to the bottom-right of 
+whatever object we put it under, we must specify that direction in our 
+<CODE>.wrap1</CODE> rule. Otherwise, it will automatically fill the 
+<CODE>div</CODE> relative to its top-left corner, the opposite of what we 
+need.</P>
+<H4>The base layer: <CODE>div.wrap1</CODE></H4>
+<P>The outermost <CODE>div</CODE> holds the largest of the three shadow 
+components, which is positioned <CODE>right bottom</CODE>.</P><PRE>.wrap1 {
+  background:url(shadow.gif) right <SPAN class=linewrap>»</SPAN>
+  bottom no-repeat;
+  }</PRE>
+<DIV id=fig2>
+<DIV class=fig-parent>
+<DIV class=fig-wrap1></DIV>
+<DIV class=fig-text-wrap1></DIV>
+<DIV class=fig-text-sh></DIV></DIV></DIV>
+<H4>The middle layer: <CODE>div.wrap2</CODE></H4>
+<P>The second div, nested inside the first, masks the clipped lower-left corner 
+of the shadow underneath, giving it a rounded appearance.</P><PRE>.wrap2 {
+  background:url(corner_bl.gif) left <SPAN class=linewrap>»</SPAN>
+  bottom no-repeat;
+  }</PRE>
+<DIV id=fig3>
+<DIV class=fig-parent>
+<DIV class=fig-wrap1></DIV>
+<DIV class=fig-wrap2></DIV>
+<DIV class=fig-text-wrap2></DIV>
+<DIV class=fig-text-bl></DIV></DIV></DIV>
+<H4>The inner layer: <CODE>div.wrap3</CODE></H4>
+<P>The third div, nested inside the second, takes care of the clipped corner in 
+the upper right.</P><PRE>.wrap3 {
+  background:url(corner_tr.gif) right <SPAN class=linewrap>»</SPAN>
+  top no-repeat;
+  }</PRE>
+<DIV id=fig4>
+<DIV class=fig-parent>
+<DIV class=fig-wrap1></DIV>
+<DIV class=fig-wrap2></DIV>
+<DIV class=fig-wrap3></DIV>
+<DIV class=fig-text-wrap3></DIV>
+<DIV class=fig-text-tr></DIV></DIV></DIV>
+<H3>Step two: dropping it down</H3>
+<P>The next step for the CSS is to create the offset that makes the drop shadow 
+drop. This could not be more simple. All it takes is a little bit of 
+<CODE>padding</CODE> on the right and bottom of the innermost <CODE>div</CODE>. 
+When the padding causes this <CODE>div</CODE> to expand away from the object 
+inside it, the two outer <CODE>div</CODE>s expand with it. The result: all three 
+shadow components, positioned along the right and bottom sides of their 
+<CODE>div</CODE>s move in tandem, and can now be seen through the gap created by 
+the padding.</P><PRE>.wrap3 {
+  padding:0 4px 4px 0;
+  background:url(corner_tr.gif) right <SPAN class=linewrap>»</SPAN>
+  top no-repeat;
+  }</PRE>
+<DIV id=fig5>
+<DIV class=fig-parent>
+<DIV class=fig-ghost></DIV></DIV></DIV>
+<H4>Modifying the offset</H4>
+<P>Changing the amount offset for your shadows is <EM>almost</EM> as easy as 
+simply changing the <CODE>padding</CODE> values on the <CODE>.wrap3</CODE> rule. 
+We say “almost” because adjusting the <CODE>padding</CODE> merely moves the 
+shadow while the corners continue to hug the edges of their containers. To 
+accurately simulate a shift in offset, you’ll need to tweak the 
+<CODE>background-position</CODE> of both corners relative to the 
+<CODE>padding</CODE>.</P>
+<P>Some would say that it’s good enough to simply adjust the padding, and leave 
+it at that. No sense complicating things to achieve a nuance that is barely 
+discernable for most people anyway. Others would argue that it cheapens the 
+effect to cut corners this way. If a method will support better aesthetic and 
+technical fidelity, as designers we’re obligated to use it to its full 
+potential. It’s likely that most, however, could go either way.</P>
+<H4>Judge for yourself.</H4>
+<P><IMG alt="Flog logo" hspace=10 
+src="Onion Skinned Drop Shadows A List Apart_files/ball.jpe" align=left>This 
+image is used below to demonstrate two sets of drop shadow styles. All 
+instances, in both sets, draw their <CODE>background-image</CODE> properties 
+from the same basic set of rules. In other words, the exact same shadow graphics 
+are used for every instance. The only difference is the degree of offset.</P>
+<P>In the first set of examples, the offset is modified by adjusting only the 
+<CODE>padding</CODE> values in the <CODE>.wrap3</CODE> rule, which moves only 
+the shadow — not the corners. In the second set, both the <CODE>padding</CODE> 
+and <CODE>background-position</CODE> values of the corners are modified so that 
+the entire shadow, corners and all, moves as the offset changes.</P>
+<TABLE class=fig cellSpacing=10 cellPadding=0 
+summary="A side-by-side demonstration of several variations of the drop shadow offset." 
+border=0>
+  <CAPTION>Set 1. <CODE>Padding</CODE> Only </CAPTION>
+  <TBODY>
+  <TR class=fig6>
+    <TD class=a>
+      <DIV class=wrap1>
+      <DIV class=wrap2>
+      <DIV class=wrap3><IMG alt="Flog logo" 
+      src="Onion Skinned Drop Shadows A List Apart_files/ball.jpe"></DIV></DIV></DIV></TD>
+    <TD class=b>
+      <DIV class=wrap1>
+      <DIV class=wrap2>
+      <DIV class=wrap3><IMG alt="Flog logo" 
+      src="Onion Skinned Drop Shadows A List Apart_files/ball.jpe"></DIV></DIV></DIV></TD>
+    <TD class=c>
+      <DIV class=wrap1>
+      <DIV class=wrap2>
+      <DIV class=wrap3><IMG alt="Flog logo" 
+      src="Onion Skinned Drop Shadows A List Apart_files/ball.jpe"></DIV></DIV></DIV></TD></TR>
+  <TR align=left>
+    <TD scope=col width=120>8 pixels</TD>
+    <TD scope=col width=120>12 pixels</TD>
+    <TD scope=col width=120>18 pixels</TD></TR></TBODY></TABLE>
+<TABLE class=fig cellSpacing=10 cellPadding=0 
+summary="A side-by-side demonstration of several variations of the drop shadow offset." 
+border=0>
+  <CAPTION>Set 2. <CODE>Padding</CODE> and <CODE>Background-Position</CODE> 
+  </CAPTION>
+  <TBODY>
+  <TR class=fig6>
+    <TD class=d>
+      <DIV class=wrap1>
+      <DIV class=wrap2>
+      <DIV class=wrap3><IMG alt="Flog logo" 
+      src="Onion Skinned Drop Shadows A List Apart_files/ball.jpe"></DIV></DIV></DIV></TD>
+    <TD class=e>
+      <DIV class=wrap1>
+      <DIV class=wrap2>
+      <DIV class=wrap3><IMG alt="Flog logo" 
+      src="Onion Skinned Drop Shadows A List Apart_files/ball.jpe"></DIV></DIV></DIV></TD>
+    <TD class=f>
+      <DIV class=wrap1>
+      <DIV class=wrap2>
+      <DIV class=wrap3><IMG alt="Flog logo" 
+      src="Onion Skinned Drop Shadows A List Apart_files/ball.jpe"></DIV></DIV></DIV></TD></TR>
+  <TR align=left>
+    <TD scope=col width=120>8 pixels</TD>
+    <TD scope=col width=120>12 pixels</TD>
+    <TD scope=col width=120>18 pixels</TD></TR></TBODY></TABLE>
+<P>If you can discern the difference between the two sets, and you prefer set 
+two, then you’ll need to adjust the <CODE>background-position</CODE> of your 
+corner images to compensate for the offset in <CODE>padding</CODE>. Further, 
+you’ll need to add additional white pixels to the outside edges of your corner 
+images. This allows them to move away from the boundary of the <CODE>div</CODE>, 
+without losing their ability to mask the clipped edge of the shadow underneath. 
+Each shadow style is a little different, and as you begin experimenting with 
+offsets, your particular corner white space requirements will become clear.</P>
+<H3>Step three: making it shrink-to-fit</H3>
+<P>A little sleight of hand was necessary to coax every browser that was tested 
+into conformity with this requirement, a potential deal-breaker. But, without 
+this behavior, each and every instance of the shadow style would require the 
+foreknowledge of the object’s width in order to specify the width of the shadow. 
+Obviously, that wasn’t going to cut it.</P>
+<P>Most of the browsers tested would allow the <CODE>div</CODE>s to collapse 
+when they received the <CODE>float</CODE> property. This would have sufficed, if 
+it weren’t for those of you who use IE5 on the Mac. The mere fact that you exist 
+was reason enough to explore alternatives. Unfortunately, none were found. At 
+least, none that <A 
+href="http://www.alistapart.com/d/onionskin/browsers.html">worked 
+universally</A>.</P>
+<P>Some research and <A 
+href="http://www.alistapart.com/d/onionskin/macfix.html">experimentation</A> 
+eventually revealed that <CODE>inline-table</CODE>, an obscure CSS display 
+property value, would be the saving grace of this technique. Right, wrong, or 
+indifferent, this was all that could be found, and it would have to do. So, 
+using the <A 
+href="http://www.sam-i-am.com/work/sandbox/css/mac_ie5_hack.html">commented 
+backslash</A> method to isolate Mac IE5, we give it 
+<CODE>display:inline-table</CODE>, and all the rest receive <CODE>float</CODE>. 
+<A href="http://www.alistapart.com/d/onionskin/sample.html">So there it is</A>, 
+shrink-to-fit — everything, everywhere, in every browser.</P>
+<H4>The composite result:</H4>
+<DIV id=fig7>
+<DIV class=wrap1>
+<DIV class=wrap2>
+<DIV class=wrap3><IMG height=30 
+alt="Demonstration image used for drop shadow illustration" 
+src="Onion Skinned Drop Shadows A List Apart_files/fig-4pxoffset.gif" width=30> 
+</DIV></DIV></DIV>
+<DIV class=fig-parent>
+<DIV class=fig-composite></DIV></DIV></DIV>
+<P>With all three steps in place our CSS looks like this:</P><PRE>.wrap1, .wrap2, .wrap3 {
+  display:inline-table;
+  /* \*/display:block;/**/
+  }
+.wrap1 {
+  float:left;
+  background:url(shadow.gif) right <SPAN class=linewrap>»</SPAN>
+  bottom no-repeat;
+  }
+.wrap2 {
+  background:url(corner_bl.gif) left <SPAN class=linewrap>»</SPAN>
+  bottom no-repeat;
+  }
+.wrap3 {
+  padding:0 4px 4px 0;
+  background:url(corner_tr.gif) right <SPAN class=linewrap>»</SPAN>
+  top no-repeat;
+  }</PRE>
+<H3>One more rule, for good measure</H3>
+<P>As in the above example, images will often be used with this technique. For 
+those occasions, an additional rule which sets a shadowed image’s display 
+property to <CODE>block</CODE> will help keep unwanted white space from 
+intruding on a good thing. Just add the following rule to your style sheet:</P><PRE>.wrap3 img {
+  display:block;
+  }</PRE>
+<H2>Do it yourself</H2>
+<P>At this point, you may want to browse the <A 
+href="http://www.alistapart.com/d/onionskin/gallery.html">drop shadow 
+gallery</A> to get a feel for what is possible with this technique. We’ve made 
+it easy to download a variety of shadow source images so you can get 
+started.</P>
+<H2 id=talkaboutit>Discuss</H2>
+<P>Was it good for you, too? <A 
+href="http://www.alistapart.com/discuss/onionskin/">Discuss</A> this 
+article.</P>
+<P id=authorbio>As Technical Design Director for <A 
+href="http://www.wachovia.com/">Wachovia</A>, Brian is slowly contributing to 
+Web Standards ubiquity in big-corporate ways. His design of <A 
+href="http://www.calibre.com/">Calibre.com</A> is the company’s proud foray into 
+standards-based design. Perhaps, someday, he’ll do something with his <A 
+href="http://www.ploughdeep.com/">personal site</A>. </P></DIV>
+<DIV id=sidebar>
+<DIV id=subnav>
+<DL>
+  <DT>Discuss 
+  <DD><A href="http://www.alistapart.com/discuss/onionskin/">Talk about</A> this 
+  article. 
+  <DT>Bookmark 
+  <DD><A href="http://www.alistapart.com/articles/onionskin/">Permanent URI</A>. 
+  </DD></DL>
+<P class=pullquote>“Using CSS, we can stack divs together in concentric fashion, 
+like the layers of an onion, to form a composite of anything we like.”</P><LABEL 
+for=sp-q>Search</LABEL><BR><!-- Atomz Search HTML for A List Apart Magazine -->
+<FORM style="MARGIN: 0px" action=http://search.atomz.com/search/ 
+method=get><INPUT id=sp-q style="WIDTH: 140px" size=12 name=sp-q><BR><INPUT 
+id=disc 
+onclick="this.form.elements['sp-k'].value = (this.checked) ? '' : 'All';" 
+type=checkbox value=All name=disc><LABEL for=disc>Include 
+Discussions</LABEL><BR><INPUT type=hidden value=sp1002d27b name=sp-a> <INPUT 
+type=hidden value=ISO-8859-1 name=sp-f> <INPUT type=hidden value=All name=sp-p> 
+<INPUT type=hidden value=All name=sp-k> <INPUT type=submit value=Search> 
+</FORM><BR>
+<DL>
+  <DT>Related Topics 
+  <DD>
+  <UL>
+    <LI><A href="http://www.alistapart.com/topics/browsers/">Browsers | 
+    X-Platform</A>
+    <LI><A href="http://www.alistapart.com/topics/css/">CSS</A>
+    <LI><A href="http://www.alistapart.com/topics/design/">Design</A> 
+  </LI></UL></DD></DL>
+<DL>
+  <DT>Departments 
+  <DD>
+  <UL>
+    <LI><A href="http://www.alistapart.com/contact/">Contact</A> 
+    <LI><A href="http://www.alistapart.com/contribute/">Contribute</A> 
+    <LI><A href="http://www.alistapart.com/credits/">Credits</A> 
+    <LI><A href="http://www.alistapart.com/copyright/">Permissions</A> 
+    <LI><A href="http://www.alistapart.com/qa/">Q &amp; A</A> </LI></UL>
+  <DT>Hot Topics 
+  <DD>
+  <UL>
+    <LI><A 
+    href="http://www.alistapart.com/topics/accessibility/">Accessibility</A> 40 
+    <LI><A href="http://www.alistapart.com/topics/browsers/">Browsers | 
+    X-Platform</A> 32 
+    <LI><A href="http://www.alistapart.com/topics/business/">Business</A> 42 
+    <LI><A href="http://www.alistapart.com/topics/content/">Content</A> 47 
+    <LI><A href="http://www.alistapart.com/topics/css/">CSS</A> 62 
+    <LI><A href="http://www.alistapart.com/topics/culture/">Culture</A> 42 
+    <LI><A href="http://www.alistapart.com/topics/design/">Design</A> 83 
+    <LI><A href="http://www.alistapart.com/topics/dom/">DOM | Scripting</A> 27 
+    <LI><A href="http://www.alistapart.com/topics/flash/">Flash</A> 9 
+    <LI><A href="http://www.alistapart.com/topics/html/">HTML | XHTML</A> 55 
+    <LI><A href="http://www.alistapart.com/topics/process/">Process</A> 25 
+    <LI><A href="http://www.alistapart.com/topics/server-side/">Server-Side</A> 
+    24 
+    <LI><A href="http://www.alistapart.com/topics/tools/">Tools</A> 27 
+    <LI><A href="http://www.alistapart.com/topics/typography/">Typography</A> 13 
+
+    <LI><A href="http://www.alistapart.com/topics/usability/">Usability</A> 27 
+    <LI><A href="http://www.alistapart.com/topics/xml/">XML &amp; Pals</A> 14 
+    </LI></UL></DD></DL>
+<P>ALA lives at <A 
+href="http://www.alistapart.com/logicworks/">Logicworks</A>.</P>
+<P><A href="http://www.basecamphq.com/?ref=adala">Basecamp project 
+management</A> keeps your clients, co-workers, and projects on track. Try it 
+free!</P></DIV></DIV></DIV>
+<DIV id=footer>
+<P><A href="http://www.alistapart.com/copyright/">Copyright</A> © 1998–2005 <A 
+href="http://www.alistapart.com/">A List Apart</A> Magazine, <A 
+href="http://www.happycog.com/">Happy Cog Studios</A>, and the authors. <A 
+href="http://validator.w3.org/check/referer">XHTML</A>, <A 
+href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.alistapart.com/c/ala.css">CSS</A>, 
+<A 
+href="http://www.contentquality.com/mynewtester/cynthia.exe?Url1=http://www.alistapart.com/">508</A>.</P></DIV></DIV><!--
+
+
+
+
+--></BODY></HTML>

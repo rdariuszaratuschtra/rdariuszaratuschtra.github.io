@@ -1,0 +1,498 @@
+BODY {
+	PADDING-RIGHT: 0px; BORDER-TOP: #76b41c 1px solid; PADDING-LEFT: 0px; BACKGROUND: #292929; PADDING-BOTTOM: 0px; MARGIN: 0px; FONT: 0.78em/1.3 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif; COLOR: #999; PADDING-TOP: 20px; TEXT-ALIGN: left
+}
+TABLE TD {
+	FONT-SIZE: 11px
+}
+A:unknown {
+	moz-outline: 0; outline: 0; outline-offset: 0
+}
+A:link {
+	COLOR: #76b41c
+}
+A:visited {
+	COLOR: #76b41c
+}
+A:hover {
+	COLOR: #76b41c; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #76b41c; TEXT-DECORATION: none
+}
+A IMG {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; TEXT-DECORATION: none; BORDER-BOTTOM-STYLE: none
+}
+H3 A:link {
+	COLOR: #fff
+}
+H3 A:visited {
+	COLOR: #fff
+}
+H3 A:hover {
+	COLOR: #fff
+}
+P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 18px; LINE-HEIGHT: 18px; PADDING-TOP: 0px
+}
+OL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 18px; LINE-HEIGHT: 18px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 18px; LINE-HEIGHT: 18px; PADDING-TOP: 0px
+}
+H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 2.1em; PADDING-BOTTOM: 10px; MARGIN: 0px; COLOR: #fff; PADDING-TOP: 10px
+}
+H1 A:link {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+H1 A:visited {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+H1 A:hover {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+H1 A:active {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 1em; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 4px; COLOR: #fff; PADDING-TOP: 0px; text-shadow: #000 2px 2px 0px
+}
+H3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 1.2em; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 4px; COLOR: #fff; PADDING-TOP: 0px
+}
+H4 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 1em; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 2px; COLOR: #fff; PADDING-TOP: 0px; text-shadow: #000 2px 2px 0px
+}
+LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; LINE-HEIGHT: 18px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+LI UL {
+	MARGIN: 0px
+}
+FIELDSET {
+	BORDER-RIGHT: #333 1px solid; BORDER-TOP: #333 1px solid; BORDER-LEFT: #333 1px solid; BORDER-BOTTOM: #333 1px solid
+}
+CODE {
+	FONT-SIZE: 110%; COLOR: #76b41c; LINE-HEIGHT: 1.2em; TEXT-ALIGN: left
+}
+CODE STRONG {
+	FONT-WEIGHT: normal; COLOR: #9ae825
+}
+LEGEND {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 4px; MARGIN: 0px 0px 16px; TEXT-TRANSFORM: uppercase; COLOR: #777; PADDING-TOP: 0px; LETTER-SPACING: 1px
+}
+P.dl {
+	PADDING-RIGHT: 6px; BORDER-TOP: #444 1px solid; DISPLAY: block; PADDING-LEFT: 16px; FONT-WEIGHT: bold; FONT-SIZE: 0.75em; BACKGROUND: url(http://slideshowpro.net/img/arrow_down.gif) no-repeat -2px 6px; PADDING-BOTTOM: 6px; MARGIN: -1.2em 0px 2em; LINE-HEIGHT: 14px; PADDING-TOP: 6px; HEIGHT: 14px
+}
+P.info {
+	PADDING-RIGHT: 6px; BORDER-TOP: #444 1px solid; DISPLAY: block; PADDING-LEFT: 18px; FONT-WEIGHT: bold; FONT-SIZE: 0.75em; BACKGROUND: url(http://slideshowpro.net/img/icon_information.gif) no-repeat 0px 6px; PADDING-BOTTOM: 6px; MARGIN: -1.2em 0px 2em; LINE-HEIGHT: 14px; PADDING-TOP: 6px; HEIGHT: 14px
+}
+P.small {
+	FONT-SIZE: 0.75em; COLOR: #999
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+INPUT {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-WEIGHT: bold; FONT-SIZE: 0.9em; BACKGROUND: #ddd; PADDING-BOTTOM: 2px; MARGIN: 2px 0px; PADDING-TOP: 2px
+}
+SELECT {
+	FONT-WEIGHT: bold; FONT-SIZE: 0.9em
+}
+INPUT:unknown {
+	BACKGROUND: #fff
+}
+TEXTAREA:unknown {
+	BACKGROUND: #fff
+}
+TEXTAREA {
+	FONT-SIZE: 0.9em; MARGIN: 2px 0px
+}
+LABEL {
+	FONT-WEIGHT: bold
+}
+UL.brief {
+	LINE-HEIGHT: 1.5
+}
+UL.brief LI {
+	FONT-SIZE: 0.8em; MARGIN-BOTTOM: 12px
+}
+UL.brief LI SPAN {
+	COLOR: #666; FONT-STYLE: italic
+}
+UL.list LI {
+	PADDING-LEFT: 14px; BACKGROUND: url(http://slideshowpro.net/img/bullet_circle.gif) no-repeat 0px 5px; MARGIN-BOTTOM: 4px; LINE-HEIGHT: 1.5
+}
+H3.scaps {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 1em; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 14px; TEXT-TRANSFORM: uppercase; COLOR: #666; PADDING-TOP: 0px; LETTER-SPACING: 1px; text-shadow: #000 2px 2px 0px
+}
+H3 SMALL {
+	COLOR: #888
+}
+#mama {
+	MARGIN: 0px auto; TEXT-ALIGN: center
+}
+#mama  {
+	TEXT-ALIGN: left
+}
+#logo {
+	DISPLAY: block; WIDTH: 100%; HEIGHT: 56px
+}
+#no_falsh_block {
+	BORDER-TOP: #333 1px solid; DISPLAY: block; PADDING-LEFT: 8px; BACKGROUND: #1f1f1f; LINE-HEIGHT: 34px; BORDER-BOTTOM: #333 1px solid; HEIGHT: 34px
+}
+DIV.innerpad {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+DIV.toprightpad {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 0px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+#foot {
+	CLEAR: both; PADDING-RIGHT: 0px; BORDER-TOP: #444 1px solid; MARGIN-TOP: 10px; PADDING-LEFT: 0px; FONT-SIZE: 0.7em; PADDING-BOTTOM: 16px; COLOR: #999; PADDING-TOP: 10px
+}
+UL#subnav {
+	CLEAR: left; PADDING-RIGHT: 0px; BORDER-TOP: #444 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px
+}
+UL#subnav LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 6px; MARGIN: 0px 8px 0px 0px; PADDING-TOP: 6px
+}
+UL#subnav LI A {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; MARGIN: 0px; COLOR: #999; PADDING-TOP: 8px; TEXT-DECORATION: none
+}
+UL#subnav LI.br {
+	FONT-WEIGHT: normal; COLOR: #444
+}
+UL#nav {
+	PADDING-RIGHT: 0px; BORDER-TOP: #444 1px solid; DISPLAY: block; PADDING-LEFT: 0px; FONT-SIZE: 1em; Z-INDEX: 4; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px; POSITION: relative
+}
+UL#nav LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px 16px 0px 0px; PADDING-TOP: 0px
+}
+BODY#product #nav LI#nav-product A {
+	COLOR: #fff
+}
+BODY#news #nav LI#nav-news A {
+	COLOR: #fff
+}
+BODY#ex #nav LI#nav-ex A {
+	COLOR: #fff
+}
+BODY#test #nav LI#nav-test A {
+	COLOR: #fff
+}
+BODY#faqs #nav LI#nav-faqs A {
+	COLOR: #fff
+}
+BODY#purch #nav LI#nav-purch A {
+	COLOR: #fff
+}
+BODY#contact #nav LI#nav-contact A {
+	COLOR: #fff
+}
+BODY#login #nav LI#nav-login A {
+	COLOR: #fff
+}
+UL#nav LI A {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; MARGIN: 0px; COLOR: #ccc; PADDING-TOP: 8px; BORDER-BOTTOM: #292929 1px solid; TEXT-DECORATION: none
+}
+UL#nav LI A:link {
+	COLOR: #999
+}
+UL#subnav LI A:link {
+	COLOR: #999
+}
+UL#nav LI A:visited {
+	COLOR: #999
+}
+UL#subnav LI A:link {
+	COLOR: #999
+}
+UL#nav LI A:hover {
+	COLOR: #fff; BORDER-BOTTOM: #76b41c 1px solid
+}
+UL#nav LI A:active {
+	COLOR: #fff; BORDER-BOTTOM: #76b41c 1px solid
+}
+UL#subnav LI A:hover {
+	COLOR: #fff
+}
+UL#subnav LI A:active {
+	COLOR: #fff
+}
+UL#nav LI#nav-login {
+	FLOAT: right; MARGIN-RIGHT: 0px
+}
+#product #mama {
+	WIDTH: 868px
+}
+#product #body_top {
+	CLEAR: both; BORDER-TOP: #444 1px solid; FLOAT: left; WIDTH: 100%; POSITION: relative
+}
+#product #body_top .lcol {
+	FLOAT: left; WIDTH: 504px
+}
+#product #body_top .mcol {
+	FLOAT: left; WIDTH: 204px
+}
+#product #body_top .mcol H4 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.9em; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #fff; PADDING-TOP: 0px
+}
+#product #body_top .mcol P {
+	FONT-SIZE: 0.8em; LINE-HEIGHT: 14px
+}
+#product #body_top .rcol {
+	FLOAT: left; WIDTH: 160px; PADDING-TOP: 10px
+}
+#product #body_top .rcol P {
+	LINE-HEIGHT: 14px
+}
+#product .title {
+	CLEAR: both; BORDER-TOP: #444 1px solid; WIDTH: 100%; LINE-HEIGHT: 60px; HEIGHT: 60px
+}
+#product .title H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 2.2em; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px 10px 0px 0px; PADDING-TOP: 0px
+}
+#product .title H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 18px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #666; PADDING-TOP: 4px; text-shadow: none
+}
+#product #body_bot {
+	CLEAR: both; BORDER-TOP: #444 1px solid; DISPLAY: block; FLOAT: left; WIDTH: 100%
+}
+#product #body_bot .lcol {
+	FLOAT: left; WIDTH: 708px
+}
+#product #body_bot .lcol {
+	POSITION: relative
+}
+#product #body_bot .lcol .left_half {
+	FLOAT: left; WIDTH: 50%
+}
+#product #body_bot .lcol .right_half {
+	FLOAT: left; WIDTH: 50%
+}
+#product #body_bot .rcol {
+	FLOAT: left; WIDTH: 160px; PADDING-TOP: 10px
+}
+#product #flash_demo {
+	MARGIN: 0px 0px 16px
+}
+#prodhome #mama {
+	WIDTH: 868px
+}
+#prodhome #body_top {
+	CLEAR: both; BORDER-TOP: #444 1px solid; FLOAT: left; WIDTH: 100%; POSITION: relative
+}
+#prodhome #body_top .lcol {
+	FLOAT: left; WIDTH: 352px
+}
+#prodhome #body_top .mcol {
+	DISPLAY: block; FLOAT: left; WIDTH: 20px
+}
+#prodhome #body_top .rcol {
+	FLOAT: left; WIDTH: 496px
+}
+#prodhome #body_bot {
+	CLEAR: both; BORDER-TOP: #444 1px solid; DISPLAY: block; FLOAT: left; WIDTH: 100%
+}
+#prodhome .title {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; PADDING-BOTTOM: 10px; MARGIN: 0px 0px 10px; PADDING-TOP: 16px; BORDER-BOTTOM: #444 1px solid; POSITION: relative; HEIGHT: 48px
+}
+#prodhome .title H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 2em; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#prodhome .title H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 14px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #666; PADDING-TOP: 0px; text-shadow: none
+}
+#prodhome #body_bot .lcol {
+	FLOAT: left; WIDTH: 352px
+}
+#prodhome #body_bot .mcol {
+	DISPLAY: block; FLOAT: left; WIDTH: 20px
+}
+#prodhome #body_bot .rcol {
+	FLOAT: left; WIDTH: 496px
+}
+#prodhome #flash_demo {
+	MARGIN: 16px 0px
+}
+.interior #mama {
+	WIDTH: 680px
+}
+.interior #body_top {
+	CLEAR: both; BORDER-TOP: #444 1px solid; BACKGROUND: url(cols.gif) repeat-y; FLOAT: left; WIDTH: 100%; POSITION: relative
+}
+.interior #body_bot {
+	CLEAR: both; BORDER-TOP: #444 1px solid; DISPLAY: block; FLOAT: left; WIDTH: 100%
+}
+.interior .title {
+	MARGIN-BOTTOM: 10px; BORDER-BOTTOM: #444 1px solid
+}
+.twocol #body_top .lcol {
+	FLOAT: left; WIDTH: 500px
+}
+.twocol #body_top .mcol {
+	DISPLAY: block; FLOAT: left; WIDTH: 20px
+}
+.twocol #body_top .rcol {
+	FLOAT: right; WIDTH: 160px; PADDING-TOP: 10px
+}
+.twocolwide #body_top .lcol {
+	FLOAT: left; WIDTH: 400px
+}
+.twocolwide #body_top .rcol {
+	FLOAT: right; WIDTH: 260px
+}
+DIV.radbox {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 12px; LINE-HEIGHT: 1.45; PADDING-TOP: 0px
+}
+DIV.radbox H2 {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; FONT-SIZE: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px -15px; COLOR: #fff; PADDING-TOP: 0px; HEIGHT: 10px
+}
+DIV.radbox H4 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 1em; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 6px; COLOR: #bbb; PADDING-TOP: 0px
+}
+DIV.radbox H5 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #fff; PADDING-TOP: 0px
+}
+DIV.radbox P {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 16px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DIV.radbox UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 10px; PADDING-TOP: 0px
+}
+DIV.radbox LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DIV.green {
+	BACKGROUND: url(http://slideshowpro.net/img/green_radius_box.gif) no-repeat center bottom
+}
+DIV.green H2 {
+	BACKGROUND: url(http://slideshowpro.net/img/green_radius_box.gif) no-repeat center top
+}
+DIV.green H4 {
+	COLOR: #334c00; text-shadow: none
+}
+DIV.green P {
+	COLOR: #fff
+}
+DIV.green A {
+	COLOR: #fff
+}
+DIV.graystroke {
+	BACKGROUND: url(http://slideshowpro.net/img/graystroke_radius_box.gif) no-repeat center bottom
+}
+DIV.graystroke H2 {
+	BACKGROUND: url(http://slideshowpro.net/img/graystroke_radius_box.gif) no-repeat center top
+}
+.mtentry {
+	DISPLAY: block; MARGIN: 0px 0px 32px
+}
+.posted {
+	PADDING-RIGHT: 0px; BORDER-TOP: #444 1px dotted; DISPLAY: block; PADDING-LEFT: 0px; FONT-SIZE: 9px; PADDING-BOTTOM: 0px; MARGIN: 6px 0px 8px; COLOR: #5c5c5c; PADDING-TOP: 6px
+}
+.posted A:link {
+	COLOR: #76b41c; TEXT-DECORATION: none
+}
+.posted A:visited {
+	COLOR: #76b41c; TEXT-DECORATION: none
+}
+.posted A:hover {
+	COLOR: #76b41c; TEXT-DECORATION: none
+}
+.posted A:active {
+	COLOR: #76b41c; TEXT-DECORATION: none
+}
+.posted A:hover {
+	TEXT-DECORATION: none
+}
+IMG.post {
+	BORDER-RIGHT: #333 1px solid; BORDER-TOP: #333 1px solid; FLOAT: left; MARGIN: 4px 6px 6px 0px; BORDER-LEFT: #333 1px solid; BORDER-BOTTOM: #333 1px solid
+}
+.date {
+	FONT-WEIGHT: normal; COLOR: #999
+}
+.pipe {
+	COLOR: #666
+}
+#foot {
+	CLEAR: both; PADDING-RIGHT: 0px; BORDER-TOP: #444 1px solid; DISPLAY: block; PADDING-LEFT: 0px; FONT-SIZE: 9px; PADDING-BOTTOM: 16px; WIDTH: 100%; COLOR: #999; PADDING-TOP: 12px
+}
+#alert {
+	BORDER-RIGHT: #f93 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #f93 1px solid; PADDING-LEFT: 10px; BACKGROUND: #fb6d15; PADDING-BOTTOM: 10px; MARGIN: 0px 0px 16px; BORDER-LEFT: #f93 1px solid; COLOR: #fff; PADDING-TOP: 10px; BORDER-BOTTOM: #f93 1px solid
+}
+TABLE.forms {
+	BACKGROUND: #333; MARGIN: 4px 0px 16px; WIDTH: 100%; BORDER-COLLAPSE: collapse
+}
+TABLE.forms TD {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 6px; VERTICAL-ALIGN: middle; PADDING-TOP: 6px; BORDER-BOTTOM: #292929 1px solid
+}
+TABLE.forms TH {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 6px; VERTICAL-ALIGN: middle; PADDING-TOP: 6px; BORDER-BOTTOM: #292929 1px solid
+}
+TABLE.forms TR.last TD {
+	BORDER-BOTTOM-STYLE: none
+}
+TABLE.forms TR.last TH {
+	BORDER-BOTTOM-STYLE: none
+}
+TABLE.forms TH {
+	PADDING-RIGHT: 12px; TEXT-ALIGN: left
+}
+TABLE.forms TH STRONG {
+	COLOR: #fff; text-shadow: #000 2px 2px 0px
+}
+FIELDSET {
+	BORDER-RIGHT: #1f1f1f 1px solid; PADDING-RIGHT: 20px; BORDER-TOP: #1f1f1f 1px solid; PADDING-LEFT: 20px; BACKGROUND: #333; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 1.9em; BORDER-LEFT: #1f1f1f 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #1f1f1f 1px solid; moz-border-radius: .8em
+}
+LEGEND {
+	BORDER-RIGHT: #444 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #444 1px solid; PADDING-LEFT: 6px; FONT-WEIGHT: bold; FONT-SIZE: 10px; BACKGROUND: #1f1f1f; PADDING-BOTTOM: 3px; MARGIN: 0px; BORDER-LEFT: #444 1px solid; COLOR: #fff; PADDING-TOP: 3px; BORDER-BOTTOM: #444 1px solid
+}
+INPUT.radio {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px; MARGIN: 2px 0px 0px -4px; PADDING-TOP: 0px
+}
+INPUT.check {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+INPUT.butt {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+FORM TABLE.forms {
+	MARGIN-BOTTOM: 4px
+}
+FORM TABLE.forms TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 6px; PADDING-TOP: 6px
+}
+FORM TABLE.forms TH {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 6px; PADDING-TOP: 6px
+}
+UL.error {
+	PADDING-RIGHT: 8px; BORDER-TOP: #c08128 1px solid; DISPLAY: block; PADDING-LEFT: 8px; FONT-WEIGHT: bold; BACKGROUND: #ffffcc; PADDING-BOTTOM: 8px; MARGIN: 18px 0px; COLOR: #1f1f1f; PADDING-TOP: 8px; BORDER-BOTTOM: #c08128 1px solid
+}
+UL.error LI {
+	PADDING-LEFT: 18px; BACKGROUND: url(http://www.slideshowpro.net/img/silk/bullet_error.png) no-repeat 0px 0px
+}
+IMG.left {
+	CLEAR: left; FLOAT: left; MARGIN: 0px 6px 4px 0px
+}
+IMG.right {
+	CLEAR: right; FLOAT: right; MARGIN: 0px 0px 4px 6px
+}
+P.moreinfo {
+	MARGIN: 16px 0px 20px
+}
+P.moreinfo A {
+	BORDER-RIGHT: #000 1px solid; PADDING-RIGHT: 14px; BORDER-TOP: #444 1px solid; PADDING-LEFT: 14px; BACKGROUND: #333; PADDING-BOTTOM: 4px; BORDER-LEFT: #444 1px solid; COLOR: #ccc; PADDING-TOP: 4px; BORDER-BOTTOM: #000 1px solid; TEXT-DECORATION: none
+}
+P.moreinfo A:hover {
+	COLOR: #fff
+}
+UL#plus LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 12px; FONT-SIZE: 0.75em; BACKGROUND: url(http://slideshowpro.net/img/icon_plus.gif) no-repeat 0px 4px; MARGIN-BOTTOM: 8px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 14px; PADDING-TOP: 0px
+}
+.gr {
+	COLOR: #76b41c
+}
+SPAN.credit {
+	DISPLAY: block; FONT-SIZE: 11px; MARGIN-LEFT: 8px; COLOR: #666; FONT-STYLE: italic
+}

@@ -1,0 +1,543 @@
+HTML {
+	COLOR: #333; BACKGROUND-COLOR: #dfe0e5
+}
+BODY {
+	COLOR: #333; BACKGROUND-COLOR: #dfe0e5
+}
+DIV#header DIV#flaghead {
+	COLOR: #333; BACKGROUND-COLOR: white
+}
+DIV#header UL#navigation {
+	COLOR: #333; BACKGROUND-COLOR: white
+}
+DIV#primaryContent DIV.blogEntry {
+	COLOR: #333; BACKGROUND-COLOR: white
+}
+DIV#primaryContent DIV.trackbacks {
+	COLOR: #333; BACKGROUND-COLOR: white
+}
+DIV#primaryContent DIV.comments {
+	COLOR: #333; BACKGROUND-COLOR: white
+}
+DIV#primaryContent DIV.writeComment {
+	COLOR: #333; BACKGROUND-COLOR: white
+}
+DIV#secondaryContent DIV#search {
+	COLOR: #333; BACKGROUND-COLOR: white
+}
+DIV#secondaryContent DIV#copyright {
+	COLOR: #333; BACKGROUND-COLOR: white
+}
+DIV#secondaryContent DIV#relevantPages {
+	COLOR: #333; BACKGROUND-COLOR: white
+}
+DIV#secondaryContent DIV#aboutSite {
+	COLOR: #333; BACKGROUND-COLOR: white
+}
+DIV#secondaryContent DIV#bestOf {
+	COLOR: #333; BACKGROUND-COLOR: white
+}
+DIV#footer {
+	COLOR: #333; BACKGROUND-COLOR: white
+}
+DIV#homepage DIV#colOne DIV#aboutSite {
+	COLOR: #333; BACKGROUND-COLOR: white
+}
+DIV#homepage DIV#colOne DIV#tableFree {
+	COLOR: #333; BACKGROUND-COLOR: white
+}
+DIV#homepage DIV#colOne DIV#blogEntry {
+	COLOR: #333; BACKGROUND-COLOR: white
+}
+DIV#homepage DIV#colOne DIV#otherEntries {
+	COLOR: #333; BACKGROUND-COLOR: white
+}
+DIV#homepage DIV#colTwo DIV#article {
+	COLOR: #333; BACKGROUND-COLOR: white
+}
+DIV#header DIV#flaghead {
+	BACKGROUND-POSITION: 0px 100%; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/header-border.gif)
+}
+DIV#header DIV#flaghead A {
+	BACKGROUND-POSITION: 0px 0px; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/workingwithme.png)
+}
+DIV#header UL#navigation {
+	BACKGROUND-POSITION: 0px 100%; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/navigation.gif); BACKGROUND-REPEAT: no-repeat
+}
+DIV#primaryContent DIV.blogEntry H1 {
+	BACKGROUND-POSITION: 0px 0px; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/primary-content-border.gif)
+}
+DIV#primaryContent DIV.blogEntry {
+	BACKGROUND-POSITION: 0px 0px; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/primary-content-border-body.gif)
+}
+DIV#primaryContent DIV.blogEntry P.blogEntryFooter {
+	BACKGROUND-POSITION: 0px 100%; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/primary-content-border.gif)
+}
+DIV#primaryContent DIV.older H1 {
+	BACKGROUND-POSITION: 0px 0px; BORDER-LEFT-COLOR: #333; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/primary-content-older-border.gif); BORDER-BOTTOM-COLOR: #333; BORDER-TOP-COLOR: #333; BORDER-RIGHT-COLOR: #333
+}
+DIV#primaryContent DIV.older {
+	BACKGROUND-POSITION: 0px 0px; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/primary-content-older-border-body.gif)
+}
+DIV#primaryContent DIV.older P.blogEntryFooter {
+	BACKGROUND-POSITION: 0px 100%; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/primary-content-older-border.gif)
+}
+DIV#secondaryContent DIV#copyright {
+	BACKGROUND-POSITION: 0px 100%; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/secondary-content-border.gif)
+}
+DIV#secondaryContent DIV#search {
+	BACKGROUND-POSITION: 0px 100%; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/secondary-content-border.gif)
+}
+DIV#secondaryContent DIV#relevantPages {
+	BACKGROUND-POSITION: 0px 100%; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/secondary-content-border.gif)
+}
+DIV#secondaryContent DIV#aboutSite {
+	BACKGROUND-POSITION: 0px 100%; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/secondary-content-border.gif)
+}
+DIV#secondaryContent DIV#bestOf {
+	BACKGROUND-POSITION: 0px 100%; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/secondary-content-border.gif)
+}
+DIV#secondaryContent DIV#copyright H1 {
+	BACKGROUND-POSITION: 0px 0px; BORDER-LEFT-COLOR: #333; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/secondary-content-border.gif); BORDER-BOTTOM-COLOR: #333; COLOR: #333; BORDER-TOP-COLOR: #333; BACKGROUND-COLOR: #99abb5; BORDER-RIGHT-COLOR: #333
+}
+DIV#secondaryContent DIV#search H1 {
+	BACKGROUND-POSITION: 0px 0px; BORDER-LEFT-COLOR: #333; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/secondary-content-border.gif); BORDER-BOTTOM-COLOR: #333; COLOR: #333; BORDER-TOP-COLOR: #333; BACKGROUND-COLOR: #99abb5; BORDER-RIGHT-COLOR: #333
+}
+DIV#secondaryContent DIV#relevantPages H1 {
+	BACKGROUND-POSITION: 0px 0px; BORDER-LEFT-COLOR: #333; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/secondary-content-border.gif); BORDER-BOTTOM-COLOR: #333; COLOR: #333; BORDER-TOP-COLOR: #333; BACKGROUND-COLOR: #99abb5; BORDER-RIGHT-COLOR: #333
+}
+DIV#secondaryContent DIV#aboutSite H1 {
+	BACKGROUND-POSITION: 0px 0px; BORDER-LEFT-COLOR: #333; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/secondary-content-border.gif); BORDER-BOTTOM-COLOR: #333; COLOR: #333; BORDER-TOP-COLOR: #333; BACKGROUND-COLOR: #99abb5; BORDER-RIGHT-COLOR: #333
+}
+DIV#secondaryContent DIV#bestOf H1 {
+	BACKGROUND-POSITION: 0px 0px; BORDER-LEFT-COLOR: #333; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/secondary-content-border.gif); BORDER-BOTTOM-COLOR: #333; COLOR: #333; BORDER-TOP-COLOR: #333; BACKGROUND-COLOR: #99abb5; BORDER-RIGHT-COLOR: #333
+}
+DIV#primaryContent DIV.blogEntry H1 {
+	COLOR: #dfe0e5; BACKGROUND-COLOR: #933
+}
+DIV#primaryContent DIV.blogEntry H1 A {
+	COLOR: #dfe0e5; BACKGROUND-COLOR: #933
+}
+DIV#primaryContent DIV.blogEntry P.blogEntryFooter {
+	COLOR: #dfe0e5; BACKGROUND-COLOR: #933
+}
+DIV#primaryContent DIV.blogEntry P.blogEntryFooter A {
+	COLOR: #dfe0e5; BACKGROUND-COLOR: #933
+}
+DIV#homepage DIV#colTwo DIV#article H1 A {
+	COLOR: #dfe0e5; BACKGROUND-COLOR: #933
+}
+DIV#homepage DIV#colTwo DIV#article P.blogEntryFooter A {
+	COLOR: #dfe0e5; BACKGROUND-COLOR: #933
+}
+DIV#primaryContent DIV.older H1 {
+	COLOR: #333; BACKGROUND-COLOR: #99abb5
+}
+DIV#primaryContent DIV.older H1 A {
+	COLOR: #333; BACKGROUND-COLOR: #99abb5
+}
+DIV#primaryContent DIV.older P.blogEntryFooter {
+	COLOR: #333; BACKGROUND-COLOR: #99abb5
+}
+DIV#primaryContent DIV.older P.blogEntryFooter A {
+	COLOR: #333; BACKGROUND-COLOR: #99abb5
+}
+DIV#primaryContent DIV.trackbacks {
+	BACKGROUND-POSITION: 0px 0px; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/comment-border.gif)
+}
+DIV#primaryContent DIV.comments {
+	BACKGROUND-POSITION: 0px 0px; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/comment-border.gif)
+}
+DIV#primaryContent DIV.trackbacks H2 {
+	BACKGROUND-COLOR: #99abb5
+}
+DIV#primaryContent DIV.comments H2 {
+	BACKGROUND-COLOR: #99abb5
+}
+DIV#primaryContent DIV.writeComment H2 {
+	BACKGROUND-COLOR: #99abb5
+}
+DIV#primaryContent DIV.writeComment {
+	BACKGROUND-POSITION: 0px 100%; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/write-comment.gif)
+}
+DIV#footer {
+	BACKGROUND-POSITION: 0px 0px; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/footer-border.gif); COLOR: #333; BACKGROUND-COLOR: white
+}
+DIV.adUnit468x15 {
+	BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/ad-unit-468x15.gif)
+}
+DIV.adUnit468x60 {
+	BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/ad-unit-468x60.gif)
+}
+DIV.adUnit200x90 {
+	BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/ad-unit-200x90.gif)
+}
+BLOCKQUOTE {
+	BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/quotation-mark.png); BACKGROUND-REPEAT: no-repeat
+}
+DIV#homepage DIV#colOne DIV#aboutSite H1 {
+	COLOR: #333; BACKGROUND-COLOR: #99abb5
+}
+DIV#homepage DIV#colOne DIV#tableFree H1 {
+	COLOR: #333; BACKGROUND-COLOR: #99abb5
+}
+DIV#homepage DIV#colOne DIV#blogEntry H1 {
+	COLOR: #333; BACKGROUND-COLOR: #99abb5
+}
+DIV#homepage DIV#colOne DIV#blogEntry P.blogEntryFooter {
+	COLOR: #333; BACKGROUND-COLOR: #99abb5
+}
+DIV#homepage DIV#colOne DIV#otherEntries H1 {
+	COLOR: #333; BACKGROUND-COLOR: #99abb5
+}
+DIV#homepage DIV#colOne DIV#aboutSite H1 A {
+	COLOR: #333; BACKGROUND-COLOR: #99abb5
+}
+DIV#homepage DIV#colOne DIV#tableFree H1 A {
+	COLOR: #333; BACKGROUND-COLOR: #99abb5
+}
+DIV#homepage DIV#colOne DIV#blogEntry H1 A {
+	COLOR: #333; BACKGROUND-COLOR: #99abb5
+}
+DIV#homepage DIV#colOne DIV#blogEntry P.blogEntryFooter A {
+	COLOR: #333; BACKGROUND-COLOR: #99abb5
+}
+DIV#homepage DIV#colOne DIV#otherEntries H1 A {
+	COLOR: #333; BACKGROUND-COLOR: #99abb5
+}
+DIV#homepage DIV#colTwo DIV#article H1 {
+	BACKGROUND-POSITION: 0px 0px; BORDER-LEFT-COLOR: #333; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/homepage-article-border.gif); BORDER-BOTTOM-COLOR: #333; COLOR: #333; BORDER-TOP-COLOR: #333; BACKGROUND-COLOR: #933; BORDER-RIGHT-COLOR: #333
+}
+DIV#homepage DIV#colTwo DIV#article P.blogEntryFooter {
+	BACKGROUND-POSITION: 0px 100%; BORDER-LEFT-COLOR: #333; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/homepage-article-border.gif); BORDER-BOTTOM-COLOR: #333; COLOR: #333; BORDER-TOP-COLOR: #333; BACKGROUND-COLOR: #933; BORDER-RIGHT-COLOR: #333
+}
+DIV#homepage DIV#colTwo DIV#article {
+	BACKGROUND-POSITION: 0px 0px; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/homepage-article-border-body.gif)
+}
+DIV#homepage DIV#colOne DIV#tableFree H1 {
+	BACKGROUND-POSITION: 0px 0px; BORDER-LEFT-COLOR: #333; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/homepage-narrow-border.gif); BORDER-BOTTOM-COLOR: #333; COLOR: #333; BORDER-TOP-COLOR: #333; BACKGROUND-COLOR: #99abb5; BORDER-RIGHT-COLOR: #333
+}
+DIV#homepage DIV#colOne DIV#aboutSite H1 {
+	BACKGROUND-POSITION: 0px 0px; BORDER-LEFT-COLOR: #333; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/homepage-narrow-border.gif); BORDER-BOTTOM-COLOR: #333; COLOR: #333; BORDER-TOP-COLOR: #333; BACKGROUND-COLOR: #99abb5; BORDER-RIGHT-COLOR: #333
+}
+DIV#homepage DIV#colOne DIV#tableFree {
+	BACKGROUND-POSITION: 0px 100%; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/homepage-narrow-border-body.gif)
+}
+DIV#homepage DIV#colOne DIV#aboutSite {
+	BACKGROUND-POSITION: 0px 100%; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/homepage-narrow-border-body.gif)
+}
+DIV#homepage DIV#colOne DIV#blogEntry H1 {
+	BACKGROUND-POSITION: 0px 0px; BORDER-LEFT-COLOR: #333; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/homepage-blogentry-border.gif); BORDER-BOTTOM-COLOR: #333; COLOR: #333; BORDER-TOP-COLOR: #333; BACKGROUND-COLOR: #99abb5; BORDER-RIGHT-COLOR: #333
+}
+DIV#homepage DIV#colOne DIV#otherEntries H1 {
+	BACKGROUND-POSITION: 0px 0px; BORDER-LEFT-COLOR: #333; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/homepage-blogentry-border.gif); BORDER-BOTTOM-COLOR: #333; COLOR: #333; BORDER-TOP-COLOR: #333; BACKGROUND-COLOR: #99abb5; BORDER-RIGHT-COLOR: #333
+}
+DIV#homepage DIV#colOne DIV#blogEntry P.blogEntryFooter {
+	BACKGROUND-POSITION: 0px 100%; BORDER-LEFT-COLOR: #333; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/homepage-blogentry-border.gif); BORDER-BOTTOM-COLOR: #333; COLOR: #333; BORDER-TOP-COLOR: #333; BACKGROUND-COLOR: #99abb5; BORDER-RIGHT-COLOR: #333
+}
+DIV#homepage DIV#colOne DIV#blogEntry {
+	BACKGROUND-POSITION: 0px 0px; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/homepage-blogentry-border-body.gif)
+}
+DIV#homepage DIV#colOne DIV#otherEntries {
+	BACKGROUND-POSITION: 0px 100%; BACKGROUND-IMAGE: url(http://www.workingwith.me.uk/images/default/homepage-otherentries-border-body.gif)
+}
+.comment_neil_crosby {
+	BACKGROUND-COLOR: #dfe0e5
+}
+.bordered {
+	BORDER-RIGHT: 1px solid; PADDING-RIGHT: 0.25em! important; BORDER-TOP: 1px solid; PADDING-LEFT: 0.25em! important; PADDING-BOTTOM: 0.25em! important; BORDER-LEFT: 1px solid; PADDING-TOP: 0.25em! important; BORDER-BOTTOM: 1px solid
+}
+.bordered TEXTAREA {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.bordered INPUT {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+TABLE {
+	MARGIN: 1em auto; WIDTH: 80%; BORDER-COLLAPSE: collapse
+}
+THEAD TH {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 0.5em; BORDER-TOP: black 1px solid; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.5em; BORDER-LEFT: black 1px solid; PADDING-TOP: 0.5em; BORDER-BOTTOM: black 1px solid; BACKGROUND-COLOR: #aaf; TEXT-ALIGN: left
+}
+TFOOT TH {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 0.5em; BORDER-TOP: black 1px solid; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.5em; BORDER-LEFT: black 1px solid; PADDING-TOP: 0.5em; BORDER-BOTTOM: black 1px solid; BACKGROUND-COLOR: #aaf; TEXT-ALIGN: left
+}
+TFOOT TD {
+	BORDER-TOP: black 1px solid
+}
+TBODY TD {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.5em; BORDER-LEFT: black 1px solid; PADDING-TOP: 0.5em
+}
+TBODY TR.odd {
+	BACKGROUND-COLOR: #ddf
+}
+TD.numeric {
+	TEXT-ALIGN: right
+}
+TH.numeric {
+	TEXT-ALIGN: right
+}
+BODY {
+	FONT: 80%/150% "Lucida Grande", "Lucida Sans Unicode", "Lucida", "Verdana", sans-serif
+}
+H1 {
+	FONT-SIZE: 120%
+}
+H2 {
+	FONT-SIZE: 120%
+}
+H3 {
+	FONT-SIZE: 100%
+}
+P {
+	MARGIN: 1em 0px
+}
+DT {
+	MARGIN-TOP: 1em; FONT-WEIGHT: bold; MARGIN-BOTTOM: 1em
+}
+CODE {
+	FONT-SIZE: 100%
+}
+PRE {
+	MARGIN-TOP: 1em; MARGIN-BOTTOM: 1em; OVERFLOW: auto; WIDTH: 100%
+}
+#navigation {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#navigation LI {
+	PADDING-RIGHT: 10px; DISPLAY: inline; LIST-STYLE-TYPE: none
+}
+HTML {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DIV#container {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 720px; PADDING-TOP: 0px
+}
+DIV#header {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 10px; PADDING-TOP: 0px; POSITION: relative
+}
+DIV#header DIV#flaghead {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; FONT-SIZE: 200%; PADDING-BOTTOM: 21px; MARGIN: 0px 0px -12px; PADDING-TOP: 4px
+}
+DIV#header DIV#flaghead A {
+	DISPLAY: block; WIDTH: 472px; TEXT-INDENT: -9000px; HEIGHT: 47px
+}
+DIV#header DIV#tagline {
+	LEFT: 195px; POSITION: absolute; TOP: 36px
+}
+DIV#header DIV#skipToContent {
+	DISPLAY: none
+}
+DIV#header UL#navigation {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 4px; MARGIN: 0px; WIDTH: 488px; PADDING-TOP: 4px
+}
+DIV#content {
+	MARGIN-BOTTOM: 10px
+}
+DIV#content DIV#primaryContent {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 10px; WIDTH: 502px; PADDING-TOP: 0px
+}
+DIV#content DIV#primaryContent DIV.blogEntry {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 4px; MARGIN: 0px 0px 1em; PADDING-TOP: 4px
+}
+DIV#content DIV#primaryContent DIV.blogEntry H1 {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 6px; MARGIN: -4px -7px; PADDING-TOP: 4px
+}
+DIV#primaryContent DIV.blogEntry P.blogEntryFooter {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 4px; MARGIN: 7px -7px -4px; PADDING-TOP: 4px
+}
+DIV#content DIV#primaryContent DIV.trackbacks {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 4px; MARGIN: -1em 20px 0px; PADDING-TOP: 4px
+}
+DIV#content DIV#primaryContent DIV.comments {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 4px; MARGIN: 0px 20px; PADDING-TOP: 4px
+}
+DIV#content DIV#primaryContent DIV.writeComment {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 4px; MARGIN: 0px 20px; PADDING-TOP: 4px
+}
+DIV#content DIV#primaryContent DIV.trackbacks H2 {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 4px; MARGIN: 0px -5px; PADDING-TOP: 4px
+}
+DIV#content DIV#primaryContent DIV.comments H2 {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 4px; MARGIN: 0px -5px; PADDING-TOP: 4px
+}
+DIV#content DIV#primaryContent DIV.writeComment H2 {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 4px; MARGIN: 0px -5px; PADDING-TOP: 4px
+}
+DIV#content DIV#primaryContent DIV.comments H3 {
+	FONT-SIZE: 100%
+}
+DIV#content DIV#primaryContent DIV.blogEntry DIV.advertising {
+	BORDER-RIGHT: 1px dashed; PADDING-RIGHT: 4px; BORDER-TOP: 1px dashed; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; MARGIN: 4px; BORDER-LEFT: 1px dashed; PADDING-TOP: 4px; BORDER-BOTTOM: 1px dashed
+}
+DIV#content DIV#primaryContent DIV.blogEntry DIV.advertising P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DIV#content DIV#secondaryContent {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; Z-INDEX: 5; FLOAT: right; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 208px; PADDING-TOP: 0px
+}
+DIV#content DIV#secondaryContent DIV#copyright {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; MARGIN: 0px 0px 10px; PADDING-TOP: 4px
+}
+DIV#content DIV#secondaryContent DIV#search {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; MARGIN: 0px 0px 10px; PADDING-TOP: 4px
+}
+DIV#content DIV#secondaryContent DIV#relevantPages {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; MARGIN: 0px 0px 10px; PADDING-TOP: 4px
+}
+DIV#content DIV#secondaryContent DIV#aboutSite {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; MARGIN: 0px 0px 10px; PADDING-TOP: 4px
+}
+DIV#content DIV#secondaryContent DIV#bestOf {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; MARGIN: 0px 0px 10px; PADDING-TOP: 4px
+}
+DIV#content DIV#secondaryContent DIV#copyright H1 {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 4px; MARGIN: -4px; PADDING-TOP: 4px; BORDER-BOTTOM: 2px solid
+}
+DIV#content DIV#secondaryContent DIV#search H1 {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 4px; MARGIN: -4px; PADDING-TOP: 4px; BORDER-BOTTOM: 2px solid
+}
+DIV#content DIV#secondaryContent DIV#relevantPages H1 {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 4px; MARGIN: -4px; PADDING-TOP: 4px; BORDER-BOTTOM: 2px solid
+}
+DIV#content DIV#secondaryContent DIV#aboutSite H1 {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 4px; MARGIN: -4px; PADDING-TOP: 4px; BORDER-BOTTOM: 2px solid
+}
+DIV#content DIV#secondaryContent DIV#bestOf H1 {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 4px; MARGIN: -4px; PADDING-TOP: 4px; BORDER-BOTTOM: 2px solid
+}
+DIV#content DIV#secondaryContent P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 90%; PADDING-BOTTOM: 0px; MARGIN: 1em 6px; LINE-HEIGHT: 130%; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+DIV#content DIV#secondaryContent UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 90%; PADDING-BOTTOM: 0px; MARGIN: 1em 6px; LINE-HEIGHT: 130%; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+DIV#content DIV#secondaryContent UL LI {
+	MARGIN: 0.5em 0px
+}
+DIV.adUnit468x15 {
+	WIDTH: 468px; HEIGHT: 15px
+}
+DIV.adUnit468x60 {
+	WIDTH: 468px; HEIGHT: 60px
+}
+DIV.adUnit200x90 {
+	WIDTH: 200px; HEIGHT: 90px
+}
+DIV#homepage DIV#colOne {
+	FLOAT: left; WIDTH: 355px
+}
+DIV#homepage DIV#colOne DIV#aboutSite {
+	FLOAT: left; MARGIN-BOTTOM: 10px; WIDTH: 158px
+}
+DIV#homepage DIV#colOne DIV#tableFree {
+	FLOAT: right; WIDTH: 158px
+}
+DIV#homepage DIV#colOne DIV#blogEntry {
+	
+}
+DIV#homepage DIV#colOne DIV#otherEntries {
+	CLEAR: both
+}
+DIV#homepage DIV#colTwo {
+	FLOAT: right; WIDTH: 355px
+}
+DIV#homepage DIV#colOne DIV#aboutSite {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 4px; MARGIN: 0px 0px 1em; PADDING-TOP: 4px
+}
+DIV#homepage DIV#colOne DIV#tableFree {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 4px; MARGIN: 0px 0px 1em; PADDING-TOP: 4px
+}
+DIV#homepage DIV#colOne DIV#blogEntry {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 4px; MARGIN: 0px 0px 1em; PADDING-TOP: 4px
+}
+DIV#homepage DIV#colOne DIV#otherEntries {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 4px; MARGIN: 0px 0px 1em; PADDING-TOP: 4px
+}
+DIV#homepage DIV#colTwo DIV#article {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 4px; MARGIN: 0px 0px 1em; PADDING-TOP: 4px
+}
+DIV#homepage DIV#colOne DIV#aboutSite H1 {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 6px; MARGIN: -4px -7px; PADDING-TOP: 4px
+}
+DIV#homepage DIV#colOne DIV#tableFree H1 {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 6px; MARGIN: -4px -7px; PADDING-TOP: 4px
+}
+DIV#homepage DIV#colOne DIV#blogEntry H1 {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 6px; MARGIN: -4px -7px; PADDING-TOP: 4px
+}
+DIV#homepage DIV#colOne DIV#otherEntries H1 {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 6px; MARGIN: -4px -7px; PADDING-TOP: 4px
+}
+DIV#homepage DIV#colTwo DIV#article H1 {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 6px; MARGIN: -4px -7px; PADDING-TOP: 4px
+}
+DIV#homepage DIV#colOne DIV#blogEntry P.blogEntryFooter {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 4px; MARGIN: 7px -7px -4px; PADDING-TOP: 4px
+}
+DIV#homepage DIV#colOne DIV#otherEntries P.blogEntryFooter {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 4px; MARGIN: 7px -7px -4px; PADDING-TOP: 4px
+}
+DIV#homepage DIV#colTwo DIV#article P.blogEntryFooter {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 4px; MARGIN: 7px -7px -4px; PADDING-TOP: 4px
+}
+DIV#homepage DIV#colOne DIV#otherEntries UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 1em 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+DIV#homepage DIV#colOne DIV#otherEntries LI {
+	MARGIN: 0.5em 0px
+}
+H1 A {
+	TEXT-DECORATION: none
+}
+H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H4 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 1em 0px; PADDING-TOP: 0px
+}
+BLOCKQUOTE {
+	PADDING-RIGHT: 55px; PADDING-LEFT: 55px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.float_right {
+	PADDING-LEFT: 1em; FLOAT: right; PADDING-BOTTOM: 1em
+}
+.float_left {
+	PADDING-RIGHT: 1em; FLOAT: left; PADDING-BOTTOM: 1em
+}
+HR {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 10px 0px 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+P.align_right {
+	TEXT-ALIGN: right
+}
+P.align_right  {
+	
+}
+A IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.clearfix:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: "."
+}
+.clearfix {
+	
+}
+ HTML .clearfix {
+	HEIGHT: 1%
+}
+.clearfix {
+	DISPLAY: block
+}

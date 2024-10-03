@@ -1,0 +1,518 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0060)http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php -->
+<HTML><HEAD><TITLE>Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1"><LINK 
+href="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/web.css" 
+type=text/css rel=stylesheet>
+<SCRIPT language=JavaScript1.1 
+src="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/tla.html" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=JavaScript1.1 
+src="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/expand.html" 
+type=text/javascript></SCRIPT>
+
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY>
+<TABLE height=39 cellSpacing=0 cellPadding=0 width=750 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD width=10 height=10><IMG height=10 
+      src="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/tl.jpg" 
+      width=10></TD>
+    <TD width="100%" 
+    background="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/t.jpg"><IMG 
+      height=10 
+      src="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/t.jpg" 
+      width=10></TD>
+    <TD width=10><IMG height=10 
+      src="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/tr.jpg" 
+      width=10></TD></TR>
+  <TR>
+    <TD 
+    background="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/l.jpg" 
+    height=19><IMG height=10 
+      src="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/l.jpg" 
+      width=10></TD>
+    <TD>
+      <TABLE class=innertb height=181 cellSpacing=5 cellPadding=0 width="100%" 
+      border=0>
+        <TBODY>
+        <TR>
+          <TD class=innercell vAlign=top width=442 rowSpan=2>
+            <H1>Mod rewrite Tutorials</H1>
+            <P><A href="http://www.webforgers.net/mod-rewrite/">overview</A> - 
+            <A 
+            href="http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php"><STRONG>syntax</STRONG></A> 
+            - <A 
+            href="http://www.webforgers.net/mod-rewrite/basic-tutorials.php">basic</A> 
+            - <A 
+            href="http://www.webforgers.net/mod-rewrite/medium-tutorials.php">medium</A> 
+            - <A 
+            href="http://www.webforgers.net/mod-rewrite/advanced-tutorials.php">advanced</A> 
+            </P>
+            <P class=heading><STRONG>Mod Rewrite syntax</STRONG></P>
+            <P>
+            <SCRIPT language=JavaScript1.1 
+            type=text/javascript>print_tla();</SCRIPT>
+            The key to good mod rewritting is patterns. Patterns in your urls 
+            are how we are going to distinguish what to rewrite and what not to 
+            rewrite. We'll get to that later, first we'll need to go over the 
+            basics of the mod rewrite syntax.</P>
+            <P class=heading><STRONG>RewriteRules</STRONG></P>
+            <P>Rewriterules are the heart and sole of the mod rewrite, here is 
+            where you declare the file to be rewritten, where it is to be 
+            rewritten and tack on any special commands.</P>
+            <P>Rewrite rules are broken down into 4 simple blocks. I'll refer to 
+            these blocks as the <STRONG>Call to action, Pattern</STRONG>, 
+            <STRONG>Rewrite</STRONG> and <STRONG>Command Flag</STRONG>.</P>
+            <P>Example:<BR><SPAN class=example>RewriteRule ^dir/([0-9]+)/?$ 
+            /index.php?id=$1 [L]</SPAN></P>
+            <P><STRONG>Call to action:</STRONG> 
+            RewriteRule<BR><STRONG>Pattern:</STRONG> ^dir/([0-9]+) 
+            /?$<BR><STRONG>Rewrite:</STRONG> /index.php?id=$1<BR><STRONG>Command 
+            Flag:</STRONG> [L]</P>
+            <P>Between each of these blocks of the rewrite rule there should be 
+            a space. With that being said let's go ahead and break down each of 
+            these 4 blocks and discuss what they do.</P>
+            <P class=heading><STRONG>Call to action Block</STRONG></P>
+            <P>The only way to screw this up is to spell RewriteRule incorrectly 
+            or leave out the space between this and the starting of the 
+            <STRONG>pattern block</STRONG>. If you do spell it incorrectly 
+            you'll trigger an error and the browser will out put a 500 error. 
+            Note if you ever see a 500 error on your site it mostlikely due to a 
+            bad line of code in your .htaccess file.</P>
+            <P class=heading><STRONG>Pattern Block</STRONG></P>
+            <P>This one little piece of the mod rewrite is where the power is. 
+            In the <STRONG>pattern block</STRONG> of the rewrite rule we use 
+            <STRONG><A 
+            href="http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php#regular_expressions">regular 
+            expressions</A></STRONG> to detect the requested file name or uri 
+            and from this we can extract key parts to pass to the 
+            <STRONG>rewrite block</STRONG>.</P>
+            <P class=notes>Pay attention because this is the hardest part of mod 
+            rewrite.</P>
+            <P>Regular expressions is just a method to detect letters, numbers 
+            and symbols using special characters. These special characters are 
+            called <STRONG><A 
+            href="http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php#metacharacters">metacharacters</A></STRONG>.</P>
+            <P><STRONG>Pattern Matching metacharacter Definitions</STRONG></P>
+            <TABLE class=bodytext cellSpacing=2 cellPadding=0 width="100%" 
+            border=0>
+              <TBODY>
+              <TR class=bodytextdark>
+                <TD align=middle width=30>Char.</TD>
+                <TD width=394>Definition</TD></TR>
+              <TR>
+                <TD align=middle>\</TD>
+                <TD>Use before any of the following characters to escape or 
+                  null the meaning or it. \* \. \$ \+ \[ \]</TD></TR>
+              <TR>
+                <TD align=middle>^</TD>
+                <TD>Start matching at this point</TD></TR>
+              <TR>
+                <TD align=middle>$</TD>
+                <TD>End point of the match</TD></TR>
+              <TR>
+                <TD align=middle>.</TD>
+                <TD>Any character</TD></TR>
+              <TR>
+                <TD align=middle>[]</TD>
+                <TD>Starts a class</TD></TR>
+              <TR>
+                <TD align=middle>|</TD>
+                <TD>Starts alternative match this|that would mean match this 
+                  or that</TD></TR>
+              <TR>
+                <TD align=middle>()</TD>
+                <TD>starts a back reference point</TD></TR>
+              <TR>
+                <TD align=middle>?</TD>
+                <TD>match 0 or 1 time <STRONG><A 
+                  href="http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php#quantifiers">Quantifier</A></STRONG></TD></TR>
+              <TR>
+                <TD align=middle>+</TD>
+                <TD>match atleast 1 or more times <STRONG><A 
+                  href="http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php#quantifiers">Quantifier</A></STRONG></TD></TR>
+              <TR>
+                <TD align=middle>*</TD>
+                <TD>match 0 to infinite times <STRONG><A 
+                  href="http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php#quantifiers">Quantifier</A></STRONG></TD></TR>
+              <TR>
+                <TD align=middle>{}</TD>
+                <TD>match minimum to maximum <STRONG><A 
+                  href="http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php#quantifiers">Quantifier</A></STRONG> 
+                  {0,3} match up to 3 times</TD></TR></TBODY></TABLE>
+            <P><STRONG>Classe Definitions []</STRONG></P>
+            <TABLE class=bodytext cellSpacing=2 cellPadding=0 width="100%" 
+            border=0>
+              <TBODY>
+              <TR class=bodytextdark>
+                <TD align=middle width=30>Char.</TD>
+                <TD width=394>Definition</TD></TR>
+              <TR>
+                <TD align=middle>^</TD>
+                <TD>Negates the class. [^A-Z]+ means don't match any 
+                uppercases</TD></TR>
+              <TR>
+                <TD align=middle>\</TD>
+                <TD>Use before any of the following characters to escape or 
+                  null the meaning or it. [\+]+</TD></TR>
+              <TR>
+                <TD align=middle>-</TD>
+                <TD>Range for matching [0-9]+ [a-zA-Z]+</TD></TR></TBODY></TABLE>
+            <P>I'll show a few quick samples just so you understand how to use 
+            all of the above. Then we're going to move right on to the 
+            <STRONG>Rewrite Block </STRONG>since we'll be going over all of this 
+            in our basic section.</P>
+            <P>In this example we just need the numbers in the ulrs below to 
+            pass through the mod rewrite to make our query. First we have to ask 
+            ourselves, "What is the common pattern in these urls"?</P>
+            <P><STRONG>Example 1</STRONG></P>
+            <P>In this example there are two common patterns that we can match 
+            against. The first one is they all start with category/. The second 
+            is they all end in .htm. This should be an easy match</P>
+            <OL>
+              <LI>category/1.htm 
+              <LI>category/56.htm 
+              <LI>category/092340923.htm 
+              <LI>category/9334.htm </LI></OL>
+            <P>So to use regular expressions to match all of these urls below we 
+            need to set our starting point to ^category/. </P>
+            <P>Now we need to tell the rewrite rule to look for any number 1 or 
+            more times. We'll use a character class to do this [0-9]+. Since we 
+            need this number to complete our <STRONG>rewrite block 
+            </STRONG>we're going to tell the mod to reference this so we can use 
+            it later. We do this by surrounding the the <BR>[0-9]+ with brachets 
+            like this ([0-9]+).</P>
+            <P>To finish the match we're going to negate the . (remember this 
+            means any 1 character) even though a . is considered 1 character 
+            we're going to go ahead and negate it to read as a dot and then 
+            finish the match with htm$.</P>
+            <P><STRONG>Mouse over the characters for a 
+            definition:</STRONG><BR><BR>RewriteRule <SPAN class=def><STRONG><A 
+            class=def title="Begin Matching at the start of category" 
+            onclick="return false;" 
+            href="http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php#">^</A>category/<A 
+            class=def 
+            title="Create a back reference and match any number 1 or more times between the / and the .htm" 
+            onclick="return false;" 
+            href="http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php#">([0-9]+)</A><A 
+            class=def 
+            title="Negate metacharacter . so that it doesn't match any character 1 time" 
+            onclick="return false;" 
+            href="http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php#">\</A>.htm<A 
+            class=def 
+            title="Stop pattern matching at this point even if there are more characters beyond htm" 
+            onclick="return false;" 
+            href="http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php#">$</A></STRONG></SPAN> 
+            /category.php?cat_id=$1 [L]</P>
+            <P><STRONG>Example 2</STRONG></P>
+            <P>In this example we're going to pass a name through the rewrite. 
+            The name we want to use is the name of the first folder. So like 
+            before we need to find a pattern so we can match and extract the 
+            name of the first folder.</P>
+            <OL>
+              <LI>kitchen-ware/spoons.htm 
+              <LI>bathware2/towels/duck-patterns.htm 
+              <LI>dinnerware-pieces/ </LI></OL>
+            <P>The only thing we have to work with that is common among all the 
+            examples is the trailing slash /. This is kind of tricky since you 
+            can type in the 3rd url with out the trailing slash and it would 
+            still show up in your browser. We'll get to the trailing slash in a 
+            bit though lets start with the collection of the words and numbers 
+            before the /.</P>
+            <P>There are a few ways to do this. We can do a wild card match 
+            which picks up everything (.+) or (.*). We can make a class that 
+            looks for all numbers, dashes, commas and numbers. ([-a-zA-Z0-9]+) 
+            or we can use a negated class which will look for anything but a / 
+            like this ([^/]+). We'll use the latter even though all of the above 
+            would do the job.</P>
+            <P class=notes>Note: The best to use is the negated class since .+ 
+            will pick up a / since a / is defined as any given character. The 
+            [-a-zA-Z0-9]+ would just take up too much computing power over the 
+            long run. Remember the more you define the more strain there is on 
+            the system. Since a search for every thing but a / ([^/]+) requires 
+            less computing power it's not only fast it most optimal.</P>
+            <P>Our final result to pick up everything before the first trailing 
+            slash then would look like this ^([^]+)</P>
+            <P>Next we'll need to account for the possible missing trailing 
+            slash. For this we have 2 options the first option is the min max 
+            {min,max} metacharacter. If we write /{0,1} this is telling the 
+            <STRONG>rewrite block</STRONG> to look for a / 0 to 1 times. That 
+            would match both dinnerware-pieces/ and dinnerware-pieces every 
+            time. But the easier way to do this is to use the ? metacharacter. ? 
+            just means match the preceding character 0 or 1 times and we don't 
+            have to type as much.</P>
+            <P>So up to this point our <STRONG>pattern block</STRONG> should 
+            look like this. ^([^]+)/?</P>
+            <P>Then we can tack on a $ to the end so we know to stop if the 
+            trailing slash is or isn't found. An we get our final rewrite rule 
+            below.</P>
+            <P>Mouse over the characters for a definition</P>
+            <P>RewriteRule <SPAN class=def><STRONG><A 
+            title="Start matching at the beginning of the requested file name" 
+            onclick="return false;" 
+            href="http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php#">^</A><A 
+            title="Start the first back reference, Negate the class. Find anything that ISN'T a /" 
+            onclick="return false;" 
+            href="http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php#">([^/]+)</A><A 
+            title="Match for a / 0 - 1 times" onclick="return false;" 
+            href="http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php#">/?</A><A 
+            title="End pattern matching" onclick="return false;" 
+            href="http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php#">$</A></STRONG></SPAN> 
+            /catalog.php?product_id=$1 [L]</P>
+            <P class=notes>A word of warning if you plan to use the folder 
+            names, especially the first folder as a variable that will be passed 
+            through the mod you better know that it's going to pass all real 
+            files as well through to be rewritten. images/, includes/ css/ img/ 
+            cgi-bin/ all of these common folders are perfect matches for 
+            <STRONG>^([^]+)/?$</STRONG> if this is your first time doing mod 
+            rewrite you may want to put your variables in file names instead of 
+            1st tier folders. We go over how to by pass the rewritting of all 
+            our static folders in the advanced tutorials. For now just keep this 
+            in mind.</P>
+            <P>It all looks like nonsense, I know I've been here before 
+            scratching my head trying to figure it all out. Just 
+            <STRONG>memorize these 3 pattern matches</STRONG> because you'll use 
+            them the most ([0-9]+) , ([^/]+) , (.*) These translate to match any 
+            number, match any folder name, or match everything. Becareful with 
+            that one though! A RewriteRule ^(.*)$ will shoot a 500 error faster 
+            than lightning. Always use .* with another pattern that can be 
+            matched like RewriteRule ^(.*).htm$.</P>
+            <P><STRONG>A few more things about the pattern block</STRONG></P>
+            <P>You cannot use a RewriteRule to match a query string from a 
+            dynamic url. RewriteRule is for request_uri matching. A requested 
+            uri is in bold below</P>
+            <P>www.somesite.com<STRONG>/some/folder/index.php</STRONG>?id=23&amp;name=foo</P>
+            <P>You can however get variables from a RewriteCond but we cover how 
+            to use RewriteCond together with RewriteRule in the medium 
+            tutorials.</P>
+            <P>Ok that's enough for now. For more information on <A 
+            href="http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php#regular_expressions">regular 
+            expressions</A> check the on page resources on the right for links 
+            to more tutorials.</P>
+            <P class=heading><STRONG>Rewrite Block</STRONG></P>
+            <P>This part is a piece of cake. Now that we've used the pattern 
+            block to reference our matches ([0-9]+) we need to rewrite to the 
+            url and add the references as needed.</P>
+            <P>Remember a reference is anything that was picked up in the () in 
+            the rewrite.</P>
+            <P>To call a reference you just add a $ follow by the reference 
+            number. This all goes in order like so. Below we'll make 3 
+            references.</P>
+            <P>RewriteRule ^dir/(.*)/(.*)\.(.htm|.html)$ /$1/$2.$3 [R=301,L]</P>
+            <P>Rewrites using a 301 redirect <BR>dir/some/folder/file.htm to 
+            /some/folder/file.htm</P>
+            <P>You can mix up the references if you want like so:</P>
+            <P>RewriteRule ^dir/(.*)/(.*)\.(.htm|.html)$ 
+            /<STRONG>$2/$1</STRONG>.$3 [R=301,L]</P>
+            <P>you can also not call a reference like so:</P>
+            <P>RewriteRule ^dir/(.*)/(.*)\.(.htm|.html)$ /$2/$1.php 
+[R=301,L]</P>
+            <P>So lets recap a bit. The rewrite block serves 2 purposes. 1 to 
+            finalize the total mod rewrite by declare where to rewrite or to 
+            redirect. and 2. it allows us to call the backreferences we collect 
+            from the <STRONG>Pattern Block.</STRONG></P>
+            <P class=notes>Note: We can use the RewriteBase to set a base 
+            directory that we want to rewrite to so you don't always have to 
+            write it in your rules.</P>
+            <P>Example: <SPAN class=example>RewriteBase /dir/<BR><BR>RewriteRule 
+            ^somefile-([0-9]+)\.htm$ index.php?id=$1 [L]</SPAN></P>
+            <P>is the same as</P>
+            <P class=example>RewriteRule ^somefile-([0-9]+)\.htm$ 
+            /dir/index.php?id=$1 [L]</P>
+            <P>So if you are doing all your rewites to the same directory save 
+            some time and declare you RewriteBase before all your rules. You can 
+            even declare / as your base.</P>
+            <P><SPAN class=heading><STRONG>Command Flag Block</STRONG></SPAN> 
+            (Optional)</P>
+            <P>Ok I didn't tell you this is optional because half of you would 
+            skip this part. Learning the different Command Flags is a must.</P>
+            <P>The command flag definitions are as follows:</P>
+            <TABLE class=bodytext cellSpacing=2 cellPadding=0 width="100%" 
+            border=0>
+              <TBODY>
+              <TR class=bodytextdark>
+                <TD align=middle width=30>Char.</TD>
+                <TD width=394>Definition</TD></TR>
+              <TR>
+                <TD align=middle>[R]</TD>
+                <TD>Redirect you can add an =301 or =302 to change the 
+              type.</TD></TR>
+              <TR>
+                <TD align=middle>[F]</TD>
+                <TD>Forces the url to be forbidden. 403 header</TD></TR>
+              <TR>
+                <TD align=middle>[G]</TD>
+                <TD>Forces the url to be gone 401 header</TD></TR>
+              <TR>
+                <TD align=middle>[L]</TD>
+                <TD>Last rule. (You should use this on all your rules that 
+                  don't link together)</TD></TR>
+              <TR>
+                <TD align=middle>[N]</TD>
+                <TD>Next round. Rerun the rules again from the start</TD></TR>
+              <TR>
+                <TD align=middle>[C]</TD>
+                <TD>Chains a rewrite rule together with the next rule.</TD></TR>
+              <TR>
+                <TD align=middle>[T]</TD>
+                <TD>use T=MIME-type to force the file to be a mime type</TD></TR>
+              <TR>
+                <TD align=middle>[NS]</TD>
+                <TD>Use if no sub request is requested</TD></TR>
+              <TR>
+                <TD align=middle>[NC]</TD>
+                <TD>Makes the rule case INsensitive</TD></TR>
+              <TR>
+                <TD align=middle>[QSA]</TD>
+                <TD>Query String Append use to add to an existing query 
+                string</TD></TR>
+              <TR>
+                <TD align=middle>[NE]</TD>
+                <TD>Turns of normal escapes that are default in the 
+                rewriterule</TD></TR>
+              <TR>
+                <TD align=middle>[PT]</TD>
+                <TD>Pass through to the handler (together with mod 
+alias)</TD></TR>
+              <TR>
+                <TD align=middle>[S]</TD>
+                <TD>Skip the next rule S=3 skips the next 3 rules</TD></TR>
+              <TR>
+                <TD align=middle>[E]</TD>
+                <TD>E=var sets an enviromental variable that can be called by 
+                  other rules</TD></TR></TBODY></TABLE>
+            <P>See <A 
+            href="http://httpd.apache.org/docs/1.3/mod/mod_rewrite.html#RewriteRule" 
+            target=_blank>full definitions here</A>.</P>
+            <P>Ok next is into the tutorials. If you are confused about any of 
+            the above don't be scared to move along. We will recap everything so 
+            we don't get confused. I know for myself I had to see it work and 
+            see the code before I could grasp the full mod rewite 
+experience.</P>
+            <P>On to the basics</P>
+            <P align=center><A 
+            href="http://www.webforgers.net/mod-rewrite/">&lt;&lt; Mod Rewrite 
+            Overviw</A> :: <A 
+            href="http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php">Mod 
+            Rewrite Syntax</A> :: <A 
+            href="http://www.webforgers.net/mod-rewrite/basic-mod-rewrites.php">Basic 
+            Mod Rewrites &gt;&gt;</A></P></TD>
+          <TD class=bodytext vAlign=top align=right width=271 height=67><A 
+            href="http://www.webforgers.net/">home</A> | blog | <A 
+            href="http://www.webforgers.net/mod-rewrite/index.php">tutorials</A> 
+            | <A href="http://www.webforgers.net/code-library/">code 
+            library</A><BR><BR><IMG height=55 
+            src="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/logo.jpg" 
+            width=265 align=absBottom> </TD></TR>
+        <TR>
+          <TD class=bodytext vAlign=top>
+            <P><STRONG>On Page Resources</STRONG></P>
+            <OL>
+              <LI><A name=apache_module_list></A><A 
+              href="http://httpd.apache.org/docs/1.3/mod/" 
+              target=_blank><STRONG>Syntax</STRONG></A> - A syntax is a uniform 
+              way to write code. Mod rewrite syntax is about the easiest to 
+              learn. Most rewrites can be done with just a few lines of 
+              code.<BR><BR>
+              <LI><A name=apache_server></A><A href="http://httpd.apache.org/" 
+              target=_blank><STRONG>Apache Server</STRONG></A> - Most popular 
+              web server used.<BR><BR>
+              <LI><A id=regular_expressions 
+              name=regular_expressions></A><STRONG><A 
+              href="http://en.wikipedia.org/wiki/Regular_expression" 
+              target=_blank>Regular Expressions</A></STRONG> - Also known as 
+              pattern matching. It is a method in which you use metacharacters 
+              to detect patterns in words, numbers and characters.<BR><BR>
+              <LI><A id=metacharacters 
+              name=metacharacters></A><STRONG>Metacharacters</STRONG> - Special 
+              characters used by regular expression engines to find and match 
+              patterns in strings.<BR><BR>
+              <LI><STRONG><A id=quantifiers name=quantifiers></A>Quantifiers - 
+              </STRONG>Simply put quantifiers tell you how many or how few times 
+              to match the preceding character. </LI></OL>
+            <P>&nbsp;</P>
+            <P><STRONG>Questions that are answered here:</STRONG></P>
+            <UL>
+              <LI>How do I write a mod rewrite rule? 
+              <LI>What is a mod rewirte rule? 
+              <LI>How do I write regular expressions for mod rewrite? </LI></UL>
+            <P>&nbsp;</P></TD></TR></TBODY></TABLE></TD>
+    <TD 
+    background="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/r.jpg"><IMG 
+      height=10 
+      src="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/r.jpg" 
+      width=10></TD></TR>
+  <TR>
+    <TD height=10><IMG height=10 
+      src="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/bl.jpg" 
+      width=10></TD>
+    <TD 
+    background="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/b.jpg"><IMG 
+      height=10 
+      src="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/b.jpg" 
+      width=10></TD>
+    <TD><IMG height=10 
+      src="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/br.jpg" 
+      width=10></TD></TR></TBODY></TABLE>
+<TABLE height=39 cellSpacing=0 cellPadding=0 width=750 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD width=10 height=10><IMG height=10 
+      src="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/tl.jpg" 
+      width=10></TD>
+    <TD width="100%" 
+    background="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/t.jpg"><IMG 
+      height=10 
+      src="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/t.jpg" 
+      width=10></TD>
+    <TD width=10><IMG height=10 
+      src="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/tr.jpg" 
+      width=10></TD></TR>
+  <TR>
+    <TD 
+    background="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/l.jpg" 
+    height=19><IMG height=10 
+      src="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/l.jpg" 
+      width=10></TD>
+    <TD class=innertb align=middle>
+      <TABLE cellSpacing=2 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class=innercell align=middle><A 
+            href="http://www.webforgers.net/">Mod Rewrite</A> (Home) | <A 
+            href="http://www.webforgers.net/mod-rewrite/">Mod Rewrite 
+            Tutorials</A> | <A href="http://www.webforgers.net/">Directory</A> | 
+            <A href="http://www.webforgers.net/code-library/">Code Library</A> | 
+            Blog</TD></TR></TBODY></TABLE></TD>
+    <TD 
+    background="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/r.jpg"><IMG 
+      height=10 
+      src="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/r.jpg" 
+      width=10></TD></TR>
+  <TR>
+    <TD height=10><IMG height=10 
+      src="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/bl.jpg" 
+      width=10></TD>
+    <TD 
+    background="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/b.jpg"><IMG 
+      height=10 
+      src="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/b.jpg" 
+      width=10></TD>
+    <TD><IMG height=10 
+      src="Mod rewrite syntax Tutorial - Mod Rewrite Regular Expressions_files/br.jpg" 
+      width=10></TD></TR></TBODY></TABLE>
+<SCRIPT language=JavaScript>
+//webforgers
+var seotrendsuserid = 4;
+var query = location.search;
+if(query.length < 1){
+	query = '?';
+}else{
+	query = query + '&';
+}
+document.write('<img src="http://www.seotrends.com/includes.scripts/tracker.php' + query +'client_id=' + seotrendsuserid + '&trends_ref=' + escape(document.referrer) +'&trends_uri=' + escape(location.pathname) + '" width="1" height="1">');
+</SCRIPT>
+</BODY></HTML>

@@ -1,0 +1,48 @@
+BODY {
+	BACKGROUND: #fff; MARGIN: 0.6em
+}
+#wrapper {
+	PADDING-RIGHT: 1em; PADDING-LEFT: 1em; BACKGROUND: #fff; PADDING-BOTTOM: 1em; MARGIN: 0px; WIDTH: auto; PADDING-TOP: 1em
+}
+#header {
+	DISPLAY: none
+}
+#otherstuff {
+	DISPLAY: none
+}
+#navigation {
+	DISPLAY: none
+}
+#footer {
+	DISPLAY: none
+}
+#content {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #fff; FLOAT: none; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: auto; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+UNKNOWN {
+	MARGIN: 0px
+}
+#content:unknown {
+	PADDING-RIGHT: 3px; DISPLAY: block; PADDING-LEFT: 3px; BACKGROUND: #f9f8e4; MARGIN-BOTTOM: 3mm; PADDING-BOTTOM: 2px; PADDING-TOP: 3px; TEXT-ALIGN: center; content: "This is a printer-friendly version. The navigation and other unnecessary elements have been removed."
+}
+#searchhioption {
+	DISPLAY: none
+}
+.pagenavbox {
+	DISPLAY: none
+}
+#adsense {
+	DISPLAY: none
+}
+.adsense {
+	DISPLAY: none
+}
+#endlinks {
+	DISPLAY: none
+}
+.featured {
+	DISPLAY: none
+}
+#content .searchword {
+	BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}

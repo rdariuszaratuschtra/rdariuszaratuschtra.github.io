@@ -1,0 +1,165 @@
+HTML {
+	WIDTH: 100%
+}
+BODY {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 11pt! important; BACKGROUND: white; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 90%; COLOR: black; LINE-HEIGHT: 125%; PADDING-TOP: 0px; FONT-FAMILY: Georgia, Palatino, serif; TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 0px
+}
+#header IMG {
+	DISPLAY: none
+}
+#sidebar {
+	DISPLAY: none
+}
+#subnav {
+	DISPLAY: none
+}
+#menu {
+	DISPLAY: none
+}
+.hide {
+	DISPLAY: none
+}
+#wrapper {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: white; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: auto; WIDTH: 90%; COLOR: black; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+#maincontent {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: none! important; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: auto; COLOR: black; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+#footer {
+	CLEAR: both; PADDING-RIGHT: 7pt; BORDER-TOP: #ccc 1pt solid; PADDING-LEFT: 10pt; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 10pt; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 7pt; PADDING-TOP: 5pt; TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 0px
+}
+#footer P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 10pt 0px; PADDING-TOP: 0px
+}
+#footer UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 10pt 0px 0px; PADDING-TOP: 0px
+}
+#footer LI {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 15pt; DISPLAY: inline; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 0px
+}
+A:link {
+	FONT-WEIGHT: bold; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #566; TEXT-DECORATION: underline
+}
+A:visited {
+	FONT-WEIGHT: bold; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #566; TEXT-DECORATION: underline
+}
+H1 {
+	MARGIN-TOP: 1em; FONT-WEIGHT: bold; MARGIN-BOTTOM: 2pt; LINE-HEIGHT: 1.2em; FONT-FAMILY: myriad, "gill sans", helvetica, arial, sans-serif; LETTER-SPACING: 1pt
+}
+H2 {
+	MARGIN-TOP: 1em; FONT-WEIGHT: bold; MARGIN-BOTTOM: 2pt; LINE-HEIGHT: 1.2em; FONT-FAMILY: myriad, "gill sans", helvetica, arial, sans-serif; LETTER-SPACING: 1pt
+}
+H3 {
+	MARGIN-TOP: 1em; FONT-WEIGHT: bold; MARGIN-BOTTOM: 2pt; LINE-HEIGHT: 1.2em; FONT-FAMILY: myriad, "gill sans", helvetica, arial, sans-serif; LETTER-SPACING: 1pt
+}
+H4 {
+	MARGIN-TOP: 1em; FONT-WEIGHT: bold; MARGIN-BOTTOM: 2pt; LINE-HEIGHT: 1.2em; FONT-FAMILY: myriad, "gill sans", helvetica, arial, sans-serif; LETTER-SPACING: 1pt
+}
+H5 {
+	MARGIN-TOP: 1em; FONT-WEIGHT: bold; MARGIN-BOTTOM: 2pt; LINE-HEIGHT: 1.2em; FONT-FAMILY: myriad, "gill sans", helvetica, arial, sans-serif; LETTER-SPACING: 1pt
+}
+H6 {
+	MARGIN-TOP: 1em; FONT-WEIGHT: bold; MARGIN-BOTTOM: 2pt; LINE-HEIGHT: 1.2em; FONT-FAMILY: myriad, "gill sans", helvetica, arial, sans-serif; LETTER-SPACING: 1pt
+}
+H3.byline {
+	MARGIN-TOP: 15pt; MARGIN-BOTTOM: 15pt
+}
+#pagebody H1 {
+	MARGIN-TOP: 0px
+}
+#pagebody H2 {
+	MARGIN-TOP: 1.5em
+}
+H4 {
+	FONT-WEIGHT: normal
+}
+H5 {
+	FONT-WEIGHT: normal
+}
+H6 {
+	FONT-WEIGHT: normal
+}
+H4.addtlbyline {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12pt; PADDING-BOTTOM: 0px; MARGIN: 7pt 0px; TEXT-TRANSFORM: uppercase; PADDING-TOP: 0px
+}
+H4.pubdate {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 11pt; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 10pt; COLOR: #666; PADDING-TOP: 0px
+}
+CODE {
+	COLOR: #333; FONT-FAMILY: "Bitstream Vera Sans Mono", monaco, "Courier New", courier, monospace
+}
+PRE {
+	COLOR: #333; FONT-FAMILY: "Bitstream Vera Sans Mono", monaco, "Courier New", courier, monospace
+}
+HTML #pagebody P {
+	MARGIN-TOP: 0px; FONT-SIZE: 11pt! important; MARGIN-BOTTOM: 1em; LINE-HEIGHT: 1.25em; TEXT-ALIGN: left
+}
+#pagebody P.fineprint {
+	FONT-SIZE: 9pt
+}
+#pagebody .trans {
+	MARGIN: 25pt 0px; PADDING-TOP: 0px
+}
+#pagebody .trans DT {
+	FONT-WEIGHT: normal; FONT-SIZE: 14pt; MARGIN-BOTTOM: 5pt; PADDING-BOTTOM: 0px; FONT-STYLE: italic
+}
+#maincontent A:link:unknown {
+	FONT-SIZE: 75%; content: " (" attr(href) ")"
+}
+#maincontent A:visited:unknown {
+	FONT-SIZE: 75%; content: " (" attr(href) ")"
+}
+H1 A:unknown {
+	FONT-SIZE: 40%! important
+}
+UNKNOWN {
+	content: " (http://www.alistapart.com" attr(href) ")"
+}
+#authorbio {
+	PADDING-RIGHT: 0px; BORDER-TOP: #ccc 1pt dotted; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-BOTTOM: 10pt; MARGIN: 15pt 0px 10pt; PADDING-TOP: 10pt; BORDER-BOTTOM: #ccc 1pt dotted; BORDER-RIGHT-WIDTH: 0px
+}
+.additionalauthorbox {
+	PADDING-RIGHT: 0px; BORDER-TOP: #ccc 1pt dotted; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-BOTTOM: 10pt; MARGIN: 15pt 0px 10pt; PADDING-TOP: 10pt; BORDER-BOTTOM: #ccc 1pt dotted; BORDER-RIGHT-WIDTH: 0px
+}
+#outdated {
+	PADDING-RIGHT: 0px; BORDER-TOP: #ccc 1pt dotted; PADDING-LEFT: 0px; FONT-WEIGHT: bold; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 10pt; PADDING-BOTTOM: 10pt; MARGIN: 25pt 0px 10pt; PADDING-TOP: 10pt; BORDER-BOTTOM: #ccc 1pt dotted; BORDER-RIGHT-WIDTH: 0px
+}
+#maincontent DL {
+	MARGIN-TOP: 0px; LINE-HEIGHT: 1.4em; PADDING-TOP: 0px
+}
+#maincontent DD {
+	PADDING-LEFT: 5pt; MARGIN-BOTTOM: 5pt; MARGIN-LEFT: 5pt
+}
+.trans {
+	MARGIN-TOP: 75pt; PADDING-TOP: 0px
+}
+.trans DT {
+	FONT-WEIGHT: normal; FONT-SIZE: 14pt; FONT-STYLE: italic
+}
+.linewrap {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt; COLOR: #666
+}
+.floatleft {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px 15pt 0px 0px; PADDING-TOP: 0px
+}
+.vs0 {
+	MARGIN-TOP: 0px
+}
+.vs3 {
+	MARGIN-TOP: 3pt
+}
+.vs5 {
+	MARGIN-TOP: 5pt
+}
+.vs7 {
+	MARGIN-TOP: 7pt
+}
+.vs10 {
+	MARGIN-TOP: 10pt
+}
+.vs15 {
+	MARGIN-TOP: 15pt
+}
+.vs25 {
+	MARGIN-TOP: 25pt
+}

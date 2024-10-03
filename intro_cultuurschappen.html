@@ -1,0 +1,214 @@
+<!doctype html public "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+	<title>R. Darius Zaratuschtra</title>
+	
+<link rel="stylesheet" href="darius3_long_2columns.css">
+<script type="text/javascript" language="JavaScript" src="./scripts/imagepopup.js"></script>
+
+<script language="JavaScript">
+<!--
+
+//*****************************************
+// Blending Image Slide Show Script- 
+// © Dynamic Drive (www.dynamicdrive.com)
+// For full source code, visit http://www.dynamicdrive.com/
+//*****************************************
+
+//specify interval between slide (in milli seconds)
+var slidespeed=3000
+
+//specify images
+var slideimages=new Array(
+"gallery_cultuurschappen/tn_schilderijen 03 darius 126.jpg",
+"gallery_cultuurschappen/tn_schilderijen 04 en schilderijen amsterdam 028.jpg",
+"gallery_cultuurschappen/tn_schilderijen 04 en schilderijen amsterdam 023.jpg",
+"gallery_cultuurschappen/tn_161.jpg"
+)
+
+//specify corresponding links
+var slidelinks=new Array(
+"gallery_cultuurschappen/schilderijen 03 darius 126.jpg",
+"gallery_cultuurschappen/schilderijen 04 en schilderijen amsterdam 028.jpg",
+"gallery_cultuurschappen/schilderijen 04 en schilderijen amsterdam 023.jpg",
+"gallery_cultuurschappen/161.jpg"
+)
+
+//specify corresponding titels
+var slidetitels=new Array(
+"Stadsuitzicht",
+"Amsterdams cultuurschap",
+"Steden / Sterren",
+"Stadsuitzicht met steigers"
+)
+
+var newwindow=0 //open links in new window? 1=yes, 0=no
+
+var imageholder=new Array()
+var ie=document.all
+for (i=0;i<slideimages.length;i++){
+	imageholder[i]=new Image()
+	imageholder[i].src=slideimages[i]
+}
+
+function gotoshow(){
+	//if (newwindow)
+	//	window.open(slidelinks[whichlink]);
+	//else
+	//	window.location=slidelinks[whichlink];
+		
+	viewPic2(slidelinks[whichlink]);
+}
+
+function showFullSize(){
+	viewPic2( slidelinks[whichlink], slidetitels[whichlink]);
+}
+
+//-->
+</script>
+</head>
+
+<body>
+
+
+<!-- 
+<table cellspacing=1 bgcolor="Gray" cellpadding=0 align="center">
+<tr>
+	<td><img src="images/dariusheader8.jpg" width=760 height=160 border=0></td>
+</tr>
+</table>
+<br>
+ -->
+
+<div id="shadow1">
+<div id="header"></div>
+</div>
+
+
+<div id="shadow2">
+<!-- <div id="test5"> -->
+
+<div id="nav">
+<script type="text/javascript" src="milonic_src.js"></script>
+<noscript><!-- <a href="http://www.milonic.com/">JavaScript DHTML Pull Down Menus From Milonic.com</a> --></noscript>
+<script	type="text/javascript">
+if(ns4)_d.write("<scr"+"ipt type=text/javascript src=mmenuns4.js><\/scr"+"ipt>");		
+  else _d.write("<scr"+"ipt type=text/javascript src=mmenudom.js><\/scr"+"ipt>"); 
+</script>
+<!-- <script type="text/javascript" src="changecolorsbyclick.js"></script> -->
+<script type="text/javascript" src="menu_data.js"></script>
+</div>	
+
+<div id="content">
+<!-- NOTE: need containing div to draw border for Firefox counts padding toward width and height -->
+<div id="column2">
+<div id="column1">
+<span class="title">CULTUURSCHAPPEN</span>
+<span class="gallery"><a href="gallery_cultuurschappen.html">&#187; GALERIE</a></span>
+<!-- <h4 class="title">Lorem ipsum</h4> -->
+<p>
+<span class="dropcap">D</span>eze serie schilderijen is het resultaat van studies, &eacute;tudes, tijdens mijn opleidingen, namelijk een sterke neiging naar geometrische lijn-, vlak-, kleurcombinaties door mijn studie van Bauhaus en mijn figuratieve werk.
+</p>
+<p>
+De natuur heb ik gebruikt in mijn pogingen die te proberen te begrijpen. In het begin heb ik de natuur met haar uiterlijke kenmerken en gedaantes bewerkt. 
+Al in deze periode was ik altijd op zoek naar de ultieme betekenis ervan.
+Zelfs in de werken waarin ik de natuur op klassieke wijze benaderde, ben ik op zoek geweest naar de begrensde, geraffineerde vorm.
+Tegelijkertijd heb ik geometrisch en non-figuratief werk gemaakt. Vorm, kleur, vlak en lijn zijn de elementen waar ik steeds naar op zoek was. Het waren complementaire elementen in mijn schilderijen, maar steeds meer ben ik deze elementen als basis gaan gebruiken en dus steeds sterker naar voren gehaald.
+</p>
+
+<div id="image1">
+<!-- <a href="gallery_verhoudingen/285.jpg" name="Titel" target="_blank" onClick="viewPic(this); return false"> -->
+<a href="javascript:showFullSize()">
+<img src="gallery_cultuurschappen/tn_schilderijen 03 darius 126.jpg" id="slide" style="filter:blendTrans(duration=3)" width=80 height=80 border=0>
+</a>
+
+<script language="JavaScript">
+<!--
+
+var whichlink=0
+var whichimage=0
+var blenddelay=(ie)? document.images.slide.filters[0].duration*1000 : 0
+function slideit(){
+if (!document.images || !ie) return;	
+if (ie) document.images.slide.filters[0].apply();
+document.images.slide.src=imageholder[whichimage].src;
+if (ie) document.images.slide.filters[0].play();
+whichlink=whichimage;
+whichimage=(whichimage<slideimages.length-1)? whichimage+1 : 0;
+setTimeout("slideit()",slidespeed+blenddelay);
+}
+slideit()
+
+//-->
+</script>
+</div>
+
+<p>
+Het zijn geen abstracte schilderijen, het zijn slechts non-figuratieve schilderijen. Wat er in tot uiting komt is het menselijke gevoel. Observaties van cultuur, momentopnames van de natuur. Het kan zowel overal als altijd zijn.
+Hierbij heb ik proberen te benadrukken hoe de ontwikkeling, naar mijn idee, is verlopen van mijzelf naast die van de maatschappij en de wereld, de kunstgeschiedenis met zijn achtergronden en de sociaal-culturele politieke veranderingen.
+</p>
+
+
+
+
+
+</div>
+</div>
+
+<div id="column4">
+<div id="column3">
+<!-- <span class="title">Lorem ipsum</span> -->
+<!-- <h4 class="title">Lorem ipsum</h4> -->
+<p>
+Op het gebied van de sociale ontwikkelingsveranderingen, de steeds groeiende invloed van het massagedrag, de verstedelijking, dus steeds minder natuur en steeds meer architectonische begrenzingen, inkaderingen en de invloed van techniek en technologie.
+</p>
+<p>
+Op het gebied van de cultuur, de steeds meer verdwijnende lokale culturen en gemeenschappen, de globalisering en daardoor de import en export van zowel levensnormen als -behoeften. 
+Eigenheid behoort steeds minder tot (sub)culturen en deze dwingen individuen tot vervreemding.
+</p>
+<a href="intro_cultuurschappen2.html">&#187; VERVOLG</a>
+
+<p>
+</p>
+
+<!-- 
+<p>
+<i><b>R. Darius Zaratuschtra</b></i>
+</p>
+<p>
+23-10-2005
+</p>
+ -->
+
+</div>
+</div>
+
+
+</div>
+<!-- <div id="test6"></div> -->
+<!-- </div> -->
+</div>
+
+
+
+<!-- 
+<table cellspacing=0 bgcolor="Gray" cellpadding=0 width=762 align="center">
+<tr valign="BOTTOM">
+	<td height=20 bgcolor="White"><p class="footer">Copyright &copy; 2005 R. Darius Zaratuschtra | Webdesign: R. Goossens</p></td>
+</tr>
+</table>
+ -->
+
+<div id="footer">
+<p class="footer">Copyright &copy; 2005 R. Darius Zaratuschtra | Webdesign: R. Goossens</p>
+</div>
+
+<!-- <br><br><br><br><br> -->
+
+
+
+
+
+</body>
+</html>
+

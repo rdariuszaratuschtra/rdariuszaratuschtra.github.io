@@ -1,0 +1,25 @@
+<html>
+<head>
+<LINK REL="stylesheet" HREF="../darius4.css">
+<script type="text/javascript" language="JavaScript" src="../scripts/thumbover.js"></script>
+<script type="text/javascript" language="JavaScript" src="../scripts/imgover.js"></script>
+
+<title><#etcIndexPageTitle></title>
+</head>
+<#etcIndexPageBody>
+<center>
+
+<div id="nav1"></div>
+<div id="nav2"><div id="title"><!-- Test2 --></div></div>
+
+<br><br>
+
+<#etcIndexTable>
+
+
+<#etcBottomNavLinks>
+
+
+</center>
+</body>
+</html>

@@ -1,0 +1,1503 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0354)http://groups.google.com/group/alt.apache.configuration/tree/browse_frm/thread/7a2200a236d3a725/0b58afb8919dafd2?rnum=1&hl=en&q=mod_rewrite+query+string+group%3A*apache*&_done=%2Fgroup%2Falt.apache.configuration%2Fbrowse_frm%2Fthread%2F7a2200a236d3a725%2F4887cf4285f48a35%3Flnk%3Dst%26q%3Dmod_rewrite+query+string+group%3A*apache*%26rnum%3D3%26hl%3Den%26 -->
+<HTML><HEAD><TITLE>Google Groups: alt.apache.configuration</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8"><LINK 
+href="/groups/img/favicon.ico" rel="SHORTCUT ICON">
+<META content=history name=save><NOSCRIPT>
+<STYLE type=text/css>.noscripthide {
+	DISPLAY: none
+}
+.noscriptinline {
+	DISPLAY: inline
+}
+.noscriptblock {
+	DISPLAY: block
+}
+</STYLE>
+</NOSCRIPT>
+<SCRIPT language=javascript><!--
+document.write('<style type="text/css">');
+document.write(' .scripthide { display: none; }');
+document.write(' .scriptinline { display: inline; }');
+document.write(' .scriptblock { display: block; }');
+document.write('</style>');
+//--></SCRIPT>
+
+<SCRIPT language=javascript1.2><!--
+if (document.getElementById) {
+  document.write('<style type="text/css">');
+  document.write(' .script12hide { display: none; }');
+  document.write(' .script12inline { display: inline; }');
+  document.write(' .script12block { display: block; }');
+  document.write('</style>');
+}
+//--></SCRIPT>
+
+<SCRIPT language=javascript1.2><!--
+if (document.getElementById) {
+  document.write('<style type="text/css">');
+  document.write(' .lnav { position: absolute; }');
+  document.write(' .lnavch { margin-left:23.0ex;}');
+  document.write('</style>');
+}
+//--></SCRIPT>
+
+<STYLE type=text/css>.hide {
+	DISPLAY: none
+}
+IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+IMG {
+	BORDER-LEFT-COLOR: #0000a0; BORDER-BOTTOM-COLOR: #0000a0; BORDER-TOP-COLOR: #0000a0; BORDER-RIGHT-COLOR: #0000a0
+}
+INPUT.ck {
+	MARGIN-LEFT: -2px
+}
+INPUT.bt {
+	PADDING-RIGHT: 0.4em; PADDING-LEFT: 0.4em; PADDING-BOTTOM: 0px; OVERFLOW: visible; WIDTH: auto; PADDING-TOP: 0px
+}
+BUTTON.bt {
+	PADDING-RIGHT: 0.4em; PADDING-LEFT: 0.4em; PADDING-BOTTOM: 0px; OVERFLOW: visible; WIDTH: auto; PADDING-TOP: 0px
+}
+.fixed_width {
+	FONT-SIZE: 90%; FONT-FAMILY: fixed-width, monospace
+}
+A:link {
+	COLOR: #0000cc
+}
+.w {
+	COLOR: #0000cc
+}
+A.w:link {
+	COLOR: #0000cc
+}
+.w A:link {
+	COLOR: #0000cc
+}
+A:visited {
+	COLOR: #551a8b
+}
+A:active {
+	COLOR: #f00
+}
+.inheritcolor A {
+	
+}
+.minmaxwie {
+	WIDTH: 100%; min-width: 260; max-width: 500
+}
+ HTML .minmaxwie {
+	
+}
+.f {
+	COLOR: #6f6f6f
+}
+.f:link {
+	COLOR: #6f6f6f
+}
+.f A:link {
+	COLOR: #6f6f6f
+}
+.fl:visited {
+	COLOR: #551a8b
+}
+.fl:active {
+	COLOR: #f00
+}
+.fl:link {
+	COLOR: #7777cc
+}
+.z {
+	DISPLAY: none
+}
+.on {
+	COLOR: #0000cc
+}
+.on:visited {
+	COLOR: #0000cc
+}
+.on:link {
+	COLOR: #0000cc
+}
+.on:active {
+	COLOR: #f00000
+}
+.don {
+	COLOR: #0000bb
+}
+.don:visited {
+	COLOR: #0000bb
+}
+.don:link {
+	COLOR: #0000bb
+}
+.don:active {
+	COLOR: #f00000
+}
+.q A:visited {
+	COLOR: #0000cc
+}
+.q A:link {
+	COLOR: #0000cc
+}
+.q A:active {
+	COLOR: #0000cc
+}
+.q {
+	COLOR: #0000cc
+}
+.qo A:visited {
+	COLOR: #0000cc
+}
+.qo A:link {
+	COLOR: #0000cc
+}
+.qo A:active {
+	COLOR: #0000cc
+}
+.qo {
+	COLOR: #0000cc
+}
+.mbody {
+	MARGIN-TOP: 4px
+}
+BODY {
+	FONT-FAMILY: arial,sans-serif
+}
+TD {
+	FONT-FAMILY: arial,sans-serif
+}
+INPUT {
+	FONT-FAMILY: arial,sans-serif
+}
+TEXTAREA {
+	FONT-FAMILY: arial,sans-serif
+}
+SELECT {
+	FONT-FAMILY: arial,sans-serif
+}
+BODY {
+	FONT-SIZE: 83%
+}
+TD {
+	FONT-SIZE: 83%
+}
+INPUT {
+	FONT-SIZE: 100%
+}
+TEXTAREA {
+	FONT-SIZE: 100%
+}
+SELECT {
+	FONT-SIZE: 100%
+}
+FORM {
+	MARGIN: 0px
+}
+.tick {
+	FONT-FAMILY: webdings; TEXT-DECORATION: none! important
+}
+.qr {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; WIDTH: 100%; PADDING-TOP: 4px; FONT-FAMILY: arial,sans-serif
+}
+.nu {
+	TEXT-DECORATION: none
+}
+.gt {
+	BORDER-COLLAPSE: collapse
+}
+.gt TD {
+	BORDER-RIGHT: #ffcc33 1px solid; PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 0.3em; PADDING-TOP: 0.3em
+}
+.gm TD {
+	PADDING-RIGHT: 1em; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.3em; PADDING-TOP: 0.3em
+}
+.bnk {
+	BORDER-RIGHT: #ffcc33 1px solid; BORDER-TOP: #ffcc33 1px solid; BORDER-LEFT: #ffcc33 1px solid; BORDER-BOTTOM: #ffcc33 1px solid
+}
+.bnk TD {
+	BORDER-RIGHT-WIDTH: 0px! important
+}
+.sel TD.seltd {
+	BORDER-RIGHT: medium none; PADDING-RIGHT: 4px; BORDER-TOP: #ffcc33 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: bold; PADDING-BOTTOM: 4px; BORDER-LEFT: #ffcc33 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #ffcc33 1px solid
+}
+.al {
+	COLOR: #990066
+}
+.al:link {
+	COLOR: #990066
+}
+.al:active {
+	COLOR: #990066
+}
+.al:visited {
+	COLOR: #990066
+}
+.dal {
+	COLOR: #880059
+}
+.dal:link {
+	COLOR: #880059
+}
+.dal:active {
+	COLOR: #880059
+}
+.dal:visited {
+	COLOR: #880059
+}
+A.bl {
+	COLOR: #000
+}
+A.bl:link {
+	COLOR: #000
+}
+A.bl:active {
+	COLOR: #000
+}
+A.bl:visited {
+	COLOR: #000
+}
+.ucl {
+	COLOR: #7777cc
+}
+.ucl:link {
+	COLOR: #7777cc
+}
+.ucl:active {
+	COLOR: #7777cc
+}
+.ucl:visited {
+	COLOR: #7777cc
+}
+.gl {
+	COLOR: #008000
+}
+.gl:link {
+	COLOR: #008000
+}
+.gl:active {
+	COLOR: #008000
+}
+.gl:visited {
+	COLOR: #008000
+}
+.groupname:link {
+	COLOR: #008000
+}
+.groupname:visited {
+	COLOR: #008000
+}
+.groupname:active {
+	COLOR: #008000
+}
+.groupname:hover {
+	COLOR: #008000
+}
+P.b {
+	MARGIN-TOP: 0.3em; MARGIN-BOTTOM: 1.5em
+}
+.adb {
+	BORDER-LEFT: #fff4c2 1px solid
+}
+.msgdate {
+	COLOR: #676767
+}
+.md {
+	COLOR: #555555
+}
+.st {
+	MARGIN-LEFT: -1px
+}
+.nb {
+	WHITE-SPACE: nowrap
+}
+.np {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.p {
+	FONT-WEIGHT: bold
+}
+.mo {
+	MARGIN: 0.5em 0px 0px
+}
+.oa {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.sbox {
+	MARGIN-TOP: 1em; MARGIN-BOTTOM: 1em
+}
+BUTTON A:link {
+	COLOR: black; TEXT-DECORATION: none
+}
+BUTTON A:hover {
+	COLOR: black; TEXT-DECORATION: none
+}
+.b {
+	FONT-WEIGHT: bold
+}
+.fontsize0 {
+	FONT-SIZE: 78%
+}
+.fontsize_01 {
+	FONT-SIZE: 84%
+}
+.fontsize1 {
+	FONT-SIZE: 87%
+}
+.fontsize2 {
+	FONT-SIZE: 96%
+}
+.fontsize_25 {
+	FONT-SIZE: 100%
+}
+.fontsize3 {
+	FONT-SIZE: 108%
+}
+.fontsize4 {
+	FONT-SIZE: 120%
+}
+.fontsize5 {
+	FONT-SIZE: 133%
+}
+.fontsize7 {
+	FONT-SIZE: 150%
+}
+.cv {
+	WIDTH: 100%
+}
+.lk {
+	CURSOR: hand; COLOR: #0000cc; TEXT-DECORATION: underline
+}
+.nl {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; PADDING-TOP: 5px
+}
+.tsh {
+	BORDER-TOP: #ffcc33 1px solid
+}
+.tlsh {
+	BORDER-TOP: #ffcc33 1px solid
+}
+.blsh {
+	BORDER-BOTTOM: #ffcc33 1px solid
+}
+.bsh {
+	BORDER-BOTTOM: #ffcc33 1px solid
+}
+.lsh {
+	BORDER-LEFT: #ffcc33 1px solid
+}
+.tlsh {
+	BORDER-LEFT: #ffcc33 1px solid
+}
+.blsh {
+	BORDER-LEFT: #ffcc33 1px solid
+}
+.lnav {
+	LEFT: 9px; OVERFLOW: hidden; WIDTH: 23ex
+}
+.lnavch {
+	
+}
+.lnavi {
+	FONT-SIZE: 100%
+}
+.lnavim {
+	MARGIN-LEFT: -2px
+}
+ HTML .lnav {
+	LEFT: 11px
+}
+.ctl {
+	PADDING-LEFT: 2px
+}
+.mb {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; PADDING-TOP: 6px
+}
+.exh {
+	MARGIN: 0px 0px 0px 5px; BACKGROUND-COLOR: #e8e8e8
+}
+.exh DIV DIV {
+	PADDING-TOP: 4px
+}
+.thread_star {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 2px; PADDING-BOTTOM: 4px; PADDING-TOP: 0px
+}
+ HTML .thread_star {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.blurb_star {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+ HTML .blurb_star {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; PADDING-TOP: 2px
+}
+</STYLE>
+
+<SCRIPT language=javascript><!--
+
+// ----------------------------------
+// used for dynamic function generation on event handlers
+
+var loaddef = "";
+var resizedef = "";
+
+// ----------------------------------
+// cross-browser functions
+
+var IE_all_cache = new Object();
+function IE_getElementById(id) {
+  if (IE_all_cache[id] == null) {
+    IE_all_cache[id] = document.all[id];
+  }
+  return IE_all_cache[id];
+}
+
+if (document.all) {
+  if (!document.getElementById) {
+    document.getElementById = IE_getElementById;
+  }
+}
+
+//-----------------------------------
+// Browser detection
+
+var agt = navigator.userAgent.toLowerCase();
+
+var is_opera = (agt.indexOf("opera") != -1);
+var is_ie = (agt.indexOf("msie") != -1) && document.all && !is_opera;
+var is_ie5 = (agt.indexOf("msie 5") != -1) && document.all;
+
+//----------------------------------
+// Timezone detection (sets cookie)
+
+try {
+  var tz_offset = (new Date()).getTimezoneOffset();
+  document.cookie = 'GTZ=' + tz_offset + ';path=/;expires=Mon, 01-Jan-2024 00:00:01 GMT';
+} catch(e) {}  // might not be able to set cookies through js
+
+// ---------------------------------
+// shelled functions for old javascript
+function tog() {}
+
+//--></SCRIPT>
+
+<SCRIPT language=javascript1.2><!--
+
+// Check if an element has a given class
+function HasClass(el, cl) {
+  if (el.className == null) return false;
+  var classes = el.className.split(" ");
+  for (var i = 0; i < classes.length; i++) {
+    if (classes[i] == cl) {
+      return true;
+    }
+  }
+  return false;
+}
+
+// Add a class to element
+function AddClass(el, cl) {
+  if (HasClass(el, cl)) return;
+  el.className += " " + cl;
+}
+
+// Remove a class from an element
+function RemoveClass(el, cl) {
+  if (el.className == null) return;
+  var classes = el.className.split(" ");
+  var result = [];
+  for (var i = 0; i < classes.length; i++) {
+    if (classes[i] != cl) {
+      result[result.length] = classes[i];
+    }
+  }
+  el.className = result.join(" ");
+}
+
+// ----------------------------------
+// visibility functions
+
+function tog() {
+  // tog: toggle the visibility of html elements (arguments[1..]) from none to
+  // arguments[0].  Return what should be returned in a javascript onevent().
+  display = arguments[0];
+  for( var i=1; i<arguments.length; i++ ) {    
+    var x = document.getElementById(arguments[i]);
+    if (!x) continue;
+    if (x.style.display == "none" || x.style.display == "") {
+      x.style.display = display;
+    } else {
+      x.style.display = "none";
+    }
+  } 
+
+  var e = is_ie ? window.event : this;
+  if (e) {
+    if (is_ie) {
+      e.cancelBubble = true;
+      e.returnValue = false;
+      return false;
+    } else {
+      return false;
+    }
+  }
+}
+
+// ----------------------------------
+// XML Http requests
+
+function CreateXmlHttpReq(handler) {
+  var xmlhttp = null;
+
+  if (is_ie) {
+    // Guaranteed to be ie5 or ie6
+    var control = (is_ie5) ? "Microsoft.XMLHTTP" : "Msxml2.XMLHTTP";
+    try {
+      xmlhttp = new ActiveXObject(control);
+    } catch(e) {
+      // TODO: better help message
+      alert("You need to enable active scripting and activeX controls");
+      DumpException(e);
+    }
+  } else {
+    // Mozilla
+    xmlhttp = new XMLHttpRequest();
+  }
+  xmlhttp.onreadystatechange = function() {
+    handler(xmlhttp);
+  }
+  return xmlhttp;
+}
+
+var uniqnum_counter = (new Date).getTime();
+function UniqueNum() {
+  ++uniqnum_counter;
+  return uniqnum_counter;
+}
+
+// Send a (hidden, non blocking) update message to the server
+// by sending a xmlhttp request
+function SendServerRequest(url) {
+  StartGETRequest(url, function() {});
+}
+
+// Send a request to the server
+function StartGETRequest(url, handler) {
+  var xmlhttp = CreateXmlHttpReq(handler);
+  xmlhttp.open('GET', url + "&rand=" + UniqueNum(), true);
+  xmlhttp.send(null);
+}
+
+// Send a post request to the server
+function StartPOSTRequest(url, data, handler) {
+  var xmlhttp = CreateXmlHttpReq(handler);
+  xmlhttp.open('POST', url, true);
+  xmlhttp.send(data);
+}
+
+//--></SCRIPT>
+
+<SCRIPT language=javascript1.2><!--
+
+//--></SCRIPT>
+
+<SCRIPT language=javascript><!--
+function ad_resize() {}
+function if_resize() {}
+function fin_resize() {}
+function qs() {}
+//--></SCRIPT>
+
+<SCRIPT language=javascript1.2><!--
+function if_resize(name, w, h) {
+  if (document.getElementById && document.getElementById(name)){
+    document.getElementById(name).style.height = h;
+    document.getElementById(name).style.width = w;
+  }
+}
+function ad_resize(w, h) {
+  if_resize("google_ads_frame",w,h);
+}
+function fin_resize(w, h) {
+  if_resize("google_finance_frame",w,h);
+}
+
+function qs(el) {
+  if (window.RegExp && window.encodeURIComponent) {
+    var qe=encodeURIComponent(document.gs.q.value);
+
+    if (qe == '') {
+      return 1;
+    }
+
+    if (el.href.indexOf("q=")!=-1) {
+      el.href=el.href.replace(new RegExp("q=[^&$]*"),"q="+qe);
+    } else {
+      el.href+="&q="+qe;
+    }
+  }
+  return 1;
+}
+
+//--></SCRIPT>
+<LINK title=RSS 
+href="http://groups.google.com/group/alt.apache.configuration/feed/rss_v2_0_msgs.xml" 
+type=application/rss+xml rel=alternate><LINK title=Atom 
+href="http://groups.google.com/group/alt.apache.configuration/feed/atom_v1_0_msgs.xml" 
+type=application/atom+xml rel=alternate>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY onresize="" bgColor=white topMargin=3 onload="" marginheight="3">
+<SCRIPT language=javascript><!--
+// Make functions exist for older browsers
+function toggle_watch() {}
+function toggleStar() {}
+//--></SCRIPT>
+
+<SCRIPT language=javascript1.2><!--
+
+function toggleHandler(xmlhttp) {
+  if (xmlhttp.readyState != 4) return;
+  if (xmlhttp.status != 200) return;
+  eval('resp = '+ xmlhttp.responseText)
+  if (resp.length < 1) return;
+  if ((resp[0] != 100) || (resp.length != 3)) return;
+  var idstr = "watch" + resp[1] + "@" + resp[2]
+  var tog = document.getElementsByName(idstr)
+  var img = document.getElementsByName(idstr + "_img")
+
+  for (var x=0;x<tog.length;x++) {
+    tog[x].setAttribute("value", 0)
+    img[x].src = '/groups/img/watched_n.gif'
+    tog[x].blur();
+  }
+}
+
+var starTooltips = [ "Click the star to watch this topic","Watching this topic","Click the envelope to receive email updates","Receiving thread updates via email", ]
+
+function table_width() {
+   var final_width = document.body.clientWidth - 250;
+}
+
+
+
+
+function RAT_RatingHolder(docid,rating,savedText) {
+  this.id = "rating_holder_"+docid;
+  this.rating = rating;
+  this.text = savedText;
+}
+
+
+var RAT_currentRH = null;
+
+
+function RAT_myMouseUp() {
+    RAT_currentRH = null;
+    document.body.parentNode.onmouseup = null;
+}
+
+
+function RAT_startTrackingStars(docid, position, rh) {
+   RAT_currentRH = rh;
+   document.body.parentNode.onmouseup = RAT_myMouseUp;
+      
+   RAT_lightStars(docid, position);
+}
+
+
+function RAT_mouseMove(event) {
+   if (is_ie && RAT_currentRH != null && event.button == 0) {
+      RAT_myMouseUp();
+   }
+}
+
+
+function RAT_mouseUpInStar(addr, docid, rating, rh, token) {
+   // we're in the star group the mouse went down in, so save rating
+   if (RAT_currentRH != null && RAT_currentRH == rh) {
+      RAT_lightStars(docid, rating);
+      RAT_submitRating(addr, docid, rating, rh, token);
+      RAT_currentRH = null;
+   }
+}
+
+
+function RAT_submitRating(addr, docid, rating, rh, token) {
+   SendServerRequest("/group/"+addr+"/ratings?did="+docid+"&rat="+rating+"&tok="+token);
+   rh.rating = rating;
+   rh.text = "Rating Saved";
+
+   //change text back
+   var textbox = document.getElementById("ratings_text_"+docid);   
+   textbox.innerHTML = rh.text;
+   if (rh.text == "Text for clearing space") {
+     textbox.style.display = "none";
+   }
+}
+
+
+function RAT_hesitateStars(docid, position, rh) {
+   // don't highlight other stars if tracking a star group with mouse down
+   if (RAT_currentRH != null && RAT_currentRH != rh)
+      return;
+   // mouse is down in a star group and we're tracking a star group
+   // show the solid stars as user mouses over them
+   if (RAT_currentRH != null && RAT_currentRH == rh) {
+       RAT_lightStars(docid, position);
+   } else {
+     // mouse is not down, highlight with hollow stars on top of
+     // existing solid stars
+      for (i=1;i<=position;i++) {
+        document.getElementById("s"+i+"_"+docid+"_img").src = '/groups/img/yellow_star_lite.gif';
+      }
+   }
+   
+   //change text
+   var textbox = document.getElementById("ratings_text_"+docid);
+   textbox.style.display = "inline";
+   switch (position) {
+     case "1":
+       textbox.innerHTML = "Poor, I would not recommend this post";
+       break;
+     case "2":
+       textbox.innerHTML = "Below Average";
+       break;
+     case "3":
+       textbox.innerHTML = "Average";
+       break;
+     case "4":
+       textbox.innerHTML = "Above Average";
+       break;
+     case "5":
+       textbox.innerHTML = "Excellent, I would recommend this post";
+       break;
+     default:
+       break;
+   }
+}
+
+
+function RAT_unhesStars(docid, position, rh) {
+   // update stars to reflect value before tracking began
+   RAT_lightStars(docid, rh.rating);
+
+   //change text back
+   var textbox = document.getElementById("ratings_text_"+docid);   
+   textbox.innerHTML = rh.text;
+   if (rh.text == "Text for clearing space") {
+     textbox.style.display = "none";
+   }
+}
+
+
+
+
+
+function RAT_lightStars(docid, position) {
+   for (i=1;i<=5;i++) {
+     if(i <= position){
+        document.getElementById("s"+i+"_"+docid+"_img").src = '/groups/img/yellow_star_blue_outline.gif';
+     } else {
+        document.getElementById("s"+i+"_"+docid+"_img").src = '/groups/img/clear_star_blue_outline.gif';
+     }
+   }
+}
+
+
+function toggleStar(addr, thread_id, action) {
+  var watch_idstr = "watch" + addr + "@" + thread_id
+  
+  var watch_tog = document.getElementsByName(watch_idstr)
+  var watch_img = document.getElementsByName(watch_idstr + "_img")
+
+  var ts_idstr = "threadsub" + addr + "@" + thread_id
+  
+  var ts_tog = document.getElementsByName(ts_idstr)
+  var ts_img = document.getElementsByName(ts_idstr + "_img")
+  var ts_lnk0 = document.getElementsByName(ts_idstr + "_lnk0")
+  var ts_lnk2 = document.getElementsByName(ts_idstr + "_lnk2")
+
+  if (watch_tog.length < 1) {
+    
+    return false; 
+  }
+  
+  try {
+    watch_state = parseInt(watch_tog[0].getAttribute("value"));
+  } catch (e) {
+    watch_state = 1
+  }
+
+  if (ts_tog.length < 1) {
+    
+    if (action == 2) {
+      
+      return false; 
+    }
+  }
+
+  
+  try {
+    ts_state = parseInt(ts_tog[0].getAttribute("value"));
+  } catch (e) {
+    ts_state = 0
+  }
+
+  
+  if (action == 1) {
+    for (var x=0;x<watch_tog.length;x++) {
+      if (watch_state == 0) {
+        watch_newstate = 1
+
+        
+        watch_tog[x].setAttribute("value", 1)
+        watch_img[x].src = '/groups/img/watched_y.gif'
+        watch_img[x].title = starTooltips[1]
+      } else {
+        watch_newstate = 0
+
+        
+        watch_tog[x].setAttribute("value", 0)
+        watch_img[x].src = '/groups/img/watched_n.gif'
+        watch_img[x].title = starTooltips[0]
+      }
+
+      watch_tog[x].blur();
+    }
+  } else {
+    for (var x=0;x<ts_tog.length;x++) {
+      if (ts_state == 0) {
+        ts_newstate = 1
+
+        
+        ts_tog[x].setAttribute("value", 1)
+        if (ts_img.length > x) ts_img[x].src = '/groups/img/threadsub_y.gif'
+  if (ts_img.length > x) ts_img[x].title = starTooltips[3]
+  if (ts_lnk0.length > x) ts_lnk0[x].style.display = ""
+  if (ts_lnk2.length > x) ts_lnk2[x].style.display = "none"
+  } else {
+  ts_newstate = 0
+  ts_tog[x].setAttribute("value", 0)
+  if (ts_img.length > x) ts_img[x].src = '/groups/img/threadsub_n.gif'
+  if (ts_img.legnth > x) ts_img[x].title = starTooltips[2]
+  if (ts_lnk0.length > x) ts_lnk0[x].style.display = "none"
+  if (ts_lnk2.length > x) ts_lnk2[x].style.display = ""
+  }
+  ts_tog[x].blur();
+  }
+  }
+  oldstate = 2 * ts_state + watch_state
+  uri = "/group/" + addr + "/watch_topic?Action.JS=1&tid=" + thread_id +
+	"&oldstate=" + oldstate + "&email=" + (action == 2 ? "1" : "0")
+  StartGETRequest(uri, toggleHandler)
+  var e = is_ie ? window.event : this;
+  if (e) {
+  if (is_ie) {
+  e.cancelBubble = true;
+  e.returnValue = false;
+  }
+  }
+  return false;
+}
+function toggle_watch(addr, gid, thread_id) {
+  var idstr = "watch" + gid + "_" + thread_id
+  var tog = document.getElementsByName(idstr)
+  var img = document.getElementsByName(idstr + "_img")
+  if (tog.length < 1) {
+    
+    return; // bad!
+  }
+  try {
+    state = parseInt(tog[0].getAttribute("value"));
+  } catch (e) {
+    state = 1
+  }
+  for (var x=0;x<tog.length;x++) {
+    if (state == 1) {
+      tog[x].setAttribute("value", 0)
+      img[x].src = '/groups/img/watched_n.gif'
+    } else {
+      tog[x].setAttribute("value", 1)
+      img[x].src = '/groups/img/watched_y.gif'
+    }
+    tog[x].blur();
+  }
+
+  
+  uri = "/group/" + addr + "/watch_topic?Action.JS=1&tid=" + thread_id + 
+	"&oldstate=" + state + "&email=0"
+  SendServerRequest(uri);
+
+  
+  if (state == 1) {
+    SendServerRequest("/groups/passive?Action.watch=1&q=" + idstr + ":off");
+  } else {
+    SendServerRequest("/groups/passive?Action.watch=1&q=" + idstr + ":on");
+  }
+
+  var e = is_ie ? window.event : this;
+  if (e) {
+    if (is_ie) {
+      e.cancelBubble = true;
+      e.returnValue = false;
+      return false;
+    } else {
+      return false;
+    }
+  }
+  return false;
+}
+
+//--></SCRIPT>
+
+<SCRIPT language=javascript1.2><!--
+var AnchorLocs = new Array();
+var ActiveDocId = 0;
+var gotFirstScroll = 0;
+
+function scrollLoc() {
+  if (document.all) {
+    return window.document.body.scrollTop;
+  } else {
+    return window.pageYOffset;
+  }
+}
+
+function computeLoc(doc_id) {
+  if (!is_ie) { return; }
+
+  var offsetobj =  document.getElementById("a_" + doc_id);
+
+  if (offsetobj.clientTop != null) {
+    offset = 0;
+    loffset = 0;
+    while (offsetobj) {
+      offset += offsetobj.offsetTop + offsetobj.clientTop;
+      loffset += offsetobj.offsetLeft + offsetobj.clientLeft;
+      offsetobj = offsetobj.offsetParent;
+    }
+  }
+  var o = new Object();
+  o.doc_id = doc_id;
+  o.offset = offset;
+
+  AnchorLocs[AnchorLocs.length] = o;
+}
+
+function setup() {
+  
+    computeLoc('0b58afb8919dafd2');
+  
+    computeLoc('4887cf4285f48a35');
+  
+    computeLoc('e576754164092832');
+  
+
+  window.onscroll = onScrollHandler;
+}
+
+function onScrollHandler(e) {
+  if (gotFirstScroll == 0) {
+    gotFirstScroll = 1;
+    return;
+  }
+  setTimeout("processScroll()",10);
+}
+
+function processScroll() {
+  var cur_loc = scrollLoc();
+
+  var nearest_docid = 0;
+  var nearest_delta = -1;
+
+  var delta;
+  for (x=0;x<AnchorLocs.length;x++) {
+    delta = Math.abs(AnchorLocs[x].offset - cur_loc);
+    if ((nearest_delta == -1) || (delta < nearest_delta)) {
+      if ((cur_loc + 200) > AnchorLocs[x].offset) {
+  nearest_delta = delta;
+  nearest_docid = AnchorLocs[x].doc_id;
+  }
+  }
+  }
+  if (ActiveDocId != nearest_docid) {
+  ActiveDocId = nearest_docid;
+  trigger_current_docid(nearest_docid);
+  }
+}
+function trigger_current_docid(docid) {
+  if (parent.frames && parent.frames.index) {
+  if (parent.frames.index.I_trigger_current_docid) {
+  parent.frames.index.I_trigger_current_docid(docid);
+  }
+  }
+}
+//-->
+</SCRIPT>
+
+<SCRIPT language=javascript><!--
+// Shelled functions for javascript compatibility
+function c() {}
+function op() {}
+function rl() {}
+function tog_quote() {}
+//--></SCRIPT>
+
+<SCRIPT language=javascript1.2><!--
+
+function c( idnum ) {	//cancel a message -- clear text and toggle the reply box. slight delay gives user time to perceive that text is being cleared.
+  document.getElementById( 't'+idnum ).value="";
+  func = "rl( '" + idnum + "' )";
+  window.setTimeout( func, 300 );
+}
+
+function op( idnum )  // hide/show headers
+{
+  optionLink = document.getElementById( 'o'+idnum );
+  x = tog('block', 'h'+idnum );
+  for (var i = 1; i < 4; i++) {
+    tog(is_ie ? 'block' : 'table-row', 'htr' + i + '_' + idnum );
+  }
+  if( optionLink.innerHTML == "show options" ) 
+  {
+    optionLink.innerHTML = "hide options";
+  } else {
+    optionLink.innerHTML = "show options";
+  }
+  optionLink.blur();
+  return x;
+}
+
+function rl( idnum ) {  //function to toggle "reply" link; gets rid of annoying linkfocus & toggles ticks
+  replyblockid = 'r' + idnum;
+  textareaObj = document.getElementById( 't'+idnum );
+  linkobj = document.getElementById( 'lo'+idnum );
+  x = tog('block', replyblockid);
+  visible = document.getElementById( replyblockid ).style.display;
+  tick = document.getElementById( 'ti'+idnum );
+  if( visible == "none" ) {
+    linkobj.blur();
+    tick.src = "/groups/img/r.gif";
+  } else {
+    textareaObj.focus();
+    tick.src = "/groups/img/d.gif";
+  }
+  return x;
+}
+
+function tog_quote( idnum ) {
+  return tog( 'block', 'qheader_shown_' + idnum, 'qheader_hidden_' + idnum,
+	   'qhide_' + idnum );
+}
+
+//--></SCRIPT>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#fff4c2 border=0>
+  <TBODY>
+  <TR>
+    <TD width="100%">
+      <TABLE cellSpacing=0 cellPadding=0 border=0>
+        <TBODY>
+        <TR>
+          <TD 
+          style="PADDING-RIGHT: 0px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 0px" 
+          width=17><A class=st 
+            id=watchalt.apache.configuration@7a2200a236d3a725 
+            href="http://groups.google.com/group/alt.apache.configuration/watch_topic?nonmember=1&amp;tid=7a2200a236d3a725&amp;oldstate=0&amp;hl=en" 
+            target=_parent name=watchalt.apache.configuration@7a2200a236d3a725 
+            value="0"><IMG class=stimg 
+            id=watchalt.apache.configuration@7a2200a236d3a725_img 
+            title="Click the star to watch this topic" height=15 
+            src="0b58afb8919dafd2_files/watched_n.gif" width=15 align=absMiddle 
+            border=0 
+          name=watchalt.apache.configuration@7a2200a236d3a725_img></A></TD>
+          <TD width=5>&nbsp;</TD>
+          <TD align=left width="100%"><B><FONT 
+          size=+1>mod_rewrite</FONT></B></TD></TR>
+        <TR>
+          <TD 
+          style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 2px" 
+          colSpan=3><FONT color=#676767>« Start of topic</FONT> &nbsp; <FONT 
+            color=#676767><SPAN class=nu>« </SPAN>Older</FONT> &nbsp; Messages 
+            <B>1</B> - <B>3</B> of <B>3</B> &nbsp; <FONT 
+            color=#676767>Newer<SPAN class=nu> »</SPAN></FONT> &nbsp; <FONT 
+            color=#676767>End of topic »</FONT> 
+  </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE id=rn cellSpacing=0 cellPadding=0 width="25%" align=right border=0>
+  <TBODY>
+  <TR vAlign=top>
+    <TD width="8%"><IMG id=rn_image height=600 alt="" 
+      src="0b58afb8919dafd2_files/dot_clear.gif" width=1 border=0></TD>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD align=right><A class=fixed_width 
+            href="http://groups.google.com/group/alt.apache.configuration/tree/browse_frm/thread/7a2200a236d3a725/0b58afb8919dafd2?rnum=1&amp;hl=en&amp;q=mod_rewrite+query+string+group%3A*apache*&amp;_done=%2Fgroup%2Falt.apache.configuration%2Fbrowse_frm%2Fthread%2F7a2200a236d3a725%2F4887cf4285f48a35%3Flnk%3Dst%26q%3Dmod_rewrite+query+string+group%3A*apache*%26rnum%3D3%26hl%3Den%26&amp;fwc=1">Fixed 
+            font</A> - <B>Proportional font</B> </TD></TR></TBODY></TABLE><BR><IFRAME 
+      id=google_ads_frame name=google_ads_frame 
+      src="0b58afb8919dafd2_files/adfetch.html" frameBorder=0 scrolling=no 
+      allowTransparency></IFRAME></TD></TR></TBODY></TABLE>&nbsp;<A 
+id=a_0b58afb8919dafd2 name=doc_0b58afb8919dafd2></A> 
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top noWrap><B><FONT color=#00681c>1</FONT></B><IMG height=1 
+      src="0b58afb8919dafd2_files/dot_clear.gif" width=2></TD>
+    <TD width="100%">
+      <DIV class=minmaxwie 
+      style="BORDER-LEFT: #00681c 3px solid; BACKGROUND-COLOR: #f6f6f6">
+      <DIV 
+      style="PADDING-RIGHT: 0px; BORDER-TOP: #e8e8e8 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 3px; WIDTH: 100%; PADDING-TOP: 3px; BORDER-BOTTOM: #efefef 1px solid; BACKGROUND-COLOR: #f6f6f6">
+      <DIV id=headerbox0b58afb8919dafd2 style="FLOAT: left; OVERFLOW: visible">
+      <TABLE id=hdropened0b58afb8919dafd2 cellSpacing=0 cellPadding=1 
+        border=0><TBODY>
+        <TR vAlign=top>
+          <TD width=25><NOBR><B>From:</B></NOBR></TD>
+          <TD width=2></TD>
+          <TD colSpan=2><B><FONT class=inheritcolor 
+            color=#00681c>Matt</FONT></B>&nbsp;- <NOBR><A 
+            href="http://groups.google.com/groups/profile?enc_user=stcQ5xQAAAAs9Qzftg_gEUFHKDd2uAstMGU8b6pdEto0vGv3QO7lyg&amp;hl=en" 
+            target=_top>view profile</A></NOBR></TD></TR>
+        <TR vAlign=top>
+          <TD width=25><NOBR><B>Date:</B></NOBR></TD>
+          <TD width=2></TD>
+          <TD>Mon, May 5 2003 3:57&nbsp;pm </TD>
+        <TR class=scripthide id=htr1_0b58afb8919dafd2 vAlign=top>
+          <TD width=25><NOBR><B>Email: </B></NOBR></TD>
+          <TD width=2></TD>
+          <TD>"Matt" &lt;mat<A 
+            href="http://groups.google.com/groups/unlock?msg=0b58afb8919dafd2&amp;hl=en&amp;_done=/group/alt.apache.configuration/browse_frm/thread/7a2200a236d3a725/4887cf4285f48a35%3Flnk%3Dst%26q%3Dmod_rewrite+query+string+group:*apache*%26rnum%3D3%26hl%3Den%26" 
+            target=_parent>...</A>@alpenjodel.de&gt;</TD></TR>
+        <TR class=scripthide id=htr2_0b58afb8919dafd2 vAlign=top>
+          <TD width=25><NOBR><B>Groups: </B></NOBR></TD>
+          <TD width=2></TD>
+          <TD>alt.apache.configuration</TD></TR></TBODY></TABLE></DIV>
+      <DIV id=ratings0b58afb8919dafd2 style="PADDING-LEFT: 2px; FLOAT: right">
+      <TABLE cellSpacing=1 cellPadding=0 border=0>
+        <TBODY>
+        <TR vAlign=top>
+          <TD>
+            <DIV style="POSITION: absolute"><NOBR><FONT color=#555555>Not yet 
+            rated</FONT></NOBR></DIV><FONT style="VISIBILITY: hidden" 
+            color=#f6f6f6>Rating:</FONT></TD>
+          <TD width=120>&nbsp; </TD>
+        <TR>
+          <TD noWrap colSpan=3><SPAN class=noscripthide><A 
+            id=o0b58afb8919dafd2 onclick="return op('0b58afb8919dafd2');" 
+            href="http://groups.google.com/group/alt.apache.configuration/tree/browse_frm/thread/7a2200a236d3a725/0b58afb8919dafd2?rnum=1&amp;hl=en&amp;q=mod_rewrite+query+string+group%3A*apache*&amp;_done=%2Fgroup%2Falt.apache.configuration%2Fbrowse_frm%2Fthread%2F7a2200a236d3a725%2F4887cf4285f48a35%3Flnk%3Dst%26q%3Dmod_rewrite+query+string+group%3A*apache*%26rnum%3D3%26hl%3Den%26#">show 
+            options</A></SPAN> </TD></TR></TBODY></TABLE></DIV><BR 
+      style="FONT-SIZE: 0px" clear=all height="0">
+      <DIV class=scripthide id=h0b58afb8919dafd2>
+      <TABLE cellSpacing=0 cellPadding=1 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD><FONT class=fontsize2><NOBR><A 
+            href="http://groups.google.com/group/alt.apache.configuration/post?hl=en&amp;inreplyto=0b58afb8919dafd2&amp;reply_to=group&amp;_done=%2Fgroup%2Falt.apache.configuration%2Fbrowse_frm%2Fthread%2F7a2200a236d3a725%2F4887cf4285f48a35%3Flnk%3Dst%26q%3Dmod_rewrite+query+string+group%3A*apache*%26rnum%3D3%26hl%3Den%26" 
+            target=_top>Reply</A></NOBR> | <NOBR><A 
+            href="http://groups.google.com/group/alt.apache.configuration/post?hl=en&amp;inreplyto=0b58afb8919dafd2&amp;reply_to=author&amp;_done=%2Fgroup%2Falt.apache.configuration%2Fbrowse_frm%2Fthread%2F7a2200a236d3a725%2F4887cf4285f48a35%3Flnk%3Dst%26q%3Dmod_rewrite+query+string+group%3A*apache*%26rnum%3D3%26hl%3Den%26" 
+            target=_top>Reply to Author</A></NOBR> | <NOBR><A 
+            href="http://groups.google.com/group/alt.apache.configuration/post?hl=en&amp;inreplyto=0b58afb8919dafd2&amp;forward=1&amp;_done=%2Fgroup%2Falt.apache.configuration%2Fbrowse_frm%2Fthread%2F7a2200a236d3a725%2F4887cf4285f48a35%3Flnk%3Dst%26q%3Dmod_rewrite+query+string+group%3A*apache*%26rnum%3D3%26hl%3Den%26" 
+            target=_top>Forward</A></NOBR> | <NOBR><A 
+            href="http://groups.google.com/group/alt.apache.configuration/msg/0b58afb8919dafd2?dmode=print&amp;hl=en" 
+            target=_blank>Print</A></NOBR> | <NOBR><A 
+            href="http://groups.google.com/group/alt.apache.configuration/msg/0b58afb8919dafd2?hl=en&amp;" 
+            target=_parent>Individual Message</A></NOBR> | <NOBR><A 
+            href="http://groups.google.com/group/alt.apache.configuration/msg/0b58afb8919dafd2?dmode=source&amp;hl=en" 
+            target=_blank>Show original</A></NOBR> | <NOBR><A 
+            href="http://groups.google.com/groups/abuse?hl=en&amp;group=alt.apache.configuration&amp;url=http%3A%2F%2Fgroups.google.com%2Fgroup%2Falt.apache.configuration%2Fmsg%2F0b58afb8919dafd2" 
+            target=_blank>Report Abuse</A></NOBR> | <NOBR><A 
+            href="http://groups.google.com/groups/search?enc_author=stcQ5xQAAAAs9Qzftg_gEUFHKDd2uAstMGU8b6pdEto0vGv3QO7lyg&amp;scoring=d&amp;hl=en" 
+            target=_top>Find messages by this author</A></NOBR> 
+        </FONT></TD></TR></TBODY></TABLE></DIV></DIV></DIV>
+      <DIV class=mbody id=mbody0b58afb8919dafd2>
+      <P>
+      <DIV style="PADDING-LEFT: 6px"><A name=msg_0b58afb8919dafd2></A>Hi there, 
+      <BR>
+      <P>I'm running Linux with <B 
+      style="COLOR: black; BACKGROUND-COLOR: #ff9999">Apache</B> 1.3.27 <BR>
+      <P>URL is: <BR>/directory/subdirectory/hello.html?Session=4711 <BR>
+      <P>I have the following rule: <BR>RewriteRule 
+      ([^/]+)/([^/]+)/([^/]+)\.html(.*) index.php$4&amp;variable=$1 <BR>
+      <P>and want to get: <BR>index.php?Session=4711&amp;variable=directory <BR>
+      <P>but what I do get is: <BR>index.php&amp;variable=directory <BR>
+      <P>which results in "not found" <BR>
+      <P>why does <B style="COLOR: black; BACKGROUND-COLOR: #ff9999">Apache</B> 
+      somehow not get $4 <BR>If I leave out $1, then $4 is there (using the same 
+      URL): <BR>
+      <P>RewriteRule ([^/]+)/([^/]+)/([^/]+)\.html(.*) index.php$4 <BR>
+      <P>works fine. <BR>
+      <P>Any answers? <BR>
+      <P>Matt <BR></P></DIV>
+      <DIV>
+      <P><A class=nu 
+      href="http://groups.google.com/group/alt.apache.configuration/post?hl=en&amp;inreplyto=0b58afb8919dafd2&amp;_done=%2Fgroup%2Falt.apache.configuration%2Fbrowse_frm%2Fthread%2F7a2200a236d3a725%2F4887cf4285f48a35%3Flnk%3Dst%26q%3Dmod_rewrite+query+string+group%3A*apache*%26rnum%3D3%26hl%3Den%26" 
+      target=_top>
+      <SCRIPT language=javascript1.2>
+  <!--
+    document.write("<img id=ti0b58afb8919dafd2 border=0 src=\"/groups/img/r.gif\" height=11 width=11 alt=\"\">");
+  //-->
+</SCRIPT>
+      <SPAN style="TEXT-DECORATION: underline">Reply</SPAN></A> 
+    </P></DIV></DIV></TD></TR></TBODY></TABLE>&nbsp;<A id=a_4887cf4285f48a35 
+name=doc_4887cf4285f48a35></A> 
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top noWrap><B><FONT color=#790619>2</FONT></B><IMG height=1 
+      src="0b58afb8919dafd2_files/dot_clear.gif" width=2></TD>
+    <TD width="100%">
+      <DIV class=minmaxwie 
+      style="BORDER-LEFT: #790619 3px solid; BACKGROUND-COLOR: #f6f6f6">
+      <DIV 
+      style="PADDING-RIGHT: 0px; BORDER-TOP: #e8e8e8 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 3px; WIDTH: 100%; PADDING-TOP: 3px; BORDER-BOTTOM: #efefef 1px solid; BACKGROUND-COLOR: #f6f6f6">
+      <DIV id=headerbox4887cf4285f48a35 style="FLOAT: left; OVERFLOW: visible">
+      <TABLE id=hdropened4887cf4285f48a35 cellSpacing=0 cellPadding=1 
+        border=0><TBODY>
+        <TR vAlign=top>
+          <TD width=25><NOBR><B>From:</B></NOBR></TD>
+          <TD width=2></TD>
+          <TD colSpan=2><B><FONT class=inheritcolor color=#790619>Joachim 
+            Ring</FONT></B>&nbsp;- <NOBR><A 
+            href="http://groups.google.com/groups/profile?enc_user=gtwCLAwAAACvzGws-SPJ4myTEKU___-P&amp;hl=en" 
+            target=_top>view profile</A></NOBR></TD></TR>
+        <TR vAlign=top>
+          <TD width=25><NOBR><B>Date:</B></NOBR></TD>
+          <TD width=2></TD>
+          <TD>Mon, May 5 2003 9:50&nbsp;pm </TD>
+        <TR class=scripthide id=htr1_4887cf4285f48a35 vAlign=top>
+          <TD width=25><NOBR><B>Email: </B></NOBR></TD>
+          <TD width=2></TD>
+          <TD>j<A 
+            href="http://groups.google.com/groups/unlock?msg=4887cf4285f48a35&amp;hl=en&amp;_done=/group/alt.apache.configuration/browse_frm/thread/7a2200a236d3a725/4887cf4285f48a35%3Flnk%3Dst%26q%3Dmod_rewrite+query+string+group:*apache*%26rnum%3D3%26hl%3Den%26" 
+            target=_parent>...</A>@web.de (Joachim Ring)</TD></TR>
+        <TR class=scripthide id=htr2_4887cf4285f48a35 vAlign=top>
+          <TD width=25><NOBR><B>Groups: </B></NOBR></TD>
+          <TD width=2></TD>
+          <TD>alt.apache.configuration</TD></TR></TBODY></TABLE></DIV>
+      <DIV id=ratings4887cf4285f48a35 style="PADDING-LEFT: 2px; FLOAT: right">
+      <TABLE cellSpacing=1 cellPadding=0 border=0>
+        <TBODY>
+        <TR vAlign=top>
+          <TD>
+            <DIV style="POSITION: absolute"><NOBR><FONT color=#555555>Not yet 
+            rated</FONT></NOBR></DIV><FONT style="VISIBILITY: hidden" 
+            color=#f6f6f6>Rating:</FONT></TD>
+          <TD width=120>&nbsp; </TD>
+        <TR>
+          <TD noWrap colSpan=3><SPAN class=noscripthide><A 
+            id=o4887cf4285f48a35 onclick="return op('4887cf4285f48a35');" 
+            href="http://groups.google.com/group/alt.apache.configuration/tree/browse_frm/thread/7a2200a236d3a725/0b58afb8919dafd2?rnum=1&amp;hl=en&amp;q=mod_rewrite+query+string+group%3A*apache*&amp;_done=%2Fgroup%2Falt.apache.configuration%2Fbrowse_frm%2Fthread%2F7a2200a236d3a725%2F4887cf4285f48a35%3Flnk%3Dst%26q%3Dmod_rewrite+query+string+group%3A*apache*%26rnum%3D3%26hl%3Den%26#">show 
+            options</A></SPAN> </TD></TR></TBODY></TABLE></DIV><BR 
+      style="FONT-SIZE: 0px" clear=all height="0">
+      <DIV class=scripthide id=h4887cf4285f48a35>
+      <TABLE cellSpacing=0 cellPadding=1 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD><FONT class=fontsize2><NOBR><A 
+            href="http://groups.google.com/group/alt.apache.configuration/post?hl=en&amp;inreplyto=4887cf4285f48a35&amp;reply_to=group&amp;_done=%2Fgroup%2Falt.apache.configuration%2Fbrowse_frm%2Fthread%2F7a2200a236d3a725%2F4887cf4285f48a35%3Flnk%3Dst%26q%3Dmod_rewrite+query+string+group%3A*apache*%26rnum%3D3%26hl%3Den%26" 
+            target=_top>Reply</A></NOBR> | <NOBR><A 
+            href="http://groups.google.com/group/alt.apache.configuration/post?hl=en&amp;inreplyto=4887cf4285f48a35&amp;reply_to=author&amp;_done=%2Fgroup%2Falt.apache.configuration%2Fbrowse_frm%2Fthread%2F7a2200a236d3a725%2F4887cf4285f48a35%3Flnk%3Dst%26q%3Dmod_rewrite+query+string+group%3A*apache*%26rnum%3D3%26hl%3Den%26" 
+            target=_top>Reply to Author</A></NOBR> | <NOBR><A 
+            href="http://groups.google.com/group/alt.apache.configuration/post?hl=en&amp;inreplyto=4887cf4285f48a35&amp;forward=1&amp;_done=%2Fgroup%2Falt.apache.configuration%2Fbrowse_frm%2Fthread%2F7a2200a236d3a725%2F4887cf4285f48a35%3Flnk%3Dst%26q%3Dmod_rewrite+query+string+group%3A*apache*%26rnum%3D3%26hl%3Den%26" 
+            target=_top>Forward</A></NOBR> | <NOBR><A 
+            href="http://groups.google.com/group/alt.apache.configuration/msg/4887cf4285f48a35?dmode=print&amp;hl=en" 
+            target=_blank>Print</A></NOBR> | <NOBR><A 
+            href="http://groups.google.com/group/alt.apache.configuration/msg/4887cf4285f48a35?hl=en&amp;" 
+            target=_parent>Individual Message</A></NOBR> | <NOBR><A 
+            href="http://groups.google.com/group/alt.apache.configuration/msg/4887cf4285f48a35?dmode=source&amp;hl=en" 
+            target=_blank>Show original</A></NOBR> | <NOBR><A 
+            href="http://groups.google.com/groups/abuse?hl=en&amp;group=alt.apache.configuration&amp;url=http%3A%2F%2Fgroups.google.com%2Fgroup%2Falt.apache.configuration%2Fmsg%2F4887cf4285f48a35" 
+            target=_blank>Report Abuse</A></NOBR> | <NOBR><A 
+            href="http://groups.google.com/groups/search?enc_author=gtwCLAwAAACvzGws-SPJ4myTEKU___-P&amp;scoring=d&amp;hl=en" 
+            target=_top>Find messages by this author</A></NOBR> 
+        </FONT></TD></TR></TBODY></TABLE></DIV></DIV></DIV>
+      <DIV class=mbody id=mbody4887cf4285f48a35>
+      <P>
+      <DIV style="PADDING-LEFT: 6px"><A name=msg_4887cf4285f48a35></A>
+      <P>
+      <P><A class=qt onclick="return tog_quote(149395); " 
+      href="http://groups.google.com/group/alt.apache.configuration/tree/browse_frm/thread/7a2200a236d3a725/0b58afb8919dafd2?hide_quotes=no#msg_4887cf4285f48a35">
+      <DIV class=hqt id=qheader_shown_149395 style="DISPLAY: none">- Hide quoted 
+      text -</DIV>
+      <DIV class=sqt id=qheader_hidden_149395 style="DISPLAY: block">- Show 
+      quoted text -</DIV></A>
+      <P></P>
+      <DIV class=qt id=qhide_149395 style="DISPLAY: none">&gt; URL is: <BR>&gt; 
+      /directory/subdirectory/hello.html?Session=4711 <BR>
+      <P>&gt; I have the following rule: <BR>&gt; RewriteRule 
+      ([^/]+)/([^/]+)/([^/]+)\.html(.*) index.php$4&amp;variable=$1 <BR>
+      <P>&gt; and want to get: <BR>&gt; 
+      index.php?Session=4711&amp;variable=directory <BR>
+      <P>&gt; but what I do get is: <BR>&gt; index.php&amp;variable=directory 
+      <BR>
+      <P>&gt; which results in "not found" <BR>
+      <P>&gt; why does <B 
+      style="COLOR: black; BACKGROUND-COLOR: #ff9999">Apache</B> somehow not get 
+      $4 <BR>&gt; If I leave out $1, then $4 is there (using the same URL): <BR>
+      <P>&gt; RewriteRule ([^/]+)/([^/]+)/([^/]+)\.html(.*) index.php$4 <BR>
+      <P>&gt; works fine. <BR><BR></P></DIV>this is pure luck. actually $4 is 
+      empty in both cases, only with the <BR>2nd example you don't clobber the 
+      <B style="COLOR: black; BACKGROUND-COLOR: #a0ffff">query </B><B 
+      style="COLOR: black; BACKGROUND-COLOR: #99ff99">string</B> by using ? or 
+      &amp; in the <BR>target expression. <BR>
+      <P>the <B style="COLOR: black; BACKGROUND-COLOR: #a0ffff">query </B><B 
+      style="COLOR: black; BACKGROUND-COLOR: #99ff99">string</B> is _not_ usable 
+      in a RewriteRule source regex! either <BR>do it the canonical way: <BR>
+      <P>RewriteCond %{QUERY_STRING} (.*) &nbsp; &nbsp; <BR># this can be any 
+      regex in case you need <BR>RewriteRule ([^/]+)/([^/]+)/([^/]+)\.html 
+      index.php?%1&amp;variable=$1 &nbsp; <BR># %1 means first match in 
+      RewriteCond <BR>
+      <P>or in your case (whole <B 
+      style="COLOR: black; BACKGROUND-COLOR: #a0ffff">query </B><B 
+      style="COLOR: black; BACKGROUND-COLOR: #99ff99">string</B> needed and not 
+      only parts) the <BR>more elegant: <BR>
+      <P>RewriteRule ([^/]+)/([^/]+)/([^/]+)\.html 
+      <BR>index.php?%{QUERY_STRING}&amp;variable=$1 <BR>
+      <P>or even: <BR>
+      <P>RewriteRule ([^/]+)/([^/]+)/([^/]+)\.html index.php?variable=$1 [QSA] 
+      <BR>
+      <P>QSA stands for <B style="COLOR: black; BACKGROUND-COLOR: #a0ffff">query 
+      </B><B style="COLOR: black; BACKGROUND-COLOR: #99ff99">string</B> attach 
+      and means not to clobber the old <BR><B 
+      style="COLOR: black; BACKGROUND-COLOR: #a0ffff">query </B><B 
+      style="COLOR: black; BACKGROUND-COLOR: #99ff99">string</B> but to attach 
+      the new part to whatever was there... <BR>
+      <P>joachim <BR></P></DIV>
+      <DIV>
+      <P><A class=nu 
+      href="http://groups.google.com/group/alt.apache.configuration/post?hl=en&amp;inreplyto=4887cf4285f48a35&amp;_done=%2Fgroup%2Falt.apache.configuration%2Fbrowse_frm%2Fthread%2F7a2200a236d3a725%2F4887cf4285f48a35%3Flnk%3Dst%26q%3Dmod_rewrite+query+string+group%3A*apache*%26rnum%3D3%26hl%3Den%26" 
+      target=_top>
+      <SCRIPT language=javascript1.2>
+  <!--
+    document.write("<img id=ti4887cf4285f48a35 border=0 src=\"/groups/img/r.gif\" height=11 width=11 alt=\"\">");
+  //-->
+</SCRIPT>
+      <SPAN style="TEXT-DECORATION: underline">Reply</SPAN></A> 
+    </P></DIV></DIV></TD></TR></TBODY></TABLE>&nbsp;<A id=a_e576754164092832 
+name=doc_e576754164092832></A> 
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top noWrap><B><FONT color=#00681c>3</FONT></B><IMG height=1 
+      src="0b58afb8919dafd2_files/dot_clear.gif" width=2></TD>
+    <TD width="100%">
+      <DIV class=minmaxwie 
+      style="BORDER-LEFT: #00681c 3px solid; BACKGROUND-COLOR: #f6f6f6">
+      <DIV 
+      style="PADDING-RIGHT: 0px; BORDER-TOP: #e8e8e8 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 3px; WIDTH: 100%; PADDING-TOP: 3px; BORDER-BOTTOM: #efefef 1px solid; BACKGROUND-COLOR: #f6f6f6">
+      <DIV id=headerboxe576754164092832 style="FLOAT: left; OVERFLOW: visible">
+      <TABLE id=hdropenede576754164092832 cellSpacing=0 cellPadding=1 
+        border=0><TBODY>
+        <TR vAlign=top>
+          <TD width=25><NOBR><B>From:</B></NOBR></TD>
+          <TD width=2></TD>
+          <TD colSpan=2><B><FONT class=inheritcolor 
+            color=#00681c>Matt</FONT></B>&nbsp;- <NOBR><A 
+            href="http://groups.google.com/groups/profile?enc_user=stcQ5xQAAAAs9Qzftg_gEUFHKDd2uAstMGU8b6pdEto0vGv3QO7lyg&amp;hl=en" 
+            target=_top>view profile</A></NOBR></TD></TR>
+        <TR vAlign=top>
+          <TD width=25><NOBR><B>Date:</B></NOBR></TD>
+          <TD width=2></TD>
+          <TD>Mon, May 5 2003 10:23&nbsp;pm </TD>
+        <TR class=scripthide id=htr1_e576754164092832 vAlign=top>
+          <TD width=25><NOBR><B>Email: </B></NOBR></TD>
+          <TD width=2></TD>
+          <TD>"Matt" &lt;mat<A 
+            href="http://groups.google.com/groups/unlock?msg=e576754164092832&amp;hl=en&amp;_done=/group/alt.apache.configuration/browse_frm/thread/7a2200a236d3a725/4887cf4285f48a35%3Flnk%3Dst%26q%3Dmod_rewrite+query+string+group:*apache*%26rnum%3D3%26hl%3Den%26" 
+            target=_parent>...</A>@alpenjodel.de&gt;</TD></TR>
+        <TR class=scripthide id=htr2_e576754164092832 vAlign=top>
+          <TD width=25><NOBR><B>Groups: </B></NOBR></TD>
+          <TD width=2></TD>
+          <TD>alt.apache.configuration</TD></TR></TBODY></TABLE></DIV>
+      <DIV id=ratingse576754164092832 style="PADDING-LEFT: 2px; FLOAT: right">
+      <TABLE cellSpacing=1 cellPadding=0 border=0>
+        <TBODY>
+        <TR vAlign=top>
+          <TD>
+            <DIV style="POSITION: absolute"><NOBR><FONT color=#555555>Not yet 
+            rated</FONT></NOBR></DIV><FONT style="VISIBILITY: hidden" 
+            color=#f6f6f6>Rating:</FONT></TD>
+          <TD width=120>&nbsp; </TD>
+        <TR>
+          <TD noWrap colSpan=3><SPAN class=noscripthide><A 
+            id=oe576754164092832 onclick="return op('e576754164092832');" 
+            href="http://groups.google.com/group/alt.apache.configuration/tree/browse_frm/thread/7a2200a236d3a725/0b58afb8919dafd2?rnum=1&amp;hl=en&amp;q=mod_rewrite+query+string+group%3A*apache*&amp;_done=%2Fgroup%2Falt.apache.configuration%2Fbrowse_frm%2Fthread%2F7a2200a236d3a725%2F4887cf4285f48a35%3Flnk%3Dst%26q%3Dmod_rewrite+query+string+group%3A*apache*%26rnum%3D3%26hl%3Den%26#">show 
+            options</A></SPAN> </TD></TR></TBODY></TABLE></DIV><BR 
+      style="FONT-SIZE: 0px" clear=all height="0">
+      <DIV class=scripthide id=he576754164092832>
+      <TABLE cellSpacing=0 cellPadding=1 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD><FONT class=fontsize2><NOBR><A 
+            href="http://groups.google.com/group/alt.apache.configuration/post?hl=en&amp;inreplyto=e576754164092832&amp;reply_to=group&amp;_done=%2Fgroup%2Falt.apache.configuration%2Fbrowse_frm%2Fthread%2F7a2200a236d3a725%2F4887cf4285f48a35%3Flnk%3Dst%26q%3Dmod_rewrite+query+string+group%3A*apache*%26rnum%3D3%26hl%3Den%26" 
+            target=_top>Reply</A></NOBR> | <NOBR><A 
+            href="http://groups.google.com/group/alt.apache.configuration/post?hl=en&amp;inreplyto=e576754164092832&amp;reply_to=author&amp;_done=%2Fgroup%2Falt.apache.configuration%2Fbrowse_frm%2Fthread%2F7a2200a236d3a725%2F4887cf4285f48a35%3Flnk%3Dst%26q%3Dmod_rewrite+query+string+group%3A*apache*%26rnum%3D3%26hl%3Den%26" 
+            target=_top>Reply to Author</A></NOBR> | <NOBR><A 
+            href="http://groups.google.com/group/alt.apache.configuration/post?hl=en&amp;inreplyto=e576754164092832&amp;forward=1&amp;_done=%2Fgroup%2Falt.apache.configuration%2Fbrowse_frm%2Fthread%2F7a2200a236d3a725%2F4887cf4285f48a35%3Flnk%3Dst%26q%3Dmod_rewrite+query+string+group%3A*apache*%26rnum%3D3%26hl%3Den%26" 
+            target=_top>Forward</A></NOBR> | <NOBR><A 
+            href="http://groups.google.com/group/alt.apache.configuration/msg/e576754164092832?dmode=print&amp;hl=en" 
+            target=_blank>Print</A></NOBR> | <NOBR><A 
+            href="http://groups.google.com/group/alt.apache.configuration/msg/e576754164092832?hl=en&amp;" 
+            target=_parent>Individual Message</A></NOBR> | <NOBR><A 
+            href="http://groups.google.com/group/alt.apache.configuration/msg/e576754164092832?dmode=source&amp;hl=en" 
+            target=_blank>Show original</A></NOBR> | <NOBR><A 
+            href="http://groups.google.com/groups/abuse?hl=en&amp;group=alt.apache.configuration&amp;url=http%3A%2F%2Fgroups.google.com%2Fgroup%2Falt.apache.configuration%2Fmsg%2Fe576754164092832" 
+            target=_blank>Report Abuse</A></NOBR> | <NOBR><A 
+            href="http://groups.google.com/groups/search?enc_author=stcQ5xQAAAAs9Qzftg_gEUFHKDd2uAstMGU8b6pdEto0vGv3QO7lyg&amp;scoring=d&amp;hl=en" 
+            target=_top>Find messages by this author</A></NOBR> 
+        </FONT></TD></TR></TBODY></TABLE></DIV></DIV></DIV>
+      <DIV class=mbody id=mbodye576754164092832>
+      <P>
+      <DIV style="PADDING-LEFT: 6px"><A name=msg_e576754164092832></A>great!!! 
+      worked. <BR>
+      <P>Thanx you so much, <BR>
+      <P>Matt <BR></P></DIV>
+      <DIV>
+      <P><A class=nu 
+      href="http://groups.google.com/group/alt.apache.configuration/post?hl=en&amp;inreplyto=e576754164092832&amp;_done=%2Fgroup%2Falt.apache.configuration%2Fbrowse_frm%2Fthread%2F7a2200a236d3a725%2F4887cf4285f48a35%3Flnk%3Dst%26q%3Dmod_rewrite+query+string+group%3A*apache*%26rnum%3D3%26hl%3Den%26" 
+      target=_top>
+      <SCRIPT language=javascript1.2>
+  <!--
+    document.write("<img id=tie576754164092832 border=0 src=\"/groups/img/r.gif\" height=11 width=11 alt=\"\">");
+  //-->
+</SCRIPT>
+      <SPAN style="TEXT-DECORATION: underline">Reply</SPAN></A> 
+    </P></DIV></DIV></TD></TR></TBODY></TABLE>
+<P>
+<TABLE cellSpacing=0 cellPadding=4 bgColor=#fff4c2 border=0>
+  <TBODY>
+  <TR>
+    <TD width="100%"><FONT color=#676767>« Start of topic</FONT> &nbsp; <FONT 
+      color=#676767><SPAN class=nu>« </SPAN>Older</FONT> &nbsp; Messages 
+      <B>1</B> - <B>3</B> of <B>3</B> &nbsp; <FONT color=#676767>Newer<SPAN 
+      class=nu> »</SPAN></FONT> &nbsp; <FONT color=#676767>End of topic »</FONT> 
+    </TD>
+    <TD width=10>&nbsp;</TD></TR>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=2 border=0>
+        <TBODY>
+        <TR>
+          <TD class=f><A class=fl 
+            href="http://groups.google.com/group/alt.apache.configuration/browse_frm/thread/c708f8724912b35c?hl=en" 
+            target=_top>« Newer topic &nbsp;-&nbsp; configurare una nuova 
+            applicazione</A> 
+          <TD width=15>&nbsp;</TD>
+          <TD class=f><A class=fl 
+            href="http://groups.google.com/group/alt.apache.configuration/browse_frm/thread/693405d1ce4d3610?hl=en" 
+            target=_top>URL to another internal IP &nbsp;-&nbsp; Older topic 
+            »</A> </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE style="BORDER-TOP: #ffcc33 1px solid" cellSpacing=0 cellPadding=2 
+border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle width="100%"><FONT size=-2>©2006 Google</FONT> </TD>
+    <TD width=10>&nbsp;</TD></TR></TBODY></TABLE>
+<SCRIPT language=javascript1.2>
+<!--
+setup();
+//-->
+</SCRIPT>
+</P></BODY></HTML>

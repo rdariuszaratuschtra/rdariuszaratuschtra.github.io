@@ -1,0 +1,343 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0066)http://www.webforgers.net/mod-rewrite/basic-tutorials-lesson-1.php -->
+<HTML><HEAD><TITLE>Mod rewrite Simple Static to Dynamic Rewrite Tutorial</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1"><LINK 
+href="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/web.css" 
+type=text/css rel=stylesheet>
+<SCRIPT language=JavaScript1.1 
+src="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/tla.html" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=JavaScript1.1 
+src="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/expand.html" 
+type=text/javascript></SCRIPT>
+
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY onload="MM_preloadImages('../images/closed.gif')">
+<TABLE height=39 cellSpacing=0 cellPadding=0 width=750 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD width=10 height=10><IMG height=10 
+      src="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/tl.jpg" 
+      width=10></TD>
+    <TD width="100%" 
+    background="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/t.jpg"><IMG 
+      height=10 
+      src="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/t.jpg" 
+      width=10></TD>
+    <TD width=10><IMG height=10 
+      src="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/tr.jpg" 
+      width=10></TD></TR>
+  <TR>
+    <TD 
+    background="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/l.jpg" 
+    height=19><IMG height=10 
+      src="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/l.jpg" 
+      width=10></TD>
+    <TD>
+      <TABLE class=innertb height=181 cellSpacing=5 cellPadding=0 width="100%" 
+      border=0>
+        <TBODY>
+        <TR>
+          <TD class=innercell vAlign=top align=left width=442 rowSpan=2>
+            <H1>Mod rewrite Tutorials</H1>
+            <P><A href="http://www.webforgers.net/mod-rewrite">overview</A> - <A 
+            href="http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php">syntax</A> 
+            - <A 
+            href="http://www.webforgers.net/mod-rewrite/basic-tutorials-lesson-1.php#"><STRONG>basic</STRONG></A> 
+            - <A 
+            href="http://www.webforgers.net/mod-rewrite/medium-tutorials.php">medium</A> 
+            - <A 
+            href="http://www.webforgers.net/mod-rewrite/advanced-tutorials.php">advanced</A> 
+            </P>
+            <P class=heading><STRONG>Mod Rewrite Basic tutorials</STRONG></P>
+            <P>The majority of you came to this site to find out how to do one 
+            of these basic tutorials. So lets go ahead and line up what we'll be 
+            learning.</P>
+            <UL>
+              <LI><A 
+              href="http://www.webforgers.net/mod-rewrite/basic-tutorials-lesson-1.php">Simple 
+              Static to Dynamic Rewrites</A> 
+              <LI><A 
+              href="http://www.webforgers.net/mod-rewrite/basic-tutorials-lesson-2.php">301 
+              and 302 redirects using mod rewrite</A> 
+              <LI><A 
+              href="http://www.webforgers.net/mod-rewrite/basic-tutorials-lesson-3.php">File 
+              and file Extension rewrites</A> </LI></UL>
+            <HR>
+
+            <P><SPAN class=heading>Tutorial 1</SPAN><BR><STRONG>Simple Static to 
+            Dynamic Rewrites </STRONG></P>
+            <P>
+            <SCRIPT language=JavaScript1.1 
+            type=text/javascript>print_tla();</SCRIPT>
+            It's easier than you think. Out of all the rewrites I've done I'd 
+            say I still do this type of rewrite the most. If you are working on 
+            a <STRONG>non commercial web applications</STRONG> then you should 
+            be able to implement this type of mod rewrite in just a few 
+            minutes.</P>
+            <P><STRONG>Scenario: </STRONG>We have a dynamic site that out puts 
+            query strings in the urls. We want to change these dynamic urls to 
+            static search engine friendly urls. All the current web pages use a 
+            .php extension. We want the urls to look like a plain html page with 
+            a .html ext.</P>
+            <P><STRONG>Current urls:</STRONG></P>
+            <OL>
+              <LI>section.php?sec_id=123 
+              <LI>category.php?cat_id=123&amp;num_limit=10 
+              <LI>product.php?prod_id=123&amp;prod_prod_sku=MET345B<BR>&amp; 
+              prod_name=metal </LI></OL>
+            <P><STRONG>Desired urls:</STRONG></P>
+            <OL>
+              <LI>section-123.html 
+              <LI>category/123-10.html 
+              <LI>product/123-MET345B-metal.html </LI></OL>
+            <P class=heading><STRONG>Step 1</STRONG></P>
+            <P>Change the code in your .php files to stop outputting dynamic 
+            urls. If you made the file then this should be too hard. If your 
+            development team or freelance programmer made these urls then you'll 
+            have to hack it out or get them to do it.</P>
+            <P>Here is some sample php code that might help you in your hunt for 
+            changing the link out puts.</P>
+            <P>section.php?sec_id=123 <SPAN class=phpexample>&lt;a 
+            href="section.php?sec_id=&lt;?php echo $sec_id ?&gt;"&gt;&lt;?php 
+            echo $sec_name ?&gt;&lt;/a&gt;</SPAN></P>
+            <P>change to</P>
+            <P>section-123.html <SPAN class=phpexample>&lt;a 
+            href="section-&lt;?php echo $sec_id ?&gt;.html"&gt;&lt;?php echo 
+            $sec_name ?&gt;&lt;/a&gt;</SPAN></P>
+            <P>category.php?cat_id=123&amp;num_limit=10 <SPAN 
+            class=phpexample>&lt;a href="category.php?cat_id=&lt;?php echo 
+            $cat_id ?&gt;&amp;num_limit=&lt;?php $num_limit ?&gt;"&gt;&lt;?php 
+            echo $cat_name ?&gt;&lt;/a&gt;</SPAN></P>
+            <P>change to</P>
+            <P>category/123-10.html <SPAN class=phpexample>&lt;a 
+            href="category/&lt;?php echo $cat_id ?&gt;-&lt;?php echo $num_limit 
+            ?&gt;.html"&gt;&lt;?php echo $cat_name ?&gt;&lt;/a&gt;</SPAN></P>
+            <P>product.php?prod_id=123&amp;prod_sku=MET345B&amp;prod_name=metal 
+            <SPAN class=phpexample>&lt;a href="&lt;?php echo $prod_id 
+            ?&gt;&amp;prod_sku=&lt;? echo $prod_sku ?&gt;&amp;prod_name=&lt;?php 
+            echo $prod_name ?&gt;"&gt;&lt;?php echo $prod_name 
+            ?&gt;&lt;/a&gt;</SPAN></P>
+            <P>change to</P>
+            <P>product/123-MET345B-metal.html <SPAN class=phpexample>&lt;a 
+            href="product/&lt;php echo $prod_id ?&gt;-&lt;?php echo $prod_sku 
+            ?&gt;-&lt;?php echo $prod_name ?&gt;.html"&gt;&lt;?php echo 
+            $prod_name ?&gt;&lt;/a&gt;</SPAN></P>
+            <P class=notes>Note: When you change a url to be called from a sub 
+            folder you're going to have to change your image, css, external 
+            javascript files and any other media or include that will be in the 
+            page. The easiest way to do this is to use absolute urls 
+            http://www.yoursite.com/images/ or 
+            http://www.yoursite.com/css/file.css to call these in. This part 
+            usually drive people nuts!</P>
+            <P class=heading><STRONG>Step 2</STRONG></P>
+            <P>Once you've changed the code to out put the desired urls we can 
+            start writing the code for the .htaccess file</P>
+            <P>First we'll start by turning the rewrite engine on</P>
+            <P>.htaccess code <SPAN class=example>RewriteEngine On</SPAN></P>
+            <P>Next we'll set the RewriteBase to our root folder for our mod 
+            <STRONG>rewrite block.</STRONG></P>
+            <P>.htaccess code <SPAN class=example>RewriteEngine 
+            On<BR>RewriteBase / </SPAN></P>
+            <P>Alright now that we've turned on the rewrite engine and set our 
+            base directory lets go ahead and make our first rule.</P>
+            <P>First we look for the pattern we need to match. Our first url is 
+            section-123.html since only section is on the root of the site and 
+            it will always begin with the word section- we'll start our pattern 
+            matching looking for exactly that RewiteRule ^section- .</P>
+            <P>Now we have to grab the 123 and reference that to be used in the 
+            <STRONG>rewrite block</STRONG>. We'll just use a character class to 
+            search for any number that repeats 1 or more times ([0-9]+). </P>
+            <P class=notes>Remember the brackets! That lets the rewrite block 
+            call in those numbers when the time comes.</P>
+            <P>Last but not least we'll go ahead and finish the matching by 
+            tacking on the \.html$ so the rewrite engine knows to stop matching 
+            at this point.</P>
+            <P>Our rule should look like this now RewriteRule 
+            ^section-([0-9]+)\.html$</P>
+            <P>Ok to finalize this rule we need to tell the rewrite block to 
+            rewrite as an alias back to section.php then we need to call in all 
+            the references () from the <STRONG>pattern block</STRONG> that we 
+            collected. In this rule there is only one reference so we call it in 
+            as a variable $1.</P>
+            <P>Your rewriterule should look like this now <BR>RewriteRule 
+            ^section-([0-9]+)\.html$ section.php?sec_id=$1</P>
+            <P>Now we just add the flag [L] to tell the mod rewrite that this is 
+            the last rule it needs to parse and we're done.</P>
+            <P>Your code should look like this at this point</P>
+            <P>.htaccess code<SPAN class=example> RewriteEngine 
+            On<BR>RewriteBase /<BR><BR>RewriteRule ^section-([0-9]+)\.html$ 
+            section.php?sec_id=$1 [L]</SPAN></P>
+            <P>We should be able to move fairly quickly now through our next 
+            rules since we'll follow the same pattern above</P>
+            <P>Since our next url category/123-10.html will always start with 
+            category we'll use ^category/ to start our rewrite rule. </P>
+            <P>Next We'll need to find any number 1 or more times between the / 
+            and - and reference it. We do that with the familiar ([0-9]+). And 
+            then we'll need to match the next set of numbers between the - and 
+            the .html. We just use the same class as before ([0-9]+).</P>
+            <P>We finish off our pattern block with a \.html$ and our code 
+            should now look like this RewriteRule 
+            ^category/([0-9]+)-([0-9]+)\.html$</P>
+            <P>We've made 2 references this time these are easily passed to the 
+            <STRONG>rewrite block</STRONG> as $1 and $2 to complete the rewrite. 
+            As before we tack on the [L] flag and we're done. Our htacces file 
+            should now look like this.</P>
+            <P>.htaccess code<SPAN class=example> RewriteEngine 
+            On<BR>RewriteBase /<BR><BR>RewriteRule ^section-([0-9]+)\.html$ 
+            section.php?sec_id=$1 [L}<BR><BR>RewriteRule 
+            ^category/([0-9]+)-([0-9]+)\.html$ 
+            category.php?cat_id=$1&amp;num_limit=$2 [L]</SPAN></P>
+            <P>Alright we're on to our final rewrite rule. This should take us 
+            long. By now were pretty much a mod rewrite guru. So we make it 
+            quick</P>
+            <P>product/123-MET345B-metal.html is the url</P>
+            <P>^product/ <BR>This will start us off on a good pattern match</P>
+            <P>([0-9]+)-<BR>This will match and reference the first numbers</P>
+            <P>([^-]+)-<BR>Since the sku is in between dashes we just need 
+            everything that's not a dash. Tricky tricky. negate the class and 
+            look for anything but a dash. ha!</P>
+            <P>(.+)\.html<BR>Since we don't know if the name will have _'s or 
+            -'s in them we'll just do a wildcard search and grab everything 
+            between the - and .html.</P>
+            <P>Now that our <STRONG>pattern block</STRONG> is squeaky clean lets 
+            send our 3 references over the <STRONG>rewrite block</STRONG> so we 
+            can finish this up. 
+            product.php?prod_id=$1&amp;prod_sku=$2&amp;prod_name=$3</P>
+            <P class=notes>Note: You do not have to call your references in 
+            order in the rewrite block. You can call them $2 $3 $1 if you want 
+            just remember $1 = first () in the <STRONG>pattern block</STRONG> 
+            etc.</P>
+            <P>Our htaccess file should now look like this</P>
+            <P>.htaccess code<SPAN class=example> RewriteEngine 
+            On<BR>RewriteBase /<BR><BR>RewriteRule ^section-([0-9]+)\.html$ 
+            section.php?sec_id=$1 [L}<BR><BR>RewriteRule 
+            ^category/([0-9]+)-([0-9]+)\.html$ 
+            category.php?cat_id=$1&amp;num_limit=$2 [L]<BR><BR>RewriteRule 
+            ^product/([0-9]+)-([^-]+)-(.+)\.html$ 
+            product.php?prod_id=$1&amp;prod_sku=$2&amp;prod_name=$3 
+            [L]</SPAN></P>
+            <P>And we're done. You should be able to upload the .htaccess file 
+            to the server first and test the urls out before you upload your 
+            .php files. That way you don't bring down a live site if you've made 
+            a typo &lt;-- which does happen! <!-- end tutorial 1 --></P>
+            <HR>
+
+            <P>&nbsp;</P>
+            <P align=center><A 
+            href="http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php">&lt;&lt; 
+            mod rewrite syntax</A> :: <A 
+            href="http://www.webforgers.net/mod-rewrite/basic-tutorials.php">basic 
+            mod rewrites</A> :: <A 
+            href="http://www.webforgers.net/mod-rewrite/medium-tutorials.php">medium 
+            mod rewrites &gt;&gt;</A></P></TD>
+          <TD class=bodytext vAlign=top align=right width=271 height=67><A 
+            href="http://www.webforgers.net/">home</A> | blog | <A 
+            href="http://www.webforgers.net/mod-rewrite/index.php">tutorials</A> 
+            | <A href="http://www.webforgers.net/code-library/">code 
+            library</A><BR><BR><IMG height=55 
+            src="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/logo.jpg" 
+            width=265 align=absBottom> </TD></TR>
+        <TR>
+          <TD class=bodytext vAlign=top>
+            <P><STRONG>Questions that are answered here:</STRONG></P>
+            <UL>
+              <LI>What is a mod rewrite? 
+              <LI>What can a mod rewrite do? 
+              <LI>How do I rewrite my messy urls 
+              <LI>How do I make clean urls </LI></UL>
+            <HR>
+
+            <P><STRONG>On Page Resources</STRONG></P>
+            <OL>
+              <LI><A id=mod_rewrite name=mod_rewrite></A><STRONG>Non commercial 
+              Application</STRONG> - These are dynamic pages that you, your 
+              developers, free lancers or kid brother have written.<BR><BR>
+              <LI><STRONG>302 Page Hijack</STRONG> - There are 2 files involved 
+              with a page hijack. <STRONG>The hijacker</STRONG> file and 
+              <STRONG>the hijackee</STRONG> file. The hijacker is the file the 
+              sends the 302 redirect. the hijackee is the file that gets 
+              hijacked.<BR><BR><STRONG>The hijacker</STRONG> file will inherit 
+              the search result title and description. It will also show the 
+              cache of the hijackee.<BR><BR><STRONG>The hijackee</STRONG> will 
+              not know anything has happened until the owner of the hijackee 
+              file checks for the file in the search engines and cannot find it. 
+              </LI></OL>
+            <P>&nbsp;</P></TD></TR></TBODY></TABLE></TD>
+    <TD 
+    background="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/r.jpg"><IMG 
+      height=10 
+      src="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/r.jpg" 
+      width=10></TD></TR>
+  <TR>
+    <TD height=10><IMG height=10 
+      src="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/bl.jpg" 
+      width=10></TD>
+    <TD 
+    background="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/b.jpg"><IMG 
+      height=10 
+      src="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/b.jpg" 
+      width=10></TD>
+    <TD><IMG height=10 
+      src="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/br.jpg" 
+      width=10></TD></TR></TBODY></TABLE>
+<TABLE height=39 cellSpacing=0 cellPadding=0 width=750 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD width=10 height=10><IMG height=10 
+      src="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/tl.jpg" 
+      width=10></TD>
+    <TD width="100%" 
+    background="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/t.jpg"><IMG 
+      height=10 
+      src="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/t.jpg" 
+      width=10></TD>
+    <TD width=10><IMG height=10 
+      src="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/tr.jpg" 
+      width=10></TD></TR>
+  <TR>
+    <TD 
+    background="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/l.jpg" 
+    height=19><IMG height=10 
+      src="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/l.jpg" 
+      width=10></TD>
+    <TD class=innertb align=middle>
+      <TABLE cellSpacing=2 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class=innercell align=middle><A 
+            href="http://www.webforgers.net/">Mod Rewrite</A> (Home) | <A 
+            href="http://www.webforgers.net/mod-rewrite/">Mod Rewrite 
+            Tutorials</A> | <A href="http://www.webforgers.net/">Directory</A> | 
+            <A href="http://www.webforgers.net/code-library/">Code Library</A> | 
+            Blog</TD></TR></TBODY></TABLE></TD>
+    <TD 
+    background="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/r.jpg"><IMG 
+      height=10 
+      src="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/r.jpg" 
+      width=10></TD></TR>
+  <TR>
+    <TD height=10><IMG height=10 
+      src="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/bl.jpg" 
+      width=10></TD>
+    <TD 
+    background="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/b.jpg"><IMG 
+      height=10 
+      src="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/b.jpg" 
+      width=10></TD>
+    <TD><IMG height=10 
+      src="Mod rewrite Simple Static to Dynamic Rewrite Tutorial_files/br.jpg" 
+      width=10></TD></TR></TBODY></TABLE>
+<SCRIPT language=JavaScript>
+//webforgers
+var seotrendsuserid = 4;
+var query = location.search;
+if(query.length < 1){
+	query = '?';
+}else{
+	query = query + '&';
+}
+document.write('<img src="http://www.seotrends.com/includes.scripts/tracker.php' + query +'client_id=' + seotrendsuserid + '&trends_ref=' + escape(document.referrer) +'&trends_uri=' + escape(location.pathname) + '" width="1" height="1">');
+</SCRIPT>
+</BODY></HTML>

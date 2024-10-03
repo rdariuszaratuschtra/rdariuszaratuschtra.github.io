@@ -1,0 +1,153 @@
+BODY {
+ 	background-color: #F5F5F5;
+ 	background : url(./images/background_grad.jpg);
+ 	scrollbar-base-color: #DBDBE0;
+    scrollbar-face-color: #DBDBE0;
+    scrollbar-track-color: default;
+    scrollbar-arrow-color: #555555;
+    scrollbar-3dlight-color: #555555;
+    scrollbar-darkshadow-color: gray;
+    scrollbar-highlight-color: white;
+    scrollbar-shadow-color: #DBDBE0;
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	margin-top: 20px;   
+}
+
+A {
+	/*display : block;*/
+	text-decoration: none;
+	color: gray;
+	text-decoration: underline;
+}
+
+IMG#thumb {
+	position: relative;
+	border : 1px solid #333333;
+	filter:alpha(opacity=80);
+	/*filter: progid:DXImageTransform.Microsoft.Shadow(strength=5,direction=135,color='#808080');*/
+}
+
+IMG#test {
+	position: relative;
+	/*border : 1px solid #ff0000;*/
+	border : 1px solid #333333;
+	/*filter:alpha(opacity=80);*/
+	/*filter: progid:DXImageTransform.Microsoft.Shadow(strength=5,direction=135,color='#808080');*/
+}
+
+DIV#thumb2 {
+	/*display : block;*/
+	position: relative;
+	width: 80px;
+	height: 80px;
+	border : 0px solid #ff0000;
+	filter: progid:DXImageTransform.Microsoft.Shadow(strength=5,direction=135,color='#808080');
+}
+
+DIV#nav1 {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	background : transparent;
+	border : 0px solid #333333;
+	border-top-width : 0px;
+	width: 707px;
+	height: 24px;
+	top: 481px;
+	left: 0px;
+	/*background : url(blackforest.jpg);*/
+	background-color: white; /*#DFDFDF;*/
+	position : absolute;
+	margin: 0 auto;
+	text-align: left;
+	/*color : black;
+	*/
+	/*margin-top: 0px;
+	*/
+	/*filter: progid:DXImageTransform.Microsoft.Shadow(strength=5,direction=135,color='#808080');
+	*/
+	/*filter:alpha(opacity=100);
+	*/
+}
+
+DIV#nav2 {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	background : transparent;
+	border : 0px solid #333333;
+	border-top-width : 1px;
+	width: 707px;
+	height: 24px;
+	top: 505px;
+	left: 0px;
+	/*background : url(blackforest.jpg);*/
+	background-color:  #F5F5F5;
+	position : absolute;
+	margin: 0 auto;
+	text-align: center;
+	/*color : black;
+	*/
+	/*margin-top: 0px;
+	*/
+	/*filter: progid:DXImageTransform.Microsoft.Shadow(strength=5,direction=135,color='#808080');
+	*/
+	/*filter:alpha(opacity=100);
+	*/
+}
+
+DIV#title {
+	top: 4px;
+	position : relative;
+	/*float: center;*/
+}
+
+/*DIV#more {
+	top: 400px;
+	left: 600px;
+	position : absolute;
+	float:left;
+	margin-left: 2px;
+	border : 1px solid #ff0000;
+}*/
+
+IMG#prev {
+	top: 484px;
+	left: 10px;
+	position : absolute;
+	/*float:left;*/
+	/*margin-left: 0px;*/
+	border : 0px solid #ff0000;
+	filter:alpha(opacity=80);
+}
+
+IMG#next {
+	top: 484px;
+	left: 680px;
+	position : absolute;
+	/*float:left;*/
+	/*margin-left: 630px;*/
+	border : 0px solid #ff0000;
+	filter:alpha(opacity=80);
+}
+
+IMG#index {
+	top: /*484px;//*/510px;
+	left: /*36px;//*/10px;
+	position : absolute;
+	/*float:left;*/
+	/*margin-left: 0px;*/
+	border : 0px solid #ff0000;
+	z-index: 1;
+	filter:alpha(opacity=80);
+}
+
+IMG#play {
+	top: /*484px;//*/510px;
+	left: /*36px;//*/32px;
+	position : absolute;
+	/*float:left;*/
+	/*margin-left: 0px;*/
+	border : 0px solid #ff0000;
+	z-index: 1;
+	filter:alpha(opacity=80);
+}

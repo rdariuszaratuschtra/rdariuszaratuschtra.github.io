@@ -1,0 +1,21 @@
+BODY DIV#toolTip {
+	BORDER-RIGHT: #4e6517 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #4e6517 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 10px; Z-INDEX: 1000; MIN-HEIGHT: 1em; PADDING-BOTTOM: 0px; BORDER-LEFT: #4e6517 1px solid; WIDTH: 300px; PADDING-TOP: 0px; BORDER-BOTTOM: #4e6517 1px solid; BACKGROUND-REPEAT: repeat; POSITION: absolute; BACKGROUND-COLOR: #e7edd3; TEXT-ALIGN: left; max-width: 300px; moz-border-radius: 3px
+}
+BODY DIV#toolTip P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; FONT: 10px/14px verdana,arial,sans-serif; COLOR: #4e6517; PADDING-TOP: 0px
+}
+BODY DIV#toolTip P EM {
+	MARGIN-TOP: 3px; DISPLAY: block; FONT-WEIGHT: bold; COLOR: #990000; FONT-STYLE: normal
+}
+BODY DIV#toolTip P EM SPAN {
+	FONT-WEIGHT: bold; COLOR: #990000
+}
+DIV#toolTip .titlesbox {
+	MARGIN: 8px 12px; COLOR: #4e6517; LINE-HEIGHT: 13px
+}
+DIV#toolTip .titlesbox .tbhead {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; MARGIN-BOTTOM: 3px; LETTER-SPACING: -1px
+}
+DIV#toolTip .titlesbox .link {
+	MARGIN: 1px 0px 10px; OVERFLOW: hidden; COLOR: #669900
+}

@@ -1,0 +1,221 @@
+<!doctype html public "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+	<title>R. Darius Zaratuschtra</title>
+	
+<link rel="stylesheet" href="darius3_long_2columns.css">
+<script type="text/javascript" language="JavaScript" src="./scripts/imagepopup.js"></script>
+
+<script language="JavaScript">
+<!--
+
+//*****************************************
+// Blending Image Slide Show Script- 
+// © Dynamic Drive (www.dynamicdrive.com)
+// For full source code, visit http://www.dynamicdrive.com/
+//*****************************************
+
+//specify interval between slide (in milli seconds)
+var slidespeed=3000
+
+//specify images
+var slideimages=new Array(
+"gallery_verhoudingen/tn_285.jpg",
+"gallery_verhoudingen/tn_291.jpg",
+"gallery_verhoudingen/tn_317 II.jpg",
+"gallery_verhoudingen/tn_schilderijen 01 120.jpg"
+)
+
+//specify corresponding links
+var slidelinks=new Array(
+"gallery_verhoudingen/285.jpg",
+"gallery_verhoudingen/291.jpg",
+"gallery_verhoudingen/317 II.jpg",
+"gallery_verhoudingen/schilderijen 01 120.jpg"
+)
+
+//specify corresponding titels
+var slidetitels=new Array(
+"Verhoudingen 1",
+"Verhoudingen 2",
+"Verhoudingen 3",
+"Verhoudingen 4"
+)
+
+var newwindow=0 //open links in new window? 1=yes, 0=no
+
+var imageholder=new Array()
+var ie=document.all
+for (i=0;i<slideimages.length;i++){
+	imageholder[i]=new Image()
+	imageholder[i].src=slideimages[i]
+}
+
+function gotoshow(){
+	//if (newwindow)
+	//	window.open(slidelinks[whichlink]);
+	//else
+	//	window.location=slidelinks[whichlink];
+		
+	viewPic2(slidelinks[whichlink]);
+}
+
+function showFullSize(){
+	viewPic2( slidelinks[whichlink], slidetitels[whichlink]);
+}
+
+//-->
+</script>
+</head>
+
+<body>
+
+
+<!-- 
+<table cellspacing=1 bgcolor="Gray" cellpadding=0 align="center">
+<tr>
+	<td><img src="images/dariusheader8.jpg" width=760 height=160 border=0></td>
+</tr>
+</table>
+<br>
+ -->
+
+<div id="shadow1">
+<div id="header"></div>
+</div>
+
+
+<div id="shadow2">
+<!-- <div id="test5"> -->
+
+<div id="nav">
+<script type="text/javascript" src="milonic_src.js"></script>
+<noscript><!-- <a href="http://www.milonic.com/">JavaScript DHTML Pull Down Menus From Milonic.com</a> --></noscript>
+<script	type="text/javascript">
+if(ns4)_d.write("<scr"+"ipt type=text/javascript src=mmenuns4.js><\/scr"+"ipt>");		
+  else _d.write("<scr"+"ipt type=text/javascript src=mmenudom.js><\/scr"+"ipt>"); 
+</script>
+<!-- <script type="text/javascript" src="changecolorsbyclick.js"></script> -->
+<script type="text/javascript" src="menu_data.js"></script>
+</div>	
+
+<div id="content">
+<!-- NOTE: need containing div to draw border for Firefox counts padding toward width and height -->
+<div id="column2">
+<div id="column1">
+<span class="title">INTERMENSELIJKE RELATIES / VERHOUDINGEN</span>
+<span class="gallery"><a href="gallery_verhoudingen.html">&#187; GALERIE</a></span>
+<!-- <h4 class="title">Lorem ipsum</h4> -->
+<p>
+<span class="dropcap">D</span>it is een serie schilderijen die gaat over intermenselijke <a href="gallery_verhoudingen.html">contacten</a>; hoe de mens op de een of andere manier zowel met zichzelf, als met de andere mens te maken krijgt.
+</p>
+<p>
+Een thema dat benadrukt dat er een paradox bestaat van de mens tot zijn individuele zelf, maar ook in zijn relatie tot de ander.
+De tendens van het steeds sterker op zichzelf gerichte individu kan niet opheffen  dat de mens toch onderdeel blijft uitmaken van een groep.
+Dit creëert echter wel een spanningsveld tussen de naar zichzelf op zoek zijnde persoonlijkheid en de massa, zeg de maatschappij.
+</p>
+<div id="image1">
+<!-- <a href="gallery_verhoudingen/285.jpg" name="Titel" target="_blank" onClick="viewPic(this); return false"> -->
+<a href="javascript:showFullSize()">
+<img src="gallery_verhoudingen/tn_285.jpg" id="slide" style="filter:blendTrans(duration=3)" width=80 height=80 border=0>
+</a>
+
+<script language="JavaScript">
+<!--
+
+var whichlink=0
+var whichimage=0
+var blenddelay=(ie)? document.images.slide.filters[0].duration*1000 : 0
+function slideit(){
+if (!document.images || !ie) return;	
+if (ie) document.images.slide.filters[0].apply();
+document.images.slide.src=imageholder[whichimage].src;
+if (ie) document.images.slide.filters[0].play();
+whichlink=whichimage;
+whichimage=(whichimage<slideimages.length-1)? whichimage+1 : 0;
+setTimeout("slideit()",slidespeed+blenddelay);
+}
+slideit()
+
+//-->
+</script>
+</div>
+
+<p>
+Oorsprong van een proces van "zijn" en "niet zijn"; van "willen zijn" en "niet willen zijn"; van "willen kunnen zijn" en "niet willen kunnen zijn". Het is een innerlijk proces van het individu dat als vanzelf een reactie oproept bij de ander, maar waarbij het "Ik" centraal staat ongeacht wat het oproept bij derden.
+</p>
+<p>
+De mens in zijn complexiteit als bewust en onderbewust wezen met zijn psyche, met zijn lichaam, zijn socialisatie, zijn ervaring, zijn instinct, zijn ontwikkeling in relatie tot de totale kosmos.
+De mens met zijn ego, kennis, seksualiteit, liefde, geweld, angst, verwachtingen, twijfels en zekerheden.
+De mens van alle continenten, kleuren, ethniciteiten, van alle rangen en standen, van alle culturen, van hegemonistische tot subculturen maken deel uit van hun eigen proces tussen de aanvang van hun leven tot aan hun dood toe.
+</p>
+
+
+
+<!-- 
+<div id="image1">
+<a href="gallery_landschappen/01.jpg" name="Titel" target="_blank" onClick="viewPic(this); return false">
+<img src="gallery_landschappen/tn_01.jpg" width=80 height=80 border=0>
+</a>
+</div>
+ -->
+
+
+</div>
+</div>
+
+<div id="column4">
+<div id="column3">
+<!-- <span class="title">Lorem ipsum</span> -->
+<!-- <h4 class="title">Lorem ipsum</h4> -->
+<p>
+De vergankelijkheid van het leven is de oorsprong van ieders drang om tot bewustheid te komen. Vanuit dit besef komt de mens tot een interactie met de ander.
+</p>
+<p>
+Binnen al deze reacties en relaties komt de mens met zijn emotionele, seksuele, politiek maatschappelijke, instinctieve en intellectuele gedrag tot daden.
+Het zijn daden die per individu andere achtergronden en redenen hebben, maar toch een gemeenschappelijk menselijk karakter ten toon spreiden.
+</p>
+<a href="intro_verhoudingen2.html">&#187; VERVOLG</a>
+
+<!-- 
+<p>
+<i><b>R. Darius Zaratuschtra</b></i>
+</p>
+<p>
+21-10-2005
+</p>
+ -->
+
+
+</div>
+</div>
+
+
+</div>
+<!-- <div id="test6"></div> -->
+<!-- </div> -->
+</div>
+
+
+
+<!-- 
+<table cellspacing=0 bgcolor="Gray" cellpadding=0 width=762 align="center">
+<tr valign="BOTTOM">
+	<td height=20 bgcolor="White"><p class="footer">Copyright &copy; 2005 R. Darius Zaratuschtra | Webdesign: R. Goossens</p></td>
+</tr>
+</table>
+ -->
+
+<div id="footer">
+<p class="footer">Copyright &copy; 2005 R. Darius Zaratuschtra | Webdesign: R. Goossens</p>
+</div>
+
+<!-- <br><br><br><br><br> -->
+
+
+
+
+
+</body>
+</html>
+

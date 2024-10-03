@@ -1,0 +1,437 @@
+<html>
+<head>
+   <meta name="channel" content="Developer">
+
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+   <title>HierMenusCentral: Sample Pop Up Menus, Drop Down Menus, and More</title>
+   <meta name="description" content="Working HierMenus version 6 sample menus. HierMenus is the easy way to add drop down and pop up menus to your Web site.">
+   <meta name="keywords" content="HierMenus version 6 hiermenuscentral live working version 6 sample menus drop down pop up menus dynamic HTML scrolling menus background images opacity transitions filters">
+   
+<style type="text/css">
+<!--
+.bodycopy, .sans, .sansb, .sansB, .bc, td, th
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;
+    text-decoration: none;
+    color: #000000;
+    }
+    
+.sansb, .sansB {font-weight:bold}
+dt       {font-size:10pt; font-weight:bold}
+tt,code  {font-family:monospace; color:maroon; font-size:10pt}
+pre.code {margin-left:20px; font-family:monospace; font-size:10pt}
+.faqhead {font-weight:bold; font-size:12pt}
+h3.head  {color:maroon; font-size:12pt; font-weight:bold}
+h1.fp    {color:maroon; font-size:14pt; font-weight:bold}
+
+.mbc1, .mbc2, .mbc3,
+.mbc4, .mbc5, .mbc6 {border:1px solid #999689; padding:2px 10px 2px 2px}
+.mbc4, .mbc5, .mbc6 {padding:2px 2px 2px 2px}
+.mbc2, .mbc5 {border-color:black; background-color:#663300}
+.mbc3, .mbc6 {border-color:black; background-color:#663300; color:#FFFF66}
+
+.bodycopy a {color:maroon}
+.bodycopy a:visited {color:gray}
+.bodycopy a:hover {text-decortion:underline; color:maroon}
+.bodycopy a:active {color:maroon}
+
+.sectionhead
+{
+    font-family: Verdana, sans-serif;
+    font-size: 11pt;
+    text-decoration: none;
+    color: #000000;
+    }
+        
+.title
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 9 pt;
+    text-decoration: none;
+    font-weight: bold;
+    color: #CC0000;
+    }
+    
+.mainheadline
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: #990000;
+    }
+
+a.smheadline                                            
+{                                                     
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;                                                                
+    text-decoration: none;                            
+    color: #990000;
+    }                                                 
+
+A:link.smheadline                                        
+{                                                     
+    font-family: Verdana, Helvetica, sans-serif;      
+    font-size: 8pt;                                                                  
+    text-decoration: none;                            
+    color: #990000;                                   
+    }                                                 
+
+A:visited.smheadline                                      
+{                                                     
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;                                                                  
+    text-decoration: none;                            
+    color: #990000;
+    }                                                 
+
+A:hover.smheadline                                       
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;                                   
+    text-decoration: underline;
+    color: #666666;
+    }    
+.channelnav
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight: 
+    text-decoration: none;
+    color: #FFFFFF;
+    }
+
+a.leftnav                                           
+{                                                     
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 9pt;                                                                  
+    text-decoration: none;
+    font-weight: bold;                            
+    color: #FFFFFF;
+    }                                                 
+
+A:link.leftnav                                         
+{                                                     
+    font-family: Verdana, Helvetica, sans-serif;      
+    font-size: 9pt;                                                                  
+    text-decoration: none;
+     font-weight: bold;                            
+    color: #FFFFFF;                                   
+    }                                                 
+
+A:visited.leftnav                                     
+{                                                     
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 9pt;                                                                  
+    text-decoration: none;
+     font-weight: bold;                            
+    color: #FFFFFF;
+    }                                                 
+
+A:hover.leftnav                                       
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 9pt;                                   
+    text-decoration: none;
+     font-weight: bold;
+    color: #FFFF66;
+    }        
+    
+a.foot                                           
+{                                                     
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;                                                                  
+    text-decoration: none;                            
+    color: #990000;
+    }                                                 
+
+A:link.foot                                       
+{                                                     
+    font-family: Verdana, Helvetica, sans-serif;      
+    font-size: 8pt;                                                                  
+    text-decoration: none;                            
+    color: #990000;                                   
+    }                                                 
+
+A:visited.foot                                   
+{                                                     
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;                                                                  
+    text-decoration: none;                            
+    color: #990000;
+    }                                                 
+
+A:hover.foot                                       
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;                                   
+    text-decoration: underline;
+    color: #999999;
+    }
+-->
+</style>
+
+<script type="text/javascript">
+<!--
+   if(window.event + "" == "undefined") event = null;
+   function HM_f_PopUp(){return false};
+   function HM_f_PopDown(){return false};
+// -->
+</script>
+</head>
+
+<body vlink="#FFFFFF" alink="#FFFFFF" link="#FFFFFF" leftmargin="0" topmargin="5" marginwidth="0" marginheight="5" bgcolor="#FFFFFF">
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr height="37">
+    <td width="1%" valign="top" background="/img/leftnav-bg2.gif">
+    <table background="" width="100%" cellpadding="0" border="0" cellspacing="0">
+        <tr>
+          <td><img src="/img/top-left.gif" width="170" height="37" border="0" alt="" vspace="0" haspace="0"></td>
+        </tr>
+        <tr>
+          <td background="/img/leftnav-bg1.gif" valign="top">
+            <table background="" width="155" cellpadding="7" cellspacing="0" border="0">
+              <tr>
+                <td class="bodycopy"><b>
+                 <font color="#990000" size="2"><i>Please Note:</i></font><br>
+                 HierMenus is protected by copyright laws. Use of the HierMenus code requires a paid licensing agreement.</b>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="http://www.jupitermedia.com/corporate/hiermenusform.html"><img src="/img/leftnav-register.gif" width="170" height="23" border="0" alt="Click Here to Register"></a></td>
+        </tr>
+      </table>
+      <table background="" width="166" cellpadding="4" border="0" cellspacing="0">
+      <tr><td align="center"><img src="/img/newversion.gif" width="150" height="60" border="0" alt="HierMenus Version 6" /></td></tr>
+      </table>
+      <img src="/img/nav-hdr.gif" width="150" height="15" border="0" alt="Site Navigation" vspace="0" hspace="0"><br />
+      <table background="" cellpadding="6" cellspacing="1" border="0" width="166">
+        <tr>
+          <td background="/img/navbut-bg1.gif"><a name="hm_l_latest" id="hm_l_latest" style="display:block; width:100%" href="/latest/" onmouseover="HM_f_PopUp('hm_m_latest',event)" onmouseout="HM_f_PopDown('hm_m_latest')" class="leftnav">Latest Version</a></td>
+        </tr>
+        <tr>
+          <td background="/img/navbut-bg.gif"><a name="hm_l_bulletins" id="hm_l_bulletins" style="display:block; width:100%" href="/bulletins/" onmouseover="HM_f_PopUp('hm_m_bulletins',event)" onmouseout="HM_f_PopDown('hm_m_bulletins')" class="leftnav">Bulletins</a></td>
+        </tr>
+        <tr>
+          <td background="/img/navbut-bg.gif"><a name="hm_l_about" id="hm_l_about" style="display:block; width:100%" href="/about/" onmouseover="HM_f_PopUp('hm_m_about',event)" onmouseout="HM_f_PopDown('hm_m_about')" class="leftnav">About</a></td>
+        </tr>
+        <tr>
+          <td background="/img/navbut-bg.gif"><a name="hm_l_docs" id="hm_l_docs" style="display:block; width:100%" href="/documentation/" onmouseover="HM_f_PopUp('hm_m_docs',event)" onmouseout="HM_f_PopDown('hm_m_docs')" class="leftnav">Documentation</a></td>
+        </tr>
+        <tr>
+          <td background="/img/navbut-bg.gif"><a name="hm_l_faq" id="hm_l_faq" style="display:block; width:100%" href="/faq/" onmouseover="HM_f_PopUp('hm_m_faq',event)" onmouseout="HM_f_PopDown('hm_m_faq')" class="leftnav">FAQ</a></td>
+        </tr>
+        <tr>
+          <td background="/img/navbut-bg.gif"><a name="hm_l_samples" id="hm_l_samples" style="display:block; width:100%" href="/samples/" onmouseover="HM_f_PopUp('hm_m_samples',event)" onmouseout="HM_f_PopDown('hm_m_samples')" class="leftnav">Samples</a></td>
+        </tr>
+        <tr>
+          <td background="/img/navbut-bg.gif"><a name="hm_l_issues" id="hm_l_issues" style="display:block; width:100%" href="/issues/" onmouseover="HM_f_PopUp('hm_m_issues',event)" onmouseout="HM_f_PopDown('hm_m_issues')" class="leftnav">Known Issues</a></td>
+        </tr>
+      </table>  
+      <br>
+      <table background="" width="170" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td valign="top" background="/img/cnav-line.gif" width="10"><img src="/img/cnav-box.gif" width="10" height="12" border="0" alt=""></td>
+          <td width="5"></td>
+          <td width="155">
+          <span class="channelnav">
+          <b>internet.commerce</b>
+          <p>
+<a href="http://www.jupitermedia.com/partners/">Partners & Affiliates</A><BR>
+<a href="http://www.interland.com/dedicated">Dedicated Server</a>
+<IMG SRC="http://www.hiermenuscentral.com/RealMedia/ads/adstream_lx.cgi/intm/webdev/www.hiermenuscentral.com/samples/1443208096/cp1/OasDefault/Interland_CP_10j/DedicatedServer.html/35313362393938643432396631353230?_RM_EMPTY_" WIDTH=1 HEIGHT=1 BORDER=0><BR>
+<a href="http://www.memoryxflash.com">Memory Flash Cards</a>
+<IMG SRC="http://www.hiermenuscentral.com/RealMedia/ads/adstream_lx.cgi/intm/webdev/www.hiermenuscentral.com/samples/244620798/cp2/OasDefault/Memoryx_net_10b/MemoryFlashCards.html/35313362393938643432396631353230?_RM_EMPTY_" WIDTH=1 HEIGHT=1 BORDER=0><BR>
+<a href="http://shop.hardwarecentral.com/main/linkin_id-3063160">Compare Prices</a>
+<IMG SRC="http://www.hiermenuscentral.com/RealMedia/ads/adstream_lx.cgi/intm/webdev/www.hiermenuscentral.com/samples/1632199204/cp3/OasDefault/DealTime_38e/ComparePrices.html/35313362393938643432396631353230?_RM_EMPTY_" WIDTH=1 HEIGHT=1><BR>
+<a href="http://www.thewhir.com/find/web-hosts">Find Web Hosts</a>
+<IMG SRC="http://www.hiermenuscentral.com/RealMedia/ads/adstream_lx.cgi/intm/webdev/www.hiermenuscentral.com/samples/1277324155/cp4/OasDefault/Web_Host_IndustryReview_4d/FindWebHosts.html/35313362393938643432396631353230?_RM_EMPTY_" WIDTH=1 HEIGHT=1 BORDER=0><BR>
+<a href="http://edit.travel.yahoo.com/flights.html">Cheap Plane Tickets</a>
+<IMG SRC="http://www.hiermenuscentral.com/RealMedia/ads/adstream_lx.cgi/intm/webdev/www.hiermenuscentral.com/samples/107815701/cp5/OasDefault/Yahoo_CP_14zc/CheapPlaneTickets.html/35313362393938643432396631353230?_RM_EMPTY_" WIDTH=1 HEIGHT=1><BR>
+<a href="http://www.grand-canyon.edu">Online Degrees</a>
+<IMG SRC="http://www.hiermenuscentral.com/RealMedia/ads/adstream_lx.cgi/intm/webdev/www.hiermenuscentral.com/samples/1514623826/cp6/OasDefault/Grand_Canyon_University_11a/OnlineDegrees.html/35313362393938643432396631353230?_RM_EMPTY_" WIDTH=1 HEIGHT=1 BORDER=0><BR>
+<a href="http://www.interland.com/dedicated">Dedicated Hosting</a>
+<IMG SRC="http://www.hiermenuscentral.com/RealMedia/ads/adstream_lx.cgi/intm/webdev/www.hiermenuscentral.com/samples/755313270/cp7/OasDefault/Interland_CP_10i/DedicatedHosting.html/35313362393938643432396631353230?_RM_EMPTY_" WIDTH=1 HEIGHT=1 BORDER=0><BR>
+<a href="http://www.planetonline.com">Shopping</a>
+<IMG SRC="http://www.hiermenuscentral.com/RealMedia/ads/adstream_lx.cgi/intm/webdev/www.hiermenuscentral.com/samples/1059400464/cp8/OasDefault/PlanetOnline_4d/Shopping.html/35313362393938643432396631353230?_RM_EMPTY_" WIDTH=1 HEIGHT=1 BORDER=0><BR>
+<A HREF="http://www.worldwidelearn.com/index.html?source=jpdl">Distance Learning</A>
+<IMG SRC="http://www.hiermenuscentral.com/RealMedia/ads/adstream_lx.cgi/intm/webdev/www.hiermenuscentral.com/samples/320170196/cp9/OasDefault/WorldWideLearn_2e/DistanceLearning.html/35313362393938643432396631353230?_RM_EMPTY_" WIDTH=1 HEIGHT=1>
+<BR>
+<a href="http://www.tophosts.com">Search Web Hosting</a>
+<IMG SRC="http://www.hiermenuscentral.com/RealMedia/ads/adstream_lx.cgi/intm/webdev/www.hiermenuscentral.com/samples/1709786156/cp10/OasDefault/Top_Hosts_48e/search.html/35313362393938643432396631353230?_RM_EMPTY_" WIDTH=1 HEIGHT=1 BORDER=0><BR>
+<a href="http://www.articleinsider.com">Information</a>
+<IMG SRC="http://www.hiermenuscentral.com/RealMedia/ads/adstream_lx.cgi/intm/webdev/www.hiermenuscentral.com/samples/59288188/cp11/OasDefault/ArticleInsider_13d/Information.html/35313362393938643432396631353230?_RM_EMPTY_" WIDTH=1 HEIGHT=1 BORDER=0><BR>
+<a href="http://www.planetonline.com">Shopping</a>
+<IMG SRC="http://www.hiermenuscentral.com/RealMedia/ads/adstream_lx.cgi/intm/webdev/www.hiermenuscentral.com/samples/1268691612/cp12/OasDefault/PlanetOnline_4d/Shopping.html/35313362393938643432396631353230?_RM_EMPTY_" WIDTH=1 HEIGHT=1 BORDER=0><BR>
+<a href="http://www.epromos.com">Promotional Gifts</a>
+<IMG SRC="http://www.hiermenuscentral.com/RealMedia/ads/adstream_lx.cgi/intm/webdev/www.hiermenuscentral.com/samples/1593280163/cp13/OasDefault/EPROMOS_15a/PromotionalGifts.html/35313362393938643432396631353230?_RM_EMPTY_" WIDTH=1 HEIGHT=1 BORDER=0><BR>
+
+          </p>
+          <pre>
+          </pre>
+          </span>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" background="/img/cnav-line.gif" width="10"><img src="/img/cnav-box.gif" width="10" height="12" border="0" alt=""></td>
+          <td width="5"></td>
+          <td width="155">
+          <span class="channelnav">
+          <b>internet.com</b>
+          <p>
+						
+<A HREF="http://www.internet.com/sections/webdev.html" CLASS="icomtb">Developer</A><BR>
+<A HREF="http://www.internet.com/sections/downloads.html" CLASS="icomtb">Downloads</A><BR>
+<A HREF="http://www.internet.com/sections/international.html" CLASS="icomtb">International</A><BR>
+<A HREF="http://www.internet.com/sections/lists.html" CLASS="icomtb">Internet Lists</A><BR>
+<A HREF="http://www.internet.com/sections/news.html" CLASS="icomtb">Internet News</A><BR>
+<A HREF="http://www.internet.com/sections/resources.html" CLASS="icomtb">Internet Resources</A><BR>
+<A HREF="http://www.internet.com/sections/it.html" CLASS="icomtb">IT</A><BR>
+<A HREF="http://www.internet.com/sections/linux.html" CLASS="icomtb">Linux/Open Source</A><BR>
+<A HREF="http://www.internet.com/sections/ptech.html" CLASS="icomtb">Personal Technology</A><BR>
+<A HREF="http://www.internet.com/sections/sb.html" CLASS="icomtb">Small Business</A> <BR>
+<A HREF="http://www.internet.com/sections/win.html" CLASS="icomtb">Windows Technology</A><BR>
+<A HREF="http://www.internet.com/sections/xsp.html" CLASS="icomtb">xSP Resources</A> <BR>
+<BR>
+<A HREF="http://search.internet.com" CLASS="icomtb">Search internet.com</A><BR>
+<A HREF="http://www.internet.com/mediakit/" CLASS="icomtb">Advertise</A><BR>
+<A HREF="http://www.jupitermedia.com/corporate/" CLASS="icomtb">Corporate Info</A><BR>
+<A HREF="http://e-newsletters.internet.com/" CLASS="icomtb">Newsletters</A><BR>
+<A HREF="http://jobs.internet.com/" CLASS="icomtb">Tech Jobs</A><BR>
+<A HREF="http://e-newsletters.internet.com/mailinglists.html" CLASS="icomtb">E-mail Offers</A><BR>
+
+          </p>
+          </span>
+          </td>
+        </tr>
+      </table>      
+    </td>
+    <td rowspan="2" width="99%" valign="top">
+      <table background="/img/topnav-bg.gif" width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td width="1%"><a href="/" border="0"><img src="/img/hr-logo.gif" width="248" height="79" border="0" alt="HierMenusCentral"></a></td>
+          <td width="99%"><img src="/img/tagline.gif" width="361" height="79" border="0" alt="Enhance the Functionality of Your Web Site with DHTML HierMenus."></td>
+        </tr>
+      </table>
+
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr><form method="post" action="http://search.internet.com/www.hiermenuscentral.com">
+          <td width="98%">&nbsp;</td>
+          <td width="1%"><img src="/img/search-corner.gif" width="30" height="30" border="0" alt=""></td>
+          <td width="1%" align="right" nowrap bgcolor="#000000"><input type="hidden" name="IC_StartNumber" value="0"><input type="hidden" name="IC_BatchSize" value="10"><input type="hidden" name="IC_QueryDatabase" value="www.hiermenuscentral.com"><input type="text" name="IC_QueryText" size="15">&nbsp;&nbsp;<input class="SUBMITTER" type="submit" value="Search" valign="absmiddle"></td>
+        </tr></form>
+      </table>
+      <table width="100%" cellpadding="5" cellspacing="0" border="0">
+        <tr>
+          <td class="bodycopy" valign="top">
+
+<p class="bc"><a href="/">home</a> / samples</p>
+
+<!-- main content block -->
+<p class="faqhead">Sample Menus</p>
+
+<p>Want to see some examples of what you can do with HierMenus? The links below will 
+take you to example pages displaying pop up and/or drop down menus illustrating 
+each of the described features.</p>
+
+<p>On each sample page a link is provided that will allow you to study the configuration
+file we used to create the menus on that page. Note that in our configuration file 
+examples, we make extensive use of <tt>HM_f_SetMenuTemplate</tt>, and little to no 
+use of <tt>HM_f_UpdateDefaults</tt>. As we explain in our 
+<a href="/documentation/setup/configuring.html">setup instructions</a>, 
+this is typically the opposite of what you would normally do. However, for our sample
+pages we needed to be able to generate both our main navigation menus (in the upper
+left) as well as our custom samples, and in this case the use of 
+<tt>HM_f_SetMenuTemplate</tt> ensures that we keep our sample menu settings separate
+from our main menu settings. Most sites won't have this unique situation; and we
+therefore recommend as a general rule the assignment of global settings via
+<tt>HM_f_UpdateDefaults</tt>, with <tt>HM_f_SetMenuTemplate</tt> used <em>only</em> 
+for groups of menus that differ from the defaults.</p>
+
+<ul class="sansb">
+   <li><a href="popups.html">Pop up Menus</a></li>
+   <li><a href="permmenus.html">Permanent & Drop Down Menus</a></li>
+   <li><a href="crossframes.html">Cross Frames</a></li>
+   <li><a href="transfilters.html">Transitions and Filters</a></li>
+   <li><a href="imagerollovers.html">Embedded Image Rollovers</a></li>
+   <li><a href="bgimages.html">Background Images</a></li>
+   <li><a href="buttons.html">Buttons</a></li>
+   <li><a href="fixedscroll.html">Fixed Position / Reposition On Scroll</a></li>
+   <li><a href="sliding.html">Sliding Menus</a></li>
+   <li><a href="iframe.html">IFRAME Masking</a></li>
+   <li><a href="/sites/">Featured Sites</a></li>
+</ul>
+
+<!-- end main content block -->
+
+            </td>
+         </tr>
+       </table>
+    </td>
+  </tr>
+  <tr>
+    <td background="/img/leftnav-bg2.gif" valign="bottom"><img src="/img/leftnav-btm.gif" width="170" height="8" border="0" alt=""></td>
+  </tr>
+</table>
+<BR CLEAR="all"><center><table border="0" cellspacing="0" cellpadding="5">
+                <tr> 
+                  <form method="POST" action="http://search.internet.com/www.jupiterweb.com" target="_top",>
+                    <td align="center"><font size="-2" face="verdana, arial, helvetica"><b>JupiterWeb networks:</b></font> 
+                      <p align="center"> 
+<table border="0" class="mgfoot">
+  <tr><td class="foot_alt" align="center">
+<a href="http://www.internet.com" class="foot" target="_top"><img src="/icom_includes/footers/icom_foot.gif" alt="internet.com" width="97" height="15" hspace="0" border="0" align="absmiddle"></a><img src="/icom_includes/footers/ruledivide_foot.gif" alt="" width="1" height="25" hspace="10" border="0" align="absmiddle"><a href="http://www.earthweb.com" target="_top"><img src="/icom_includes/footers/earthweb_foot2.gif" alt="earthweb.com" width="93" height="12" hspace="5" border="0" align="absmiddle"></a><img src="/icom_includes/footers/ruledivide_foot.gif" alt="" width="1" height="25" hspace="10" border="0" align="absmiddle"><a href="http://www.devx.com" target="_top"><img src="/icom_includes/footers/devx_foot2.gif" alt="Devx.com" width="35" height="30" hspace="0" border="0" align="absmiddle"></a><img src="/icom_includes/footers/ruledivide_foot.gif" alt="" width="1" height="25" hspace="10" border="0" align="absmiddle"><a href="http://www.clickz.com" target="_top"><img src="/icom_includes/footers/clickz_foot2.gif" alt="ClickZ" width="55" height="24" hspace="0" border="0" align="absmiddle"></a><img src="/icom_includes/footers/ruledivide_foot.gif" alt="" width="1" height="25" hspace="10" border="0" align="absmiddle"><a href="http://www.graphics.com" target="_top"><img src="/icom_includes/footers/grcom_foot.gif" alt="Graphics.com" width="97" height="18" hspace="0" border="0" align="absmiddle"></a></td></tr></table>
+                      <p> 
+                      <font size="-2" face="verdana, arial, helvetica"><b>Search JupiterWeb:</b> 
+                      <input type="HIDDEN" name="IC_Summary" value="1">
+                      <input type="HIDDEN" name="IC_StartNumber" value="0">
+                      <input type="HIDDEN" name="IC_BatchSize" value="10">
+                      <input type="HIDDEN" name="IC_RelevanceThreshold" value="50">
+                      <input type="hidden" name="IC_QueryDatabase" value="all">
+                      <input type="text" name="IC_QueryText" size="45">
+                      <input type="image" border="0" value="Find" name="SUBMIT" src="/icom_includes/footers/but_find.gif" width="41" height="20" align="absmiddle">
+                      </font>
+                      <p>
+                      <font size="-2" face="verdana, arial, helvetica">
+                     <a href="http://www.jupitermedia.com/" class="foot"> Jupitermedia Corporation</a> has four divisions:
+                      <br><a href="http://www.jupiterweb.com/" class="foot" target="_top">JupiterWeb</a>, <a href="http://www.jupiterresearch.com/" class="foot" target="_top">JupiterResearch</a>, <a href="http://www.jupiterevents.com/" class="foot" target="_top">JupiterEvents</a> and <a href="http://www.jupiterimages.com/" class="foot" target="_top">JupiterImages</a>
+                      <p>
+                      <div class="foot">Copyright <!--YEAR-->2005 Jupitermedia Corporation All Rights Reserved.<br>
+                        <a href="http://www.jupitermedia.com/corporate/legal.html" class="foot" target="_top">Legal 
+                        Notices</a>, <a href="http://www.jupitermedia.com/corporate/reprints.html#Licensing1" class="foot" target="_top">Licensing</a>, 
+                        <a href="http://www.jupitermedia.com/corporate/reprints.html#Reprints1" class="foot" target="_top">Reprints</a>, 
+                        & <a href="http://www.jupitermedia.com/corporate/reprints.html#Permissions" class="foot" target="_top">Permissions</a>, 
+                        <a href="http://www.jupitermedia.com/corporate/privacy/privacypolicy.html" class="foot" target="_top">Privacy 
+                        Policy</a>. </font>
+                      <p> <font size="-2" face="verdana, arial, helvetica"><a href="http://www.jupitermedia.com/corporate/" class="foot" target="_top">Jupitermedia Corporate 
+                        Info</a> | <a href="http://e-newsletters.internet.com/" class="foot">Newsletters</a> 
+                        | <a href="http://jobs.internet.com/" class="foot" target="_top">Tech 
+                        Jobs</a> | <a href="http://e-newsletters.internet.com/cgi-bin/al-manage/subscribe.cgi?brand=icom" class="foot" target="_top">E-mail 
+                        Offers</a></div></font>
+
+                    </td>
+                  </form>
+                </tr>
+              </table></center>
+
+
+<div class="bc" align="center">
+Created: 3/25/2004<br />
+Updated: 3/25/2004<br />
+URL: http://www.hiermenuscentral.com/samples/
+</div>
+
+<script type="text/javascript"
+        language="JavaScript1.2"
+        src="/_hm/scripts/v602/HM_Loader.js">
+</script>
+
+</body>
+</html>

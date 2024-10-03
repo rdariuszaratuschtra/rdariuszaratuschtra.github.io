@@ -1,0 +1,670 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0072)http://www.milonic.com/forum/viewtopic.php?t=5942&highlight=pop+function -->
+<HTML dir=ltr><HEAD><TITLE>Milonic :: View topic - closeAllMenus()</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META http-equiv=Content-Style-Type content=text/css><LINK 
+title="Milonic Forum Index" href="./index.php" rel=top><LINK title=Search 
+href="./search.php" rel=search><LINK title=FAQ href="./faq.php" rel=help><LINK 
+title=Memberlist href="./memberlist.php" rel=author><LINK 
+title="View previous topic" href="viewtopic.php?t=5942&amp;view=previous" 
+rel=prev><LINK title="View next topic" href="viewtopic.php?t=5942&amp;view=next" 
+rel=next><LINK title="Help &amp; Support for DHTML Menu Version 5.0" 
+href="viewforum.php?f=10" rel=up><LINK title="Milonic News" 
+href="viewforum.php?f=11" rel="chapter forum"><LINK 
+title="Help &amp; Support for DHTML Menu Version 5.0" href="viewforum.php?f=10" 
+rel="chapter forum"><LINK title="DHTML Menu - Beginners Guide" 
+href="viewforum.php?f=14" rel="chapter forum"><LINK 
+title="Beginners Guide - Polls &amp; Suggestions" href="viewforum.php?f=15" 
+rel="chapter forum"><LINK title="Menu Images" href="viewforum.php?f=16" 
+rel="chapter forum"><LINK title="Anything Goes" href="viewforum.php?f=8" 
+rel="chapter forum"><LINK 
+title="Archived Topics for the old Version 3.0 JavaScript Menu" 
+href="viewforum.php?f=3" rel="chapter forum"><LINK title="Windows Menu Builder" 
+href="viewforum.php?f=13" rel="chapter forum"><!-- link rel="stylesheet" href="templates/subSilver/subSilver.css" type="text/css" -->
+<STYLE type=text/css>@import url( templates/subSilver/formIE.css );
+BODY {
+	SCROLLBAR-FACE-COLOR: #dee3e7; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #dee3e7; SCROLLBAR-3DLIGHT-COLOR: #d1d7dc; SCROLLBAR-ARROW-COLOR: #006699; SCROLLBAR-TRACK-COLOR: #efefef; SCROLLBAR-DARKSHADOW-COLOR: #98aab1; BACKGROUND-COLOR: #e5e5e5
+}
+FONT {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TH {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TD {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+P {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+A:link {
+	COLOR: #006699
+}
+A:active {
+	COLOR: #006699
+}
+A:visited {
+	COLOR: #006699
+}
+A:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+HR {
+	BORDER-RIGHT: #d1d7dc 0px solid; BORDER-TOP: #d1d7dc 1px solid; BORDER-LEFT: #d1d7dc 0px solid; BORDER-BOTTOM: #d1d7dc 0px solid; HEIGHT: 0px
+}
+.bodyline {
+	BORDER-RIGHT: #98aab1 1px solid; BORDER-TOP: #98aab1 1px solid; BORDER-LEFT: #98aab1 1px solid; BORDER-BOTTOM: #98aab1 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.forumline {
+	BORDER-RIGHT: #006699 2px solid; BORDER-TOP: #006699 2px solid; BORDER-LEFT: #006699 2px solid; BORDER-BOTTOM: #006699 2px solid; BACKGROUND-COLOR: #ffffff
+}
+TD.row1 {
+	BACKGROUND-COLOR: #efefef
+}
+TD.row2 {
+	BACKGROUND-COLOR: #dee3e7
+}
+TD.row3 {
+	BACKGROUND-COLOR: #d1d7dc
+}
+TD.rowpic {
+	BACKGROUND-IMAGE: url(templates/subSilver/images/cellpic2.jpg); BACKGROUND-REPEAT: repeat-y; BACKGROUND-COLOR: #ffffff
+}
+TH {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; BACKGROUND-IMAGE: url(templates/subSilver/images/cellpic3.gif); COLOR: #ffa34f; HEIGHT: 25px; BACKGROUND-COLOR: #006699
+}
+TD.cat {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; BACKGROUND-IMAGE: url(templates/subSilver/images/cellpic1.gif); BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px; BACKGROUND-COLOR: #d1d7dc
+}
+TD.catHead {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; BACKGROUND-IMAGE: url(templates/subSilver/images/cellpic1.gif); BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px; BACKGROUND-COLOR: #d1d7dc
+}
+TD.catSides {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; BACKGROUND-IMAGE: url(templates/subSilver/images/cellpic1.gif); BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px; BACKGROUND-COLOR: #d1d7dc
+}
+TD.catLeft {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; BACKGROUND-IMAGE: url(templates/subSilver/images/cellpic1.gif); BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px; BACKGROUND-COLOR: #d1d7dc
+}
+TD.catRight {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; BACKGROUND-IMAGE: url(templates/subSilver/images/cellpic1.gif); BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px; BACKGROUND-COLOR: #d1d7dc
+}
+TD.catBottom {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; BACKGROUND-IMAGE: url(templates/subSilver/images/cellpic1.gif); BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px; BACKGROUND-COLOR: #d1d7dc
+}
+TD.cat {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 29px; BORDER-RIGHT-WIDTH: 0px
+}
+TD.catHead {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 29px; BORDER-RIGHT-WIDTH: 0px
+}
+TD.catBottom {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 29px; BORDER-RIGHT-WIDTH: 0px
+}
+TH.thHead {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TH.thSides {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TH.thTop {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TH.thLeft {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TH.thRight {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TH.thBottom {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TH.thCornerL {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TH.thCornerR {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TD.row3Right {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; BACKGROUND-COLOR: #d1d7dc
+}
+TD.spaceRow {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; BACKGROUND-COLOR: #d1d7dc
+}
+TH.thHead {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TD.catHead {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TH.thSides {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TD.catSides {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TD.spaceRow {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TH.thRight {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TD.catRight {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TD.row3Right {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TH.thLeft {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+TD.catLeft {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+TH.thBottom {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+TD.catBottom {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+TH.thTop {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+TH.thCornerL {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+TH.thCornerR {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+.maintitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 22px; COLOR: #000000; LINE-HEIGHT: 120%; FONT-FAMILY: "Trebuchet MS",Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.gen {
+	FONT-SIZE: 12px
+}
+.genmed {
+	FONT-SIZE: 11px
+}
+.gensmall {
+	FONT-SIZE: 10px
+}
+.gen {
+	COLOR: #000000
+}
+.genmed {
+	COLOR: #000000
+}
+.gensmall {
+	COLOR: #000000
+}
+A.gen {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.genmed {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.gensmall {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.gen:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+A.genmed:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+A.gensmall:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+.mainmenu {
+	FONT-SIZE: 11px; COLOR: #000000
+}
+A.mainmenu {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.mainmenu:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+.cattitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #006699; LETTER-SPACING: 1px
+}
+A.cattitle {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.cattitle:hover {
+	TEXT-DECORATION: underline
+}
+.forumlink {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #006699
+}
+A.forumlink {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.forumlink:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+.nav {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000
+}
+A.nav {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.nav:hover {
+	TEXT-DECORATION: underline
+}
+.topictitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000
+}
+A.topictitle:link {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.topictitle:visited {
+	COLOR: #5493b4; TEXT-DECORATION: none
+}
+A.topictitle:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+.name {
+	FONT-SIZE: 11px; COLOR: #000000
+}
+.postdetails {
+	FONT-SIZE: 10px; COLOR: #000000
+}
+.postbody {
+	FONT-SIZE: 12px; LINE-HEIGHT: 18px
+}
+A.postlink:link {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.postlink:visited {
+	COLOR: #5493b4; TEXT-DECORATION: none
+}
+A.postlink:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+.code {
+	BORDER-RIGHT: #d1d7dc 1px solid; BORDER-TOP: #d1d7dc 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #d1d7dc 1px solid; COLOR: #006600; BORDER-BOTTOM: #d1d7dc 1px solid; FONT-FAMILY: Courier, 'Courier New', sans-serif; BACKGROUND-COLOR: #fafafa
+}
+.quote {
+	BORDER-RIGHT: #d1d7dc 1px solid; BORDER-TOP: #d1d7dc 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #d1d7dc 1px solid; COLOR: #444444; LINE-HEIGHT: 125%; BORDER-BOTTOM: #d1d7dc 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #fafafa
+}
+.copyright {
+	FONT-SIZE: 10px; COLOR: #444444; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; LETTER-SPACING: -1px
+}
+A.copyright {
+	COLOR: #444444; TEXT-DECORATION: none
+}
+A.copyright:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+INPUT {
+	BORDER-LEFT-COLOR: #000000; BORDER-BOTTOM-COLOR: #000000; FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #000000; BORDER-TOP-COLOR: #000000; BORDER-RIGHT-COLOR: #000000
+}
+TEXTAREA {
+	BORDER-LEFT-COLOR: #000000; BORDER-BOTTOM-COLOR: #000000; FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #000000; BORDER-TOP-COLOR: #000000; BORDER-RIGHT-COLOR: #000000
+}
+SELECT {
+	BORDER-LEFT-COLOR: #000000; BORDER-BOTTOM-COLOR: #000000; FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #000000; BORDER-TOP-COLOR: #000000; BORDER-RIGHT-COLOR: #000000
+}
+INPUT.post {
+	BACKGROUND-COLOR: #ffffff
+}
+TEXTAREA.post {
+	BACKGROUND-COLOR: #ffffff
+}
+SELECT {
+	BACKGROUND-COLOR: #ffffff
+}
+INPUT {
+	TEXT-INDENT: 2px
+}
+INPUT.button {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #efefef
+}
+INPUT.mainoption {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #fafafa
+}
+INPUT.liteoption {
+	FONT-WEIGHT: normal; BACKGROUND-COLOR: #fafafa
+}
+.helpline {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BACKGROUND-COLOR: #dee3e7; BORDER-BOTTOM-STYLE: none
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2800.1491" name=GENERATOR></HEAD>
+<BODY text=#000000 vLink=#5493b4 link=#006699 bgColor=#e5e5e5><A name=top></A>
+<TABLE cellSpacing=0 cellPadding=10 width="100%" align=center border=0>
+  <TBODY>
+  <TR>
+    <TD class=bodyline>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD><A href="http://www.milonic.com/"><IMG alt="Milonic Forum Index" 
+            src="Milonic  View topic - closeAllMenus()_files/forum_logo.gif" 
+            vspace=1 border=0></A></TD>
+          <TD vAlign=center align=middle width="100%"><SPAN 
+            class=maintitle>Milonic</SPAN><BR><SPAN class=gen>Milonic DHTML Menu 
+            Forum<BR>&nbsp; </SPAN>
+            <TABLE cellSpacing=0 cellPadding=2 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=top noWrap align=middle><SPAN 
+                  class=mainmenu>&nbsp;<A class=mainmenu 
+                  href="http://www.milonic.com/forum/faq.php"><IMG height=13 
+                  alt=FAQ hspace=3 
+                  src="Milonic  View topic - closeAllMenus()_files/icon_mini_faq.gif" 
+                  width=12 border=0>FAQ</A></SPAN><SPAN class=mainmenu>&nbsp; 
+                  &nbsp;<A class=mainmenu 
+                  href="http://www.milonic.com/forum/search.php"><IMG height=13 
+                  alt=Search hspace=3 
+                  src="Milonic  View topic - closeAllMenus()_files/icon_mini_search.gif" 
+                  width=12 border=0>Search</A>&nbsp; &nbsp;<A class=mainmenu 
+                  href="http://www.milonic.com/forum/memberlist.php"><IMG 
+                  height=13 alt=Memberlist hspace=3 
+                  src="Milonic  View topic - closeAllMenus()_files/icon_mini_members.gif" 
+                  width=12 border=0>Memberlist</A>&nbsp; &nbsp;<A class=mainmenu 
+                  href="http://www.milonic.com/forum/groupcp.php"><IMG height=13 
+                  alt=Usergroups hspace=3 
+                  src="Milonic  View topic - closeAllMenus()_files/icon_mini_groups.gif" 
+                  width=12 border=0>Usergroups</A>&nbsp; &nbsp;<A class=mainmenu 
+                  href="http://www.milonic.com/forum/profile.php?mode=register"><IMG 
+                  height=13 alt=Register hspace=3 
+                  src="Milonic  View topic - closeAllMenus()_files/icon_mini_register.gif" 
+                  width=12 border=0>Register</A></SPAN>&nbsp; </TD></TR>
+              <TR>
+                <TD vAlign=top noWrap align=middle height=25><SPAN 
+                  class=mainmenu>&nbsp;<A class=mainmenu 
+                  href="http://www.milonic.com/forum/profile.php?mode=editprofile"><IMG 
+                  height=13 alt=Profile hspace=3 
+                  src="Milonic  View topic - closeAllMenus()_files/icon_mini_profile.gif" 
+                  width=12 border=0>Profile</A>&nbsp; &nbsp;<A class=mainmenu 
+                  href="http://www.milonic.com/forum/privmsg.php?folder=inbox"><IMG 
+                  height=13 alt="Log in to check your private messages" hspace=3 
+                  src="Milonic  View topic - closeAllMenus()_files/icon_mini_message.gif" 
+                  width=12 border=0>Log in to check your private 
+                  messages</A>&nbsp; &nbsp;<A class=mainmenu 
+                  href="http://www.milonic.com/forum/login.php"><IMG height=13 
+                  alt="Log in" hspace=3 
+                  src="Milonic  View topic - closeAllMenus()_files/icon_mini_login.gif" 
+                  width=12 border=0>Log 
+          in</A>&nbsp;</SPAN></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><BR>
+      <TABLE cellSpacing=2 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=bottom align=left colSpan=2><A class=maintitle 
+            href="http://www.milonic.com/forum/viewtopic.php?t=5942&amp;start=0&amp;postdays=0&amp;postorder=asc&amp;highlight=pop+function">closeAllMenus()</A><BR><SPAN 
+            class=gensmall><B></B><BR>&nbsp; </SPAN></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=2 cellPadding=2 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=bottom noWrap align=left><SPAN class=nav><A 
+            href="http://www.milonic.com/forum/posting.php?mode=newtopic&amp;f=10"><IMG 
+            alt="Post new topic" 
+            src="Milonic  View topic - closeAllMenus()_files/post.gif" 
+            align=middle border=0></A>&nbsp;&nbsp;&nbsp;<A 
+            href="http://www.milonic.com/forum/posting.php?mode=reply&amp;t=5942"><IMG 
+            alt="Reply to topic" 
+            src="Milonic  View topic - closeAllMenus()_files/reply.gif" 
+            align=middle border=0></A></SPAN></TD>
+          <TD vAlign=center align=left width="100%"><SPAN 
+            class=nav>&nbsp;&nbsp;&nbsp;<A class=nav 
+            href="http://www.milonic.com/forum/index.php">Milonic Forum 
+            Index</A> -&gt; <A class=nav 
+            href="http://www.milonic.com/forum/viewforum.php?f=10">Help &amp; 
+            Support for DHTML Menu Version 5.0</A></SPAN></TD></TR></TBODY></TABLE>
+      <TABLE class=forumline cellSpacing=1 cellPadding=3 width="100%" 
+        border=0><TBODY>
+        <TR align=right>
+          <TD class=catHead colSpan=2 height=28><SPAN class=nav><A class=nav 
+            href="http://www.milonic.com/forum/viewtopic.php?t=5942&amp;view=previous">View 
+            previous topic</A> :: <A class=nav 
+            href="http://www.milonic.com/forum/viewtopic.php?t=5942&amp;view=next">View 
+            next topic</A> &nbsp;</SPAN></TD></TR>
+        <TR>
+          <TH class=thLeft noWrap width=150 height=26>Author</TH>
+          <TH class=thRight noWrap>Message</TH></TR>
+        <TR>
+          <TD class=row1 vAlign=top align=left width=150><SPAN class=name><A 
+            name=28995></A><B>Mrfunkleberry</B></SPAN><BR><SPAN 
+            class=postdetails>User&nbsp;<BR><IMG title=User&nbsp; alt=User&nbsp; 
+            src="Milonic  View topic - closeAllMenus()_files/rank0.gif" 
+            border=0><BR><BR><BR>Joined: 14 May 2005<BR>Posts: 
+          7<BR></SPAN><BR></TD>
+          <TD class=row1 vAlign=top width="100%" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%"><A 
+                  href="http://www.milonic.com/forum/viewtopic.php?p=28995#28995"><IMG 
+                  title=Post height=9 alt=Post 
+                  src="Milonic  View topic - closeAllMenus()_files/icon_minipost.gif" 
+                  width=12 border=0></A><SPAN class=postdetails>Posted: Sat May 
+                  14, 2005 12:05 pm<SPAN class=gen>&nbsp;</SPAN>&nbsp; 
+                  &nbsp;Post subject: closeAllMenus()</SPAN></TD>
+                <TD vAlign=top noWrap><A 
+                  href="http://www.milonic.com/forum/posting.php?mode=quote&amp;p=28995"><IMG 
+                  title="Reply with quote" alt="Reply with quote" 
+                  src="Milonic  View topic - closeAllMenus()_files/icon_quote.gif" 
+                  border=0></A> </TD></TR>
+              <TR>
+                <TD colSpan=2>
+                  <HR>
+                </TD></TR>
+              <TR>
+                <TD colSpan=2><SPAN class=postbody>I'm trying to overcome 
+                  'sticky' menus in FireFox. <BR>I have an iframe directly 
+                  underneath my menu <BR>(crowd goes :shock horror, dont you 
+                  know you shouldn't do that!) <BR>The menu appears fine but 
+                  will not hide on mouse out. <BR><BR>so... <BR><BR>On my iframe 
+                  i have a onmouseover="hidemenus();" <BR><BR><BR><SPAN 
+                  style="COLOR: #ffa34f"><B>function</B></SPAN> hidemenus(){ 
+                  <BR>if(document.getElementById &amp;&amp; !(document.all)) { 
+                  <BR>closeAllMenus(); <BR>} <BR>} <BR><BR>Works fine, the menu 
+                  hides, everything is right in the world. <BR>But no, menus 
+                  will only appear again on the second tome of trying. <BR><BR>i 
+                  have an urge to throw in an emoticon now, but i will resist. 
+                  <BR><BR>thanks in advance for any help.</SPAN><SPAN 
+                  class=gensmall></SPAN></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=row1 vAlign=center align=left width=150><SPAN class=nav><A 
+            class=nav 
+            href="http://www.milonic.com/forum/viewtopic.php?t=5942&amp;highlight=pop+function#top">Back 
+            to top</A></SPAN></TD>
+          <TD class=row1 vAlign=bottom noWrap width="100%" height=28>
+            <TABLE height=18 cellSpacing=0 cellPadding=0 width=18 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=center noWrap><A 
+                  href="http://www.milonic.com/forum/profile.php?mode=viewprofile&amp;u=4106"><IMG 
+                  title="View user's profile" alt="View user's profile" 
+                  src="Milonic  View topic - closeAllMenus()_files/icon_profile.gif" 
+                  border=0></A> <A 
+                  href="http://www.milonic.com/forum/privmsg.php?mode=post&amp;u=4106"><IMG 
+                  title="Send private message" alt="Send private message" 
+                  src="Milonic  View topic - closeAllMenus()_files/icon_pm.gif" 
+                  border=0></A> <A href="http://www.diddlydoo.com/" 
+                  target=_userwww><IMG title="Visit poster's website" 
+                  alt="Visit poster's website" 
+                  src="Milonic  View topic - closeAllMenus()_files/icon_www.gif" 
+                  border=0></A>
+                  <SCRIPT language=JavaScript type=text/javascript><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></SCRIPT>
+                   <NOSCRIPT></NOSCRIPT></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=spaceRow colSpan=2 height=1><IMG height=1 alt="" 
+            src="Milonic  View topic - closeAllMenus()_files/spacer.gif" 
+          width=1></TD></TR>
+        <TR>
+          <TD class=row2 vAlign=top align=left width=150><SPAN class=name><A 
+            name=29013></A><B>Mrfunkleberry</B></SPAN><BR><SPAN 
+            class=postdetails>User&nbsp;<BR><IMG title=User&nbsp; alt=User&nbsp; 
+            src="Milonic  View topic - closeAllMenus()_files/rank0.gif" 
+            border=0><BR><BR><BR>Joined: 14 May 2005<BR>Posts: 
+          7<BR></SPAN><BR></TD>
+          <TD class=row2 vAlign=top width="100%" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%"><A 
+                  href="http://www.milonic.com/forum/viewtopic.php?p=29013#29013"><IMG 
+                  title=Post height=9 alt=Post 
+                  src="Milonic  View topic - closeAllMenus()_files/icon_minipost.gif" 
+                  width=12 border=0></A><SPAN class=postdetails>Posted: Sat May 
+                  14, 2005 10:11 pm<SPAN class=gen>&nbsp;</SPAN>&nbsp; 
+                  &nbsp;Post subject: ok done it</SPAN></TD>
+                <TD vAlign=top noWrap><A 
+                  href="http://www.milonic.com/forum/posting.php?mode=quote&amp;p=29013"><IMG 
+                  title="Reply with quote" alt="Reply with quote" 
+                  src="Milonic  View topic - closeAllMenus()_files/icon_quote.gif" 
+                  border=0></A> </TD></TR>
+              <TR>
+                <TD colSpan=2>
+                  <HR>
+                </TD></TR>
+              <TR>
+                <TD colSpan=2><SPAN class=postbody>Problem seems to have gone 
+                  now, not sure what i did but, there you go</SPAN><SPAN 
+                  class=gensmall></SPAN></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=row2 vAlign=center align=left width=150><SPAN class=nav><A 
+            class=nav 
+            href="http://www.milonic.com/forum/viewtopic.php?t=5942&amp;highlight=pop+function#top">Back 
+            to top</A></SPAN></TD>
+          <TD class=row2 vAlign=bottom noWrap width="100%" height=28>
+            <TABLE height=18 cellSpacing=0 cellPadding=0 width=18 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=center noWrap><A 
+                  href="http://www.milonic.com/forum/profile.php?mode=viewprofile&amp;u=4106"><IMG 
+                  title="View user's profile" alt="View user's profile" 
+                  src="Milonic  View topic - closeAllMenus()_files/icon_profile.gif" 
+                  border=0></A> <A 
+                  href="http://www.milonic.com/forum/privmsg.php?mode=post&amp;u=4106"><IMG 
+                  title="Send private message" alt="Send private message" 
+                  src="Milonic  View topic - closeAllMenus()_files/icon_pm.gif" 
+                  border=0></A> <A href="http://www.diddlydoo.com/" 
+                  target=_userwww><IMG title="Visit poster's website" 
+                  alt="Visit poster's website" 
+                  src="Milonic  View topic - closeAllMenus()_files/icon_www.gif" 
+                  border=0></A>
+                  <SCRIPT language=JavaScript type=text/javascript><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></SCRIPT>
+                   <NOSCRIPT></NOSCRIPT></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=spaceRow colSpan=2 height=1><IMG height=1 alt="" 
+            src="Milonic  View topic - closeAllMenus()_files/spacer.gif" 
+          width=1></TD></TR>
+        <TR align=middle>
+          <TD class=catBottom colSpan=2 height=28>
+            <TABLE cellSpacing=0 cellPadding=0 border=0>
+              <TBODY>
+              <TR>
+                <FORM action=viewtopic.php?t=5942&amp;start=0 method=post>
+                <TD align=middle><SPAN class=gensmall>Display posts from 
+                  previous: <SELECT name=postdays><OPTION value=0 selected>All 
+                    Posts</OPTION><OPTION value=1>1 Day</OPTION><OPTION 
+                    value=7>7 Days</OPTION><OPTION value=14>2 
+                    Weeks</OPTION><OPTION value=30>1 Month</OPTION><OPTION 
+                    value=90>3 Months</OPTION><OPTION value=180>6 
+                    Months</OPTION><OPTION value=364>1 
+                  Year</OPTION></SELECT>&nbsp;<SELECT name=postorder><OPTION 
+                    value=asc selected>Oldest First</OPTION><OPTION 
+                    value=desc>Newest First</OPTION></SELECT>&nbsp;<INPUT class=liteoption type=submit value=Go name=submit></SPAN></TD></FORM></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=2 cellPadding=2 width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=center noWrap align=left><SPAN class=nav><A 
+            href="http://www.milonic.com/forum/posting.php?mode=newtopic&amp;f=10"><IMG 
+            alt="Post new topic" 
+            src="Milonic  View topic - closeAllMenus()_files/post.gif" 
+            align=middle border=0></A>&nbsp;&nbsp;&nbsp;<A 
+            href="http://www.milonic.com/forum/posting.php?mode=reply&amp;t=5942"><IMG 
+            alt="Reply to topic" 
+            src="Milonic  View topic - closeAllMenus()_files/reply.gif" 
+            align=middle border=0></A></SPAN></TD>
+          <TD vAlign=center align=left width="100%"><SPAN 
+            class=nav>&nbsp;&nbsp;&nbsp;<A class=nav 
+            href="http://www.milonic.com/forum/index.php">Milonic Forum 
+            Index</A> -&gt; <A class=nav 
+            href="http://www.milonic.com/forum/viewforum.php?f=10">Help &amp; 
+            Support for DHTML Menu Version 5.0</A></SPAN></TD>
+          <TD vAlign=top noWrap align=right><SPAN class=gensmall>All times are 
+            GMT</SPAN><BR><SPAN class=nav></SPAN></TD></TR>
+        <TR>
+          <TD align=left colSpan=3><SPAN class=nav>Page <B>1</B> of 
+            <B>1</B></SPAN></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=2 width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top noWrap align=left width="40%"><SPAN 
+            class=gensmall></SPAN><BR>&nbsp;<BR></TD>
+          <TD vAlign=top noWrap align=right>
+            <FORM name=jumpbox 
+            onsubmit="if(document.jumpbox.f.value == -1){return false;}" 
+            action=viewforum.php method=get>
+            <TABLE cellSpacing=0 cellPadding=0 border=0>
+              <TBODY>
+              <TR>
+                <TD noWrap><SPAN class=gensmall>Jump to:&nbsp;<SELECT 
+                  onchange="if(this.options[this.selectedIndex].value != -1){ forms['jumpbox'].submit() }" 
+                  name=f><OPTION value=-1>Select a forum</OPTION><OPTION 
+                    value=-1>&nbsp;</OPTION><OPTION 
+                    value=-1>News</OPTION><OPTION 
+                    value=-1>----------------</OPTION><OPTION value=11>Milonic 
+                    News</OPTION><OPTION value=-1>&nbsp;</OPTION><OPTION 
+                    value=-1>DHTML Menu Version 5.0</OPTION><OPTION 
+                    value=-1>----------------</OPTION><OPTION value=10 
+                    selected>Help &amp; Support for DHTML Menu Version 
+                    5.0</OPTION><OPTION value=14>DHTML Menu - Beginners 
+                    Guide</OPTION><OPTION value=15>Beginners Guide - Polls &amp; 
+                    Suggestions</OPTION><OPTION value=-1>&nbsp;</OPTION><OPTION 
+                    value=-1>Images</OPTION><OPTION 
+                    value=-1>----------------</OPTION><OPTION value=16>Menu 
+                    Images</OPTION><OPTION value=-1>&nbsp;</OPTION><OPTION 
+                    value=-1>Off Topic</OPTION><OPTION 
+                    value=-1>----------------</OPTION><OPTION value=8>Anything 
+                    Goes</OPTION><OPTION value=-1>&nbsp;</OPTION><OPTION 
+                    value=-1>DHTML Menu Version 3 Only</OPTION><OPTION 
+                    value=-1>----------------</OPTION><OPTION value=3>Archived 
+                    Topics for the old Version 3.0 JavaScript 
+                    Menu</OPTION><OPTION value=-1>&nbsp;</OPTION><OPTION 
+                    value=-1>Betas and Pre-Releases</OPTION><OPTION 
+                    value=-1>----------------</OPTION><OPTION value=13>Windows 
+                    Menu Builder</OPTION></SELECT><INPUT type=hidden 
+                  value=9e1cf5ec4b48a40969b75d222e88c489 name=sid>&nbsp;<INPUT class=liteoption type=submit value=Go></SPAN></TD></TR></TBODY></TABLE></FORM><SPAN 
+            class=gensmall>You <B>cannot</B> post new topics in this 
+            forum<BR>You <B>cannot</B> reply to topics in this forum<BR>You 
+            <B>cannot</B> edit your posts in this forum<BR>You <B>cannot</B> 
+            delete your posts in this forum<BR>You <B>cannot</B> vote in polls 
+            in this forum<BR></SPAN></TD></TR></TBODY></TABLE>
+      <DIV align=center><SPAN class=copyright><BR><BR><!--
+	We request you retain the full copyright notice below including the link to www.phpbb.com.
+	This not only gives respect to the large amount of time given freely by the developers
+	but also helps build interest, traffic and use of phpBB 2.0. If you cannot (for good
+	reason) retain the full copyright we request you at least leave in place the
+	Powered by phpBB line, with phpBB linked to www.phpbb.com. If you refuse
+	to include even this then support on our forums may be affected.
+
+	The phpBB Group : 2002
+// -->Powered 
+      by <A class=copyright href="http://www.phpbb.com/" target=_phpbb>phpBB</A> 
+      © 2001, 2005 phpBB 
+Group<BR></SPAN></DIV></TD></TR></TBODY></TABLE></BODY></HTML>

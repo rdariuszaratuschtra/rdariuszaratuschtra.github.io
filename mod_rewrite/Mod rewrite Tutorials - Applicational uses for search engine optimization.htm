@@ -1,0 +1,231 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0038)http://www.webforgers.net/mod-rewrite/ -->
+<HTML><HEAD><TITLE>Mod rewrite Tutorials - Applicational uses for search engine optimization</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1"><LINK 
+href="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/web.css" 
+type=text/css rel=stylesheet>
+<SCRIPT language=JavaScript1.1 
+src="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/tla.html" 
+type=text/javascript></SCRIPT>
+
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY>
+<TABLE height=39 cellSpacing=0 cellPadding=0 width=750 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD width=10 height=10><IMG height=10 
+      src="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/tl.jpg" 
+      width=10></TD>
+    <TD width="100%" 
+    background="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/t.jpg"><IMG 
+      height=10 
+      src="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/t.jpg" 
+      width=10></TD>
+    <TD width=10><IMG height=10 
+      src="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/tr.jpg" 
+      width=10></TD></TR>
+  <TR>
+    <TD 
+    background="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/l.jpg" 
+    height=19><IMG height=10 
+      src="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/l.jpg" 
+      width=10></TD>
+    <TD>
+      <TABLE class=innertb height=181 cellSpacing=5 cellPadding=0 width="100%" 
+      border=0>
+        <TBODY>
+        <TR>
+          <TD class=innercell vAlign=top align=left width=442 rowSpan=2>
+            <H1>Mod rewrite Tutorials</H1>
+            <P><A 
+            href="http://www.webforgers.net/mod-rewrite"><STRONG>overview</STRONG></A> 
+            - <A 
+            href="http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php">syntax</A> 
+            - <A 
+            href="http://www.webforgers.net/mod-rewrite/basic-tutorials.php">basic</A> 
+            - <A 
+            href="http://www.webforgers.net/mod-rewrite/medium-tutorials.php">medium</A> 
+            - <A 
+            href="http://www.webforgers.net/mod-rewrite/advanced-tutorials.php">advanced</A> 
+            </P>
+            <P class=heading><STRONG>Mod Rewrite Overview</STRONG></P>
+            <P>
+            <SCRIPT language=JavaScript1.1 
+            type=text/javascript>print_tla();</SCRIPT>
+            We're hearing more and more about <A 
+            href="http://www.webforgers.net/mod-rewrite/#mod_rewrite">mod 
+            rewrite</A> every day. E commerce applications are making add-ons to 
+            their software to allow for it, content mangement systems are using 
+            it and most of all blogs are taking it to the next level as they are 
+            now becoming more and more popular.</P>
+            <P>So what is mod rewrite, what can it do and how can I use it to 
+            further the opimization of my website? </P>
+            <P>Mod rewrite is just one of the many <A 
+            href="http://www.webforgers.net/mod-rewrite/#apache_module_list">modules</A> 
+            that are tacked on to the <A 
+            href="http://www.webforgers.net/mod-rewrite/#apache_server">Apache 
+            webserver</A>. It's main purpose is to detect incoming uri request 
+            (file name) and rewrite them to a redirect or to an alias file.</P>
+            <P class=heading><STRONG>What does mod_rewrite really 
+            rewrite?</STRONG></P>
+            <P>First lets start off by killing the implied meaning of a mod 
+            rewrite. </P>
+            <UL>
+              <LI><STRONG>A mod rewrite DOES NOT rewrite the url in the browser. 
+              </STRONG>A mod rewrite is not a magical url changer. You cannot 
+              flip a switch and hope to change all your <A 
+              href="http://www.webforgers.net/mod-rewrite/#dynamic_url">dynamic 
+              urls</A> to <A 
+              href="http://www.webforgers.net/mod-rewrite/#static_url">static 
+              urls</A>. <BR>
+              <LI>A mod rewrite does it's rewriting <STRONG>on the server AFTER 
+              a file has been requested.</STRONG> </LI></UL>
+            <P>In this sample below we're telling the mod rewrite that if the 
+            file called file_name<STRONG>.htm</STRONG> is request that it should 
+            be rewritten to its alias file_name<STRONG>.php</STRONG>.</P>
+            <P>Rewrite Sample: <SPAN class=example>RewriteRule ^file_name.htm 
+            /file_name.php [L]</SPAN></P>
+            <P><A href="http://www.webforgers.net/mod-rewrite/#seo">SEO</A>s use 
+            mod rewrite more as a <STRONG>translator</STRONG>. An SEO can 
+            instruct his web developer to out put clean urls for a dynamic 
+            application and then by using mod rewrite translate those clean urls 
+            back to it's dynamic form on the server.</P>
+            <P>In this example the mod rewrite is looking for the directory 
+            named mod/rewrite/tutorial/ it is then going to make three 
+            references () and then call those references and rewrite the folder 
+            to it's alias some_file.php?name=mod_rewrite_tutorial</P>
+            <P>Rewrite Sample: <SPAN class=example>#rule to rewrite 
+            /mod/rewrite/tutorial/ to it's dynamic<BR>#query string 
+            some_file.php?name=mod_rewrite_tutorial<BR>RewriteRule 
+            ^(mod)/(rewrite)/(tutorial)/ /some_file.php?name=$1_$2_$3 
+            [L]</SPAN></P>
+            <P>So lets dig in and start learning the mod rewrite syntax.</P>
+            <P align=center><A href="http://www.webforgers.net/mod-rewrite/">Mod 
+            Rewrite Overviw</A> :: <A 
+            href="http://www.webforgers.net/mod-rewrite/mod-rewrite-syntax.php">Mod 
+            Rewrite Syntax &gt;&gt;</A></P></TD>
+          <TD class=bodytext vAlign=top align=right width=271 height=67><A 
+            href="http://www.webforgers.net/">home</A> | blog | <A 
+            href="http://www.webforgers.net/mod-rewrite/index.php">tutorials</A> 
+            | <A href="http://www.webforgers.net/code-library/">code 
+            library</A><BR><BR><IMG height=55 
+            src="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/logo.jpg" 
+            width=265 align=absBottom> </TD></TR>
+        <TR>
+          <TD class=bodytext vAlign=top>
+            <P><STRONG>Questions that are answered here:</STRONG></P>
+            <UL>
+              <LI>What is a mod rewrite? 
+              <LI>What can a mod rewrite do? 
+              <LI>How do I rewrite my messy urls 
+              <LI>How do I make clean urls </LI></UL>
+            <HR>
+
+            <P><STRONG>On Page Resources</STRONG></P>
+            <OL>
+              <LI><A id=mod_rewrite name=mod_rewrite></A><A 
+              href="http://httpd.apache.org/docs/1.3/mod/mod_rewrite.html"><STRONG>Mod 
+              Rewrite</STRONG></A> - One of the many modules for the Apache web 
+              server. Uses regular expressions to detect and rewrite urls in 
+              real time.<BR><BR>
+              <LI><A name=apache_module_list></A><A 
+              href="http://httpd.apache.org/docs/1.3/mod/" 
+              target=_blank><STRONG>Apache Modules</STRONG></A> - List of 
+              moduldes that can be added or come with apache 1.3.<BR><BR>
+              <LI><A name=apache_server></A><A href="http://httpd.apache.org/" 
+              target=_blank><STRONG>Apache Server</STRONG></A> - Most popular 
+              web server used.<BR><BR>
+              <LI><STRONG>Alias file</STRONG> - An alias or a proxy file is a 
+              file that is called to take the place of a requested uri. Most of 
+              the time the requested uri is a folder or file that does not exist 
+              on the server. For example we can say read index.htm (which 
+              doesn't exist as a real file) as index.php that does exist on the 
+              server.<BR><BR>
+              <LI><A id=dynamic_url name=dynamic_url></A><STRONG>Dynamic url 
+              </STRONG>- A url that passes variables using the GET method. These 
+              variables are visible in the web browser and can be seen in the 
+              url. They follow any file or folder name and start with a ? and 
+              can use a &amp; sign to denote a second, third variable and so on. 
+              <BR>Sample: file.php?var1=mod&amp;var2=rewrite<BR><BR>
+              <LI><A id=static_url name=static_url></A><STRONG>Static url 
+              </STRONG>- A file name and folder passed through the web 
+              browser.<BR>Sample: /mod-rewrite/index.php<BR><BR>
+              <LI><A id=seo name=seo></A><STRONG>SEO</STRONG> - Acronymn for 
+              search engine optimiz(er/ation). </LI></OL>
+            <P>&nbsp;</P></TD></TR></TBODY></TABLE></TD>
+    <TD 
+    background="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/r.jpg"><IMG 
+      height=10 
+      src="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/r.jpg" 
+      width=10></TD></TR>
+  <TR>
+    <TD height=10><IMG height=10 
+      src="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/bl.jpg" 
+      width=10></TD>
+    <TD 
+    background="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/b.jpg"><IMG 
+      height=10 
+      src="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/b.jpg" 
+      width=10></TD>
+    <TD><IMG height=10 
+      src="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/br.jpg" 
+      width=10></TD></TR></TBODY></TABLE>
+<TABLE height=39 cellSpacing=0 cellPadding=0 width=750 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD width=10 height=10><IMG height=10 
+      src="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/tl.jpg" 
+      width=10></TD>
+    <TD width="100%" 
+    background="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/t.jpg"><IMG 
+      height=10 
+      src="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/t.jpg" 
+      width=10></TD>
+    <TD width=10><IMG height=10 
+      src="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/tr.jpg" 
+      width=10></TD></TR>
+  <TR>
+    <TD 
+    background="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/l.jpg" 
+    height=19><IMG height=10 
+      src="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/l.jpg" 
+      width=10></TD>
+    <TD class=innertb align=middle>
+      <TABLE cellSpacing=2 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class=innercell align=middle><A 
+            href="http://www.webforgers.net/">Mod Rewrite</A> (Home) | <A 
+            href="http://www.webforgers.net/mod-rewrite/">Mod Rewrite 
+            Tutorials</A> | <A href="http://www.webforgers.net/">Directory</A> | 
+            <A href="http://www.webforgers.net/code-library/">Code Library</A> | 
+            Blog</TD></TR></TBODY></TABLE></TD>
+    <TD 
+    background="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/r.jpg"><IMG 
+      height=10 
+      src="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/r.jpg" 
+      width=10></TD></TR>
+  <TR>
+    <TD height=10><IMG height=10 
+      src="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/bl.jpg" 
+      width=10></TD>
+    <TD 
+    background="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/b.jpg"><IMG 
+      height=10 
+      src="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/b.jpg" 
+      width=10></TD>
+    <TD><IMG height=10 
+      src="Mod rewrite Tutorials - Applicational uses for search engine optimization_files/br.jpg" 
+      width=10></TD></TR></TBODY></TABLE>
+<SCRIPT language=JavaScript>
+//webforgers
+var seotrendsuserid = 4;
+var query = location.search;
+if(query.length < 1){
+	query = '?';
+}else{
+	query = query + '&';
+}
+document.write('<img src="http://www.seotrends.com/includes.scripts/tracker.php' + query +'client_id=' + seotrendsuserid + '&trends_ref=' + escape(document.referrer) +'&trends_uri=' + escape(location.pathname) + '" width="1" height="1">');
+</SCRIPT>
+</BODY></HTML>

@@ -1,0 +1,531 @@
+HTML {
+	SCROLLBAR-FACE-COLOR: #99b; SCROLLBAR-HIGHLIGHT-COLOR: #fff; SCROLLBAR-SHADOW-COLOR: #99c; SCROLLBAR-3DLIGHT-COLOR: #000; SCROLLBAR-ARROW-COLOR: #fff
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(/media/BACKGROUND.gif) #f0f0ff; PADDING-BOTTOM: 0px; MARGIN: 0px; FONT: 0.8em "Lucida Grande", "Trebuchet MS", Helvetica, Arial, sans-serif; COLOR: #333; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+#wrapper {
+	BACKGROUND: url(/media/columns.gif) #f8f8ff repeat-y center top; MARGIN: 0px auto; WIDTH: 770px; TEXT-ALIGN: left
+}
+#header {
+	CLEAR: both; BACKGROUND: #369; POSITION: relative
+}
+#masthead {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 40px; PADDING-BOTTOM: 1px; WIDTH: 490px; PADDING-TOP: 1px
+}
+#searchbox {
+	BORDER-RIGHT: white 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: white 1px solid; PADDING-LEFT: 0px; RIGHT: 8px; PADDING-BOTTOM: 14px; BORDER-LEFT: white 1px solid; WIDTH: 280px; PADDING-TOP: 0px; BORDER-BOTTOM: white 1px solid; POSITION: absolute; TOP: 8px; TEXT-ALIGN: right
+}
+#searchbox LABEL STRONG {
+	TEXT-DECORATION: underline
+}
+H1.sitetitle {
+	FONT-SIZE: 32px; MARGIN: 8px 0px 15px
+}
+H1 A:link {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+H1 A:visited {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+.subtitle {
+	FONT-SIZE: 0.5em
+}
+.motto {
+	FONT-WEIGHT: bold; MARGIN: 12px 0px; COLOR: #def
+}
+#otherstuff {
+	CLEAR: both; PADDING-RIGHT: 0px; BORDER-TOP: white 1px solid; PADDING-LEFT: 0px; LIST-STYLE-POSITION: inside; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#otherstuff LI {
+	BORDER-RIGHT: white 0px solid; BORDER-TOP: white 0px solid; BACKGROUND: #99c; FLOAT: left; BORDER-LEFT: white 1px solid; WIDTH: 191px; BORDER-BOTTOM: white 0px solid; TEXT-ALIGN: center
+}
+#otherstuff LI:unknown {
+	PADDING-LEFT: 1px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+#otherstuff LI A {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; PADDING-BOTTOM: 3px; WIDTH: 191px; PADDING-TOP: 3px
+}
+#otherstuff LI A:hover {
+	BACKGROUND: #9f9fd6
+}
+#main {
+	CLEAR: both; BORDER-TOP: #fff 1px solid; MARGIN-LEFT: 25px
+}
+#content {
+	FLOAT: left; MARGIN: 10px 0px 100px; WIDTH: 500px; LINE-HEIGHT: 1.8; TEXT-ALIGN: justify
+}
+#navigation {
+	MARGIN: 5px 5px 15px 529px; COLOR: #fff; TEXT-ALIGN: right
+}
+.section {
+	BORDER-RIGHT: #fff 5px solid; BORDER-TOP: #fff 5px solid; FONT-SIZE: 1.3em; BACKGROUND: #039; BORDER-LEFT: #fff 5px solid; BORDER-BOTTOM: #fff 0px solid
+}
+.section A.nav {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; COLOR: #ccf; PADDING-TOP: 5px
+}
+.section A.nav:visited {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; COLOR: #ccf; PADDING-TOP: 5px
+}
+#navigation .primary {
+	BORDER-RIGHT: #fff 5px solid; BORDER-TOP: #fff 5px solid; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 5px; BORDER-LEFT: #fff 5px solid; LINE-HEIGHT: 1.3; BORDER-BOTTOM: #fff 5px solid
+}
+#navigation .secondary {
+	BORDER-RIGHT: #fff 5px solid; BORDER-TOP: #fff 5px solid; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 5px; BORDER-LEFT: #fff 5px solid; LINE-HEIGHT: 1.3; BORDER-BOTTOM: #fff 5px solid
+}
+.primary {
+	FONT-WEIGHT: bold; BACKGROUND: #369; MARGIN-BOTTOM: 30px
+}
+.primary P {
+	PADDING-RIGHT: 5px
+}
+.secondary {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; BACKGROUND: #039; PADDING-BOTTOM: 0px; MARGIN: 50px 0px; PADDING-TOP: 0px
+}
+#footer {
+	CLEAR: both; FONT-WEIGHT: bold; BACKGROUND: #369; COLOR: #fff
+}
+#footer P {
+	PADDING-RIGHT: 9px; PADDING-LEFT: 9px; PADDING-BOTTOM: 7px; MARGIN: 0px; PADDING-TOP: 7px; TEXT-ALIGN: right
+}
+P#vroom {
+	FLOAT: left; WIDTH: 540px; TEXT-ALIGN: center
+}
+#footer A.more {
+	FONT-WEIGHT: bold; COLOR: #fff
+}
+#footer A.more:active {
+	COLOR: #fc0
+}
+.pathbar {
+	BORDER-RIGHT: silver 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: silver 1px solid; PADDING-LEFT: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 3px; MARGIN: 8px 0px 12px; BORDER-LEFT: silver 0px solid; LINE-HEIGHT: 1.3; PADDING-TOP: 3px; BORDER-BOTTOM: silver 1px solid
+}
+.pathbar A {
+	WHITE-SPACE: nowrap
+}
+#endlinks HR {
+	MARGIN: 12px 0px; HEIGHT: 2px
+}
+.pathtitle {
+	TEXT-TRANSFORM: uppercase; COLOR: #a3f
+}
+.boxhead {
+	FONT-WEIGHT: bold; MARGIN: 7px 0px 1em; COLOR: #ccf
+}
+INPUT.searchbox {
+	BORDER-RIGHT: #000 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #000 1px solid; PADDING-LEFT: 3px; BACKGROUND: #fff; PADDING-BOTTOM: 3px; BORDER-LEFT: #000 1px solid; WIDTH: 170px; PADDING-TOP: 3px; BORDER-BOTTOM: #000 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.searchbox:unknown {
+	BACKGROUND: #ffb
+}
+INPUT.button {
+	BACKGROUND: #99c; FONT: bold 1em Arial, Helvetica, sans-serif; COLOR: #fff
+}
+H1.maintitle {
+	MARGIN: 15px 0px 12px; FONT: bold 38px "Arial Rounded MT Bold", sans-serif; COLOR: #039
+}
+.byline {
+	MARGIN-TOP: -6px
+}
+.byline A.more:link {
+	FONT-WEIGHT: bold; COLOR: #f40
+}
+.byline A.more:visited {
+	FONT-WEIGHT: bold; COLOR: #f40
+}
+.byline A.more:hover {
+	COLOR: #f00
+}
+H2.heading {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 3px; FONT: bold 1.4em "Lucida Sans", "Lucida Sans Unicode", sans-serif; COLOR: #00f; PADDING-TOP: 20px; BORDER-BOTTOM: blue 1px solid; LETTER-SPACING: 1px
+}
+H3.subhead {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; FONT: 1.2em "Lucida Sans", "Lucida Sans Unicode", sans-serif; WIDTH: 80%; COLOR: #906; PADDING-TOP: 20px; BORDER-BOTTOM: #906 1px solid
+}
+H3.minorhead {
+	FONT-SIZE: 1em; MARGIN: 2em 0px -0.6em; COLOR: #00f
+}
+HR.blue {
+	BACKGROUND: #03c; MARGIN: 7px 0px; COLOR: #03c; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 3px; TEXT-ALIGN: center; BORDER-BOTTOM-STYLE: none
+}
+HR.big {
+	MARGIN-TOP: -8px; HEIGHT: 5px
+}
+HR.white {
+	BORDER-TOP: white 1px solid; BACKGROUND: #fff; COLOR: white; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 1px; BORDER-BOTTOM-STYLE: none
+}
+P.intro {
+	BORDER-RIGHT: #306 0px dotted; PADDING-RIGHT: 30px; BORDER-TOP: #306 1px dotted; PADDING-LEFT: 30px; BACKGROUND: #fff; PADDING-BOTTOM: 5px; BORDER-LEFT: #306 0px dotted; COLOR: #446; PADDING-TOP: 5px; BORDER-BOTTOM: #306 1px dotted
+}
+.pagenavbox {
+	BORDER-RIGHT: #fff 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #fff 1px solid; MARGIN-TOP: 1em; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 5px; BORDER-LEFT: #fff 1px solid; LINE-HEIGHT: 1.4em; PADDING-TOP: 5px; BORDER-BOTTOM: #fff 1px solid; BACKGROUND-COLOR: #efefff
+}
+.lastmodified {
+	BORDER-RIGHT: #d9e9e4 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #d9e9e4 1px solid; PADDING-LEFT: 4px; BACKGROUND: #e6f9f8; PADDING-BOTTOM: 2px; FONT: 90% "Lucida Sans Unicode", "Lucida Sans"; BORDER-LEFT: #d9e9e4 1px solid; CURSOR: default; COLOR: #593; PADDING-TOP: 2px; BORDER-BOTTOM: #d9e9e4 1px solid; TEXT-ALIGN: right; moz-border-radius: 2px
+}
+.help {
+	CURSOR: help; COLOR: #444; BORDER-BOTTOM: #9c0 1px dotted
+}
+DFN.help {
+	FONT-STYLE: italic
+}
+ACRONYM.help {
+	BORDER-LEFT-COLOR: #c39; BORDER-BOTTOM-COLOR: #c39; BORDER-TOP-COLOR: #c39; BORDER-RIGHT-COLOR: #c39
+}
+.wellspaced LI {
+	MARGIN-TOP: 1.3em
+}
+.wellspaced DT {
+	MARGIN-TOP: 1.3em
+}
+.sourcegray {
+	FONT-WEIGHT: bold; COLOR: #44a; FONT-STYLE: normal
+}
+P.code {
+	BORDER-RIGHT: #fff 4px solid; PADDING-RIGHT: 2px; BORDER-TOP: #fff 4px solid; PADDING-LEFT: 16px; BACKGROUND: #fbfbff; PADDING-BOTTOM: 5px; BORDER-LEFT: #fff 4px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #fff 4px solid; TEXT-ALIGN: left
+}
+CODE {
+	FONT-SIZE: 0.9em; COLOR: #03a; FONT-FAMILY: Verdana, Courier, monospace
+}
+.css {
+	COLOR: #190; FONT-FAMILY: "Lucida Sans Unicode", "Lucida Sans"
+}
+.css STRONG {
+	PADDING-RIGHT: 5px; FONT-WEIGHT: 400; FONT-SIZE: 120%
+}
+.js {
+	FONT-SIZE: 0.85em; COLOR: #a06; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+CODE.js {
+	WHITE-SPACE: nowrap
+}
+PRE.js {
+	BORDER-RIGHT: #fdd 3px double; PADDING-RIGHT: 5px; BORDER-TOP: #fdd 3px double; PADDING-LEFT: 5px; BACKGROUND: #fcfaff; PADDING-BOTTOM: 3px; OVERFLOW: hidden; BORDER-LEFT: #fdd 3px double; WIDTH: 484px; PADDING-TOP: 3px; BORDER-BOTTOM: #fdd 3px double
+}
+.codecomment {
+	FONT-SIZE: 110%; BACKGROUND: #fff; BORDER-BOTTOM: #fdd 1px solid; FONT-FAMILY: Lucida Sans Unicode
+}
+.php {
+	FONT: 1em "Lucida Console", "Courier New", Courier, monospace; COLOR: #63c
+}
+PRE.php CODE {
+	FONT: 1em "Lucida Console", "Courier New", Courier, monospace; COLOR: #63c
+}
+PRE.php {
+	BORDER-RIGHT: #83c 1px dotted; PADDING-RIGHT: 2px; BORDER-TOP: #83c 1px dotted; PADDING-LEFT: 12px; BACKGROUND: #fff3ff; PADDING-BOTTOM: 2px; BORDER-LEFT: #83c 1px dotted; PADDING-TOP: 4px; BORDER-BOTTOM: #83c 1px dotted
+}
+.cgi {
+	COLOR: #939
+}
+PRE.cgi {
+	BORDER-RIGHT: #c6c 2px dotted; PADDING-RIGHT: 2em; BORDER-TOP: #c6c 2px dotted; PADDING-LEFT: 2em; PADDING-BOTTOM: 2em; FONT: 1em Verdana, Courier, monospace; BORDER-LEFT: #c6c 2px dotted; PADDING-TOP: 2em; BORDER-BOTTOM: #c6c 2px dotted
+}
+.unix {
+	FONT: 1em/1.4 "Lucida Sans Unicode"; COLOR: #890
+}
+SAMP.eg {
+	FONT: 1em "Lucida Console", "Courier New", Courier, monospace; COLOR: #446; BORDER-BOTTOM: #aab 1px dashed; WHITE-SPACE: nowrap
+}
+KBD {
+	FONT: 1em "Lucida Console", "Courier New", Courier, monospace; COLOR: #556; BORDER-BOTTOM: #dde 1px solid
+}
+KBD.key {
+	BORDER-RIGHT: #cbc 2px solid; PADDING-RIGHT: 2px; BORDER-TOP: #dde 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; BORDER-LEFT: #dde 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #cbc 2px solid; WHITE-SPACE: nowrap
+}
+.compatibility {
+	BORDER-RIGHT: #9999ff 3px solid; PADDING-RIGHT: 10px; BORDER-TOP: #9999ff 3px solid; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; MARGIN: 10px 4%; BORDER-LEFT: #9999ff 3px solid; COLOR: #fff; PADDING-TOP: 0px; BORDER-BOTTOM: #9999ff 3px solid; BACKGROUND-COLOR: #229
+}
+.compatibility BIG {
+	DISPLAY: block; MARGIN-BOTTOM: 1em; FONT: italic 1.2em "Trebuchet MS"; BORDER-BOTTOM: #fff 1px dashed
+}
+.compatibility P {
+	MARGIN: 0.7em; LINE-HEIGHT: 1.7
+}
+.compatibility A:link {
+	FONT-WEIGHT: bold; COLOR: #fff
+}
+.compatibility A:visited {
+	FONT-WEIGHT: bold; COLOR: #fff
+}
+.compatibility CODE {
+	FONT-SIZE: 1em; COLOR: #ebebff
+}
+.compatibility .css {
+	COLOR: #deffde
+}
+.compatibility CODE.js {
+	COLOR: #ffe0e0
+}
+.validationerror {
+	BORDER-RIGHT: #ff9900 3px solid; PADDING-RIGHT: 15px; BORDER-TOP: #ff9900 3px solid; PADDING-LEFT: 15px; PADDING-BOTTOM: 0px; MARGIN: 5px 4%; BORDER-LEFT: #ff9900 3px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #ff9900 3px solid; BACKGROUND-COLOR: #ffffe0
+}
+.sourcetip {
+	BORDER-RIGHT: white 2px dotted; PADDING-RIGHT: 7px; BORDER-TOP: white 2px dotted; PADDING-LEFT: 7px; BACKGROUND: #88b; PADDING-BOTTOM: 7px; BORDER-LEFT: white 2px dotted; COLOR: white; LINE-HEIGHT: 1.4em; PADDING-TOP: 7px; BORDER-BOTTOM: white 2px dotted
+}
+.sourcetip CODE {
+	FONT-SIZE: 1em; COLOR: #ebebff
+}
+.sourcetip .css {
+	COLOR: #deffde
+}
+.sourcetip CODE.js {
+	COLOR: #ffe0e0
+}
+.sourcetip A.nav3:link {
+	TEXT-DECORATION: underline
+}
+.sourcetip A.nav3:visited {
+	TEXT-DECORATION: underline
+}
+DIV.futurewatch {
+	BORDER-RIGHT: #f66 1px dotted; PADDING-RIGHT: 15px; BORDER-TOP: #f66 1px dotted; PADDING-LEFT: 15px; BACKGROUND: #fffaff; PADDING-BOTTOM: 15px; MARGIN: 10px; BORDER-LEFT: #f66 1px dotted; PADDING-TOP: 15px; BORDER-BOTTOM: #f66 1px dotted
+}
+.futurewatch H2 {
+	FONT: italic 1.2em "Trebuchet MS"; COLOR: #f60; BORDER-BOTTOM: #f60 1px dotted
+}
+.futurewatch UL {
+	LIST-STYLE-TYPE: circle
+}
+.important {
+	BORDER-RIGHT: #3c0 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #3c0 1px solid; PADDING-LEFT: 20px; PADDING-BOTTOM: 7px; BORDER-LEFT: #3c0 1px solid; PADDING-TOP: 8px; BORDER-BOTTOM: #3c0 1px solid
+}
+UNKNOWN {
+	BACKGROUND: #fff; moz-border-radius: 4px
+}
+.important LEGEND {
+	BORDER-RIGHT: #3c0 1px solid; PADDING-RIGHT: 15px; BORDER-TOP: #3c0 1px solid; PADDING-LEFT: 15px; BACKGROUND: #f3fff3; PADDING-BOTTOM: 1px; FONT: 1.2em "Trebuchet MS"; BORDER-LEFT: #3c0 1px solid; COLOR: #3a0; PADDING-TOP: 1px; BORDER-BOTTOM: #3c0 1px solid; moz-border-radius: 4px
+}
+#searchhioption {
+	BORDER-RIGHT: #9c0 1px dotted; PADDING-RIGHT: 6px; BORDER-TOP: #9c0 1px dotted; PADDING-LEFT: 6px; BACKGROUND: #cf9; PADDING-BOTTOM: 10px; FONT: 95%/1.4 "Lucida Sans Unicode", "Lucida Sans"; BORDER-LEFT: #9c0 1px dotted; PADDING-TOP: 9px; BORDER-BOTTOM: #9c0 1px dotted
+}
+#searchhioption BUTTON {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; FLOAT: right; PADDING-BOTTOM: 2px; MARGIN: -3px 0px 0px 10px; LINE-HEIGHT: 1.2em; PADDING-TOP: 1px
+}
+#content .searchword {
+	BACKGROUND: #e6ffdc; BORDER-BOTTOM: #bd6 1px solid
+}
+#content .maintitle .searchword {
+	BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-STYLE: none
+}
+#content .pathbar .searchword {
+	BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-STYLE: none
+}
+#content .compatibility .searchword {
+	BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-STYLE: none
+}
+#content .sourcetip .searchword {
+	BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-STYLE: none
+}
+#content #searchhioption .searchword {
+	BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-STYLE: none
+}
+#feedback {
+	BORDER-RIGHT: #fff 3px outset; PADDING-RIGHT: 7px; BORDER-TOP: #fff 3px outset; PADDING-LEFT: 7px; BACKGROUND: #77b; PADDING-BOTTOM: 7px; MARGIN: 20px 0px; BORDER-LEFT: #fff 3px outset; PADDING-TOP: 7px; BORDER-BOTTOM: #fff 3px outset; TEXT-ALIGN: center
+}
+#feedback A {
+	COLOR: #fdf; TEXT-DECORATION: underline
+}
+.textad {
+	BORDER-RIGHT: #669 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #669 1px solid; PADDING-LEFT: 0px; BACKGROUND: #e9e6f9; PADDING-BOTTOM: 3px; MARGIN: 6px 0px; FONT: 11px Verdana; BORDER-LEFT: #669 1px solid; COLOR: #333; PADDING-TOP: 4px; BORDER-BOTTOM: #669 1px solid
+}
+UNKNOWN {
+	BORDER-RIGHT: #669 1px dotted; BORDER-TOP: #669 1px dotted; BORDER-LEFT: #669 1px dotted; BORDER-BOTTOM: #669 1px dotted
+}
+.textad P {
+	MARGIN: 4px 0px
+}
+P.lcol {
+	FLOAT: left; MARGIN: 0px 2px 0px 6px
+}
+.textad A.nav2 {
+	FONT-WEIGHT: normal
+}
+#topxml A.nav2 {
+	FONT-WEIGHT: bold
+}
+.partner {
+	BACKGROUND: #f6f3ff
+}
+#adbrite {
+	BORDER-RIGHT: #ce9 1px dotted; PADDING-RIGHT: 10px; BORDER-TOP: #ce9 1px dotted; PADDING-LEFT: 10px; BACKGROUND: #e8fcd9; PADDING-BOTTOM: 4px; MARGIN: 15px 0px -10px; BORDER-LEFT: #ce9 1px dotted; COLOR: #333; PADDING-TOP: 4px; BORDER-BOTTOM: #ce9 1px dotted; moz-border-radius: 10px
+}
+#adbrite DIV {
+	BORDER-TOP: #dec 1px solid
+}
+.featured {
+	BORDER-RIGHT: #090 2px dotted; PADDING-RIGHT: 4px; BORDER-TOP: #090 2px dotted; PADDING-LEFT: 4px; BACKGROUND: #e8fcd9; PADDING-BOTTOM: 7px; MARGIN: 30px 0px; BORDER-LEFT: #090 2px dotted; COLOR: #333; PADDING-TOP: 7px; BORDER-BOTTOM: #090 2px dotted
+}
+.featured P {
+	MARGIN: 3px 0px
+}
+UNKNOWN {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+.pair {
+	BORDER-RIGHT: #add 1px dotted; PADDING-RIGHT: 120px; BORDER-TOP: #add 1px dotted; PADDING-LEFT: 5px; BACKGROUND: #def; PADDING-BOTTOM: 5px; BORDER-LEFT: #add 1px dotted; PADDING-TOP: 5px; BORDER-BOTTOM: #add 1px dotted; POSITION: relative; TOP: 30px; TEXT-ALIGN: left
+}
+.pair IMG {
+	BORDER-RIGHT: #06c 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #06c 1px solid; PADDING-LEFT: 1px; RIGHT: 8px; PADDING-BOTTOM: 1px; BORDER-LEFT: #06c 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #06c 1px solid; POSITION: absolute; TOP: 8px
+}
+.pair A:hover IMG {
+	BORDER-LEFT-COLOR: #09f; BACKGROUND: #fff; BORDER-BOTTOM-COLOR: #09f; BORDER-TOP-COLOR: #09f; BORDER-RIGHT-COLOR: #09f
+}
+#getfirefox {
+	BORDER-RIGHT: #ccc 1px outset; PADDING-RIGHT: 0px; BORDER-TOP: #fff 1px outset; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; MARGIN: 15px 5px 30px; BORDER-LEFT: #fff 1px outset; PADDING-TOP: 5px; BORDER-BOTTOM: #ccc 1px outset; TEXT-ALIGN: center
+}
+#getfirefox P {
+	MARGIN: 3px 0px
+}
+#asidecontent {
+	BORDER-RIGHT: #99c 3px solid; PADDING-RIGHT: 30px; BORDER-TOP: #99c 3px solid; PADDING-LEFT: 30px; PADDING-BOTTOM: 30px; MARGIN: 2em auto; BORDER-LEFT: #99c 3px solid; WIDTH: 450px; LINE-HEIGHT: 1.6; PADDING-TOP: 20px; BORDER-BOTTOM: #99c 3px solid; BACKGROUND-COLOR: #fff; TEXT-ALIGN: left
+}
+H2.bg {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 40px; FONT-SIZE: 1em; PADDING-BOTTOM: 0px; COLOR: #fff; PADDING-TOP: 0px
+}
+H2.one {
+	BACKGROUND: url(/media/heading.gif) #039 no-repeat; MARGIN: 30px 0px
+}
+H2.two {
+	BACKGROUND: url(/media/heading2.gif) #88b no-repeat; MARGIN: 0px
+}
+H2.three {
+	BACKGROUND: url(/media/heading3.gif) #cc9 no-repeat
+}
+H2.four {
+	BACKGROUND: url(/media/heading4.gif) #3c3 no-repeat
+}
+A {
+	FONT-WEIGHT: bold
+}
+A:link {
+	COLOR: #0033cc
+}
+A:visited {
+	COLOR: #81b
+}
+A:active {
+	COLOR: #4682b4
+}
+A:hover {
+	COLOR: #9999ff
+}
+A.nav:link {
+	COLOR: #ccccd9; TEXT-DECORATION: none
+}
+A.nav:visited {
+	COLOR: #b9b9cf; TEXT-DECORATION: none
+}
+A.nav:active {
+	COLOR: black
+}
+A.nav:hover {
+	COLOR: white
+}
+A.nav2 {
+	FONT-WEIGHT: bold
+}
+A.nav2:link {
+	COLOR: #554477; TEXT-DECORATION: underline
+}
+A.nav2:visited {
+	COLOR: #333399; TEXT-DECORATION: none
+}
+A.nav2:active {
+	COLOR: #cc3399
+}
+A.nav2:hover {
+	COLOR: #0066cc; TEXT-DECORATION: none
+}
+A.nav3:link {
+	COLOR: #f6f6ff; TEXT-DECORATION: none
+}
+A.nav3:visited {
+	COLOR: white; TEXT-DECORATION: none
+}
+A.nav3:active {
+	COLOR: #ffcc00
+}
+A.nav3:hover {
+	COLOR: black
+}
+A.pagenav:link {
+	COLOR: #547; LETTER-SPACING: -1px; TEXT-DECORATION: none
+}
+.pagenav:visited {
+	COLOR: #547; LETTER-SPACING: -1px; TEXT-DECORATION: none
+}
+A.pagenav:active {
+	COLOR: red
+}
+A.pagenav:hover {
+	COLOR: #e60
+}
+A.pagenav2:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.9em; COLOR: #558; TEXT-DECORATION: none
+}
+.pagenav2:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.9em; COLOR: #558; TEXT-DECORATION: none
+}
+A.pagenav2:active {
+	COLOR: #6c0
+}
+A.pagenav2:hover {
+	COLOR: #000
+}
+A.books:link {
+	COLOR: #390
+}
+A.books:visited {
+	COLOR: #390
+}
+A.books:hover {
+	COLOR: #3b0
+}
+A.books IMG {
+	BORDER-LEFT-COLOR: #390; BORDER-BOTTOM-COLOR: #390; BORDER-TOP-COLOR: #390; BORDER-RIGHT-COLOR: #390
+}
+A.more:link {
+	FONT-WEIGHT: normal; COLOR: #003377; TEXT-DECORATION: none
+}
+A.more:visited {
+	FONT-WEIGHT: normal; COLOR: #000; TEXT-DECORATION: none
+}
+A.more:active {
+	COLOR: blue; TEXT-DECORATION: underline
+}
+A.more:hover {
+	COLOR: #30c; TEXT-DECORATION: underline
+}
+A.resource:link {
+	COLOR: #eeeeff; TEXT-DECORATION: underline
+}
+A.resource:visited {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+A.resource:active {
+	COLOR: #fc0
+}
+A.resource:hover {
+	COLOR: #fff
+}
+UNKNOWN {
+	BORDER-RIGHT: #36b 0px solid; PADDING-RIGHT: 1px; BORDER-TOP: #36b 1px solid; DISPLAY: block; PADDING-LEFT: 0px; BACKGROUND: #24a; MARGIN-BOTTOM: -1em; PADDING-BOTTOM: 3px; BORDER-LEFT: #36b 0px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #36b 1px solid; TEXT-DECORATION: none
+}
+UNKNOWN {
+	BACKGROUND: #34b
+}
+A.example {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 20px; BACKGROUND: url(/media/example.png) no-repeat left top; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+A.example:link {
+	COLOR: #009; TEXT-DECORATION: none
+}
+A.example:visited {
+	COLOR: #60c; TEXT-DECORATION: none
+}
+A.example:active {
+	COLOR: #93f
+}
+A.example:hover {
+	COLOR: #f90; TEXT-DECORATION: none
+}

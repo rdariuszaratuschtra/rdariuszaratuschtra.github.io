@@ -1,0 +1,352 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0050)http://www.alistapart.com/articles/cssdropshadows/ -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>CSS Drop Shadows: A List Apart</TITLE>
+<STYLE type=text/css media=screen>@import url( /c/ala.css );
+</STYLE>
+
+<STYLE type=text/css media=projection>@import url( /c/ala.css );
+</STYLE>
+<LINK media=print href="CSS Drop Shadows A List Apart_files/print.css" 
+type=text/css rel=stylesheet>
+<META http-equiv=Content-type content="text/html; charset=iso-8859-1">
+<META http-equiv=Content-Language content=en-us>
+<META content=ALL name=ROBOTS>
+<META 
+content="Copyright (c) 2005 A List Apart Magazine, Happy Cog Studios LLC, Jeffrey Zeldman, and the respective authors" 
+name=Copyright>
+<META http-equiv=imagetoolbar content=no>
+<META content=true name=MSSmartTagsPreventParsing>
+<SCRIPT language=JavaScript src="CSS Drop Shadows A List Apart_files/auto.js" 
+type=text/javascript></SCRIPT>
+<LINK href="/favicon.ico" type=image/x-icon rel="Shortcut Icon"><LINK title=RSS 
+href="/rss.xml" type=application/rss+xml rel=alternate>
+<META content="Using CSS to create standards-compliant drop shadows" 
+name=description>
+<META content="CSS, drop, shadows, flexible, block, elements" 
+name=keywords><LINK title="Site info." href="http://www.alistapart.com/about/" 
+rel=help><LINK 
+title="Produced by Happy Cog Studios LLC: web design, consulting, and publishing." 
+rev=happycog href="http://www.happycog.com/"><LINK 
+title="Directed by Jeffrey Zeldman, bringing web designers The Daily Report since 1995." 
+rev=zeldman href="http://www.zeldman.com/">
+<META content=General name=Rating>
+<META content="5 Days" name=revisit-after>
+<META content="Living Document" name=doc-class>
+<STYLE type=text/css>.img-shadow {
+	CLEAR: both; BACKGROUND: url(/d/cssdropshadows/img/shadow.gif) no-repeat right bottom; FLOAT: left; MARGIN: 20px 0px 0px 8px
+}
+.img-shadow IMG {
+	BORDER-RIGHT: #a9a9a9 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #a9a9a9 1px solid; DISPLAY: block; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; MARGIN: -6px 6px 6px -6px; BORDER-LEFT: #a9a9a9 1px solid; WIDTH: 154px; PADDING-TOP: 4px; BORDER-BOTTOM: #a9a9a9 1px solid; POSITION: relative; HEIGHT: 203px; BACKGROUND-COLOR: #fff
+}
+.p-shadow {
+	CLEAR: both; BACKGROUND: url(/d/cssdropshadows/img/shadow.gif) no-repeat right bottom; FLOAT: left; MARGIN: 10px 0px 0px 5px; WIDTH: 90%
+}
+.p-shadow DIV {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 0px; BACKGROUND: url(/d/cssdropshadows/img/shadow2.gif) no-repeat left top; PADDING-BOTTOM: 6px; PADDING-TOP: 0px
+}
+.p-shadow P {
+	BORDER-RIGHT: #a9a9a9 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #a9a9a9 1px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; MARGIN: 0px; FONT: italic 1em georgia, serif; BORDER-LEFT: #a9a9a9 1px solid; COLOR: #777; PADDING-TOP: 4px; BORDER-BOTTOM: #a9a9a9 1px solid; BACKGROUND-COLOR: #fff
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2800.1491" name=GENERATOR></HEAD>
+<BODY id=sectiontwo 
+onload="window.defaultStatus='A List Apart, for people who make websites.'">
+<DIV id=wrapper>
+<P class=hide><A 
+href="http://www.alistapart.com/articles/cssdropshadows/#maincontent">Skip 
+navigation</A>.</P>
+<DIV id=header><A title="A List Apart Home - current issue." 
+href="http://www.alistapart.com/"><IMG height=75 
+alt="A List Apart front page: HOME" 
+src="CSS Drop Shadows A List Apart_files/9.gif" width=597 border=0></A></DIV>
+<DIV id=menu>
+<UL>
+  <LI id=one><A title="A List Apart Home - current issue." 
+  href="http://www.alistapart.com/">up front</A></LI>
+  <LI id=two><A title="Design, code, content." 
+  href="http://www.alistapart.com/articles/">articles</A></LI>
+  <LI id=three><A title="Everything you wanted to know about A List Apart." 
+  href="http://www.alistapart.com/about/">about ala</A></LI>
+  <LI id=four><A title="We may be coming to your town." 
+  href="http://www.alistapart.com/live/">live events</A></LI>
+  <LI id=five><A title="RSS feeds, headlines and summaries." 
+  href="http://www.alistapart.com/xmlfeed/">xml feeds</A></LI></UL></DIV>
+<DIV id=pagebody>
+<DIV id=maincontent>
+<H6>ISSN: 1534-0295. 27 February 2004 – Issue No. <A 
+title="Permanent location for this issue." 
+href="http://www.alistapart.com/issues/172/">172</A></H6>
+<H1><A href="http://www.alistapart.com/articles/cssdropshadows/">CSS Drop 
+Shadows</A></H1>
+<H3 class=byline>by <A title="View all articles by this author." 
+href="http://www.alistapart.com/authors/sergiovillarreal/">Sergio 
+Villarreal</A></H3>
+<P>They’re the corkscrew in every graphic designer’s Swiss Army knife. Much 
+used, oft maligned but <EM>always</EM> popular, drop shadows are a staple of 
+graphic design. Although easy to accomplish with image-editing software, they’re 
+not of much use in the fast-changing world of web design. On the web, 
+adaptability and ease of use dictate trends — and static images with a fixed 
+background effect are not very adaptable.</P>
+<P>But what if we had a technique to build flexible CSS drop shadows that can be 
+applied to arbitrary block elements? That can expand as the content of the block 
+changes shape? Compatible with most modern browsers? With better results for 
+standards-compliant browsers? If you’re not sold yet, we can also tell you that 
+it requires minimal markup.</P>
+<P>Interested? Well, first off, we wouldn’t want to take credit for something we 
+didn’t invent, but merely improved upon. This particular technique was <A 
+href="http://1976design.com/blog/archive/2003/11/14/shadows/">conceived and 
+demonstrated</A> by Dunstan Orchard, of <A href="http://1976design.com/">1976 
+design</A> fame (hats off to you, Dunstan). We found it was easy, intuitive, and 
+worked like a charm. However, after closer examination, we saw room for 
+improvement and set to work on it.</P>
+<P>Here’s how it works: you need to make a drop shadow image in the image editor 
+of your choice. It should be only the shadow, without a visible border (an easy 
+way to do this is by applying the effect to an empty selection). Make sure your 
+image is big enough to cover the maximum expected size of the block elements 
+that will use it. In practice, we’ve found that 800 x 800 is a respectable 
+enough size. Save it as a GIF, making sure you use the color of the background 
+you’ll apply the effect over. Additionally, save the same shadow with full alpha 
+transparency (no background color) as PNG. This will be used to feed a better 
+shadow to browsers capable of displaying it. These are some sample files: <A 
+href="http://www.alistapart.com/d/cssdropshadows/img/shadow.gif">GIF file</A>/<A 
+href="http://www.alistapart.com/d/cssdropshadows/img/shadowAlpha.png">PNG 
+file</A>.</P>
+<DIV 
+style="BORDER-RIGHT: #a9a9a9 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #a9a9a9 1px solid; PADDING-LEFT: 3px; FLOAT: right; PADDING-BOTTOM: 3px; MARGIN: 3px; BORDER-LEFT: #a9a9a9 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #a9a9a9 1px solid"><IMG 
+alt=test src="CSS Drop Shadows A List Apart_files/catFace.jpe"></DIV>
+<P>We’ll start by giving a shadow to an image and then move on to other block 
+elements. In a moment of ingenuity, we decided to name our class “img-shadow”. 
+Our test subject shall be this cute cat:</P>
+<P style="CLEAR: both">And its corresponding markup (one div is the only extra 
+markup we’ll need):</P>
+<P><CODE>&lt;div class="img-shadow"&gt;<BR>&nbsp;&nbsp;&lt;img src="cat.jpg" 
+alt="test"/&gt;<BR>&lt;/div&gt; </CODE></P>
+<P>The following illustration shows how the technique works:</P>
+<DIV 
+style="BORDER-RIGHT: #c2ccdc 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #c2ccdc 1px solid; PADDING-LEFT: 3px; FLOAT: left; PADDING-BOTTOM: 3px; MARGIN: 10px 0px 10px 20px; BORDER-LEFT: #c2ccdc 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #c2ccdc 1px solid"><IMG 
+alt="Technique illustration" 
+src="CSS Drop Shadows A List Apart_files/example1.jpe"></DIV><BR 
+style="CLEAR: both">
+<P>First, our previously prepared shadow file will be set as background for the 
+div.</P>
+<P><CODE>background: url(shadow.gif) no-repeat bottom right;</CODE> </P>
+<P>Then we’ll give the image negative top and left margins to make the “drop” 
+that gives us the shadow. Our shadow is six pixels wide, so that’s our magic 
+value.</P>
+<P><CODE>margin: -6px 6px 6px -6px;</CODE></P>
+<P>We float the <CODE>div</CODE> to avoid having to specify its size (otherwise 
+it will take up all available horizontal space).</P>
+<P>Remember we said that we’d provide better shadows for better browsers? This 
+line will do the trick:</P>
+<P><CODE>background: url(shadowAlpha.png) no-repeat right bottom 
+!important;</CODE></P>
+<P>That “!important” bit tells the browser that the declaration is to take 
+precedence over normal declarations for the same element (see <A 
+href="http://www.w3.org/TR/REC-CSS2/cascade.html#important-rules">the spec</A>). 
+It also happens to be unsupported in all versions of Internet Explorer, which 
+also lack native support for transparent PNG’s. It’s almost too convenient. By 
+specifying controversial declarations twice, we get the desired behavior (IE 
+takes the second one, most other browsers the first one). The end result is 
+that, were the background color to change, browsers that support PNG would 
+maintain a perfectly transparent shadow. Sadly, Explorer’s shadow will stay with 
+its original background color.</P>
+<P>But <STRONG>why</STRONG> do this you ask? The reasons are twofold:</P>
+<UL>
+  <LI><B>We can</B>: This is a painless, effortless and automatic hack that 
+  yields great results in the browsers that support it. 
+  <LI><B>It may fix itself</B>: If the new version of Internet Explorer 
+  (shipping with Longhorn) supports both of these standards, we won’t have to 
+  fix a thing to get pixel-perfect, truly transparent shadows in it. </LI></UL>
+<P>The finished CSS code looks like this:</P>
+<P><CODE>.img-shadow {<BR>&nbsp;&nbsp;float:left;<BR>&nbsp;&nbsp;background: 
+url(shadowAlpha.png) no-repeat bottom right 
+!important;<BR>&nbsp;&nbsp;background: url(shadow.gif) no-repeat bottom 
+right;<BR>&nbsp;&nbsp;margin: 10px 0 0 10px !important;<BR>&nbsp;&nbsp;margin: 
+10px 0 0 5px;<BR>&nbsp;&nbsp;}<BR><BR>.img-shadow img {<BR>&nbsp;&nbsp;display: 
+block;<BR>&nbsp;&nbsp;position: relative;<BR>&nbsp;&nbsp;background-color: 
+#fff;<BR>&nbsp;&nbsp;border: 1px solid #a9a9a9;<BR>&nbsp;&nbsp;margin: -6px 6px 
+6px -6px;<BR>&nbsp;&nbsp;padding: 4px;<BR>&nbsp;&nbsp;} </CODE></P>
+<P>Differences in margin size account for IE’s box model, and that last padding 
+value gives us a nice frame around the image. Sadly, it is lost in IE 5.5 and 
+5.0. The drop shadow effect stays, though.</P>
+<P>Our shadow will blend seamlessly with its background in standards-compliant 
+browsers. In Explorer, the shadow will clash with the background unless you’ve 
+stuck with the background color you used for your shadow. You can see the 
+results here:</P>
+<DIV 
+style="BORDER-RIGHT: #a0a0a0 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #a0a0a0 1px solid; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 10px 0px 15px; BORDER-LEFT: #a0a0a0 1px solid; WIDTH: 188px; PADDING-TOP: 0px; BORDER-BOTTOM: #a0a0a0 1px solid; HEIGHT: 250px; BACKGROUND-COLOR: #fff">
+<DIV class=img-shadow><IMG alt="A cute cat" 
+src="CSS Drop Shadows A List Apart_files/cat.jpe"></DIV></DIV>
+<DIV 
+style="BORDER-RIGHT: #a0a0a0 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #a0a0a0 1px solid; PADDING-LEFT: 0px; FLOAT: right; PADDING-BOTTOM: 0px; MARGIN: 10px 0px 15px; BORDER-LEFT: #a0a0a0 1px solid; WIDTH: 188px; PADDING-TOP: 0px; BORDER-BOTTOM: #a0a0a0 1px solid; HEIGHT: 250px; BACKGROUND-COLOR: #c2ccdc">
+<DIV class=img-shadow><IMG alt="A cute cat" 
+src="CSS Drop Shadows A List Apart_files/cat.jpe"></DIV></DIV>
+<P>For the next part, we’ll apply the drop shadow effect to a paragraph.</P>
+<P>Logic dictates that the same technique should yield similar results when 
+working with a paragraph, which can be treated as another block element. And 
+indeed, with most browsers, it works like a charm. Care to guess which one 
+doesn’t get it right?</P>
+<P>While developing this technique, we found that when working with a block 
+element other than an image, in bold defiance of common sense, Explorer decided 
+to clip the left and top parts of the block — the ones that “jump” out of the 
+shadow — regardless of what we tried. Amusingly enough, the only version of 
+Explorer that gets this right is 5.0. No amount of hacks, overflow settings, or 
+gentle suggestions seemed to help (and yes, <EM>righteous cursing</EM> was 
+tried). We gave up and decided that a different approach was called for.</P>
+<P>The method we came up with is partly based on Douglas Bowman’s <A 
+href="http://www.alistapart.com/articles/slidingdoors/">Sliding Doors</A> 
+methodology, and calls for an extra bit of markup (another div), so our 
+paragraph will look like this:</P>
+<P><CODE>&lt;div 
+class="p-shadow"&gt;<BR>&nbsp;&nbsp;&lt;div&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;The 
+rain in Spain 
+...&lt;/p&gt;<BR>&nbsp;&nbsp;&lt;/div&gt;<BR>&lt;/div&gt;<BR></CODE></P>
+<P>Instead of giving the paragraph negative top and left margins, we’ll give it 
+positive right and bottom padding. This will expose the shadow (set as 
+background for the outermost div). Then we’ll <EM>fake</EM> the shadow offset by 
+using a partly transparent GIF as background for the inner div, which will 
+overlap the shadow. Make sure that the visible part of this image is the same 
+color as the background over which you use the drop shadow effect. Name the 
+image “shadow2.gif”. It should be constructed as follows: </P>
+<DIV 
+style="BORDER-RIGHT: #c2ccdc 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #c2ccdc 1px solid; PADDING-LEFT: 3px; FLOAT: left; PADDING-BOTTOM: 3px; MARGIN: 10px 0px 10px 20px; BORDER-LEFT: #c2ccdc 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #c2ccdc 1px solid"><IMG 
+alt="Fake offset image example" 
+src="CSS Drop Shadows A List Apart_files/example3.gif"></DIV><BR 
+style="CLEAR: both">
+<P>Here’s an example <A 
+href="http://www.alistapart.com/d/cssdropshadows/img/shadow2.gif">GIF file</A> 
+(this image will most likely look as <EM>white on white</EM> on your browser, so 
+you may want to save it and take a look at it in your image editing 
+program).</P>
+<P>This illustration shows what we’re going to do:</P>
+<DIV 
+style="BORDER-RIGHT: #c2ccdc 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #c2ccdc 1px solid; PADDING-LEFT: 3px; FLOAT: left; PADDING-BOTTOM: 3px; MARGIN: 10px 0px 10px 20px; BORDER-LEFT: #c2ccdc 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #c2ccdc 1px solid"><IMG 
+alt="Paragraph technique illustration" 
+src="CSS Drop Shadows A List Apart_files/example2.gif"></DIV><BR 
+style="CLEAR: both">
+<P>The following are the styles needed to accomplish the effect. Notice that the 
+extraneous image and padding are used only by Internet Explorer. Most other 
+browers effectively ignore the inner div, and stick with the method we used for 
+the drop shadow of the image.</P>
+<P><CODE>.p-shadow {<BR>&nbsp;&nbsp;width: 
+90%;<BR>&nbsp;&nbsp;float:left;<BR>&nbsp;&nbsp;background: url(shadowAlpha.png) 
+no-repeat bottom right !important;<BR>&nbsp;&nbsp;background: url(shadow.gif) 
+no-repeat bottom right;<BR>&nbsp;&nbsp;margin: 10px 0 0 10px 
+!important;<BR>&nbsp;&nbsp;margin: 10px 0 0 
+5px;<BR>&nbsp;&nbsp;}<BR><BR>.p-shadow div {<BR>&nbsp;&nbsp;background: none 
+!important;<BR>&nbsp;&nbsp;background: url(shadow2.gif) no-repeat left 
+top;<BR>&nbsp;&nbsp;padding: 0 !important;<BR>&nbsp;&nbsp;padding: 0 6px 6px 
+0;<BR>&nbsp;&nbsp;}<BR><BR>.p-shadow p {<BR>&nbsp;&nbsp;color: 
+#777;<BR>&nbsp;&nbsp;background-color: #fff;<BR>&nbsp;&nbsp;font: italic 1em 
+georgia, serif;<BR>&nbsp;&nbsp;border: 1px solid 
+#a9a9a9;<BR>&nbsp;&nbsp;padding: 4px;<BR>&nbsp;&nbsp;margin: -6px 6px 6px -6px 
+!important;<BR>&nbsp;&nbsp;margin: 0;<BR>&nbsp;&nbsp;}<BR></CODE></P>
+<P>The same considerations for background color mentioned in the image example 
+apply for paragraphs. Here’s the end result. (Try resizing the text on your 
+browser to see the box change size and watch the shadow adjust.)</P>
+<DIV class=p-shadow>
+<DIV>
+<P style="FONT-SIZE: 1.3em">The rain in Spain falls mainly on the 
+plain.</P></DIV></DIV><BR style="CLEAR: both"><BR>
+<P><B>Additional notes</B></P>
+<P>In this article, the styles for image and paragraph have been broken up for 
+clarity, but both could be specified in one fell swoop with minor 
+adjustments.</P>
+<P>This technique has been tested with Gecko-based browsers, Safari, Opera and 
+IE 5.0+. Apart from the differences noted, no problems were observed. It should 
+work well with most of the stuff out there (no, <EM>not</EM> Netscape 4.x).</P>
+<P><B>Acknowledgements</B></P>
+<P>To <A href="http://www.1976design.com/blog/">Dunstan</A> for inventing the 
+drop shadow techique and <A href="http://www.stopdesign.com/">Douglas Bowman</A> 
+for the <A href="http://www.alistapart.com/articles/slidingdoors/">Sliding 
+Doors</A> technique</P>
+<H2 id=talkaboutit>Discuss</H2>
+<P>Was it good for you, too? <A 
+href="http://www.alistapart.com/discuss/cssdropshadows/">Discuss</A> this 
+article.</P>
+<P id=authorbio>Sergio Villarreal lives in México but spends most of the time in 
+his head. He maintains a weblog and rarely updated webcomic at <A 
+href="http://overcaffeinated.net/">Overcaffeinated.net</A> and makes a point of 
+learning a new trick every day. Some are even useful.</P></DIV>
+<DIV id=sidebar>
+<DIV id=subnav>
+<DL>
+  <DT>Discuss 
+  <DD><A href="http://www.alistapart.com/discuss/cssdropshadows/">Talk about</A> 
+  this article. 
+  <DT>Bookmark 
+  <DD><A href="http://www.alistapart.com/articles/cssdropshadows/">Permanent 
+  URI</A>. </DD></DL>
+<P class=pullquote>“…what if we had a technique to build flexible CSS drop 
+shadows that can be applied to arbitrary block elements? That can expand as the 
+content of the block changes shape? Compatible with most browsers in use today? 
+If you’re not sold yet, we can also tell you that it requires minimal 
+markup.”</P><LABEL for=sp-q>Search</LABEL><BR><!-- Atomz Search HTML for A List Apart Magazine -->
+<FORM style="MARGIN: 0px" action=http://search.atomz.com/search/ 
+method=get><INPUT id=sp-q style="WIDTH: 140px" size=12 name=sp-q><BR><INPUT 
+id=disc 
+onclick="this.form.elements['sp-k'].value = (this.checked) ? '' : 'All';" 
+type=checkbox value=All name=disc><LABEL for=disc>Include 
+Discussions</LABEL><BR><INPUT type=hidden value=sp1002d27b name=sp-a> <INPUT 
+type=hidden value=ISO-8859-1 name=sp-f> <INPUT type=hidden value=All name=sp-p> 
+<INPUT type=hidden value=All name=sp-k> <INPUT type=submit value=Search> 
+</FORM><BR>
+<DL>
+  <DT>Related Topics 
+  <DD>
+  <UL>
+    <LI><A href="http://www.alistapart.com/topics/css/">CSS</A>
+    <LI><A href="http://www.alistapart.com/topics/design/">Design</A> 
+  </LI></UL></DD></DL>
+<DL>
+  <DT>Departments 
+  <DD>
+  <UL>
+    <LI><A href="http://www.alistapart.com/contact/">Contact</A> 
+    <LI><A href="http://www.alistapart.com/contribute/">Contribute</A> 
+    <LI><A href="http://www.alistapart.com/credits/">Credits</A> 
+    <LI><A href="http://www.alistapart.com/copyright/">Permissions</A> 
+    <LI><A href="http://www.alistapart.com/qa/">Q &amp; A</A> </LI></UL>
+  <DT>Hot Topics 
+  <DD>
+  <UL>
+    <LI><A 
+    href="http://www.alistapart.com/topics/accessibility/">Accessibility</A> 40 
+    <LI><A href="http://www.alistapart.com/topics/browsers/">Browsers | 
+    X-Platform</A> 32 
+    <LI><A href="http://www.alistapart.com/topics/business/">Business</A> 42 
+    <LI><A href="http://www.alistapart.com/topics/content/">Content</A> 47 
+    <LI><A href="http://www.alistapart.com/topics/css/">CSS</A> 62 
+    <LI><A href="http://www.alistapart.com/topics/culture/">Culture</A> 42 
+    <LI><A href="http://www.alistapart.com/topics/design/">Design</A> 83 
+    <LI><A href="http://www.alistapart.com/topics/dom/">DOM | Scripting</A> 27 
+    <LI><A href="http://www.alistapart.com/topics/flash/">Flash</A> 9 
+    <LI><A href="http://www.alistapart.com/topics/html/">HTML | XHTML</A> 55 
+    <LI><A href="http://www.alistapart.com/topics/process/">Process</A> 25 
+    <LI><A href="http://www.alistapart.com/topics/server-side/">Server-Side</A> 
+    24 
+    <LI><A href="http://www.alistapart.com/topics/tools/">Tools</A> 27 
+    <LI><A href="http://www.alistapart.com/topics/typography/">Typography</A> 13 
+
+    <LI><A href="http://www.alistapart.com/topics/usability/">Usability</A> 27 
+    <LI><A href="http://www.alistapart.com/topics/xml/">XML &amp; Pals</A> 14 
+    </LI></UL></DD></DL>
+<P>ALA lives at <A 
+href="http://www.alistapart.com/logicworks/">Logicworks</A>.</P>
+<P><A href="http://www.basecamphq.com/?ref=adala">Basecamp project 
+management</A> keeps your clients, co-workers, and projects on track. Try it 
+free!</P></DIV></DIV></DIV>
+<DIV id=footer>
+<P><A href="http://www.alistapart.com/copyright/">Copyright</A> © 1998–2005 <A 
+href="http://www.alistapart.com/">A List Apart</A> Magazine, <A 
+href="http://www.happycog.com/">Happy Cog Studios</A>, and the authors. <A 
+href="http://validator.w3.org/check/referer">XHTML</A>, <A 
+href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.alistapart.com/c/ala.css">CSS</A>, 
+<A 
+href="http://www.contentquality.com/mynewtester/cynthia.exe?Url1=http://www.alistapart.com/">508</A>.</P></DIV></DIV><!--
+
+
+
+
+--></BODY></HTML>

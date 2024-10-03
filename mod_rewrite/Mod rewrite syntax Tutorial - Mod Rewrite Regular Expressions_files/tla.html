@@ -1,0 +1,16 @@
+// JavaScript Document
+function make_random(){
+	var ranNum= Math.floor(Math.random()*3);
+    return ranNum;
+}
+
+function print_tla(){
+	 var ran_ad=make_random();
+	 var ad=new Array(3)
+     ad[0]="A";
+     ad[1]="B";
+     ad[2]="C";   
+
+	document.write('<a href="http://www.text-link-ads.com/?ref=20121"><img src="http://www.text-link-ads.com/images/text_link_ads_'+ad[ran_ad]+'_300x250.gif" alt="Text Link Ads" hspace="5" vspace="5" border="0" align="right"></a>');
+	
+}

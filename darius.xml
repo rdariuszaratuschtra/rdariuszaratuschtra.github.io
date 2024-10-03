@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artist name="Darius">
+<gallery name="Cultuurschappen">
+<work>
+	<image>161.jpg</image>
+	<title>Stadsuitzicht met steigers</title>
+	<material>Ol.o.lin.</material>
+	<size>55x65</size>
+	<year>2004</year>
+	<price>Verkocht</price>
+</work>
+<work>          
+	<image>162.jpg</image>   
+	<title>Kruispunt</title>   
+	<material>Ol.o.lin.</material>
+	<size>55x75</size>    
+	<year>2001-2004</year>    
+	<price>1200,-</price>   
+</work>
+<work>                  
+	<image>schilderijen 01 001.jpg</image>   
+	<title>Stroom</title>   
+	<material>Ol.o.lin.</material>
+	<size>170x135</size>    
+	<year>2000</year>    
+	<price>5550,-</price>   
+</work>
+<work>                   
+	<image>schilderijen 01 002.jpg</image>   
+	<title>Struiken</title>   
+	<material>Ol.o.lin.</material>
+	<size>135x140</size>    
+	<year>2000</year>    
+	<price>Verkocht</price>   
+</work>         
+</gallery>
+</artist>

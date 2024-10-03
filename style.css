@@ -1,0 +1,292 @@
+/*****************************************************
+		TAG DEFINITIONS, AND GLOBAL STYLES
+******************************************************/
+* 	  { margin:0px; padding:0px; border:0px; font:10px verdana,sans-serif; color:#000; }
+body	  { text-align:center; }
+
+p       { margin-top:10px; line-height:1.6; }
+ul      { margin:0px 15px; }
+
+h4 	  { font-weight:bold; margin:3px 0px;color:#A54625; }
+h5,em   { font-weight:bold; display:inline; color:#666; }
+
+a	  { color:#000000; text-decoration:none; }
+a:hover { color:#933; text-decoration:none; }
+  
+form            { display:inline; }
+input,textarea  { padding:2px; border: 1px inset #A9A793; background:#F6F6F6; } 
+input.button    { padding:1px !important; border: 1px outset #A9A793 !important; width:auto !important; }
+select,option   { font: 9px verdana,sans-serif; margin:1px;}
+
+.form 	    { clear:both; padding-top:8px; }
+.form .label    { float:left; width:60px; text-align:left; padding-top:2px; } 
+
+/*****************************************************
+		LAYOUT STYLES
+******************************************************/
+#header             { display:block; height:120px; background:#F7F3E5 url('../img/header.jpg') no-repeat;}
+#header a 	        { display:block; height:120px;text-indent:-5000px; }
+#header a:hover     { text-decoration:none; }
+#bodycontainer      { width:725px; margin:0px auto; text-align:left; border:1px solid #808080; background:#EFF2F6; }
+#bodycontainer      { min-height:700px; _height:700px; }
+#toolbar            { background:#DBDBE0; height:34px; border-bottom:1px solid #AFAFAF; }
+#toolbar #search    { float:right; margin:8px; }
+#toolbar #address   { float:left; margin:12px; }
+#content #inside    { padding: 10px; }
+#footer             { height:98px;width:661px;margin:0px auto;border:1px solid #9E9E9E; }
+.lastlink           { color:#933; }
+
+/*****************************************************
+		HOME STYLES
+******************************************************/
+.home                   { padding:5px; }
+.home .floatbox         { background:#F0F0F0; border:1px solid #C8C8C8; color:#000; padding:10px 0px 10px 0px; margin:0px 0px 10px 0px; }
+.home .right            { width:152px; float:right; }
+.home #featured         { text-align:center; }
+.home #featured h4	{ color: #666; }
+.home #featured span    { font-size:9px;  }
+.home #featured img     { border:1px solid; border-color: #666; }
+.home #featured div     { border:1px outset #FFF; background:#FFF; padding:8px 5px 5px 5px; width:100px; margin:0px auto; }
+.home #home             { width:505px; float:left; padding:10px; height:467px;}
+.home p                 { text-align:justify;display:block; }
+
+/*****************************************************
+		LOGIN / REGISTER STYLES
+*****************************************************/
+
+.login input,.login textarea,.login select,
+.register input,.register textarea,.register select
+                                            { border:5px solid #E8EAEA; background:#FFF; padding:3px; width:330px; }
+.register select                            { width:344px; }
+.login,.register                            { width:auto; padding-top:0px;}
+.login .form,.register .form                { clear:both; padding:6px 0px; border-bottom:1px solid #B2B2B2; }
+.login .label,.register .label	        { text-align:right; width:170px; padding:8px 5px 0px 0px; }
+.login input.button,.register input.button  { width:auto; border:0px; padding:0px; }
+
+.login #error,.register #error              { margin:20px;background:#EDEDED; border:5px solid #E8EAEA; padding:3px; }
+ 
+/*****************************************************
+		RELATED LINKS STYLES
+******************************************************/
+.related-links ul               { list-style-type:none; }
+.related-links li               { padding-bottom:4px; background:#fff url('../img/listshadow.jpg') repeat-x left bottom; margin:10px; }
+.related-links a                { display:block; padding:6px 6px 6px 30px; height:11px; border:1px solid #A2A2A2; background:url('../img/listbg.jpg') no-repeat; cursor:pointer; }
+.related-links a:hover          { background:url('../img/listbg.jpg') left bottom no-repeat; }
+.related-links a .link          { display:block; width:300px; float:left; } 
+.related-links a:hover .link    { color:#933; }
+.related-links #footer          { margin-bottom:40px; background:url('../img/masts/links.jpg') no-repeat; }
+
+/*****************************************************
+		CONTACT FORM STYLES
+******************************************************/
+.contact-us                 { width:auto; padding:0px 20px;}
+.contact-us input,textarea  { border:5px solid #E8EAEA; background:#FFF; padding:3px; width:330px; }
+.contact-us textarea        { height:100px; }
+.contact-us .form 	    { clear:both; padding:6px 0px; border-bottom:1px solid #B2B2B2; }
+.contact-us .form .label    { text-align:right; width:170px; padding:8px 5px 0px 0px; }
+.contact-us input.button    { width:auto; margin-left:177px; }
+.contact-us #footer         { margin-bottom:50px; background:url('../img/masts/contact.jpg') no-repeat;  } 
+
+/*****************************************************
+		SERVICES STYLES
+******************************************************/
+.services           { margin:0px 20px; }
+.services ul        { list-style-type:none;margin:0px; }
+.services li        { background:url('../img/bullet.jpg') no-repeat 0px center; margin:10px 0px; text-indent:20px; padding:0px;}
+.services #footer   { margin-bottom:10px; background:url('../img/masts/services.jpg') no-repeat; }
+
+/*****************************************************
+		OSSIP ZADKINE SECTION STYLES
+******************************************************/
+/* sub nav for ie5 poeple */
+.ossip-zadkine #oss                 { width:663px;margin:0px auto; }
+.ossip-zadkine #oss ul              { width:300px; margin:50px 10px; list-style-type:none; border-top:1px solid #B2B2B2; float:left; }
+.ossip-zadkine #oss ul li           { padding:20px 25px; text-indent:25px; border-bottom:1px solid #B2B2B2; }
+.ossip-zadkine #oss a div           { background:url('../img/button.jpg') no-repeat; height:9px; line-height:9px; float:left; }
+.ossip-zadkine #oss a               { cursor:pointer; }
+.ossip-zadkine #oss a:hover div     { background:url('../img/button.jpg') no-repeat left bottom; }
+.ossip-zadkine #ossipimage         { height:312px; width:175px; margin:50px 50px; float:right; background:url('../img/ossip.jpg') no-repeat;  }
+/* Poetry styles */
+.ossip-zadkine #poetry ul           { width:300px; margin:50px 10px; list-style-type:none; border-top:1px solid #B2B2B2; float:left; }
+.ossip-zadkine #poetry ul li        { padding:20px 25px; text-indent:25px; border-bottom:1px solid #B2B2B2; }
+.ossip-zadkine #poetry a div        { background:url('../img/button.jpg') no-repeat; height:9px; line-height:9px; float:left; }
+.ossip-zadkine #poetry a            { cursor:pointer; }
+.ossip-zadkine #poetry a:hover div  { background:url('../img/button.jpg') no-repeat left bottom; }
+.ossip-zadkine #poetryimage         { height:312px; width:175px; margin:50px 50px; float:right; background:url('../img/poetry.jpg') no-repeat;  }
+/* Individual Poems */
+.ossip-zadkine .poem                { margin:60px 80px; }
+.ossip-zadkine #footerpoem          { height:98px; width:661px; margin:0px auto; border:1px solid #9E9E9E; background:url('../img/masts/poetry.jpg') no-repeat; }
+/* Public work styles */
+.ossip-zadkine #subnav ul           { list-style-type:none;width:663px; margin:0px auto; }
+.ossip-zadkine #subnav ul li        { text-indent:8px;float:left; width:110px; padding-bottom:5px;}
+.ossip-zadkine #subnav a div        { background:url('../img/button.jpg') left top no-repeat; height:9px; line-height:9px; float:left; margin-top:2px;}
+.ossip-zadkine #subnav a:hover div  { background:url('../img/button.jpg') left bottom no-repeat; overflow:hidden; }
+.ossip-zadkine #public              { width:670px; margin:0px auto;clear:left; padding-top:20px; }
+.ossip-zadkine #public ul           { margin:10px 4px; list-style-type:none; }
+.ossip-zadkine #public ul li        { background:url('../img/b1.jpg') 0px 5px no-repeat;text-indent:10px; list-style-type:none; }
+.ossip-zadkine #public div          { border-bottom:1px solid #DDD; }
+.ossip-zadkine #public div div      { border:0px;margin:5px; }
+.ossip-zadkine #public .country a   { color:#933 !important; font-weight:bold; }
+.ossip-zadkine #subnav #footer      { margin-bottom:10px; background:url('../img/masts/wip.jpg') no-repeat; }
+/* Bibliography Styles */
+.ossip-zadkine #bio h4              { margin:15px auto 0px auto;  width:664px;}
+.ossip-zadkine #bio #footer         { background:url('../img/masts/bio.jpg') no-repeat; }
+.ossip-zadkine #bio p               { border-bottom:1px solid #DDD;width:664px; margin:0px auto; }
+.ossip-zadkine #bio a               { color:#A54625;}
+.ossip-zadkine #bio a:hover         { color:#000099;}
+/* Solo Exhibitions */
+#solo #footer   { background:url('../img/masts/solo.jpg') no-repeat; }
+#solo table     { width:674px; margin:0px auto; }
+#solo td        { padding:2px; border-bottom:1px solid #DDD; }
+
+/*****************************************************
+            ADVANCED SEARCH PAGE
+******************************************************/
+.search .searchterm         { width:auto; background:#EDEDED; border:1px outset #FFF; margin-bottom:10px; }
+.search .searchterm .head   { background:#DBDBE0; padding:5px 3px; }
+.search .searchterm div div { width:212px; float:left; padding:3px; }
+.search .check input        { display:block; float:left; margin:0px 3px; border:0px; padding:0px; height:14px; width:14px; }
+.search #textinput          { padding:10px; }
+
+
+/*****************************************************
+		NAVIGATION
+******************************************************/
+/* basic drop down list */
+#nav                { background:url("../img/navbg.jpg"); height:26px; padding-left:3px; _padding-left:0px; border-bottom:1px solid #808080; clear:both; }
+#nav ul             { list-style-type:none; margin:0px; z-index:5000;}
+#nav ul li          { float:left; position: relative; margin:4px 3px; z-index:5000;}
+#nav ul li a        { display:block; text-align:center; color:#000;padding:2px 0px; border: 1px solid; border-color: #FFF #999 #999 #FFF; }
+#nav ul li ul       { background: #DADADA; border: 1px solid; border-color:#DADADA #999 #999 #FFF; position: absolute; top:15px; overflow:hidden; display: none; z-index:5000; }
+#nav ul li ul li    { float:none; padding:0px; }
+#nav ul li ul li  a { width:100%; }
+
+/* Stupid iframe needed to cover form element overlayed by menu */
+#members_nav iframe     { height:50px !important; }
+#members_nav #extended  { height:90px !important; }
+#ossip_nav iframe       { height:136px !important; }
+#nav iframe { height:90px; z-index:50; }
+#nav iframe { border: 0px solid #999; margin:2px;position: absolute; top:15px;overflow:hidden; display: none; }
+
+/* indent the buttons on hover */
+#nav a:hover,#nav ul li ul li a:hover  { border-color: #999 #FFF #FFF #999;color: #990000; }
+/* apart from the head items */
+#sculpture_nav a:hover,#paper_nav a:hover,#graphical_nav a:hover,#ossip_nav a:hover,#members_nav a:hover
+    { border-color: #999 #FFF #FFF #999; voice-family: "\"}\""; voice-family:inherit; border-color: #FFF #999 #999 #FFF; }
+html>body #ossip_nav a:hover { border-color: #FFF #999 #999 #FFF; } 
+
+/* define the width a buttons + sublists */
+#sculpture_nav a,#sculpture_nav ul,#sculpture_nav iframe    { width:60px; }
+#ossip_nav a, #ossip_nav ul,#ossip_nav iframe               { width:108px; }
+#members_nav a, #members_nav ul,#members_nav iframe         { width:90px; }
+/* menus without iframe */
+#paper_nav a,#paper_nav ul          { width:96px; }
+#graphical_nav a,#graphical_nav ul  { width:92px; }
+/* menus without sub menu */
+#services_nav a { width:53px; }
+#contact_nav a  { width:70px; } 
+#links_nav a    { width:86px; } 
+
+/* on hover show the menus, not in ie 5 */
+#nav li:hover ul,#nav li.over ul,#nav li.over iframe  { display: none; voice-family: "\"}\""; voice-family:inherit; display:block; }
+html>body #nav li.over ul { display:block; } 
+
+/*****************************************************
+		MEMBERS PAGES
+******************************************************/
+/* Members navigation */
+ul.members li a { width:100px;}
+
+/* Home page */
+.members                   { padding:5px; }
+.members .floatbox         { background:#F0F0F0; border:1px solid #C8C8C8; color:#000; padding:10px 0px 10px 0px; margin:0px 0px 10px 0px; }
+.members .right            { width:152px; float:right; }
+.members #featured         { text-align:center; }
+.members #featured h4	   { color: #666; }
+.members #featured span    { font-size:9px;  }
+.members #featured img     { border:1px solid; border-color: #666; }
+.members #featured div     { border:1px outset #FFF; background:#FFF; padding:8px 5px 5px 5px; width:100px; margin:0px auto; }
+.members #members          { width:505px; float:left; padding:10px; height:467px;}
+.members p                 { text-align:justify;display:block; }
+
+/* Signatures Page */
+#siglist .item .details div { border:1px inset #FFF; padding:4px; background:#F6F6F6; margin:3px; width:auto; }
+#siglist .item              { border:1px outset #FFF; padding:3px; background:#E1E1E1; margin:10px; width:auto; height:54px !important;}
+#siglist .item .image       { width:90px; float:left; margin:3px; _margin-left:2px; }
+#siglist .item .details     { margin-left:208px; _padding-top:1px; }
+#siglist .item .image img   { border:1px inset #FFF; }
+
+/* Bibliography */
+.biblio         { width:664px; margin:0px auto; }
+.biblio td      { padding:2px; border-bottom:1px solid #DDD; }
+.members #footer{ margin-bottom:10px; background:url('../img/masts/bib.jpg') no-repeat; }
+
+/* For Sale */
+#forthumbs      { width:640px; margin:50px auto; }
+.forsale        { width:102px; padding:10px; border: 4px solid #E6E8E8; background: #F8F9F9; text-align:center;float:left; margin:15px; display:inline; }
+.forsale a div  { width:99px; height:99px; border:1px solid #000; display:block; margin-bottom:5px; }
+.forsale a      { cursor: pointer; }
+p.sale          { width:650px; margin:0px auto; line-height:2; }
+
+.forsale .bronze    { background:url("../img/fsbronze.jpg") no-repeat; }
+.forsale .onpaper   { background:url("../img/fsonpaper.jpg") no-repeat; }
+.forsale .graphical { background:url("../img/fsgraphical.jpg") no-repeat; }
+.forsale .various   { background:url("../img/fsvarious.jpg") no-repeat; }
+
+#thumbnail.wfs .item .details { width:auto !important; }
+.members .wfs .item .details div    { border:1px inset #FFF; padding:2px; background:#F6F6F6; margin:5px; width:auto; }
+.members .wfs .item                 { border:1px outset #FFF; padding:3px; background:#E1E1E1; margin:10px; width:auto; }
+.members .wfs .item .image          { height:63px !important;margin-top:7px !important; }
+
+/*****************************************************
+		BROWSE AND SEARCH PAGE STYLES
+******************************************************/
+
+/* Shared */
+.browse .item .details div,
+.search .item .details div          { border:1px inset #FFF; padding:2px; background:#F6F6F6; margin:5px; width:auto; }
+.browse .item, .search .item        { border:1px outset #FFF; padding:5px; background:#DBDBE0; margin:10px; width:auto; }
+.browse .showingcount, .search .showingcount,
+.browse #pager, .search #pager      { text-align:center;line-height:1.6; }
+
+
+/* thumbnail list veiw */
+#thumbnaillist .item .details   { margin-left:100px; _padding-top:2px; }
+#thumbnaillist .item .image     { width:90px; height:90px; float:left; margin:5px; _margin-left:2px; }
+#thumbnaillist .item .image img { border:1px inset #FFF; }
+
+/* Enlarged image view */
+#enlarge                { border: 1px solid #000; }
+#enlarge #back          { display:block; float:left; }
+#enlarge #next          { display:block; float:right; }
+#enlarge .item .details { margin:0px; }
+#enlarge img            { border:1px solid #666; }
+
+/* Browse page */
+#browse {width:693px;margin:0px auto;  }
+#browse select { margin-left:4px; }
+.browse #decade             { width:96px; }
+.browse .head .showingcount { float:left; }
+.browse .head #pager        { float:right; }
+
+/* Search page */
+.search .head .showingcount { float:left; }
+.search .head #pager        { float:right; }
+.search #enlarge            { height:628px; border:1px solid #000; z-index:5; }
+/* Ugly code to make the image center in ie */
+#outer      { height: 450px; overflow: hidden; position: relative; margin:0px auto; z-index:5;}
+#outer[id]  { display: table; position: static; z-index:5;}
+#middle     { _position: absolute; _top: 50%; _left:50%; z-index:5;} 
+#middle[id] { display: table-cell; vertical-align: middle; position: static; z-index:5;}
+#inner      {_position: relative; _top: -50%; _left:-50%; z-index:5;} 
+
+/*****************************************************
+		HACKS
+******************************************************/
+.clearfix:after { content: 	".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+
+

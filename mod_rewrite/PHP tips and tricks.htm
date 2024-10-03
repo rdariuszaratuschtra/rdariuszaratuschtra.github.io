@@ -1,0 +1,424 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0045)http://www.mousewhisperer.co.uk/php_page.html -->
+<HTML><HEAD><TITLE>PHP tips and tricks</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META 
+content="web design, PHP, PHP4, tutorials, Ajax, XML, XMLHTTPRequest, script, coding, programming, server, Apache, scripting, Word,DOC,MS,convert,PHP,TXT,text,RTF,rich text format,plain text" 
+name=keywords>
+<META 
+content="Source code clips, snippets and tutorials for PHP programmers, hints and tips on programming techniques.  Coding lessons in .htaccess, custom error pages, detecting PHP, measuring page load time. PHP based software which converts MS Word (.DOC) files to plain text. Code available to download." 
+name=description>
+<META content="Phil Ballard" name=author>
+<META content=index,follow name=ROBOTS><LINK 
+href="PHP tips and tricks_files/mw.css" type=text/css rel=stylesheet>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY>
+<CENTER>
+<TABLE width=800>
+  <TBODY>
+  <TR>
+    <TD>
+      <CENTER>
+      <SCRIPT type=text/javascript><!--
+google_ad_client = "pub-7046513073226935";
+google_ad_width = 728;
+google_ad_height = 15;
+google_ad_format = "728x15_0ads_al_s";
+google_ad_channel ="";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "336666";
+google_color_url = "006699";
+google_color_text = "336666";
+//--></SCRIPT>
+
+      <SCRIPT src="PHP tips and tricks_files/show_ads.js" 
+      type=text/javascript>
+</SCRIPT>
+      </CENTER></TD></TR>
+  <TR>
+    <TD><IMG src="PHP tips and tricks_files/banner.gif" border=0></TD></TR>
+  <TR>
+    <TD align=middle bgColor=#c5ced5>
+      <SCRIPT src="PHP tips and tricks_files/xaramenu.js"></SCRIPT>
+
+      <SCRIPT src="PHP tips and tricks_files/mw.js"></SCRIPT>
+    </TD></TR>
+  <TR>
+    <TD>
+      <TABLE width="100%">
+        <TBODY>
+        <TR>
+          <TD vAlign=top align=middle width=136 bgColor=#c5ced5>
+            <SCRIPT type=text/javascript><!--
+google_ad_client = "pub-7046513073226935";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_ad_type = "text_image";
+google_ad_channel ="";
+google_color_border = "C5CED5";
+google_color_bg = "C5CED5";
+google_color_link = "003366";
+google_color_url = "000000";
+google_color_text = "006699";
+//--></SCRIPT>
+
+            <SCRIPT src="PHP tips and tricks_files/show_ads.js" 
+            type=text/javascript>
+</SCRIPT>
+          </TD>
+          <TD 
+          style="PADDING-RIGHT: 20px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px" 
+          vAlign=top><!-- google_ad_section_start -->
+            <P>&nbsp;</P>
+            <BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+              <P>
+              <H2><FONT color=#000066 size=3>PHP Resources</FONT></H2>
+              <P></P>
+              <P><STRONG><FONT color=#000066 size=2>Some PHP&nbsp;Odds 'n' 
+              Ends&nbsp;you my find useful</FONT></STRONG></P>
+              <P>
+              <H3><FONT color=#000066>Extracting Text from MS Word</FONT></H3>
+              <P>If your PHP installation is Unix/Linux, rather than Windows, 
+              you don't have access to PHP's COM abilities. This makes it 
+              difficult to extract infomation from Microsoft Word documents.</P>
+              <P>Being able to get at the text from a Word document can be 
+              useful, especially for building indexers for search engines.</P>
+              <P>The solutions that are currently available usually involve 
+              using binaries such as catdoc or antiword.&nbsp; Good as these 
+              products are, they can be complicated to install and configure 
+              (sometimes impossible if using a shared hosting account).</P>
+              <P>Here's a simple attempt at a solution using just PHP. I don't 
+              pretend that it makes a complete success of extracting the text 
+              from all Word documents, but I've found it very reliable for the 
+              vast majority of the several thousand docs I've used it with. The 
+              function returns text from the Word document as a 
+              string,&nbsp;with all the formatting removed. Please note that 
+              some parts of the Word document (header, footer etc) are not 
+              parsed.</P><FONT color=#cc0000><XMP><?php
+/*****************************************************************
+This approach uses detection of NUL (chr(00)) and end line (chr(13))
+to decide where the text is:
+- divide the file contents up by chr(13)
+- reject any slices containing a NUL
+- stitch the rest together again
+- clean up with a regular expression
+*****************************************************************/
+
+function parseWord($userDoc) 
+{
+    $fileHandle = fopen($userDoc, "r");
+    $line = @fread($fileHandle, filesize($userDoc));   
+    $lines = explode(chr(0x0D),$line);
+    $outtext = "";
+    foreach($lines as $thisline)
+      {
+        $pos = strpos($thisline, chr(0x00));
+        if (($pos !== FALSE)||(strlen($thisline)==0))
+          {
+          } else {
+            $outtext .= $thisline." ";
+          }
+      }
+    $outtext = preg_replace("/[^a-zA-Z0-9\s\,\.\-\n\r\t@\/\_\(\)]/","",$outtext);
+    return $outtext;
+}    
+?></XMP></FONT>
+              <P>Using the function is as easy as:</P><FONT color=#cc0000>
+              <P><XMP>$text = parseWord($userDoc);
+</XMP>
+              <P></P></FONT>
+              <P>The recovered text can then be processed as required, e.g. put 
+              into an index, or a MySQL table having a FULLTEXT index applied 
+              etc.</P>
+              <H3><FONT color=#000066>Detecting PHP use</FONT></H3>
+              <P></P>
+              <P>You can tell if a server has PHP installed, irrespective of 
+              what file extensions they may be using (some sites change the 
+              default .php extension for security reasons).&nbsp; Simply 
+              append:</P>
+              <BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+                <BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+                  <BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+                    <P align=left><FONT color=#990000 
+                    size=1>?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000</FONT></P></BLOCKQUOTE></BLOCKQUOTE></BLOCKQUOTE>
+              <P>to the URL of the domain in question.&nbsp; If PHP is 
+              installed, you should get a nicely formatted page showing the PHP 
+              credits.</P>
+              <P>Try it with this site by clicking <A 
+              href="http://mousewhisperer.co.uk/index.php?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000" 
+              target=_blank>here</A>.<BR></P>
+              <P>
+              <H3><FONT color=#000066>Measuring Page Loading Time</FONT></H3>
+              <P></P>
+              <P>You may have noticed some pages (including this one) displaying 
+              a little message, usual at the page foot, saying 'Page loaded in 
+              0.*** secs' or similar.&nbsp; here's how to do it using PHP's 
+              <STRONG>microtime()</STRONG> function:</P>
+              <P>In a PHP code block at the start of the page, put:</P>
+              <BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+                <BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+                  <BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+                    <P><FONT color=#990000 size=1>$mic_time = explode(" 
+                    ",microtime()); <BR>$mic_time = $mic_time[1] + $mic_time[0]; 
+                    <BR>$starttime = 
+              $mic_time;</FONT></P></BLOCKQUOTE></BLOCKQUOTE></BLOCKQUOTE>
+              <P>Near the page end, put the following lines in a PHP code 
+              block:</P>
+              <BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+                <BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+                  <BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+                    <P align=left><FONT color=#990000 size=1>$places = 
+                    5;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// However many 
+                    decimal places you require<BR>$mic_time = explode(" 
+                    ",microtime()); <BR>$mic_time = $mic_time[1] + $mic_time[0]; 
+                    <BR>$finishtime = $mic_time; <BR>echo "Page loaded in ". 
+                    round(($finishtime - $starttime),$places) ." secs";</FONT> 
+                    </P></BLOCKQUOTE></BLOCKQUOTE></BLOCKQUOTE>
+              <P>The <STRONG>microtime()</STRONG> function returns the Unix 
+              timestamp for the current moment, in the form "msec sec" where sec 
+              is the current time measured in the number of seconds since the 
+              Unix Epoch (0:00:00 January 1, 1970 GMT), and msec is the 
+              miiliseconds part.</P>
+              <P>We manipulate the string to give us a start time and finish 
+              time, and simply subtract one from the other to give us our page 
+              loading time.</P>
+              <P>
+              <H3><FONT color=#000066 size=2>A Custom Error Page 
+              generator</FONT></H3>
+              <P></P>
+              <P>This is to be used with suitable <STRONG>ErrorDocument</STRONG> 
+              entries in an .<STRONG>htaccess</STRONG> file - see the <A 
+              href="http://www.mousewhisperer.co.uk/htaccess_page.html">.htaccess 
+              tutorial</A> for details.</P>
+              <P>Rather than create a whole bunch of different pages to cater 
+              for all of the different error codes, we can quite easily write a 
+              PHP script to generate them on-the-fly.</P>
+              <P>First, take your favourite programmer's editor and create a 
+              file called <STRONG>err.php</STRONG>.&nbsp; This file will contain 
+              the program that will be called by the .htaccess file when an 
+              error occurs.&nbsp; Here's an example line from our .htaccess 
+              file, this one dealing with the common 404 or <STRONG>'Page Not 
+              Found'</STRONG> error:</P>
+              <BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+                <BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+                  <P align=left><FONT color=#990000 size=1>ErrorDocument 404 
+                  /err.php?code=404</FONT></P></BLOCKQUOTE></BLOCKQUOTE>
+              <P>We need one such line in .htaccess for each different error 
+              code we choose to process.&nbsp; </P>
+              <P>Our PHP script will store error messages in an associative 
+              array<STRONG> $errortext</STRONG>, with each array entry being of 
+              the form</P>
+              <BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+                <BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+                  <P align=left><FONT color=#990000 size=1>$errortext[errorcode] 
+                  = "Explanatory text for this 
+              error";</FONT></P></BLOCKQUOTE></BLOCKQUOTE>
+              <P>The script will simply look for the given error code (passed, 
+              via the URL, in the variable code) and output the associated text 
+              into a web page template.&nbsp; So inside our PHP code block:</P>
+              <BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+                <BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+                  <P><FONT color=#990000 size=1>// First let's generate our 
+                  array of error messages<BR>$errortext["400"] = "Bad server 
+                  request.&nbsp; You may have made a syntax 
+                  error.";<BR>$errrortext["404"] = "I'm sorry, but that page 
+                  doesn't seem to exist.";<BR>... and so 
+              on</FONT></P></BLOCKQUOTE></BLOCKQUOTE>
+              <P>Now we need to check the error code, passed to the script in 
+              the code variable, to get the appropriate error message:</P>
+              <BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+                <BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+                  <P><FONT color=#990000 size=1>$errorcode = 
+                  $_GET["code"];&nbsp; </FONT></P>
+                  <P><FONT color=#990000 size=1>// get the relevant error 
+                  code:<BR>if(array_key_exists($errorcode,$errortext))<BR>{<BR>&nbsp; 
+                  $output = 
+              $errortext[$errorcode];<BR>}</FONT></P></BLOCKQUOTE></BLOCKQUOTE>
+              <P>We now have a variable <STRONG>$output</STRONG>, which we can 
+              simply echo to our user:</P>
+              <BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+                <BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+                  <P><FONT color=#990000 size=1>echo 
+                $output;</FONT></P></BLOCKQUOTE></BLOCKQUOTE>
+              <P>You can download a complete script to study <A 
+              href="http://www.mousewhisperer.co.uk/err.zip">HERE</A>.&nbsp; 
+              This script has some added features:</P>
+              <UL>
+                <LI>An option&nbsp;to send an email to the webmaster when an 
+                error is generated 
+                <LI>All error pages have a link for the user to redirect them to 
+                the site's homepage</LI></UL>
+              <P>The code is commented and would be easy to extend further.</P>
+              <P>Your feedback on these tutorials is important, so please don't 
+              forget to sign the <A 
+              href="http://www.mousewhisperer.co.uk/gbook/index.htm">guestbook</A> 
+              ....<BR><BR></P>
+              <P><A 
+              href="http://tutorialtopsites.com/in.php?id=32"></A>&nbsp;</P></BLOCKQUOTE><BR>
+            <TABLE width="100%">
+              <TBODY>
+              <TR>
+                <TD 
+                style="PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 20px; PADDING-TOP: 20px" 
+                colSpan=4>
+                  <CENTER><B>Amazon Books: </B>Mouse over for brief details or 
+                  click to visit</CENTER></TD>
+              <TR>
+                <TD>
+                  <CENTER><A 
+                  style="PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 20px; PADDING-TOP: 20px" 
+                  href="http://www.amazon.com/exec/obidos/ASIN/0672326728/themousewhisp-20?dev-t=1WPTTG90FS816BXMNFG2%26camp=2025%26link_code=xm2" 
+                  target=_blank><IMG 
+                  title="PHP and MySQL Web Development (3rd Edition) (Developer's Library): $31.49" 
+                  alt="PHP and MySQL Web Development (3rd Edition) (Developer's Library): $31.49" 
+                  src="PHP tips and tricks_files/0672326728.01.THUMBZZZ.jpg" 
+                  border=0></A></CENTER></TD>
+                <TD>
+                  <CENTER><A 
+                  style="PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 20px; PADDING-TOP: 20px" 
+                  href="http://www.amazon.com/exec/obidos/ASIN/0596006810/themousewhisp-20?dev-t=1WPTTG90FS816BXMNFG2%26camp=2025%26link_code=xm2" 
+                  target=_blank><IMG title="Programming PHP: $25.19" 
+                  alt="Programming PHP: $25.19" 
+                  src="PHP tips and tricks_files/0596006810.01.THUMBZZZ.jpg" 
+                  border=0></A></CENTER></TD>
+                <TD>
+                  <CENTER><A 
+                  style="PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 20px; PADDING-TOP: 20px" 
+                  href="http://www.amazon.com/exec/obidos/ASIN/0596005431/themousewhisp-20?dev-t=1WPTTG90FS816BXMNFG2%26camp=2025%26link_code=xm2" 
+                  target=_blank><IMG 
+                  title="Web Database Applications with PHP &amp; MySQL, 2nd Edition: $28.32" 
+                  alt="Web Database Applications with PHP &amp; MySQL, 2nd Edition: $28.32" 
+                  src="PHP tips and tricks_files/0596005431.01.THUMBZZZ.jpg" 
+                  border=0></A></CENTER></TD>
+                <TD>
+                  <CENTER><A 
+                  style="PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 20px; PADDING-TOP: 20px" 
+                  href="http://www.amazon.com/exec/obidos/ASIN/0321186486/themousewhisp-20?dev-t=1WPTTG90FS816BXMNFG2%26camp=2025%26link_code=xm2" 
+                  target=_blank><IMG 
+                  title="PHP and MySQL for Dynamic Web Sites: Visual QuickPro Guide: $15.74" 
+                  alt="PHP and MySQL for Dynamic Web Sites: Visual QuickPro Guide: $15.74" 
+                  src="PHP tips and tricks_files/0321186486.01.THUMBZZZ.jpg" 
+                  border=0></A></CENTER></TD></TR></TBODY></TABLE><BR><!-- google_ad_section_end --></TD>
+          <TD width=9 bgColor=#c5ced5></TD>
+          <TD vAlign=top width=127 bgColor=#c5ced5>&nbsp; 
+            <TABLE width=120>
+              <TBODY>
+              <TR>
+                <TD 
+                style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 20px; FONT: 11px bold verdana, arial, sans-serif; PADDING-TOP: 0px" 
+                colSpan=4>
+                  <CENTER>Amazon Books:</CENTER></TD>
+              <TR>
+              <TR>
+                <TD>
+                  <CENTER><A 
+                  style="PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 50px; PADDING-TOP: 50px" 
+                  href="http://www.amazon.com/exec/obidos/ASIN/0672326728/themousewhisp-20?dev-t=1WPTTG90FS816BXMNFG2%26camp=2025%26link_code=xm2" 
+                  target=_blank><IMG 
+                  title="PHP and MySQL Web Development (3rd Edition) (Developer's Library): $31.49" 
+                  alt="PHP and MySQL Web Development (3rd Edition) (Developer's Library): $31.49" 
+                  src="PHP tips and tricks_files/0672326728.01.THUMBZZZ.jpg" 
+                  border=0></A><BR>&nbsp;</CENTER></TD>
+              <TR>
+              <TR>
+                <TD>
+                  <CENTER><A 
+                  style="PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 50px; PADDING-TOP: 50px" 
+                  href="http://www.amazon.com/exec/obidos/ASIN/0596006810/themousewhisp-20?dev-t=1WPTTG90FS816BXMNFG2%26camp=2025%26link_code=xm2" 
+                  target=_blank><IMG title="Programming PHP: $25.19" 
+                  alt="Programming PHP: $25.19" 
+                  src="PHP tips and tricks_files/0596006810.01.THUMBZZZ.jpg" 
+                  border=0></A><BR>&nbsp;</CENTER></TD>
+              <TR>
+              <TR>
+                <TD>
+                  <CENTER><A 
+                  style="PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 50px; PADDING-TOP: 50px" 
+                  href="http://www.amazon.com/exec/obidos/ASIN/0596005431/themousewhisp-20?dev-t=1WPTTG90FS816BXMNFG2%26camp=2025%26link_code=xm2" 
+                  target=_blank><IMG 
+                  title="Web Database Applications with PHP &amp; MySQL, 2nd Edition: $28.32" 
+                  alt="Web Database Applications with PHP &amp; MySQL, 2nd Edition: $28.32" 
+                  src="PHP tips and tricks_files/0596005431.01.THUMBZZZ.jpg" 
+                  border=0></A><BR>&nbsp;</CENTER></TD>
+              <TR>
+              <TR>
+                <TD>
+                  <CENTER><A 
+                  style="PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 50px; PADDING-TOP: 50px" 
+                  href="http://www.amazon.com/exec/obidos/ASIN/0321186486/themousewhisp-20?dev-t=1WPTTG90FS816BXMNFG2%26camp=2025%26link_code=xm2" 
+                  target=_blank><IMG 
+                  title="PHP and MySQL for Dynamic Web Sites: Visual QuickPro Guide: $15.74" 
+                  alt="PHP and MySQL for Dynamic Web Sites: Visual QuickPro Guide: $15.74" 
+                  src="PHP tips and tricks_files/0321186486.01.THUMBZZZ.jpg" 
+                  border=0></A><BR>&nbsp;</CENTER></TD>
+              <TR>
+              <TR>
+                <TD style="FONT: 9px normal verdana, arial, sans-serif">
+                  <CENTER>Mouse over for brief details or click for full 
+                  information</CENTER></TD></TR></TBODY></TABLE><!--<script language="JavaScript1.2" src="http://convert.rss-to-javascript.com/scroll/?desc=1&font=Verdana&bgcolor=f0f0ff&fgcolor=6699CC&src=http%3A%2F%2Frss.news.yahoo.com%2Frss%2Ftech&rss_title=News&pause=1&height=270&width=120&type=1">
+</script><noscript>Your browser does not support JavaScript. </noscript>--></TD>
+          <TD width=2 bgColor=#c5ced5></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD>
+      <TABLE width="100%">
+        <TBODY>
+        <TR>
+          <TD align=left width="33%" bgColor=#c5ced5><A 
+            href="http://www.mousewhisperer.co.uk/sitemap_page.html">Site 
+          Map</A></TD>
+          <TD align=middle width="34%" bgColor=#c5ced5>Page loaded in 1.06974 
+            sec</TD>
+          <TD align=right width="33%" bgColor=#c5ced5>© 2005 The Mouse 
+            Whisperer</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></CENTER><!-- Start of StatCounter Code -->
+<SCRIPT language=javascript type=text/javascript>
+var sc_project=618727; 
+var sc_invisible=1; 
+var sc_partition=3; 
+var sc_security="10549b3f"; 
+</SCRIPT>
+
+<SCRIPT language=javascript src="PHP tips and tricks_files/counter.js" 
+type=text/javascript></SCRIPT>
+<NOSCRIPT><A href="http://www.statcounter.com/" target=_blank><IMG 
+alt="free web page hit counter" src="PHP tips and tricks_files/counter.gif" 
+border=0></A> </NOSCRIPT><!-- End of StatCounter Code -->
+<SCRIPT type=text/javascript>
+<!--
+// THIS CODE MUST BE **AFTER** THE ADSENSE CODE
+function adsense_log_click()
+{
+	if(window.status.indexOf('go to') == 0)
+	{
+		adsense_log_url_image = new Image();
+		adsense_log_url_image.src = '/adsense_clicklogger.php?R=' +
+			escape(document.location) + '&U=' +
+			escape(window.status.substring(6));
+	}
+	if(window.status.indexOf('View ads') == 0)
+	{
+		adsense_log_url_image = new Image();
+		adsense_log_url_image.src = '/adsense_clicklogger.php?R=' +
+			escape(document.location) + '&U=Link Unit' +
+			escape(window.status.substring(8));
+	}        
+}
+
+var elements;
+if(document.getElementsByTagName) {
+	elements = document.body.getElementsByTagName("IFRAME");
+} else if (document.body.all) {
+	elements = document.body.all.tags("IFRAME");
+} else {
+	elements = Array();
+}
+for(var i = 0; i < elements.length; i++) {
+	if(elements[i].src.indexOf('googlesyndication.com') > -1) {
+		elements[i].onfocus = adsense_log_click;
+	}
+}
+
+//-->
+</SCRIPT>
+</BODY></HTML>

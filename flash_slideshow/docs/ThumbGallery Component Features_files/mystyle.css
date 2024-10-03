@@ -1,0 +1,30 @@
+A#dis:link {
+	COLOR: #ff6600; TEXT-DECORATION: none
+}
+A#dis:visited {
+	COLOR: #ff6600; TEXT-DECORATION: none
+}
+A#dis:hover {
+	COLOR: #cccccc; TEXT-DECORATION: none
+}
+A#dis:active {
+	COLOR: #ff6600; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #ff6600; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #ff6600; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #1e4b78; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #ff3300; TEXT-DECORATION: none
+}
+.disclaimer {
+	FONT-SIZE: 10px; COLOR: #999999; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.bodyText {
+	FONT-SIZE: 11px; COLOR: #666666; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}

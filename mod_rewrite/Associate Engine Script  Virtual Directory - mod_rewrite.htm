@@ -1,0 +1,546 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0049)http://www.c3scripts.com/amazon/docs-virtual.html -->
+<HTML><HEAD><TITLE>Associate Engine Script : Virtual Directory / mod_rewrite</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<STYLE type=text/css>A:hover {
+	COLOR: #000000; BACKGROUND-COLOR: #ffff66
+}
+P {
+	FONT-SIZE: x-small; FONT-FAMILY: Verdana
+}
+UL {
+	FONT-SIZE: x-small; FONT-FAMILY: Verdana
+}
+LI {
+	FONT-SIZE: x-small; FONT-FAMILY: Verdana
+}
+TT {
+	FONT-SIZE: x-small; FONT-FAMILY: monospace
+}
+.box {
+	BORDER-RIGHT: gray 1px dashed; BORDER-TOP: gray 1px dashed; BORDER-LEFT: gray 1px dashed; BORDER-BOTTOM: gray 1px dashed; BACKGROUND-COLOR: #f0f0f0
+}
+.tag {
+	FONT-SIZE: x-small; COLOR: #990099; FONT-FAMILY: monospace
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff>
+<TABLE cellSpacing=0 cellPadding=8 width="100%" align=center border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle width=160 bgColor=#005ea9><IMG height=75 
+      src="Associate Engine Script  Virtual Directory - mod_rewrite_files/ccc.gif" 
+      width=151 border=0></TD>
+    <TD align=middle bgColor=#005ea9><FONT face=Arial color=#ffffff 
+      size=+2><I>Associate Engine</I> : Documentation : <NOBR>Virtual Directory 
+      / mod_rewrite</NOBR></FONT></TD>
+    <TD align=middle width=160 bgColor=#005ea9>&nbsp;</TD></TR>
+  <TR>
+    <TD bgColor=#ccccff colSpan=3>
+      <P><FONT face=Verdana size=-1><A 
+      href="http://www.c3scripts.com/index.html">Home</A> &gt; <A 
+      href="http://www.c3scripts.com/amazon/index.html">Associate Engine</A> 
+      &gt; <A href="http://www.c3scripts.com/amazon/docs.html">Documentation</A> 
+      &gt; Virtual Directory / mod_rewrite</FONT></P></TD></TR></TBODY></TABLE>
+<H1>Virtual Directory / mod_rewrite</H1>
+<TABLE cellSpacing=2 cellPadding=6 border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=1 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD bgColor=#cccc99>
+            <TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#ffffff 
+            border=0>
+              <TBODY>
+              <TR>
+                <TD bgColor=#eeeecc>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT face=Verdana>Browse <B>Virtual 
+                        Directory</B></FONT></TD></TR></TBODY></TABLE></TD></TR>
+              <TR vAlign=top>
+                <TD vAlign=top align=left bgColor=#ffffff>
+                  <TABLE cellSpacing=0 cellPadding=0 border=0>
+                    <TBODY>
+                    <TR>
+                      <TD vAlign=top>
+                        <UL style="MARGIN-BOTTOM: 2pt">
+                          <LI><A 
+                          href="http://www.c3scripts.com/amazon/docs-virtual.html#explained">Virtual 
+                          Directory Explained</A> 
+                          <LI><A 
+                          href="http://www.c3scripts.com/amazon/docs-virtual.html#requirements">Webserver 
+                          Requirements</A> 
+                          <LI><A 
+                          href="http://www.c3scripts.com/amazon/docs-virtual.html#configuration">Server 
+                          Configuration</A> 
+                          <LI><A 
+                          href="http://www.c3scripts.com/amazon/docs-virtual.html#windows">Windows 
+                          Servers</A> 
+                          <LI><A 
+                          href="http://www.c3scripts.com/amazon/docs-virtual.html#forms">Search 
+                          Forms</A> 
+                          <LI><A 
+                          href="http://www.c3scripts.com/amazon/docs-virtual.html#homepage">Home 
+                          Page</A> </LI></UL></TD>
+                      <TD 
+            width=16>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><BR>
+<TABLE cellSpacing=2 cellPadding=6 border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=1 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD bgColor=#ff0000>
+            <TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#fffff0 
+            border=0>
+              <TBODY>
+              <TR>
+                <TD bgColor=#ffff00>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT face=Verdana color=#ff0000><B>Note to 
+                        webmasters of Windows 
+                  Servers:</B></FONT></TD></TR></TBODY></TABLE></TD></TR>
+              <TR vAlign=top>
+                <TD vAlign=top align=left>
+                  <TABLE cellSpacing=0 cellPadding=0>
+                    <TBODY>
+                    <TR>
+                      <TD vAlign=top>
+                        <P>See <A 
+                        href="http://www.c3scripts.com/amazon/docs-virtual.html#windows">Windows 
+                        Servers</A> section below for important 
+                    note.</P></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<HR color=#ffcc66 noShade SIZE=1>
+
+<H2><A name=explained>Virtual Directory Explained</A></H2>
+<BLOCKQUOTE>
+  <P>Virtual Directory makes it possible for <I>Associate Engine</I> results 
+  pages to appear as if they are static HTML files rather than accessed via a 
+  <NOBR><TT><A 
+  href="http://www.c3scripts.com/amazon/faq-newuser.html#cgibin">cgi-bin</A></TT></NOBR> 
+  perl program.</P>
+  <P>Virtual Directory is implemented using "<TT><FONT 
+  color=#990099>mod_rewrite</FONT></TT>". <TT><FONT 
+  color=#990099>mod_rewrite</FONT></TT> is a standard feature of Apache 
+  webserver (running on linux/unix computers). If you're using a Windows server, 
+  see <A 
+  href="http://www.c3scripts.com/amazon/docs-virtual.html#windows">Windows 
+  Servers</A> below.</P>
+  <P>For example, a typical <I>Associate Engine</I> URL that uses parameters is 
+  as follows:</P>
+  <BLOCKQUOTE>
+    <TABLE cellSpacing=0 cellPadding=8 bgColor=#f0f0f0 border=0>
+      <TBODY>
+      <TR>
+        <TD>
+          <P><A 
+          href="http://www.bime.com/cgi-bin/ae.pl?type=search&amp;mode=books&amp;keyword=harry+potter" 
+          target=_blank><IMG height=36 
+          src="Associate Engine Script  Virtual Directory - mod_rewrite_files/sample-url.gif" 
+          width=630 border=0></A></P></TD></TR></TBODY></TABLE></BLOCKQUOTE>
+  <P>The following URL that uses a Virtual Directory is equivalent to the above 
+  parameter-based URL:</P>
+  <BLOCKQUOTE>
+    <TABLE cellSpacing=0 cellPadding=8 bgColor=#f0f0f0 border=0>
+      <TBODY>
+      <TR>
+        <TD>
+          <P><A 
+          href="http://www.bime.com/amazon/type_search/mode_books/keyword_harry%20potter" 
+          target=_blank><IMG height=41 
+          src="Associate Engine Script  Virtual Directory - mod_rewrite_files/sample-path.gif" 
+          width=590 border=0></A></P></TD></TR></TBODY></TABLE></BLOCKQUOTE>
+  <P>This URL does not contain anything that suggests that it is a perl program. 
+  The URL looks like it is just referring to a directory that is within several 
+  subdirectories. To the "outside world" it appears that your webserver contains 
+  the following directory tree even though none of these directories actually 
+  exists:</P>
+  <BLOCKQUOTE>
+    <P><IMG height=65 
+    src="Associate Engine Script  Virtual Directory - mod_rewrite_files/sample-path2.gif" 
+    width=204 border=0></P></BLOCKQUOTE>
+  <P>The order of the directory names in the <FONT 
+  color=#009900>Parameters</FONT> portion of the URL does not matter. The only 
+  thing that matters is the first directory name, that is, <TT><FONT 
+  color=#990099>/amazon/</FONT></TT> (this directory name is set in the 
+  configuration; see below).</P>
+  <P>Each of the parameters (<TT><FONT color=#990099><I>NAME</I>=<I><FONT 
+  color=#ff0000>VALUE</FONT></I></FONT></TT>) has become a directory name 
+  (<TT><FONT color=#990099>/<I>NAME</I>_<I><FONT 
+  color=#ff0000>VALUE</FONT></I></FONT></TT>).</P>
+  <HR align=left width=250 color=#ffcc66 noShade SIZE=1>
+
+  <H3>Creating a URL:</H3>
+  <P>When you type in a URL, keep the following points in mind:</P>
+  <UL>
+    <LI>Start with <TT><FONT 
+    color=#990099>http://www.<I>DOMAIN</I>.com/amazon</FONT></TT> or with 
+    <TT><FONT color=#990099>/amazon</FONT></TT> if it is a local URL (e.g.: 
+    <TT><FONT color=#990099>HREF="/amazon/..."</FONT></TT>). 
+    <LI>Use <TT><FONT color=#990099>/</FONT></TT> to separate each parameter 
+    (e.g.: <TT><FONT 
+    color=#990099>/amazon/type_search/mode_books/...</FONT></TT>). 
+    <LI>Use <TT><FONT color=#990099>_</FONT></TT> between the <TT><FONT 
+    color=#990099><I>NAME</I></FONT></TT> and <TT><I><FONT 
+    color=#ff0000>VALUE</FONT></I></TT> of each parameter (e.g.: <TT><FONT 
+    color=#990099>type_</FONT><FONT color=#ff0000>search</FONT></TT>). 
+    <LI>In the <TT><I><FONT color=#ff0000>VALUE</FONT></I></TT>, use <TT><FONT 
+    color=#990099>%20</FONT></TT> (i.e.: percent-two-zero) instead of <TT><FONT 
+    color=#990099>+</FONT></TT>, e.g.: <TT><FONT 
+    color=#990099>harry%20potter</FONT></TT> (space is ASCII code %20). 
+    <LI>If a parameter has no value then use <TT><FONT 
+    color=#990099>/<I>NAME</I></FONT></TT> wihtout any <TT><I><FONT 
+    color=#ff0000>VALUE</FONT></I></TT> (e.g.: <TT><FONT 
+    color=#990099>/amazon/script/type_search/...</FONT></TT>). 
+    <LI>Optional: If you want, you can end the URL with one of the following 
+    endings: </LI></UL></BLOCKQUOTE>
+<TABLE cellSpacing=0 cellPadding=4 align=center bgColor=#fffee9 border=1>
+  <TBODY>
+  <TR bgColor=#ffcc66>
+    <TD align=middle><FONT face=Verdana size=-1><B>URL Ending</B></FONT></TD>
+    <TD align=middle><FONT face=Verdana size=-1><B>Example URL</B></FONT></TD>
+    <TD align=middle><FONT face=Verdana size=-1><B>Meaning</B></FONT></TD></TR>
+  <TR>
+    <TD><TT>/</TT></TD>
+    <TD><TT>/amazon/type_search/mode_books/</TT></TD>
+    <TD>URL looks like a directory</TD></TR>
+  <TR>
+    <TD><TT>/index.html</TT></TD>
+    <TD><TT>/amazon/type_search/mode_books/index.html</TT></TD>
+    <TD>URL looks like a <TT>index.html</TT> file</TD></TR>
+  <TR>
+    <TD><TT>.html</TT></TD>
+    <TD><TT>/amazon/type_search/mode_books.html</TT></TD>
+    <TD>URL looks like a <TT>.html</TT> file</TD></TR>
+  <TR>
+    <TD><TT>.htm</TT></TD>
+    <TD><TT>/amazon/type_search/mode_books.htm</TT></TD>
+    <TD>URL looks like a <TT>.htm</TT> file</TD></TR></TBODY></TABLE><BR><BR>
+<HR color=#ffcc66 noShade SIZE=1>
+
+<H2><A name=requirements>Webserver Requirements</A></H2>
+<BLOCKQUOTE>
+  <P>For Virtual Directory to work, your webserver must have 
+  <TT>RewriteEngine</TT> enabled. The <TT>RewriteEngine</TT> is part of Apache 
+  webservers and allows you to do "search and replace" on URL's (e.g.: replace 
+  URL "<TT><FONT color=#990099>/amazon/bestbooks</FONT></TT>" with URL 
+  <NOBR>"<TT><FONT 
+  color=#990099>/cgi-bin/ae.pl?type=best&amp;mode=books</FONT></TT>")</NOBR>. 
+  Note: <TT>RewriteEngine</TT> might be disabled by your hosting company so you 
+  might have to ask your hosting company to enable <TT>RewriteEngine</TT> on 
+  your webserver.</P>
+  <P>If you're using a Windows server, see <A 
+  href="http://www.c3scripts.com/amazon/docs-virtual.html#windows">Windows 
+  Servers</A> below.</P></BLOCKQUOTE><BR>
+<HR color=#ffcc66 noShade SIZE=1>
+
+<H2><A name=configuration>Configuration</A></H2>
+<BLOCKQUOTE>
+  <P>To configure your webserver and <I>Associate Engine</I> to use Virtual 
+  Directory, you have to do two things:</P>
+  <OL>
+    <LI>Create a <TT><FONT color=#990099>.htaccess</FONT></TT> file in the root 
+    directory of your website. 
+    <LI>Set the <TT><A 
+    href="http://www.c3scripts.com/amazon/docs8.html#virtual.dir">virtual.dir</A></TT> 
+    configuration variable. </LI></OL>
+  <HR align=left width=250 color=#ffcc66 noShade SIZE=1>
+
+  <H3><TT>.htaccess</TT> Server Configuration File</H3>
+  <P>Look in the root directory of your website (i.e.: in the directory where 
+  your website's homepage <TT><FONT color=#990099>index.html</FONT></TT> file is 
+  located) and see if there is a file called <TT><FONT 
+  color=#990099>.htaccess</FONT></TT> located there. If it already exists, then 
+  you have to download it, edit it using a text editor (such as Windows 
+  Notepad), and then reupload it. If it does not exist, then you can just create 
+  a new <TT><FONT color=#990099>.htaccess</FONT></TT> file using a text editor 
+  and upload it.</P>
+  <P>The following four lines need to be in your <TT><FONT 
+  color=#990099>.htaccess</FONT></TT> file. Either add these lines to the end of 
+  your existing <TT><FONT color=#990099>.htaccess</FONT></TT> file or create a 
+  new <TT><FONT color=#990099>.htaccess</FONT></TT> file that contains these 
+  lines.</P>
+  <BLOCKQUOTE>
+    <P><FONT color=#ff0000><B>Important:</B></FONT> The lines have to be typed 
+    exactly as shown below. To prevent typographical errors, open the text file 
+    <NOBR><TT><FONT color=#990099>ae-htaccess.txt</FONT></TT></NOBR> found in 
+    the <TT><FONT color=#990099>.zip</FONT></TT> distribution file, and copy and 
+    paste the lines to your <TT><FONT color=#990099>.htaccess</FONT></TT> 
+    file.</P>
+    <TABLE cellSpacing=0 cellPadding=8 bgColor=#f0f0f0 border=0>
+      <TBODY>
+      <TR>
+        <TD><PRE style="MARGIN-BOTTOM: 0pt">RewriteEngine on
+RewriteBase /
+RewriteRule ^(<FONT color=#990099>amazon</FONT>)$ $1/ [R]
+RewriteRule ^(<FONT color=#990099>amazon</FONT>)/(.*)(\.[a-z]+)$ <FONT color=#990099>cgi-bin/ae.pl</FONT>?virtual=$2&amp;virtual.dir=$1 [L]
+RewriteRule ^(<FONT color=#990099>amazon</FONT>)/(.*)$ <FONT color=#990099>cgi-bin/ae.pl</FONT>?virtual=$2&amp;virtual.dir=$1 [L]
+</PRE></TD></TR></TBODY></TABLE></BLOCKQUOTE>
+  <P>These lines cause all requests that start with <TT><FONT 
+  color=#990099>/amazon</FONT></TT> to be rewritten as requests to 
+  <NOBR><TT><FONT color=#990099>/cgi-bin/ae.pl</FONT></TT></NOBR> The virtual 
+  directory path is passed to <TT><FONT color=#990099>ae.pl</FONT></TT> as the 
+  <TT><A 
+  href="http://www.c3scripts.com/amazon/docs10.html#virtual">virtual</A></TT> 
+  parameter and the <TT><A 
+  href="http://www.c3scripts.com/amazon/docs10.html#virtual.dir">virtual.dir</A></TT> 
+  parameter.</P>
+  <P>If you want to start your URL's with something other than <TT><FONT 
+  color=#990099>/amazon</FONT></TT> such as <TT><FONT 
+  color=#990099>/shop</FONT></TT> then change the <TT><FONT 
+  color=#990099>amazon</FONT></TT> in the 3rd and 4th and 5th lines, such as 
+  <TT><FONT color=#990099>shop</FONT></TT>. If you want to use a 
+  <NOBR>sub-directory</NOBR> such as <TT><FONT 
+  color=#990099>/mystore/shop</FONT></TT> you can do that; in the above 
+  <TT><FONT color=#990099>RewriteRule</FONT></TT>'s you would use <TT><FONT 
+  color=#990099>(mystore/shop)</FONT></TT></P>
+  <P><FONT color=#ff0000><B>IMPORTANT:</B></FONT> If <I>Associate Engine</I> is 
+  located at a different URL than <NOBR><TT><FONT 
+  color=#990099>/cgi-bin/ae.pl</FONT></TT></NOBR> then change the 4th and 5th 
+  lines so that they use the correct URL of <I>Associate Engine</I> (note: leave 
+  out the leading <TT><FONT color=#990099>/</FONT></TT> character).</P>
+  <HR align=left width=250 color=#ffcc66 noShade SIZE=1>
+
+  <H3><TT>ae.ini</TT> <I>Associate Engine</I> Configuration File</H3>
+  <P>Edit your <TT><FONT color=#990099>ae.ini</FONT></TT> configuration file and 
+  set the following configuration variables:</P>
+  <BLOCKQUOTE>
+    <TABLE cellSpacing=0 cellPadding=8 bgColor=#f0f0f0 border=0>
+      <TBODY>
+      <TR>
+        <TD><PRE style="MARGIN-BOTTOM: 0pt">virtual.dir    "/<FONT color=#990099>amazon</FONT>"
+virtual.ending "<FONT color=#990099>/</FONT>"
+</PRE></TD></TR></TBODY></TABLE></BLOCKQUOTE>
+  <P><FONT color=#ff0000><B>IMPORTANT:</B></FONT> The directory (or 
+  sub-directory) name that you set the <SPAN class=tag>virtual.dir</SPAN> 
+  variable to must be the same directory (or sub-directory) that you used in the 
+  <SPAN class=tag>.htaccess</SPAN> file (note: the value in the <SPAN 
+  class=tag>.htaccess</SPAN> file must <B>not</B> start with a leading <SPAN 
+  class=tag>/</SPAN> but the value in the <SPAN class=tag>virtual.dir</SPAN> 
+  variable <B>must</B> start with a leading <SPAN class=tag>/</SPAN></P>
+  <P>If you want to start your URL's with something other than <TT><FONT 
+  color=#990099>/amazon</FONT></TT> such as <TT><FONT 
+  color=#990099>/shop</FONT></TT> then change the <TT><FONT 
+  color=#990099>/amazon</FONT></TT>, such as <TT><FONT 
+  color=#990099>/shop</FONT></TT>. If you want to use a 
+  <NOBR>sub-directory</NOBR> such as <TT><FONT 
+  color=#990099>/mystore/shop</FONT></TT> you can do that; you would use 
+  <NOBR><TT><FONT color=#990099>virtual.dir 
+  "/mystore/shop"</FONT></TT></NOBR></P>
+  <BLOCKQUOTE>
+    <P><FONT color=#ff0000><B>IMPORTANT:</B></FONT> The leading <TT><FONT 
+    color=#990099>/</FONT></TT> in <TT><FONT 
+    color=#990099>virtual.dir</FONT></TT> (such as <TT>"<FONT 
+    color=#990099>/amazon</FONT>"</TT>) is required. If you leave it out, an 
+    error will occur.</P>
+    <P><FONT color=#ff0000><B>IMPORTANT:</B></FONT> Do <B>not</B> enter a URL in 
+    <TT><FONT color=#990099>virtual.dir</FONT></TT>; just enter <TT><FONT 
+    color=#990099>/amazon</FONT></TT> or <TT><FONT 
+    color=#990099>/shop</FONT></TT> or whatever you want to call the virtual 
+    directory. If you enter something other than <TT><FONT 
+    color=#990099>/<I>DIRECTORY</I></FONT></TT>, an error will 
+  occur.</P></BLOCKQUOTE>
+  <P>The <TT><A 
+  href="http://www.c3scripts.com/amazon/docs10.html#virtual.ending">virtual.ending</A></TT> 
+  configuration variable sets the ending that is added to the end of URL's that 
+  <I>Associate Engine</I> generates to refer back to itself to do subsequent 
+  searches (e.g.: the "More Results" button).</P></BLOCKQUOTE>
+<TABLE cellSpacing=0 cellPadding=4 align=center bgColor=#fffee9 border=1>
+  <TBODY>
+  <TR bgColor=#ffcc66>
+    <TD align=middle><FONT face=Verdana 
+size=-1><B>virtual.ending</B></FONT></TD>
+    <TD align=middle><FONT face=Verdana size=-1><B>Example Generated 
+      URL</B></FONT></TD>
+    <TD align=middle><FONT face=Verdana size=-1><B>Meaning</B></FONT></TD></TR>
+  <TR>
+    <TD><TT><FONT color=#ff0000>/</FONT></TT></TD>
+    <TD><TT>/amazon/type_search/mode_books/</TT></TD>
+    <TD>URL looks like a directory</TD></TR>
+  <TR>
+    <TD><TT>/index.html</TT></TD>
+    <TD><TT>/amazon/type_search/mode_books/index.html</TT></TD>
+    <TD>URL looks like a <TT>index.html</TT> file</TD></TR>
+  <TR>
+    <TD><TT>.html</TT></TD>
+    <TD><TT>/amazon/type_search/mode_books.html</TT></TD>
+    <TD>URL looks like a <TT>.html</TT> file</TD></TR>
+  <TR>
+    <TD><TT>.htm</TT></TD>
+    <TD><TT>/amazon/type_search/mode_books.htm</TT></TD>
+    <TD>URL looks like a <TT>.htm</TT> file</TD></TR></TBODY></TABLE>
+<BLOCKQUOTE>
+  <HR align=left width=250 color=#ffcc66 noShade SIZE=1>
+
+  <H3><TT>search.*</TT> Pre-Defined Searches</H3>
+  <P>Virtual Directory can also be used in conjunction with pre-defined searches 
+  to create very short URL's. See: <TT><A 
+  href="http://www.c3scripts.com/amazon/docs8.html#search.*">search.*</A></TT> 
+  for details.</P></BLOCKQUOTE><BR><BR>
+<HR color=#ffcc66 noShade SIZE=1>
+
+<H2><A name=windows>Windows Servers</A></H2>
+<BLOCKQUOTE>
+  <P>Windows servers do not come pre-installed with <TT><FONT 
+  color=#990099>mod_rewrite</FONT></TT> functionality which is required to 
+  implement virtual directories. You have to add that functionality via a 
+  3rd-party product such as <A href="http://www.helicontech.com/" 
+  target=_blank>ISAPI_Rewrite</A> (from <A href="http://www.helicontech.com/" 
+  target=_blank>Helicon Tech</A>) or <A 
+  href="http://www.qwerksoft.com/products/iisrewrite/" 
+  target=_blank>IISRewrite</A> (from <A href="http://www.qwerksoft.com/" 
+  target=_blank>QwerkSoft</A>). Those products add rule-based rewriting 
+  functionality to Windows IIS.</P>
+  <P><FONT color=#ff0000><B>IMPORTANT:</B> We have <B>not</B> tested 
+  <I>ISAPI_Rewrite</I> nor <I>IISRewrite</I> with <TT><FONT 
+  color=#990099>ae.pl</FONT></TT>. We are not associated with Helicon Tech or 
+  QwerkSoft in any way.</FONT></P></BLOCKQUOTE><BR>
+<HR color=#ffcc66 noShade SIZE=1>
+
+<H2><A name=forms>Search Forms</A></H2>
+<BLOCKQUOTE>
+  <P><B><I>Associate Engine</I> v3.06.27 (or less):</B></P>
+  <BLOCKQUOTE>
+    <P>If you have a search form on your page template so that the user can do a 
+    keyword search, the URL that appears in the address bar when the user 
+    submits the form will not be a virtual directory.</P>
+    <P>The URL will be something like:<BR><NOBR><TT><FONT 
+    color=#990099>http://www.domain.com/cgi-bin/ae.pl?type=search&amp;...</FONT></TT></NOBR>.</P>
+    <P>Even though the URL will not be a virtual directory, all the links in the 
+    results will be virtual directory links.</P></BLOCKQUOTE>
+  <P><B><I>Associate Engine</I> v4.01.01 (or higher):</B></P>
+  <BLOCKQUOTE>
+    <P>You can set the <TT><FONT color=#990099>virtual.redir</FONT></TT> 
+    configuration to <TT><FONT color=#990099>yes</FONT></TT>. This setting will 
+    cause <I>Associate Engine</I> to automatically redirect 
+    <NOBR>non-virtual</NOBR> URL's (e.g.: <NOBR><TT><FONT 
+    color=#990099>/cgi-bin/ae.pl?type=search&amp;...</FONT></TT></NOBR>) to 
+    virtual URL's (e.g.: <TT><FONT 
+    color=#990099>/amazon/type_search/...</FONT></TT>). In this case, when your 
+    search form is submitted, <I>Associate Engine</I> will redirect the user to 
+    the virtual version of the URL to do the search.</P>
+    <P>If you set the <TT><FONT color=#990099>virtual.redir</FONT></TT> 
+    configuration variable to <TT><FONT color=#990099>no</FONT></TT>, then 
+    <I>Associate Engine</I> will not do a redirect and the address bar will 
+    continue to show a non-virtual URL when your form is 
+  submitted.</P></BLOCKQUOTE></BLOCKQUOTE><BR>
+<HR color=#ffcc66 noShade SIZE=1>
+
+<H2><A name=homepage>Home Page</A></H2>
+<BLOCKQUOTE>
+  <HR align=left width=153 color=#ffcc66 noShade SIZE=1>
+
+  <H3>linux/unix web servers:</H3>
+  <P>Virtual Directory can be configured so that <I>Associate Engine</I> output 
+  appears as your home page. Note this is different than including <I>Associate 
+  Engine</I> results on your existing home page with your existing content (by 
+  using <TT><A 
+  href="http://www.c3scripts.com/amazon/tutorial.html">&lt;script&gt;</A></TT> 
+  or <A href="http://www.c3scripts.com/amazon/tutorial.html">SSI 
+  server-side-include</A>).</P>
+  <P>To have <I>Associate Engine</I> as your home page, edit your 
+  <TT>.htaccess</TT> file and add the following lines:</P>
+  <BLOCKQUOTE>
+    <TABLE cellSpacing=0 cellPadding=8 bgColor=#f0f0f0 border=0>
+      <TBODY>
+      <TR>
+        <TD><PRE style="MARGIN-BOTTOM: 0pt">RewriteEngine on
+RewriteBase /
+RewriteRule <FONT color=#006600>^$</FONT> <FONT color=#ff0000>/cgi-bin/ae.pl</FONT>?<FONT color=red><I>PARAMETERS</I></FONT> [L]
+</PRE></TD></TR></TBODY></TABLE></BLOCKQUOTE>
+  <P><B><FONT color=#ff0000>Important notes</FONT></B> about the <TT><FONT 
+  color=#990099>RewriteRule</FONT></TT> line:</P>
+  <OL>
+    <LI>
+    <P>Replace <TT><FONT color=red><I>PARAMETERS</I></FONT></TT> with the search 
+    parameters that you want to use. You can use any search parameters (except 
+    for the <TT><A 
+    href="http://www.c3scripts.com/amazon/docs10.html#script">script</A></TT>, 
+    <TT><A href="http://www.c3scripts.com/amazon/docs10.html#ssi">ssi</A></TT> 
+    and <TT><A 
+    href="http://www.c3scripts.com/amazon/docs10.html#iframe">iframe</A></TT> 
+    parameters) as you would with any <I>Associate Engine</I> search .</P>
+    <BLOCKQUOTE>
+      <P>For example, <TT><FONT color=#990099>template=stores</FONT></TT> would 
+      cause the <I>Stores Directory</I> index to show up as your home page. This 
+      assumes that you are using the <A 
+      href="http://www.c3scripts.com/amazon/docs12.html#store"><I>Store</I> page 
+      templates</A>.</P>
+      <P>For example, <TT><FONT 
+      color=#990099>type=browse&amp;mode=books</FONT></TT> would cause the Books 
+      browse index to show up as your home page.</P></BLOCKQUOTE>
+    <LI>
+    <P>The <TT><FONT color=#990099>RewriteRule</FONT></TT> line assumes that 
+    <I>Associate Engine</I> is installed at <NOBR><TT><FONT 
+    color=#990099>/cgi-bin/ae.pl</FONT></TT></NOBR>. If you have <I>Associate 
+    Engine</I> installed at a different location (e.g.: <NOBR><TT><FONT 
+    color=#990099>/cgi/shop.pl</FONT></TT></NOBR>), then change this line.</P>
+    <LI>
+    <P>To link to your home page from your other pages, link to <TT><FONT 
+    color=#990099>/</FONT></TT> or your full domain name. If you want to link to 
+    <TT><FONT color=#990099>/index.html</FONT></TT> then edit the <TT><FONT 
+    color=#990099>RewriteRule</FONT></TT> and change the <TT><FONT 
+    color=#990099>^$</FONT></TT> to <NOBR><TT><FONT 
+    color=#990099>^(index\.html)?$</FONT></TT></NOBR> <B>Note:</B> The <TT><FONT 
+    color=#990099>\</FONT></TT> before the <TT><FONT color=#990099>.</FONT></TT> 
+    is required otherwise the webserver considers the <TT><FONT 
+    color=#990099>.</FONT></TT> as a wildcard character that can match any 
+    character.</P></LI></OL>
+  <P><BR><FONT color=#ff0000><B>IMPORTANT:</B></FONT> Each time your home page 
+  is requested, <I>Associate Engine</I> will run. This is slightly inefficient 
+  since the page output will look the same most of the time (as set by your 
+  <TT><A 
+  href="http://www.c3scripts.com/amazon/docs8.html#cache.stale">cache.stale</A></TT> 
+  time). If you have a lot of users visiting your home page, rather than using 
+  the above <TT><FONT color=#990099>RewriteRule</FONT></TT>, you might want to 
+  look into setting up a linux cron job that periodically (e.g.: every 1 hour) 
+  captures the output from <NOBR><TT><FONT 
+  color=#990099>/cgi-bin/ae.pl?template=stores</FONT></TT></NOBR> (or whatever 
+  search parameters you are using) and save that output to your <TT><FONT 
+  color=#990099>/index.html</FONT></TT> file. That way, when users go to your 
+  homepage, the webserver outputs the static <TT><FONT 
+  color=#990099>/index.html</FONT></TT> file rather than running <I>Associate 
+  Engine</I> each time. We use this at our <A 
+  href="http://www.collectiblecats.com/" target=_blank>CollectibleCats.com</A> 
+  website. For instructions on how to set this up, see: "<A 
+  href="http://www.c3scripts.com/amazon/docs17.html#cronjob">How do I set up a 
+  linux cron job to create a static HTML home page file?</A>"</P>
+  <HR align=left width=153 color=#ffcc66 noShade SIZE=1>
+
+  <H3>Windows web servers:</H3>
+  <P>If you are using a Windows web server, read the note above about <A 
+  href="http://www.c3scripts.com/amazon/docs-virtual.html#windows">Windows 
+  Servers</A>. Windows servers do not come pre-installed with <TT><FONT 
+  color=#990099>mod_rewrite</FONT></TT>. To get virtual directories to work on a 
+  Windows server you have to add a 3rd-party "<TT><FONT 
+  color=#990099>mod_rewrite</FONT></TT>" product such as <A 
+  href="http://www.helicontech.com/" target=_blank>ISAPI_Rewrite</A> or <A 
+  href="http://www.qwerksoft.com/products/iisrewrite/" 
+  target=_blank>IISRewrite</A>.</P>
+  <P>If all you want to do is show the <A 
+  href="http://www.c3scripts.com/amazon/docs12.html#sample">stores template</A> 
+  on your home page (and you do not want Virtual Directory), then the easiest 
+  thing to do is to view the stores template web page in your web browser (e.g.: 
+  <NOBR><TT><FONT 
+  color=#990099>/cgi-bin/ae.pl?template=stores</FONT></TT></NOBR>) and then save 
+  the HTML to your <TT><FONT color=#990099>/index.html</FONT></TT> home page 
+  file. In Internet Explorer, select "File &gt; Save As..." and select "Save as 
+  type: Web Page, HTML only". <B>Note</B>: Before doing this, set configuration 
+  variable <TT><FONT color=#990099>ssi.script</FONT></TT> to <TT><FONT 
+  color=#990099>no</FONT></TT>. When you're done, set <TT><FONT 
+  color=#990099>ssi.script</FONT></TT> back to <TT><FONT 
+  color=#990099>yes</FONT></TT> (assuming you had it as <TT><FONT 
+  color=#990099>yes</FONT></TT> initially).</P></BLOCKQUOTE><BR><BR>
+<HR color=#ffcc66 noShade SIZE=1>
+
+<P><FONT face=Verdana size=-2><A 
+href="http://www.c3scripts.com/amazon/">http://www.c3scripts.com/amazon/</A></FONT></P></BODY></HTML>

@@ -1,0 +1,368 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0040)http://alistapart.com/articles/cssdrop2/ -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>CSS Drop Shadows II: Fuzzy Shadows: A List Apart</TITLE>
+<STYLE type=text/css media=screen>@import url( /c/ala.css );
+</STYLE>
+
+<STYLE type=text/css media=projection>@import url( /c/ala.css );
+</STYLE>
+<LINK media=print 
+href="CSS Drop Shadows II Fuzzy Shadows A List Apart_files/print.css" 
+type=text/css rel=stylesheet>
+<META http-equiv=Content-type content="text/html; charset=iso-8859-1">
+<META http-equiv=Content-Language content=en-us>
+<META content=ALL name=ROBOTS>
+<META 
+content="Copyright (c) 2005 A List Apart Magazine, Happy Cog Studios LLC, Jeffrey Zeldman, and the respective authors" 
+name=Copyright>
+<META http-equiv=imagetoolbar content=no>
+<META content=true name=MSSmartTagsPreventParsing>
+<SCRIPT language=JavaScript 
+src="CSS Drop Shadows II Fuzzy Shadows A List Apart_files/auto.js" 
+type=text/javascript></SCRIPT>
+<LINK href="/favicon.ico" type=image/x-icon rel="Shortcut Icon"><LINK title=RSS 
+href="/rss.xml" type=application/rss+xml rel=alternate>
+<META content="Using CSS to create standards-compliant, fuzzy drop shadows" 
+name=description>
+<META 
+content="css, drop shadows, fuzzy, png transparency, flexible, block, elements" 
+name=keywords><LINK title="Site info." href="http://www.alistapart.com/about/" 
+rel=help><LINK 
+title="Produced by Happy Cog Studios LLC: web design, consulting, and publishing." 
+rev=happycog href="http://www.happycog.com/"><LINK 
+title="Directed by Jeffrey Zeldman, bringing web designers The Daily Report since 1995." 
+rev=zeldman href="http://www.zeldman.com/">
+<META content=General name=Rating>
+<META content="5 Days" name=revisit-after>
+<META content="Living Document" name=doc-class>
+<STYLE type=text/css>.img-shadow {
+	CLEAR: both; BACKGROUND: url(/d/cssdrop2/img/shadow.gif) no-repeat right bottom; FLOAT: left; MARGIN: 20px 0px 0px 8px
+}
+.img-shadow IMG {
+	BORDER-RIGHT: #a9a9a9 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #a9a9a9 1px solid; DISPLAY: block; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; MARGIN: -6px 6px 6px -6px; BORDER-LEFT: #a9a9a9 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #a9a9a9 1px solid; POSITION: relative; BACKGROUND-COLOR: #fff
+}
+.alpha-shadow {
+	CLEAR: both; BACKGROUND: url(/d/cssdrop2/img/shadow.gif) no-repeat right bottom; FLOAT: left; MARGIN: 14px 0px 0px 8px
+}
+.alpha-shadow DIV {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 0px; BACKGROUND: url(/d/cssdrop2/img/shadow2.gif) no-repeat left top; FLOAT: left; PADDING-BOTTOM: 6px; PADDING-TOP: 0px
+}
+.alpha-shadow IMG {
+	BORDER-RIGHT: #a9a9a9 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #a9a9a9 1px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; MARGIN: 0px; BORDER-LEFT: #a9a9a9 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #a9a9a9 1px solid; BACKGROUND-COLOR: #fff
+}
+</STYLE>
+<!--[if gte ie 5.5000]>
+<STYLE type=text/css>.alpha-shadow DIV {
+	BACKGROUND: none transparent scroll repeat 0% 0%; FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/d/cssdrop2/img/shadow2.png',
+sizingMethod='crop')
+}
+</STYLE>
+<![endif]-->
+<META content="MSHTML 6.00.2800.1491" name=GENERATOR></HEAD>
+<BODY id=sectiontwo 
+onload="window.defaultStatus='A List Apart, for people who make websites.'">
+<DIV id=wrapper>
+<P class=hide><A 
+href="http://alistapart.com/articles/cssdrop2/#maincontent">Skip 
+navigation</A>.</P>
+<DIV id=header><A title="A List Apart Home - current issue." 
+href="http://alistapart.com/"><IMG height=75 alt="A List Apart front page: HOME" 
+src="CSS Drop Shadows II Fuzzy Shadows A List Apart_files/2.gif" width=597 
+border=0></A></DIV>
+<DIV id=menu>
+<UL>
+  <LI id=one><A title="A List Apart Home - current issue." 
+  href="http://alistapart.com/">up front</A></LI>
+  <LI id=two><A title="Design, code, content." 
+  href="http://alistapart.com/articles/">articles</A></LI>
+  <LI id=three><A title="Everything you wanted to know about A List Apart." 
+  href="http://alistapart.com/about/">about ala</A></LI>
+  <LI id=four><A title="We may be coming to your town." 
+  href="http://alistapart.com/live/">live events</A></LI>
+  <LI id=five><A title="RSS feeds, headlines and summaries." 
+  href="http://alistapart.com/xmlfeed/">xml feeds</A></LI></UL></DIV>
+<DIV id=pagebody>
+<DIV id=maincontent>
+<H6>ISSN: 1534-0295. 23 April 2004 – Issue No. <A 
+title="Permanent location for this issue." 
+href="http://alistapart.com/issues/178/">178</A></H6>
+<H1><A href="http://alistapart.com/articles/cssdrop2/">CSS Drop Shadows II: 
+Fuzzy Shadows</A></H1>
+<H3 class=byline>by <A title="View all articles by this author." 
+href="http://alistapart.com/authors/sergiovillarreal/">Sergio 
+Villarreal</A></H3>
+<P>We like shadows. We enjoy making them drop and we love CSS and standards, so 
+we wrote <A href="http://alistapart.com/articles/cssdropshadows/">CSS Drop 
+Shadows</A>. The little voice in our head approved of it. We thought that was 
+the end of it.</P>
+<P>We thought wrong.</P>
+<P>The internet being the kind of medium it is, <EM>minutes</EM> after the 
+publication of the article, we started receiving comments, queries and 
+suggestions for improvements. Most notable among the latter was <A 
+href="http://wubbleyew.com/tests/dropshadows.htm">Phil Baines’ method</A> for 
+keeping the markup simple when dealing with paragraph drop shadows. We are 
+indebted to him.</P>
+<P>The most complained-about shortcoming of the technique turned out to be the 
+sharp top and left edges of the shadow, which, although generally acceptable, 
+are unlike what an image editing program would produce (a fuzzy shadow). Given 
+that the shadow image is effectively <EM>clipped</EM> at those points, we felt 
+this was an unavoidable inconvenience, chiefly due to Internet Explorer’s 
+inability to display PNG’s transparency natively.</P>
+<DIV 
+style="BORDER-RIGHT: #a0a0a0 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #a0a0a0 1px solid; PADDING-LEFT: 10px; FLOAT: left; PADDING-BOTTOM: 10px; MARGIN: 10px auto 15px 10px; BORDER-LEFT: #a0a0a0 1px solid; WIDTH: 350px; PADDING-TOP: 10px; BORDER-BOTTOM: #a0a0a0 1px solid; BACKGROUND-COLOR: #fff">
+<DIV class=alpha-shadow style="FLOAT: left; MARGIN: 10px 0px 0px 6px">
+<DIV><IMG alt="A cat's nose" 
+src="CSS Drop Shadows II Fuzzy Shadows A List Apart_files/catnose.jpe"></DIV></DIV>
+<DIV class=img-shadow 
+style="CLEAR: none; FLOAT: right! important; MARGIN: 16px 0px 0px"><IMG 
+alt="A cat's nose" 
+src="CSS Drop Shadows II Fuzzy Shadows A List Apart_files/catnose.jpe"></DIV><BR 
+style="CLEAR: both"><IMG alt="blowup of shadow detail" 
+src="CSS Drop Shadows II Fuzzy Shadows A List Apart_files/example1blowup.gif"> 
+</DIV><BR style="CLEAR: both">
+<P>Then <A href="http://jotbe-fx.de/daily/">Jan</A> pointed out a technique for 
+making Internet Explorer render PNG’s alpha channel correctly. It works by 
+activating Explorer’s <CODE>AlphaImageLoader</CODE> filter (previously discussed 
+in <A href="http://alistapart.com/articles/pngopacity/">this ALA article</A>), 
+but does so in an inobtrusive way which requires no extra javascript code. We 
+think it’s a godsend. Combining this technique, some image trickery and our 
+“fake shadow offset” method, we’ll be able to make properly fuzzy shadows that 
+work across browsers.</P>
+<P>In this article we’ll learn how to:</P>
+<UL>
+  <LI>Hide a stylesheet from non-IE browsers so it doesn’t affect document 
+  validation. 
+  <LI>Coerce IE5.5/IE6 into displaying PNG transparency correctly. 
+  <LI>Use the above to create fuzzy shadow edges for our Drop Shadow effect. 
+  </LI></UL>
+<P>First, we’ll fabricate our fuzzy shadow edge. To do this, we must create an 
+<EM>inverse shadow</EM> in our image editing program. Usually we’d use a black 
+shadow over a background color. For this effect, we’ll need a colored shadow. It 
+must be the same color as the background over which we’ll apply the effect.</P>
+<P>Start with an image like the “fake shadow offset” we described in the 
+previous article. This one should be thinner than before (about 3px thickness 
+for a 6px shadow has worked out well for us). Our examples will use white as 
+background color. When reproducing this technique, adjust for yours.</P>
+<P>We’ll apply a “Drop Shadow” effect to this image, taking care to specify 
+white for the shadow color. A strong shadow is desirable — the stronger it is, 
+the faster your shadow will seem to fade. We should now have something that 
+looks like this:</P>
+<DIV 
+style="BORDER-RIGHT: #dce6e8 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #dce6e8 1px solid; PADDING-LEFT: 3px; FLOAT: left; PADDING-BOTTOM: 3px; MARGIN: 10px 0px 20px 30px; BORDER-LEFT: #dce6e8 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #dce6e8 1px solid"><IMG 
+alt="Fake Shadow offset image" 
+src="CSS Drop Shadows II Fuzzy Shadows A List Apart_files/example4.gif"></DIV><BR 
+style="CLEAR: both">
+<P>Save this image as a PNG with full transparency. We’ll use this file for 
+IE5.5, IE6 and standards compliant browsers. Make a regular version <EM>sans 
+shadow</EM> with thicker offset (as seen in the previous article) and save that 
+as a GIF file. We’ll feed this one to IE 5 (which does not support the 
+<CODE>AlphaImageLoader</CODE> filter). Here are sample files for your perusal: 
+<A href="http://alistapart.com/d/cssdrop2/img/shadow2.png">PNG</A>/<A 
+href="http://alistapart.com/d/cssdrop2/img/shadow2.gif">GIF</A> (Check them on 
+an image editing program, since they will look like <EM>white on white</EM> in 
+your browser).</P>
+<P>Since we now have a solid color at the edge of our offset, we’ve effectively 
+given up on the possibility of having a transparent shadow, so we’ll use a 
+simple GIF for it. Make sure you apply the effect over the background color 
+you’ll use. Here’s our example shadow: <A 
+href="http://alistapart.com/d/cssdrop2/img/shadow.gif">GIF</A>.</P>
+<P>The markup for this effect will be two &lt;div&gt;’s around our image/block 
+element.</P><PRE>&lt;div class="alpha-shadow"&gt;
+  &lt;div&gt;
+    &lt;img src="img/test.jpg" alt="just a test" /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</PRE>
+<P>The basic technique is still the same: We’ll set up the fake offset (with its 
+inverse shadow) as background of the innermost &lt;div&gt;, and the shadow as 
+background of the outermost one. When overlapped, the transparency of the PNG 
+will seem to gradually dissolve the shadow image until it becomes the solid 
+background color. The tricky part is making this work in Explorer.</P>
+<DIV 
+style="BORDER-RIGHT: #dce6e8 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #dce6e8 1px solid; PADDING-LEFT: 3px; FLOAT: left; PADDING-BOTTOM: 3px; MARGIN: 10px 0px 20px 30px; BORDER-LEFT: #dce6e8 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #dce6e8 1px solid"><IMG 
+alt="Illustrated process" 
+src="CSS Drop Shadows II Fuzzy Shadows A List Apart_files/example5.gif"></DIV><BR 
+style="CLEAR: both">
+<P>Our CSS is pretty much what we had seen in the previous article:</P><PRE>.alpha-shadow {
+  float: left;
+  background: url(img/shadow1.gif) <SPAN class=linewrap>»</SPAN>
+  no-repeat bottom right;
+  margin: 10px 0 0 10px !important;
+  margin: 10px 0 0 5px;
+}
+
+.alpha-shadow div {
+  background: url(img/shadow2.png) <SPAN class=linewrap>»</SPAN>
+  no-repeat left top !important;
+  background: url(img/shadow2.gif) <SPAN class=linewrap>»</SPAN>
+  no-repeat left top;
+  padding: 0px 5px 5px 0px;
+}
+
+.alpha-shadow img {
+  background-color: #fff;
+  border: 1px solid #a9a9a9;
+
+  padding: 4px;
+}
+</PRE>
+<P>If you look closely you’ll notice we’re still including the non-fuzzy GIF 
+offset (<CODE>shadow2.gif</CODE>) as background of the inner &lt;div&gt;. This 
+is for the benefit of Internet Explorer 5.0, which doesn’t support the 
+<CODE>AlphaImageLoader</CODE> filter. As it stands, this code will apply to all 
+versions of Explorer. To make adjustments for IE 5.5/6, we’ll create an extra 
+CSS file.</P>
+<H2>ie.css</H2>
+<P>To activate the <CODE>AlphaImageLoader</CODE> filter in a simple and reliable 
+way, we’ll first include it in its own CSS file and name it <CODE>ie.css</CODE>. 
+We know this is shameful and will probably make the Standards Squad put a price 
+on our head, but we’ll hide this file from other browsers later, so it’s ok. 
+Kind of.</P>
+<P>Our <CODE>ie.css</CODE> stylesheet will look like this:</P><PRE>.alpha-shadow div {
+  filter:progid:DXImageTransform.Microsoft<SPAN class=linewrap>»</SPAN>
+.AlphaImageLoader(src='img/shadow2.png', <SPAN class=linewrap>»</SPAN>
+  sizingMethod='crop');
+  background: none;
+}
+</PRE>
+<P>The <CODE>AlphaImageLoader</CODE> filter supports two sizing methods: crop 
+and scale. We’ll use <CODE>crop</CODE> for our offset (<CODE>scale</CODE> fits 
+the full image into the block, and is not what we’re looking for). Since the 
+filter is somewhat limited and does not support CSS-like image positioning, 
+we’re stuck with shadows that drop down and to the right (the image on its 
+default position is all the way to the left and top).</P>
+<P>We should note that, since the filter places the image in the foreground of 
+the block element rather than as its background, this technique could be set up 
+to show fuzzy shadows in Explorer with only one &lt;div&gt; surrounding the 
+image, and show the hard edge shadow for other browsers. Not being ones to 
+reward bad browser behavior, we’ll stick to the technique with the extra 
+&lt;div&gt;, which gives us a fuzzy shadow in almost every browser under the 
+sun.</P>
+<P>The second line, where we set the &lt;div&gt;’s background to 
+<CODE>none</CODE>, is there in order to remove the GIF offset we specified in 
+the CSS before. Since we'll only feed this file to IE5.5 and IE6, IE5 keeps the 
+GIF offset (and thus displays a hard edge shadow). The rest of the browsers 
+ignore that GIF file by the <CODE>!important</CODE> method we specified in the 
+<A href="http://alistapart.com/articles/cssdropshadows/">previous 
+article</A>.</P>
+<H2>Conditional Comments</H2>
+<P>To hide the <CODE>ie.css</CODE> stylesheet from all browsers that don’t need 
+it, we’ll use <A 
+href="http://msdn.microsoft.com/workshop/author/dhtml/overview/ccomment_ovw.asp">Conditional 
+Comments</A>, a Microsoft provided technique to serve content to specific 
+versions of Internet Explorer. They are included in the html document and look 
+like standard html comments, so browsers other than IE5+ ignore them (and so 
+does the <A href="http://jigsaw.w3.org/css-validator/">w3c Validator</A>, which 
+is convenient). We’ll insert this in the &lt;head&gt; of our document, 
+<EM>after</EM> the CSS for the drop shadow:</P><PRE>&lt;!--[if gte ie 5.5000]&gt;
+&lt;link
+  rel="stylesheet"
+  type="text/css"
+  href="ie.css"
+/&gt;
+&lt;![endif]--&gt;
+</PRE>
+<P>What that does is specify that the enclosed bit of code should be used by 
+versions <EM>Greater Than or Equal</EM> (the <CODE>gte</CODE> part) to Internet 
+Explorer 5.5 (it must be specified as 5.5000 because of <A 
+href="http://msdn.microsoft.com/workshop/author/dhtml/overview/ccomment_ovw.asp#Version_Vectors">Version 
+Vectors</A>), thus feeding IE5.5 and IE6 the special stylesheet.</P>
+<P>That completes the technique. This may seem overly complicated just to 
+achieve a fuzzy shadow, but then again, they say that <EM>God is in the 
+details</EM>. As a plus, the mentioned techniques can be used to achieve all 
+sorts of different effects.</P>
+<P>Here, have a cat:</P>
+<DIV class=alpha-shadow style="MARGIN: 5px 0px 0px 30px">
+<DIV><IMG alt="Cat on floor" 
+src="CSS Drop Shadows II Fuzzy Shadows A List Apart_files/catfloor.jpe"></DIV></DIV><BR 
+style="CLEAR: both">
+<H2>Acknowledgements</H2>
+<P>To <A href="http://jotbe-fx.de/daily/">Jan</A>, who has been playing with 
+this <EM>transparency thing</EM> for far longer than we have, to <A 
+href="http://wubbleyew.com/">Phil Baines</A>, for his suggestions on how to 
+improve the methods exposed in the previous article, and to Ava McBride, for 
+facilitating the use of the <A href="http://browsercam.com/">Browsercam</A> 
+service for testing of these techniques.</P>
+<H2 id=talkaboutit>Discuss</H2>
+<P>Was it good for you, too? <A 
+href="http://alistapart.com/discuss/cssdrop2/">Discuss</A> this article.</P>
+<P id=authorbio>Sergio Villarreal lives in México but spends most of the time in 
+his head. He maintains a weblog and rarely updated webcomic at <A 
+href="http://overcaffeinated.net/">Overcaffeinated.net</A> and makes a point of 
+learning a new trick every day. Some are even useful.</P></DIV>
+<DIV id=sidebar>
+<DIV id=subnav>
+<DL>
+  <DT>Discuss 
+  <DD><A href="http://alistapart.com/discuss/cssdrop2/">Talk about</A> this 
+  article. 
+  <DT>Bookmark 
+  <DD><A href="http://alistapart.com/articles/cssdrop2/">Permanent URI</A>. 
+</DD></DL>
+<P class=pullquote><EM>God is in the details</EM>. The techniques shown here not 
+only produce soft-edged, fuzzy shadows, but they can also be used to achieve all 
+sorts of creative effects.</P><LABEL for=sp-q>Search</LABEL><BR><!-- Atomz Search HTML for A List Apart Magazine -->
+<FORM style="MARGIN: 0px" action=http://search.atomz.com/search/ 
+method=get><INPUT id=sp-q style="WIDTH: 140px" size=12 name=sp-q><BR><INPUT 
+id=disc 
+onclick="this.form.elements['sp-k'].value = (this.checked) ? '' : 'All';" 
+type=checkbox value=All name=disc><LABEL for=disc>Include 
+Discussions</LABEL><BR><INPUT type=hidden value=sp1002d27b name=sp-a> <INPUT 
+type=hidden value=ISO-8859-1 name=sp-f> <INPUT type=hidden value=All name=sp-p> 
+<INPUT type=hidden value=All name=sp-k> <INPUT type=submit value=Search> 
+</FORM><BR>
+<DL>
+  <DT>Related Topics 
+  <DD>
+  <UL>
+    <LI><A href="http://alistapart.com/topics/css/">CSS</A>
+    <LI><A href="http://alistapart.com/topics/design/">Design</A> 
+</LI></UL></DD></DL>
+<DL>
+  <DT>Departments 
+  <DD>
+  <UL>
+    <LI><A href="http://alistapart.com/contact/">Contact</A> 
+    <LI><A href="http://alistapart.com/contribute/">Contribute</A> 
+    <LI><A href="http://alistapart.com/credits/">Credits</A> 
+    <LI><A href="http://alistapart.com/copyright/">Permissions</A> 
+    <LI><A href="http://alistapart.com/qa/">Q &amp; A</A> </LI></UL>
+  <DT>Hot Topics 
+  <DD>
+  <UL>
+    <LI><A href="http://alistapart.com/topics/accessibility/">Accessibility</A> 
+    40 
+    <LI><A href="http://alistapart.com/topics/browsers/">Browsers | 
+    X-Platform</A> 32 
+    <LI><A href="http://alistapart.com/topics/business/">Business</A> 42 
+    <LI><A href="http://alistapart.com/topics/content/">Content</A> 47 
+    <LI><A href="http://alistapart.com/topics/css/">CSS</A> 62 
+    <LI><A href="http://alistapart.com/topics/culture/">Culture</A> 42 
+    <LI><A href="http://alistapart.com/topics/design/">Design</A> 83 
+    <LI><A href="http://alistapart.com/topics/dom/">DOM | Scripting</A> 27 
+    <LI><A href="http://alistapart.com/topics/flash/">Flash</A> 9 
+    <LI><A href="http://alistapart.com/topics/html/">HTML | XHTML</A> 55 
+    <LI><A href="http://alistapart.com/topics/process/">Process</A> 25 
+    <LI><A href="http://alistapart.com/topics/server-side/">Server-Side</A> 24 
+    <LI><A href="http://alistapart.com/topics/tools/">Tools</A> 27 
+    <LI><A href="http://alistapart.com/topics/typography/">Typography</A> 13 
+    <LI><A href="http://alistapart.com/topics/usability/">Usability</A> 27 
+    <LI><A href="http://alistapart.com/topics/xml/">XML &amp; Pals</A> 14 
+  </LI></UL></DD></DL>
+<P>ALA lives at <A href="http://alistapart.com/logicworks/">Logicworks</A>.</P>
+<P><A href="http://www.basecamphq.com/?ref=adala">Basecamp project 
+management</A> keeps your clients, co-workers, and projects on track. Try it 
+free!</P></DIV></DIV></DIV>
+<DIV id=footer>
+<P><A href="http://alistapart.com/copyright/">Copyright</A> © 1998–2005 <A 
+href="http://alistapart.com/">A List Apart</A> Magazine, <A 
+href="http://www.happycog.com/">Happy Cog Studios</A>, and the authors. <A 
+href="http://validator.w3.org/check/referer">XHTML</A>, <A 
+href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.alistapart.com/c/ala.css">CSS</A>, 
+<A 
+href="http://www.contentquality.com/mynewtester/cynthia.exe?Url1=http://www.alistapart.com/">508</A>.</P></DIV></DIV><!--
+
+
+
+
+--></BODY></HTML>

@@ -1,0 +1,5 @@
+* op Homepage: featured work: thumbnail die per dag verandert. Implementeer met PHP script dat random uit alle gallerys een thumb kiest
+
+* In twg: if .jpg shows speckled: make it a .png, then rename to .jpg (twg only shows .jpg)
+
+* Submenu: Intro, Galerie, Diaprojectie (Slideshow)

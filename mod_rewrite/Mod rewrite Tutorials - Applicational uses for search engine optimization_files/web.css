@@ -1,0 +1,90 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #b5b5b5; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 50px
+}
+.innertb {
+	BORDER-RIGHT: #9fa2ae 1px solid; BORDER-TOP: #9fa2ae 1px solid; BACKGROUND: #f8f8fa; BORDER-LEFT: #9fa2ae 1px solid; BORDER-BOTTOM: #9fa2ae 1px solid
+}
+.innercell {
+	BORDER-RIGHT: #dddee1 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #dddee1 1px solid; PADDING-LEFT: 5px; BACKGROUND: #ffffff; PADDING-BOTTOM: 5px; FONT: 11px Verdana, Arial, Helvetica, sans-serif; BORDER-LEFT: #dddee1 1px solid; COLOR: #666666; PADDING-TOP: 5px; BORDER-BOTTOM: #dddee1 1px solid
+}
+.innercell A:link {
+	FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #666666
+}
+.innercell A:visited {
+	FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #666666
+}
+.innercell A:active {
+	FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #666666; TEXT-DECORATION: none
+}
+.innercell A:hover {
+	FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #666666; TEXT-DECORATION: none
+}
+.bodytext {
+	FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #666666
+}
+.bodytext A:link {
+	FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #666666
+}
+.bodytext A:visited {
+	FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #666666
+}
+.bodytext A:hover {
+	FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #666666; TEXT-DECORATION: none
+}
+.bodytext :active {
+	FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #666666; TEXT-DECORATION: none
+}
+HR {
+	BORDER-RIGHT: 0px; BORDER-TOP: #993333 1px dashed; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 18px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #993333; PADDING-TOP: 0px
+}
+.example {
+	BORDER-RIGHT: #666666 1px dashed; PADDING-RIGHT: 5px; BORDER-TOP: #666666 1px dashed; DISPLAY: block; PADDING-LEFT: 5px; BACKGROUND: #e9e9e9; PADDING-BOTTOM: 5px; FONT: 12px "Times New Roman", Times, serif; BORDER-LEFT: #666666 1px dashed; COLOR: #000000; PADDING-TOP: 5px; BORDER-BOTTOM: #666666 1px dashed
+}
+.bodytextdark {
+	BACKGROUND: #666666; FONT: 10px Verdana, Arial, Helvetica, sans-serif; COLOR: #ffffff
+}
+.def {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+.def A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; CURSOR: hand; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal; TEXT-DECORATION: none
+}
+.def A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; CURSOR: hand; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal; TEXT-DECORATION: none
+}
+.def A:active {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; CURSOR: hand; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal; TEXT-DECORATION: none
+}
+.def A:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; CURSOR: hand; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal; TEXT-DECORATION: none
+}
+.notes {
+	FONT: italic 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #993333
+}
+.notes A {
+	FONT: italic 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #993333
+}
+.notes A:link {
+	FONT: italic 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #993333
+}
+.notes A:visited {
+	FONT: italic 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #993333
+}
+.notes A:active {
+	FONT: italic 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #993333; TEXT-DECORATION: none
+}
+.notes A:hover {
+	FONT: italic 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #993333; TEXT-DECORATION: none
+}
+.heading {
+	FONT-WEIGHT: bold; FONT-SIZE: 18px; COLOR: #993333
+}
+.phpexample {
+	BORDER-RIGHT: #666666 1px dashed; PADDING-RIGHT: 5px; BORDER-TOP: #666666 1px dashed; DISPLAY: block; PADDING-LEFT: 5px; BACKGROUND: #e9e9e9; PADDING-BOTTOM: 5px; FONT: 10px Verdana, Arial, Helvetica, sans-serif; BORDER-LEFT: #666666 1px dashed; COLOR: #003366; PADDING-TOP: 5px; BORDER-BOTTOM: #666666 1px dashed
+}
+.closed {
+	DISPLAY: none
+}

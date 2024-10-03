@@ -1,0 +1,559 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0062)http://www.yourhtmlsource.com/sitemanagement/urlrewriting.html -->
+<HTML lang=en xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>URL Rewriting | redirecting URLs with Apache’s mod_rewrite || HTMLSource ]</TITLE>
+<META content="Ross Shannon" name=author>
+<META content="Ross Shannon 2000-2005 and beyond..." name=copyright>
+<META content=all name=robots>
+<META http-equiv=Content-Type content="text/html; charset=ISO-8859-1"><LINK 
+href="/favicon.ico" type=image/ico rel="shortcut icon">
+<STYLE type=text/css media=all>@import url( /bubbleicious.css );
+</STYLE>
+<LINK media=print 
+href="URL Rewriting  redirecting URLs with Apache’s mod_rewrite  HTMLSource ]_files/print.css" 
+type=text/css rel=stylesheet>
+<SCRIPT 
+src="URL Rewriting  redirecting URLs with Apache’s mod_rewrite  HTMLSource ]_files/sourcescripts.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="URL Rewriting  redirecting URLs with Apache’s mod_rewrite  HTMLSource ]_files/smoothscroll.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="URL Rewriting  redirecting URLs with Apache’s mod_rewrite  HTMLSource ]_files/urchin.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>
+_uacct = "UA-204627-1";
+urchinTracker();
+</SCRIPT>
+
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY id=htmlsource text=#000000 bgColor=#ffffff><A name=top></A>
+<DIV id=wrapper><!-- **Header -->
+<DIV id=header>
+<DIV id=masthead>
+<H1 class=sitetitle><A title="Go back to the Homepage" 
+href="http://www.yourhtmlsource.com/">HTMLSource <SPAN class=subtitle>: HTML 
+Tutorials</SPAN></A></H1>
+<P class=motto>&lt;HTML Source="excellent"&gt;</P></DIV>
+<FORM id=searchbox onsubmit="return checkSearch()" 
+action=http://search.atomz.com/search/ method=get>
+<P class=boxhead><LABEL for=mainsearch><STRONG>S</STRONG>earch the Source 
+&nbsp;¤</LABEL></P><INPUT class=searchbox id=mainsearch accessKey=s name=sp-q> <INPUT class=button type=submit value=Search!> <INPUT type=hidden 
+value=00080192-sp00000001 name=sp-a> </FORM></DIV><!-- **Other Stuff bar -->
+<UL id=otherstuff>
+  <LI><A class=nav3 href="http://www.yourhtmlsource.com/fullindex/">Full 
+  Index</A> </LI>
+  <LI><A class=nav3 href="http://www.yourhtmlsource.com/about/">About</A> </LI>
+  <LI><A class=nav3 href="http://www.yourhtmlsource.com/contact/">Contact</A> 
+  </LI>
+  <LI><A class=nav3 href="http://www.yourhtmlsource.com/updates/">Updates</A> 
+  </LI></UL>
+<DIV id=main>
+<DIV id=content>
+<P class=pathbar><SPAN class=pathtitle>Path</SPAN> // <A class=nav2 id=url 
+href="http://www.yourhtmlsource.com/">http://www.yourhtmlsource.com/</A> &gt; <A 
+class=nav2 href="http://www.yourhtmlsource.com/sitemanagement/">Site 
+Management</A> &gt; URL REWRITING</P>
+<H1 class=maintitle align=center>URL Rewriting</H1>
+<HR class="big blue">
+
+<DIV class=byline align=right>by <A class=more title=Yep. 
+href="http://www.yourhtmlsource.com/about/">Ross Shannon</A></DIV><!-- Intro -->
+<P>The Apache server’s <CODE class=unix>mod_rewrite</CODE> module gives you the 
+ability to transparently redirect one URL to another, without the user’s 
+knowledge. This opens up all sorts of possibilities, from simply redirecting old 
+URLs to new addresses, to cleaning up the ‘dirty’ URLs coming from a poor 
+publishing system — giving you URLs that are friendlier to both readers and 
+search engines.</P><A name=navigation></A>
+<DIV class=pagenavbox align=center>Page Navigation:<BR>[ <A class=pagenav 
+href="http://www.yourhtmlsource.com/sitemanagement/urlrewriting.html#introduction">An 
+Introduction to Rewriting</A> | <A class=pagenav 
+href="http://www.yourhtmlsource.com/sitemanagement/urlrewriting.html#basicrewriting">Basic 
+Rewriting</A> · <A class=pagenav2 
+href="http://www.yourhtmlsource.com/sitemanagement/urlrewriting.html#basicredirects">Basic 
+Redirects</A> · <A class=pagenav2 
+href="http://www.yourhtmlsource.com/sitemanagement/urlrewriting.html#forcingnewrequests">Forcing 
+New Requests</A> | <A class=pagenav 
+href="http://www.yourhtmlsource.com/sitemanagement/urlrewriting.html#usingregularexpressions">Using 
+Regular Expressions</A> · <A class=pagenav2 
+href="http://www.yourhtmlsource.com/sitemanagement/urlrewriting.html#addingtrailingslashes">Adding 
+Trailing Slashes</A> · <A class=pagenav2 
+href="http://www.yourhtmlsource.com/sitemanagement/urlrewriting.html#addingguessableurls">Adding 
+Guessable URLs</A> ] </DIV>
+<P class=lastmodified>This page was last updated on 2005-08-14</P>
+<SCRIPT 
+src="URL Rewriting  redirecting URLs with Apache’s mod_rewrite  HTMLSource ]_files/searchhiplus.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>searchHiOption();</SCRIPT>
+
+<HR class=blue>
+
+<SCRIPT type=text/javascript><!--
+google_ad_client = "pub-7702953938020767";
+google_alternate_ad_url = "http://www.yourhtmlsource.com/ads/sitepoint.html";
+google_ad_width = 300;
+google_ad_height = 250;
+google_ad_format = "300x250_as";
+google_ad_type = "text_image";
+google_ad_channel ="7461344516";
+google_color_border = "f8f8ff";
+google_color_bg = "f8f8ff";
+google_color_link = "0033cc";
+google_color_url = "000000";
+google_color_text = "000000";
+//--></SCRIPT>
+
+<SCRIPT 
+src="URL Rewriting  redirecting URLs with Apache’s mod_rewrite  HTMLSource ]_files/show_ads.js" 
+type=text/javascript></SCRIPT>
+<!-- Content Start --><A name=introduction></A>
+<H2 class=heading>An Introduction to Rewriting</H2>
+<P>Readable URLs are nice. A well designed website will have a logical file 
+system layout, with smart folder and file names, and as many implementation 
+details left out as possible. In the best designed sites, readers can 
+<STRONG>guess at filenames with a high level of success</STRONG>.</P>
+<P>However, there are some cases when the best possible information design can’t 
+stop your site’s URLs from being nigh-on impossible to use. For instance, you 
+may be using a Content Management System that serves out URLs that look 
+something like</P>
+<P><SAMP 
+class=eg>http://www.site.com/viewcatalog.asp?category=hats&amp;prodID=53</SAMP></P>
+<P>This is a horrible URL, but it and its brethren are becoming increasingly 
+prevalent in these days of dynamically generated pages. There are a number of 
+problems with an URL of this kind.</P>
+<UL class=wellspaced>
+  <LI>
+  <P>It <STRONG>exposes the underlying technology</STRONG> of the website (in 
+  this case <ACRONYM class=help 
+  title="[ Active Server Page ] - Microsoft’s dynamic webpage technology">ASP</ACRONYM>). 
+  This can give potential hackers clues as to what type of data they should send 
+  along with the query string to perform a ‘front-door’ attack on the site. 
+  Information like this shouldn’t be given away if you can help it.</P>
+  <P>Even if you’re not overly concerned with the security of your site, 
+  <STRONG>the technology you’re using is at best irrelevant</STRONG> — and at 
+  worst a source of confusion — to your readers, so it should be hidden from 
+  them if possible.</P>
+  <P>Also, if at some point in the future you decide to change the language that 
+  your site is based on (to <A href="http://php.net/">» PHP</A>, for instance); 
+  all your old URLs will stop working. This is a pretty serious problem, as 
+  anyone who has tackled a full-on site rewrite will attest.</P>
+  <LI><STRONG>The URL is littered with awkward punctuation</STRONG>, like the 
+  question mark and ampersand. Those &amp; characters, in particular, are 
+  problematic because if another webmaster links to this page using that URL, 
+  the unescaped ampersands will mess up their <A 
+  href="http://www.yourhtmlsource.com/accessibility/xhtmlexplained.html">XHTML</A> 
+  conformance. 
+  <LI>Some <STRONG>search engines won’t index pages which they think are 
+  generated dynamically</STRONG>. They’ll see that question mark in the URL and 
+  just turn their asses around. </LI></UL>
+<P>Luckily, using rewriting, we can clean up this URL to something far more 
+manageable. For example, we could map it to</P>
+<P><SAMP class=eg>http://www.site.com/catalog/hats/53/</SAMP></P>
+<P>Much better. This URL is more logical, readable and memorable, and will be 
+picked up by all search engines. The <I lang=fr>faux</I>-directories are short 
+and descriptive. Importantly, it looks more <EM>permanent</EM>.</P>
+<P>To use <CODE class=unix>mod_rewrite</CODE>, you supply it with the link text 
+you want the server to match, and the real URLs that these URLs will be 
+redirected to. The URLs to be matched can be straight file addresses, which will 
+match one file, or they can be <EM>regular expressions</EM>, which will match 
+many files.</P><A name=basicrewriting></A>
+<H2 class=heading>Basic Rewriting</H2>
+<P>Some servers will not have <A 
+href="http://httpd.apache.org/docs/mod/mod_rewrite.html">» mod_rewrite</A> 
+enabled by default. As long as the <A href="http://modules.apache.org/">» 
+module</A> is present in the installation, you can enable it simply by starting 
+a .htaccess file with the command</P>
+<P class=code><CODE class=unix><STRONG>RewriteEngine</STRONG> on</CODE></P>
+<P>Put this .htaccess file in your root so that rewriting is enabled throughout 
+your site. You only need to write this line once per .htaccess file.</P><A 
+name=basicredirects></A>
+<H3 class=subhead>Basic Redirects</H3>
+<P>We’ll start off with a straight redirect; as if you had moved a file to a new 
+location and want all links to the old location to be forwarded to the new 
+location. Though you shouldn’t really ever <A 
+title="As Sir Tim says, ‘Cool URIs don’t change’" 
+href="http://www.w3.org/Provider/Style/URI.html">» move a file</A> once it has 
+been placed on the web; at least when you <EM>simply have to</EM>, you can do 
+your best to stop any old links from breaking.</P>
+<P class=code><CODE class=unix><STRONG>RewriteEngine</STRONG> 
+on<BR><STRONG>RewriteRule</STRONG> <STRONG>^</STRONG>old\.html<STRONG>$</STRONG> 
+new.html </CODE></P>
+<P>Though this is the simplest example possible, it may throw a few people off. 
+The structure of the ‘old’ URL is the only difficult part in this <CODE 
+class=unix>RewriteRule</CODE>. There are three special characters in there.</P>
+<UL class=wellspaced>
+  <LI>The caret, <CODE class=unix>^</CODE>, signifies the <STRONG>start of an 
+  URL</STRONG>, under the current directory. This directory is whatever 
+  directory the .htaccess file is in. You’ll start almost all matches with a 
+  caret. 
+  <LI>The dollar sign, <CODE class=unix>$</CODE>, signifies the <STRONG>end of 
+  the string to be matched</STRONG>. You should add this in to stop your rules 
+  matching the first part of longer URLs. 
+  <LI>The period or dot before the file extension is a special character in 
+  regular expressions, and would mean something special if we didn’t 
+  <STRONG>escape it with the backslash</STRONG>, which tells Apache to treat it 
+  as a normal character. </LI></UL>
+<P>So, this rule will make your server transparently redirect from <SAMP 
+class=eg>old.html</SAMP> to the <SAMP class=eg>new.html</SAMP> page. Your reader 
+will have no idea that it happened, and it’s pretty much instantaneous.</P><A 
+name=forcingnewrequests></A>
+<H3 class=subhead>Forcing New Requests</H3>
+<P>Sometimes you <EM>do</EM> want your readers to know a redirect has occurred, 
+and can do this by forcing a new <ABBR class=help 
+title="[ HyperText Transfer Protocol ] - The protocol designed for the Internet, to send webpages">HTTP</ABBR> 
+request for the new page. This will make the browser load up the new page as if 
+it was the page originally requested, and the location bar will change to show 
+the URL of the new page. All you need to do is turn on the <CODE 
+class=unix>[R]</CODE> flag, by appending it to the rule:</P>
+<P class=code><CODE class=unix><STRONG>RewriteRule</STRONG> 
+<STRONG>^</STRONG>old\.html<STRONG>$</STRONG> new.html <STRONG>[R]</STRONG> 
+</CODE></P><A name=usingregularexpressions></A>
+<H2 class=heading>Using Regular Expressions</H2>
+<P>Now we get on to the <EM>really</EM> useful stuff. The power of <CODE 
+class=unix>mod_rewrite</CODE> comes at the expense of complexity. If this is 
+your first encounter with regular expressions, you may find them to be a tough 
+nut to crack, but the options they afford you are well worth the slog. I’ll be 
+providing plenty of examples to guide you through the basics here. </P>
+<P>Using regular expressions you can have your rules matching a set of URLs at a 
+time, and mass-redirect them to their actual pages. Take this rule;</P>
+<P class=code><CODE class=unix><STRONG>RewriteRule</STRONG> 
+<STRONG>^</STRONG>products/([0-9][0-9])/<STRONG>$</STRONG> 
+productinfo.php?prodID=$1 </CODE></P>
+<P>This will match any URLs that start with ‘products/’, followed by any two 
+digits, followed by a forward slash. For example, this rule will match an URL 
+like <SAMP class=eg>products/12/</SAMP> or <SAMP class=eg>products/99/</SAMP>, 
+and redirect it to the PHP page.</P>
+<P>The parts in square brackets are called <EM>ranges</EM>. In this case we’re 
+allowing anything in the range 0-9, which is any digit. Other ranges would be 
+<CODE class=unix>[A-Z]</CODE>, which is any uppercase letter; <CODE 
+class=unix>[a-z]</CODE>, any lowercase letter; and <CODE 
+class=unix>[A-Za-z]</CODE>, any letter in either case.</P>
+<P>We have <STRONG>encased the regular expression part of the URL in 
+parentheses</STRONG>, because we want to <STRONG>store whatever value was found 
+here for later use</STRONG>. In this case we’re sending this value to a PHP page 
+as an argument. Once we have a value in parentheses we can use it through what’s 
+called a <EM>back-reference</EM>. <STRONG>Each of the parts you’ve placed in 
+parentheses are given an index, starting with one</STRONG>. So, the first 
+back-reference is <CODE class=unix>$1</CODE>, the third is <CODE 
+class=unix>$3</CODE> etc.</P>
+<P>Thus, once the redirect is done, the page loaded in the readers’ browser will 
+be something like <SAMP class=eg>productinfo.php?prodID=12</SAMP> or something 
+similar. Of course, we’re keeping this true URL secret from the reader, because 
+it likely ain’t the prettiest thing they’ll see all day.</P><A 
+name=addingtrailingslashes></A>
+<H3 class=subhead>Adding Trailing Slashes</H3>
+<P>If your site visitor had entered something like <SAMP 
+class=eg>products/12</SAMP>, the rule above won’t do a redirect, as the slash at 
+the end is missing. To promote good URL writing, we’ll take care of this by 
+doing a direct redirect to the same URL with the slash appended.</P>
+<P class=code><CODE class=unix><STRONG>RewriteRule</STRONG> 
+<STRONG>^</STRONG>products/([0-9][0-9])<STRONG>$</STRONG> products/$1/ 
+<STRONG>[R]</STRONG> </CODE></P>
+<P><STRONG>Multiple redirects in the same .htaccess file can be applied in 
+sequence</STRONG>, which is what we’re doing here. This rule is added before the 
+one we did above, like so:</P>
+<P class=code><CODE class=unix><STRONG>RewriteRule</STRONG> 
+<STRONG>^</STRONG>products/([0-9][0-9])<STRONG>$</STRONG> products/$1/ 
+<STRONG>[R]</STRONG><BR><STRONG>RewriteRule</STRONG> 
+<STRONG>^</STRONG>products/([0-9][0-9])/<STRONG>$</STRONG> 
+productinfo.php?prodID=$1 </CODE></P>
+<P>Thus, if the user types in the URL <SAMP class=eg>products/12</SAMP>, our 
+first rule kicks in, rewriting the URL to include the trailing slash, and doing 
+a new request for <SAMP class=eg>products/12/</SAMP> so the user can see that we 
+likes our trailing slashes around here. Then the second rule has something to 
+match, and transparently redirects this URL to <SAMP 
+class=eg>productinfo.php?prodID=12</SAMP>. <EM>Slick.</EM></P><A 
+name=matchmodifiers></A>
+<H3 class=subhead>Match Modifiers</H3>
+<P>You can expand your regular expression patterns by adding some modifier 
+characters, which allow you to match URLs with an indefinite number of 
+characters. In our examples above, we were only allowing two numbers after 
+products. This isn’t the most expandable solution, as if the shop ever grew 
+beyond these initial confines of 99 products and created the URL 
+productinfo.php?prodID=100, our rules would cease to match this URL.</P>
+<P>So, instead of hard-coding a set number of digits to look for, we’ll work in 
+some room to grow by allowing any number of characters to be entered. The rule 
+below does just that:</P>
+<P class=code><CODE class=unix><STRONG>RewriteRule</STRONG> 
+<STRONG>^</STRONG>products/([0-9]<STRONG>+</STRONG>)<STRONG>$</STRONG> 
+products/$1/ <STRONG>[R]</STRONG> </CODE></P>
+<P>Note the plus sign (<CODE class=unix>+</CODE>) that has snuck in there. This 
+modifier changes whatever comes directly before it, by saying ‘<STRONG>one or 
+more of the preceding character or range</STRONG>.’ In this case it means that 
+the rule will match any URL that starts with products/ and ends with at least 
+one digit. So this’ll match both <SAMP class=eg>products/1</SAMP> and <SAMP 
+class=eg>products/1000</SAMP>.</P>
+<P>Other match modifiers that can be used in the same way are the asterisk, 
+<CODE class=unix>*</CODE>, which means ‘zero or more of the preceding character 
+or range’, and the question mark, <CODE class=unix>?</CODE>, which means ‘zero 
+or only one of the preceding character or range.’</P><A 
+name=addingguessableurls></A>
+<H3 class=subhead>Adding Guessable URLs</H3>
+<P>Using these simple commands you can set up a slew of ‘shortcut URLs’ that you 
+think visitors will likely try to enter to get to pages they know exist on your 
+site. For example, I’d imagine a lot of visitors try jumping straight into our 
+<A href="http://www.yourhtmlsource.com/stylesheets/">stylesheets</A> section by 
+typing the URL http://www.yourhtmlsource.com/css/. We can catch these cases, and 
+hopefully alert the reader to the correct address by updating their location bar 
+once the redirect is done with these lines:</P>
+<P class=code><CODE class=unix><STRONG>RewriteRule</STRONG> 
+<STRONG>^</STRONG>css(/)?<STRONG>$</STRONG> /stylesheets/ <STRONG>[R]</STRONG> 
+</CODE></P>
+<P>The simple regular expression in this rule allows it to match the css URL 
+with or without a trailing slash. The question mark means ‘zero or one of the 
+preceding character or range’ — in other words either yourhtmlsource.com/css or 
+yourhtmlsource.com/css/ will both be taken care of by this one rule.</P>
+<P>This approach means less confusing <A 
+title="Even if you’ve set up your own, nobody likes to hit them" 
+href="http://www.yourhtmlsource.com/sitemanagement/custom404error.html">404 
+errors</A> for your readers, and a site that seems to run a whole lot smoother 
+all ’round.</P>
+<DIV class=adsense>
+<SCRIPT 
+src="URL Rewriting  redirecting URLs with Apache’s mod_rewrite  HTMLSource ]_files/googleinfo.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript><!--
+google_ad_width = 300;
+google_ad_height = 250;
+google_ad_format = "300x250_as";
+google_ad_type = "text_image";
+google_ad_channel ="7490500179";
+google_color_url = "000000";
+google_color_text = "000000";
+//--></SCRIPT>
+
+<SCRIPT 
+src="URL Rewriting  redirecting URLs with Apache’s mod_rewrite  HTMLSource ]_files/show_ads.js" 
+type=text/javascript></SCRIPT>
+</DIV>
+<DIV id=endlinks>
+<HR class=blue>
+
+<P class=pathbar align=center><STRONG class=pathtitle>Keep Learning</STRONG> // 
+&nbsp; <A class=nav2 
+href="http://www.yourhtmlsource.com/sitemanagement/custom404error.html">Custom 
+404 Error</A> &gt; Go! Go!</P>
+<P class=pathbar><STRONG class=pathtitle>Other Site Management Articles</STRONG> 
+// &nbsp;&nbsp; <A class=nav2 
+href="http://www.yourhtmlsource.com/sitemanagement/includes.html">Server Side 
+Includes</A>&nbsp;&gt; <A class=nav2 
+href="http://www.yourhtmlsource.com/sitemanagement/ssiecho.html">SSI 
+Echo</A>&nbsp;&gt; URL Rewriting&nbsp;&gt; <A class=nav2 
+href="http://www.yourhtmlsource.com/sitemanagement/custom404error.html">Custom 
+404 Error</A>&nbsp;&gt; <A class=nav2 
+href="http://www.yourhtmlsource.com/sitemanagement/bandwidththeft.html">Bandwidth 
+Theft</A>&nbsp;&gt; <A class=nav2 
+href="http://www.yourhtmlsource.com/sitemanagement/servercodes.html">Server 
+Response Codes</A>&nbsp;&gt; </P>
+<P class=pathbar><STRONG class=pathtitle>What’s Related</STRONG> // &nbsp;&nbsp; 
+</P>
+<HR class=blue>
+
+<P align=center><STRONG>&lt; <A 
+href="http://www.yourhtmlsource.com/">Homepage</A> | <A 
+href="http://www.yourhtmlsource.com/fullindex/">Full Index</A> | <A 
+href="http://www.yourhtmlsource.com/sitemanagement/">Section Index</A> 
+&gt;</STRONG></P></DIV></DIV>
+<DIV id=navigation><!-- **Main Navigation -->
+<DIV class=section title="Section Index" align=center><A class=nav 
+href="http://www.yourhtmlsource.com/sitemanagement/">Site Management</A></DIV>
+<DIV class=primary>
+<P><STRONG>Starting Off</STRONG> &nbsp;<BR><A class=nav 
+href="http://www.yourhtmlsource.com/starthere/">Start Here</A> ·<BR><A class=nav 
+href="http://www.yourhtmlsource.com/myfirstsite/">My First Site</A> ·</P>
+<P><STRONG>Lessons</STRONG> &nbsp;<BR><A class=nav 
+href="http://www.yourhtmlsource.com/text/">Text</A> ·<BR><A class=nav 
+href="http://www.yourhtmlsource.com/images/">Images</A> ·<BR><A class=nav 
+href="http://www.yourhtmlsource.com/tables/">Tables</A> ·<BR><A class=nav 
+href="http://www.yourhtmlsource.com/frames/">Frames</A> ·<BR><A class=nav 
+href="http://www.yourhtmlsource.com/forms/">Forms</A> ·<BR><A class=nav 
+href="http://www.yourhtmlsource.com/stylesheets/">Stylesheets</A> ·</P>
+<P><STRONG>Scripting</STRONG> &nbsp;<BR><A class=nav 
+href="http://www.yourhtmlsource.com/javascript/">JavaScript</A> ·<BR><A 
+class=nav href="http://www.yourhtmlsource.com/cgi/">CGI Scripting</A> ·</P>
+<P><STRONG>Advanced</STRONG> &nbsp;<BR><A class=nav 
+href="http://www.yourhtmlsource.com/accessibility/">Accessibility</A> ·<BR><A 
+class=nav href="http://www.yourhtmlsource.com/promotion/">Promotion</A> ·<BR><A 
+class=nav href="http://www.yourhtmlsource.com/optimisation/">Optimisation</A> 
+·<BR><A class=nav href="http://www.yourhtmlsource.com/sitemanagement/">Site 
+Management</A> ·</P>
+<P><STRONG>Reviews</STRONG> &nbsp;<BR><A class=nav 
+href="http://www.yourhtmlsource.com/books/">Books</A> ·</P></DIV>
+<DIV class=featured align=center>
+<FORM style="MARGIN: 0px" action=https://www.paypal.com/cgi-bin/webscr 
+method=post>
+<P><STRONG>Please support HTMLSource by making a small 
+donation.</STRONG></P><INPUT type=hidden value=_xclick name=cmd> <INPUT 
+type=hidden value=ross@yourhtmlsource.com name=business> <INPUT type=hidden 
+value="Support HTMLSource" name=item_name> <INPUT type=hidden value=1 
+name=no_note> <INPUT type=hidden value=USD name=currency_code> <INPUT 
+type=hidden value=0 name=tax> <INPUT title=Cheers-O type=image 
+alt="PayPal donate button" 
+src="URL Rewriting  redirecting URLs with Apache’s mod_rewrite  HTMLSource ]_files/paypal.gif" 
+name=submit> 
+<P><A class=nav2 href="http://www.yourhtmlsource.com/support/">Past 
+supporters</A></P></FORM></DIV>
+<DIV id=getfirefox align=center>
+<P><STRONG>Get a better browser, and join <SPAN id=ffcounter>over 170 
+million</SPAN> other happy Firefox users!</STRONG>
+<SCRIPT type=text/javascript><!--
+google_ad_client = "pub-7702953938020767";
+google_ad_width = 125;
+google_ad_height = 125;
+google_ad_format = "125x125_as_rimg";
+google_cpa_choice = "CAAQ4fuXhAIaCFomRCotNSbYKK2293M";
+//--></SCRIPT>
+
+<SCRIPT 
+src="URL Rewriting  redirecting URLs with Apache’s mod_rewrite  HTMLSource ]_files/show_ads.js" 
+type=text/javascript></SCRIPT>
+ <!-- <img src="/media/getfirefox_large.png" width="178" height="60" border="0" alt="Get Mozilla Firefox &#8212; the best browser ever" /> --></P>
+<P>Already a happy Firefox user?<BR><A class=nav3 
+title="Sign up with Spread Firefox and help others get a better browser." 
+style="TEXT-DECORATION: underline" 
+href="http://www.spreadfirefox.com/?q=user/register&amp;r=68">Spread the 
+Fire!</A></P></DIV>
+<SCRIPT 
+src="URL Rewriting  redirecting URLs with Apache’s mod_rewrite  HTMLSource ]_files/ffcounter.js" 
+type=text/javascript></SCRIPT>
+
+<DIV class=textad id=topxml>
+<P><A class=nav2 style="FONT-WEIGHT: bold" 
+href="http://www.professionalbusinesscardsonline.com/">Professional Business 
+Cards</A><BR><A class=nav2 style="FONT-WEIGHT: bold" 
+href="http://www.freeemailtutorials.com/">Free Email Tutorials</A><BR><A 
+class=nav2 style="FONT-WEIGHT: bold" 
+href="http://www.business-ecommerce-solution.com/">Business Ecommerce 
+Solution</A><BR><A class=nav2 style="FONT-WEIGHT: bold" 
+href="http://www.1234pens.com/">Promotional Pens</A><BR><A class=nav2 
+href="http://www.4funparties.com/">Party Supplies</A><BR><A class=nav2 
+href="http://www.cookingspot.com/">Holiday Recipes</A><BR><A class=nav2 
+href="http://www.4starelectronics.com/">Electronics Distributor</A><BR><A 
+class=nav2 href="http://www.accessorygeeks.com/">Cellular Phone 
+Accessory</A><BR><A class=nav2 
+href="http://www.1800mobiles.com/headsets.html">Cell Phone 
+Accessories</A></P></DIV>
+<DIV class=textad>
+<P><A class=nav2 style="FONT-WEIGHT: bold; TEXT-DECORATION: underline" 
+href="http://www.nitroventures.com/">Professional Web Site Design</A><BR><A 
+class=nav2 href="http://www.nitroprice.co.uk/">Price Comparison</A><BR><A 
+class=nav2 href="http://www.nitro-telecoms.co.uk/">Cheap Broadband 
+Internet</A><BR><A class=nav2 href="http://www.nitro-travel.co.uk/">Cheaper 
+Business Flights</A><BR><A class=nav2 href="http://www.nitro-movies.com/">Life’s 
+not all work — Buy DVDs</A></P></DIV>
+<DIV class=textad>
+<P>Search and register .co.uk domain names with our partners below:</P>
+<P><A class=nav2 style="FONT-WEIGHT: bold; TEXT-DECORATION: underline" 
+href="http://www.net2.co.uk/">UK Domain Name Registration</A><BR><A class=nav2 
+href="http://www.123domainnames.co.uk/">123 Domain Names UK</A></P></DIV>
+<DIV class=textad>
+<P><A class=nav2 style="FONT-WEIGHT: bold; TEXT-DECORATION: underline" 
+href="http://www.bayst-search-engine-optimization.com/">SEO 
+Company</A></P></DIV>
+<DIV class="partner textad">
+<P><STRONG>Partners:</STRONG></P>
+<P class=lcol><A class=nav2 href="http://www.needscripts.com/">Scripts</A> 
+&nbsp; <A class=nav2 href="http://www.topxml.com/">XML</A><BR><A class=nav2 
+href="http://zvon.org/">ZVON.ORG</A><BR><A class=nav2 
+href="http://www.xmlpitstop.com/">XML/XSLT Forums</A><BR><A class=nav2 
+href="http://www.planet-source-code.com/">Planet Source Code</A></P>
+<P><A class=nav2 href="http://www.visualbuilder.com/">VisualBuilder</A><BR><A 
+class=nav2 href="http://www.webdevforums.com/">Web Design</A><BR><A class=nav2 
+href="http://aspalliance.com/">ASPAlliance</A><BR><A class=nav2 
+href="http://devguru.com/">DevGuru</A></P></DIV>
+<DIV class=secondary>
+<P class=boxhead><STRONG>HTMLSource Toolbox &nbsp;¤</STRONG></P><STRONG>Love 
+us?</STRONG> &nbsp;<IMG height=14 alt=" " 
+src="URL Rewriting  redirecting URLs with Apache’s mod_rewrite  HTMLSource ]_files/faves.gif" 
+width=20 align=top border=0><BR>
+<HR class=white>
+
+<SCRIPT type=text/javascript>
+faves();
+</SCRIPT>
+<NOSCRIPT>Add HTMLSource to your bookmarks!</NOSCRIPT> 
+<HR class=white>
+<BR><STRONG>Printable Source</STRONG> &nbsp;<IMG height=15 alt=" " 
+src="URL Rewriting  redirecting URLs with Apache’s mod_rewrite  HTMLSource ]_files/print.gif" 
+width=20 align=top border=0><BR>
+<HR class=white>
+Just print pages normally, our stylesheet will know what to do<BR>
+<HR class=white>
+<!--
+<br />
+<strong>Theme me up</strong> &nbsp;<img src="/media/customise.gif" width="14" height="14" border="0" align="top" alt=" " /><br />
+<hr class="white" />
+Choose your stylesheet with the buttons below:<br />
+<button onclick="setActiveStyleSheet('Bubbleicious'); return false;" onkeypress="setActiveStyleSheet('Bubbleicious'); return false;" accesskey="b" class="stylissimo"><strong>B</strong>ubbleicious</button>
+<button onclick="setActiveStyleSheet('Retro'); return false;" onkeypress="setActiveStyleSheet('Retro'); return false;" accesskey="r" class="stylissimo"><strong>R</strong>etro</button>
+<p class="upgrade">You&#8217;ll need to upgrade your browser first.</p>
+<hr class="white" />
+--><BR><STRONG>Tell 
+the World</STRONG> &nbsp;<IMG height=14 alt=" " 
+src="URL Rewriting  redirecting URLs with Apache’s mod_rewrite  HTMLSource ]_files/sendfriend.gif" 
+width=14 align=top border=0><BR>
+<HR class=white>
+<A class=nav href="http://www.yourhtmlsource.com/sendtofriend.html">Recommend 
+HTMLSource to your friends!</A><BR>
+<HR class=white>
+</DIV>
+<DIV id=feedback align=center><STRONG>Having fun? Being frustrated? Got some 
+comments?</STRONG><BR><A class=nav title="All in the name of progress, see?" 
+href="http://www.yourhtmlsource.com/feedback/">We want them!</A></DIV>
+<DIV class=secondary>
+<P class=boxhead><STRONG>More Resources 
+&nbsp;¤</STRONG></P><STRONG>Links</STRONG> 
+<HR class=white>
+
+<P><A class=resource href="http://www.alistapart.com/articles/urls/">» ALA: 
+URLS! URLS! URLS!</A><BR>Bill Humphries’ excellent tutorial on URL 
+rewriting.</P>
+<P><A class=resource href="http://www.engelschall.com/pw/apache/rewriteguide/">» 
+A User’s Guide to URL Rewriting with the Apache Webserver</A><BR>The daddy of 
+rewriting guides. This is the one to read if you’ve gotta know it 
+<EM>all</EM>.</P>
+<P><A class=resource href="http://www.doriat.com/">» Doriat Mod_Rewrite 
+Board</A><BR>Discuss your mod_rewrite problems and offer solutions to others on 
+this message board.</P>
+<P><A class=resource href="http://www.alistapart.com/articles/slashforward/">» 
+ALA: Slash Forward</A><BR>“Some URLs are better than others.” Illustrating the 
+benefits of good, clean links.</P>
+<P><A class=resource href="http://www.useit.com/alertbox/990321.html">» 
+AlertBox: URL as UI</A><BR>A column by Jakob Nielson on users’ implicit use of 
+URLs as an aid for site navigation.</P>
+<P><A class=resource 
+href="http://www.brainstormsandraves.com/archives/2003/08/08/friday_feast_55_friendly_lasting_urls/">» 
+Friendly, Lasting URLs</A><BR>Very useful compendium of links on creating a 
+permanent URL system.</P></DIV>
+<DIV class=textad id=bingobango>
+<P><A class=nav2 style="FONT-WEIGHT: bold; TEXT-DECORATION: underline" 
+href="http://www.bingo.com/">Free Bingo</A></P></DIV>
+<DIV class=textad id=myazland>
+<P><A class=nav2 style="FONT-WEIGHT: bold; TEXT-DECORATION: underline" 
+href="http://www.myazland.com/">Arizona Real Estate</A></P></DIV>
+<DIV class=textad id=cpays>
+<P><A class=nav2 style="FONT-WEIGHT: bold; TEXT-DECORATION: underline" 
+href="http://www.casinopays.com/">Affiliate Programs</A><BR><A class=nav2 
+href="http://www.clubdicecasino.com/">Casinos</A></P></DIV>
+<DIV class=textad id=casinocheck>
+<P><A class=nav2 style="FONT-WEIGHT: bold; TEXT-DECORATION: underline" 
+href="http://www.online-casino-check.com/">Online Casino Gambling</A></P></DIV>
+<DIV class=textad id=bestcasino>
+<P><A class=nav2 style="FONT-WEIGHT: bold; TEXT-DECORATION: underline" 
+href="http://www.alljackpots.com/best-online-casino.php">Best Online 
+Casino</A></P></DIV>
+<DIV class=textad id=hotpepper>
+<P><A class=nav2 style="TEXT-DECORATION: underline" 
+href="http://www.hotpeppercasino.com/">Online Casino: Hot Pepper 
+Casino</A></P></DIV></DIV></DIV><!-- **Bottom Bar -->
+<DIV id=footer>
+<P id=vroom><A class=nav 
+href="http://www.yourhtmlsource.com/sitemanagement/urlrewriting.html#top">^ TOP 
+^</A></P>
+<P>© 2000–2006 · <A class=more 
+title="Find out more about me, should you so wish" 
+href="http://www.yourhtmlsource.com/about/">Ross Shannon</A></P></DIV></DIV><!-- ~Fin~ --></BODY></HTML>

@@ -1,0 +1,117 @@
+.marginfxt {
+	BACKGROUND-IMAGE: url(../graphics/white100-0.png); VERTICAL-ALIGN: bottom; HEIGHT: 50px
+}
+.marginfxtc {
+	BACKGROUND-IMAGE: url(../graphics/white30-0.png); WIDTH: 10px; HEIGHT: 50px
+}
+.marginfx {
+	BACKGROUND-IMAGE: url(../graphics/white30.png); WIDTH: 10px; HEIGHT: 100%
+}
+.marginfxtinv {
+	BACKGROUND-IMAGE: url(../graphics/white100-0inv.png); HEIGHT: 50px; TEXT-ALIGN: center
+}
+.marginfxtcinv {
+	BACKGROUND-IMAGE: url(../graphics/white30-0inv.png); WIDTH: 10px; HEIGHT: 50px
+}
+.mainback {
+	BACKGROUND-POSITION: 50% top; BACKGROUND-IMAGE: url(../graphics/sidediagonal.gif); BACKGROUND-REPEAT: repeat-x; HEIGHT: 100%
+}
+HTML {
+	OVERFLOW: auto; HEIGHT: 100%
+}
+BODY {
+	FONT-SIZE: 11px; COLOR: #4e6517; LINE-HEIGHT: 140%; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TD {
+	FONT-SIZE: 11px; COLOR: #4e6517; LINE-HEIGHT: 140%; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TH {
+	FONT-SIZE: 11px; COLOR: #4e6517; LINE-HEIGHT: 140%; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+BODY {
+	BACKGROUND-POSITION: 50% top; BACKGROUND-IMAGE: url(../graphics/newdiag.gif); MARGIN: 0px; HEIGHT: 100%; BACKGROUND-COLOR: #ffffff
+}
+.style2 {
+	COLOR: #639d13
+}
+.margindiagonal {
+	BACKGROUND-POSITION: 50% top; BACKGROUND-IMAGE: url(../graphics/sidemargindiagonal.gif); BACKGROUND-REPEAT: repeat-x
+}
+.diagonal {
+	BACKGROUND-POSITION: 50% top; BACKGROUND-IMAGE: url(../graphics/sidediagonal.gif); BACKGROUND-REPEAT: repeat-x
+}
+.cellmargin {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 20px; VERTICAL-ALIGN: top; PADDING-TOP: 20px
+}
+.cellmargin STRONG {
+	LETTER-SPACING: -1px
+}
+.cellmargin B {
+	LETTER-SPACING: -1px
+}
+.navicellpad STRONG {
+	LETTER-SPACING: -1px
+}
+.navicellpad B {
+	LETTER-SPACING: -1px
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #4e6517; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; LETTER-SPACING: -1px
+}
+.smalltext {
+	FONT-SIZE: 11px
+}
+.smalltext STRONG {
+	FONT-SIZE: 11px
+}
+.smalltext B {
+	FONT-SIZE: 11px
+}
+A {
+	COLOR: #639d13; TEXT-DECORATION: none
+}
+A:visited {
+	TEXT-DECORATION: none
+}
+A:hover {
+	BACKGROUND: #639d13; COLOR: #ffffff; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #639d13; TEXT-DECORATION: none
+}
+.icon {
+	MARGIN-TOP: 2px; MARGIN-BOTTOM: 2px; VERTICAL-ALIGN: middle; WIDTH: 13px; MARGIN-RIGHT: 3px; HEIGHT: 13px
+}
+.subicon {
+	MARGIN-LEFT: 10px
+}
+.frame {
+	BORDER-RIGHT: #669900 1px solid; BORDER-TOP: #669900 1px solid; BORDER-LEFT: #669900 1px solid; BORDER-BOTTOM: #669900 1px solid
+}
+.code {
+	BORDER-RIGHT: #cccccc 1px dashed; PADDING-RIGHT: 10px; BORDER-TOP: #cccccc 1px dashed; PADDING-LEFT: 10px; FONT-SIZE: 12px; PADDING-BOTTOM: 10px; BORDER-LEFT: #cccccc 1px dashed; COLOR: #000066; LINE-HEIGHT: 20px; PADDING-TOP: 10px; BORDER-BOTTOM: #cccccc 1px dashed; FONT-FAMILY: "Courier New", Courier, mono; BACKGROUND-COLOR: #efefef
+}
+.codes {
+	BORDER-RIGHT: #cccccc 1px dashed; PADDING-RIGHT: 10px; BORDER-TOP: #cccccc 1px dashed; PADDING-LEFT: 10px; FONT-SIZE: 13px; PADDING-BOTTOM: 10px; BORDER-LEFT: #cccccc 1px dashed; COLOR: #000066; LINE-HEIGHT: 20px; PADDING-TOP: 10px; BORDER-BOTTOM: #cccccc 1px dashed; BACKGROUND-COLOR: #efefef
+}
+.codeitem {
+	BORDER-RIGHT: #cccccc 1px dashed; PADDING-RIGHT: 10px; BORDER-TOP: #cccccc 1px dashed; PADDING-LEFT: 10px; FONT-SIZE: 10px; PADDING-BOTTOM: 10px; BORDER-LEFT: #cccccc 1px dashed; COLOR: #000066; LINE-HEIGHT: 14px; PADDING-TOP: 10px; BORDER-BOTTOM: #cccccc 1px dashed; BACKGROUND-COLOR: #efefef
+}
+.citem {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; MARGIN-TOP: 2px; MARGIN-BOTTOM: 2px; BORDER-LEFT: #cccccc 1px solid; MARGIN-RIGHT: 10px; BORDER-BOTTOM: #cccccc 1px solid
+}
+LI {
+	PADDING-LEFT: 5px; PADDING-BOTTOM: 12px
+}
+.imageframe {
+	BORDER-RIGHT: #333333 1px solid; BORDER-TOP: #333333 1px solid; MARGIN: 2px 5px 5px; BORDER-LEFT: #333333 1px solid; BORDER-BOTTOM: #333333 1px solid
+}
+.imageemphasize {
+	FONT-SIZE: 9px; MARGIN-LEFT: 5px; COLOR: #666666; FONT-STYLE: italic
+}
+.docheads {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; LINE-HEIGHT: 23px; TEXT-DECORATION: underline
+}
+.docmainhead {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; LINE-HEIGHT: 20px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}

@@ -1,0 +1,20 @@
+// JavaScript Document
+intImage = 1;
+function swapImage(img) {
+switch (intImage) {
+ case 1:
+   img.src = "http://www.webforgers.net/images/closed.gif"
+   intImage = 2
+   return(false);
+case 2:
+   img.src = "http://www.webforgers.net/images/open.gif"
+   intImage = 1
+   return(false);
+ }
+}
+
+function toggle(target, iNo)
+{
+	obj=document.getElementById(target+String(iNo));
+	obj.className=( (obj.className=='closed') ? 'open' : 'closed');
+}

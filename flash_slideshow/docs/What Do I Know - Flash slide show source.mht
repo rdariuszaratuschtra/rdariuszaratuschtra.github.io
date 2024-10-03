@@ -1,0 +1,1923 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: What Do I Know - Flash slide show source
+Date: Tue, 6 Jun 2006 22:06:53 +0200
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01C689B5.849745B0"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.2180
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://whatdoiknow.org/archives/001629.shtml
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML lang=3Den xml:lang=3D"en" =
+xmlns=3D"http://www.w3.org/1999/xhtml"><HEAD><TITLE>What Do I Know - =
+Flash slide show source</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1"><!-- For you, my lovely Google -->
+<META content=3Dindex,follow name=3Drobots>
+<META=20
+content=3D"The daily dish of Dominey Design written by Todd Dominey. =
+Features news about web design and development, technology, typography, =
+media, and the arts."=20
+name=3Ddescription>
+<META=20
+content=3D"what do i know, what i do know, weblog, todd dominey, dominey =
+design, atlanta weblogs, bacon, eggs, vodka, orange"=20
+name=3Dkeywords>
+<META=20
+content=3D"Todd Dominey for www.whatdoiknow.org. See also =
+domineydesign.com."=20
+name=3Dauthor>
+<META http-equiv=3Dimagetoolbar content=3Dno><LINK media=3Dscreen=20
+href=3D"http://www.whatdoiknow.org/styles/master.css" type=3Dtext/css=20
+rel=3Dstylesheet><LINK title=3D"Ragged Text" media=3Dscreen,print=20
+href=3D"http://www.whatdoiknow.org/styles/alignLeft.css" type=3Dtext/css =
+
+rel=3D"alternate stylesheet"><LINK title=3D"Justify Text" =
+media=3Dscreen,print=20
+href=3D"http://www.whatdoiknow.org/styles/alignJustify.css" =
+type=3Dtext/css=20
+rel=3D"alternate stylesheet"><LINK title=3D"Large Text" =
+media=3Dscreen,print=20
+href=3D"http://www.whatdoiknow.org/styles/textLg.css" type=3Dtext/css=20
+rel=3D"alternate stylesheet"><LINK title=3D"Largest Text" =
+media=3Dscreen,print=20
+href=3D"http://www.whatdoiknow.org/styles/textLgest.css" type=3Dtext/css =
+
+rel=3D"alternate stylesheet"><LINK title=3DRSS=20
+href=3D"http://whatdoiknow.org/index.xml" type=3Dapplication/rss+xml =
+rel=3Dalternate><!-- must appear after css -->
+<SCRIPT src=3D"http://www.whatdoiknow.org/scripts/global.js"=20
+type=3Dtext/javascript></SCRIPT>
+
+<META content=3D"MSHTML 6.00.2900.2180" name=3DGENERATOR></HEAD>
+<BODY>
+<DIV id=3Ddotframe>
+<DIV id=3Dglobalwrap>
+<DIV id=3Dheader><A title=3D"What Do I Know" =
+href=3D"http://whatdoiknow.org/"><IMG=20
+class=3Dinline height=3D81 alt=3D"What Do I Know"=20
+src=3D"http://www.whatdoiknow.org/images/header_script.gif" =
+width=3D289></A></DIV>
+<DIV id=3Dmasthead><IMG height=3D22 alt=3D"Daily Dish of Dominey Design" =
+
+src=3D"http://www.whatdoiknow.org/images/masthead.gif" =
+width=3D583></DIV>
+<DIV id=3Dmenu><SPAN class=3Dtextwidgets><A =
+onclick=3D"leftAlign();return false;"=20
+href=3D"http://www.whatdoiknow.org/#"><IMG height=3D24 alt=3D"Ragged =
+Right Text"=20
+src=3D"http://www.whatdoiknow.org/images/widget_left.gif" =
+width=3D24></A><A=20
+onclick=3D"justifyAlign();return false;" =
+href=3D"http://www.whatdoiknow.org/#"><IMG=20
+height=3D24 alt=3D"Justify Text"=20
+src=3D"http://www.whatdoiknow.org/images/widget_just.gif" =
+width=3D24></A><A=20
+onclick=3D"setActiveSS('');return false;" =
+href=3D"http://www.whatdoiknow.org/#"><IMG=20
+height=3D24 alt=3D"Suggested Type Size"=20
+src=3D"http://www.whatdoiknow.org/images/widget_typeSm.gif" =
+width=3D24></A><A=20
+onclick=3D"setActiveSS('Large Text');return false;"=20
+href=3D"http://www.whatdoiknow.org/#"><IMG height=3D24 alt=3D"Larger =
+Text Size"=20
+src=3D"http://www.whatdoiknow.org/images/widget_typeNor.gif" =
+width=3D24></A><A=20
+onclick=3D"setActiveSS('Largest Text');return false;"=20
+href=3D"http://www.whatdoiknow.org/#"><IMG height=3D24 alt=3D"Largest =
+Text Size"=20
+src=3D"http://www.whatdoiknow.org/images/widget_typeLg.gif" =
+width=3D24></A></SPAN><A=20
+title=3DHome href=3D"http://whatdoiknow.org/"><IMG height=3D24 =
+alt=3DHome=20
+src=3D"http://www.whatdoiknow.org/images/menu_home.gif" =
+width=3D61></A><A=20
+title=3DAbout href=3D"http://www.whatdoiknow.org/about.shtml"><IMG =
+height=3D24=20
+alt=3D"About the Author, This Site, Etc."=20
+src=3D"http://www.whatdoiknow.org/images/menu_about.gif" =
+width=3D65></A><A=20
+href=3D"http://www.whatdoiknow.org/library/index.shtml"><IMG height=3D24 =
+alt=3DLibrary=20
+src=3D"http://www.whatdoiknow.org/images/menu_library.gif" =
+width=3D79></A><A=20
+title=3DArchives href=3D"http://www.whatdoiknow.org/archives.shtml"><IMG =
+height=3D24=20
+alt=3DArchives =
+src=3D"http://www.whatdoiknow.org/images/menu_archives.gif"=20
+width=3D88></A><A href=3D"http://domineydesign.com/"><IMG height=3D24 =
+alt=3DPortfolio=20
+src=3D"http://www.whatdoiknow.org/images/menu_folio.gif" width=3D64> =
+</A></DIV>
+<DIV id=3Dwrap>
+<DIV id=3DcolRight>
+<DIV class=3Dpost>
+<DIV class=3Ddate>{&nbsp;&nbsp;April 14, 2004&nbsp;&nbsp;} </DIV>
+<H1>Flash slide show source</H1>
+<DIV=20
+style=3D"PADDING-RIGHT: 0px; BORDER-TOP: #d5d5d5 1px solid; =
+PADDING-LEFT: 0px; PADDING-BOTTOM: 4px; MARGIN: 0px 0px 0.85em; =
+PADDING-TOP: 4px; BORDER-BOTTOM: #d5d5d5 1px solid"><SPAN=20
+class=3Dupdate>Update (2/14/05):</SPAN> The content in this post is old =
+-- the=20
+source has been updated to a new Flash MX 2004 component named <A=20
+title=3DSlideShowPro =
+href=3D"http://www.slideshowpro.net/">SlideShowPro</A>.</DIV>
+<P>Quite often I receive emails inquiring about various Flash pieces =
+I've=20
+created, and the one that has attracted the most attention (and requests =
+for=20
+source code) is the dynamic, cross-fading image loader used on <A=20
+title=3D"PGA Championship 2003"=20
+href=3D"http://www.pga.com/pgachampionship/2003/">The 2003 PGA =
+Championship</A>.=20
+After recently revisiting the source, and completely overhauling it for =
+a=20
+probono project I was asked to contribute to, I thought now would be a =
+good time=20
+to distribute the source as a free download.</P>
+<P>To quickly describe it, the loader is a 1k "shell" swf (ActionScript =
+only)=20
+that loads all images as external jpgs -- one at a time -- and =
+cross-fades=20
+between them after a configurable amount of time. It uses XML to handle =
+file=20
+names, directory structure, and other playback preferences. You can =
+control the=20
+amount of seconds each image "holds" before moving to the next, speed up =
+/ slow=20
+down the cross-fade speed, and decide whether to show the images =
+sequentially,=20
+or in random order.</P>
+<P>A lot could be done to improve the user-friendliness of this =
+(including more=20
+configurable options and standalone functionality for non-Flash users), =
+but=20
+that'll have to wait. For now, if you're a Flash developer that likes to =
+poke=20
+around under the hood, and adapt code for your own projects, this is for =
+
+you.</P>
+<P><SPAN class=3Dupdate>Update (4/29/04):</SPAN> Per request, I added a =
+new=20
+attribute to the slide show to toggle looping. This prevents the movie =
+(when=20
+used in sequential mode) from displaying the first image when the last =
+one has=20
+loaded.</P>
+<P>Also -- since many people (without the Flash app) were tinkering with =
+the=20
+width/height attributes in the html to match their own image sizes, and =
+were=20
+receiving stretched / scaled results, I modified the code to allow this =
+to work=20
+correctly. So if you want to do this, copy the code from the example =
+html=20
+document, alter the width and height attributes (in both the 'param' and =
+'embed'=20
+elements) to the size of your images (they need to be uniform), and =
+you're good=20
+to go.</P>
+<P><SPAN class=3Dupdate>Update (9/28/04):</SPAN> There are now two =
+versions of the=20
+slide show source available for download -- one for Flash MX, the other =
+for=20
+Flash MX 2004. The latter can publish to either Flash Player 6 or 7 with =
+
+ActionScript 2 enabled. The Flash MX version can publish only to Flash =
+Player 6=20
+using ActionScript 1.</P>
+<P><STRONG>Preview</STRONG><BR><A title=3D"Flash slide show"=20
+href=3D"http://whatdoiknow.org/other/slideshow/slideshow.html">What it =
+looks=20
+like</A></P>
+<P><STRONG>Download</STRONG><BR><A title=3D"Slideshow Source (FMX - =
+AS1)"=20
+href=3D"http://whatdoiknow.org/downloads/slideshow_as1.zip">Slide show =
+source (FMX=20
+- AS1)</A><BR><A title=3D"Slideshow Source (FMX2004 - AS2)"=20
+href=3D"http://whatdoiknow.org/downloads/slideshow_as2.zip">Slide show =
+source=20
+(FMX2004 - AS2)</A></P>
+<H2 id=3Dcomments>Comments</H2>
+<DIV id=3Dc5373>
+<P>Hey Todd, quick ?: what's your recommendation for optimal fps? I see =
+you're=20
+using 30 in this one.</P></DIV>
+<P>Posted by: <A href=3D"http://www.cameronmoll.com/" =
+rel=3Dnofollow>Cameron=20
+Moll</A> at April 16, 2004 10:56 AM </P>
+<DIV id=3Dc5375>
+<P>I stick to 30fps for general work, since that's pretty close to =
+television=20
+frame rate.</P></DIV>
+<P>Posted by: <A href=3D"http://whatdoiknow.org/" rel=3Dnofollow>Todd =
+Dominey</A> at=20
+April 16, 2004 11:04 AM </P>
+<DIV id=3Dc5376>
+<P>Wow, thanks! What amazing timing, I just figured out that I needed to =
+do=20
+something like this about 2 minutes before your post! You're a =
+star...</P></DIV>
+<P>Posted by: <A href=3D"http://hicksdesign.co.uk/" rel=3Dnofollow>Jon =
+Hicks</A> at=20
+April 16, 2004 11:29 AM </P>
+<DIV id=3Dc5377>
+<P>Great! I'm a beginning flash developer and am really going to use =
+this to=20
+learn from... Thanks much!</P></DIV>
+<P>Posted by: <A href=3D"http://www.rynoweb.com/" =
+rel=3Dnofollow>Chuck</A> at April=20
+16, 2004 01:23 PM </P>
+<DIV id=3Dc5379>
+<P>Awesome! Can't wait till exams are over to try this one out =
+:D</P></DIV>
+<P>Posted by: <A href=3D"http://pketh.blogs.com/" =
+rel=3Dnofollow>pketh</A> at April=20
+16, 2004 02:02 PM </P>
+<DIV id=3Dc5381>
+<P>man I just finished doing something like this. damn. oh well here's =
+to=20
+downloading and seeing how you did it.</P></DIV>
+<P>Posted by: <A href=3D"http://www.heliozilla.com/" =
+rel=3Dnofollow>drew</A> at=20
+April 16, 2004 02:29 PM </P>
+<DIV id=3Dc5382>
+<P>Dominey =3D The Bomb :-)</P></DIV>
+<P>Posted by: Dan Rubin at April 16, 2004 02:32 PM </P>
+<DIV id=3Dc5383>
+<P>Yo this shit is hype! </P>
+<P>Just what I was looking for.</P>
+<P>Thanks a million.</P></DIV>
+<P>Posted by: <A href=3D"http://www.goodnightrecords.com/" =
+rel=3Dnofollow>Nathan</A>=20
+at April 16, 2004 03:34 PM </P>
+<DIV id=3Dc5384>
+<P>So funny, I just wrote something very similar 2 weeks ago. =
+(Slideshow, load=20
+external jpgs, xml settings) I really could have used this to help =
+through the=20
+tough parts. Oh well. Just a reminder to those who use this.. make sure =
+your=20
+jpgs are NOT progressive. I was using jpgs from years ago and wasted a =
+good=20
+couple hours figuring out what the hell was wrong.</P>
+<P>Great site by the way. Harland sucks.</P></DIV>
+<P>Posted by: Ice at April 16, 2004 04:57 PM </P>
+<DIV id=3Dc5385>
+<P>Thank you, Todd. I admire your work and style, and often show it to =
+my=20
+students as a definition of what being adept at both HTML and Flash =
+is.</P>
+<P>I always wondered about how that piece worked, too. :)</P></DIV>
+<P>Posted by: salvatore filippone at April 16, 2004 05:26 PM </P>
+<DIV id=3Dc5386>
+<P>What a piece of art. Great job. Can I distribute it in my blog too? =
+Just=20
+email me.</P></DIV>
+<P>Posted by: <A href=3D"http://www.jaimealejandro.com/blog/" =
+rel=3Dnofollow>Jaime=20
+Olmo</A> at April 16, 2004 05:55 PM </P>
+<DIV id=3Dc5387>
+<P>Very neat. Thanks - I've been doodling with <A =
+href=3D"http://ming.sf.net/"=20
+rel=3Dnofollow>Ming</A> since the weekend, and am now trying to wrap =
+your=20
+ActionScript bits in PHP to make it into a class. ;)</P></DIV>
+<P>Posted by: <A href=3D"http://the.taoofmac.com/" rel=3Dnofollow>Rui =
+Carmo</A> at=20
+April 16, 2004 05:56 PM </P>
+<DIV id=3Dc5389>
+<P>Thanks for this, your an inspiration! I have to get my act together =
+and learn=20
+more flash/actionscript. I've had "Actionscripting: Advanced Training =
+From the=20
+Source" for nearly a year now without going through the book! Just so =
+busy ...=20
+but you my friend have inspired me. I have advanced knowledge of =
+programming=20
+with javascript so I already have a leg up, I think.</P></DIV>
+<P>Posted by: <A href=3D"http://www.xdevdesign.com/" =
+rel=3Dnofollow>Terry</A> at=20
+April 16, 2004 06:45 PM </P>
+<DIV id=3Dc5390>
+<P>Dan Rubin's comment rules - Todd, you're the bomb !</P></DIV>
+<P>Posted by: <A href=3D"http://phnk.com/" rel=3Dnofollow>Fran=E7ois =
+Briatte</A> at=20
+April 17, 2004 05:08 AM </P>
+<DIV id=3Dc5391>
+<P>Wow, very nice. I need to do something like this for a client next =
+month.=20
+Thank you for posting the source!</P></DIV>
+<P>Posted by: Marc A. Garrett at April 17, 2004 08:09 AM </P>
+<DIV id=3Dc5397>
+<P>Thanks Todd ;-) I've <A =
+href=3D"http://www.xlab.co.uk/photos/albums/prague/"=20
+rel=3Dnofollow>implemented it already</A> on my own site to display some =
+photos=20
+from a recent trip to Prague. Let me know if you want some kind of =
+credit for=20
+use of the Flash script.</P></DIV>
+<P>Posted by: <A href=3D"http://www.xlab.co.uk/" rel=3Dnofollow>Phil</A> =
+at April=20
+18, 2004 11:36 AM </P>
+<DIV id=3Dc5398>
+<P>Really nice implementation Phil. :) Looks great.</P></DIV>
+<P>Posted by: <A href=3D"http://whatdoiknow.org/" rel=3Dnofollow>Todd =
+Dominey</A> at=20
+April 18, 2004 11:43 AM </P>
+<DIV id=3Dc5399>
+<P>Great tool!<BR>My apologies for my ignorance (with Flash).</P>
+<P>Q: How can I include (PHP) in a document and view the movie? =
+...currently the=20
+document as stand-alone displays the movie. However, when I include in a =
+page, I=20
+get blank.</P>
+<P>Thankx in advance,<BR>Arthur</P></DIV>
+<P>Posted by: Arthur Bahadourian at April 18, 2004 12:26 PM </P>
+<DIV id=3Dc5400>
+<P>Fantastic stuff, just what I was looking for. It is great that you =
+share your=20
+work, it is damn frustrating trying to work things through by hitting =
+F1!</P>
+<P>I have taken your code and added some pics of my own. Works great in =
+Flash=20
+and the preview window of Dreamweaver, for some reason (speaking of =
+frustration)=20
+it will not play in browser. I am trying to incoporate it in an ASP =
+page. I just=20
+get black window where movie should be.</P>
+<P>All associate files are in webroot and as I said the placeholder =
+shows movie=20
+in Dreamweaver preview.</P>
+<P>I guess I will work it out after a few hours - if you or anyone else =
+could=20
+help that would be great!</P>
+<P>Sounds similar to Arthur's problem.</P></DIV>
+<P>Posted by: David Hewitt at April 18, 2004 02:23 PM </P>
+<DIV id=3Dc5401>
+<P>"I just get black window where movie should be."</P>
+<P>Two suggestions:</P>
+<P>1 -- Make sure your jpgs are NOT saved as progressive jpgs. Flash =
+cannot load=20
+them. Your jpgs must be saved without this option (as most are).</P>
+<P>2 -- The directory path could be wrong in the xml. Depending on your =
+setup,=20
+you may need to include a slash. As in... "/images/test.jpg" instead of=20
+"images/test.jpg".</P></DIV>
+<P>Posted by: <A href=3D"http://whatdoiknow.org/" rel=3Dnofollow>Todd =
+Dominey</A> at=20
+April 18, 2004 02:31 PM </P>
+<DIV id=3Dc5402>
+<P>Hi Todd,</P>
+<P>My scenario, direct path to the file works fine. Once I include in a =
+page=20
+(with correct path) I get blank.</P>
+<P>Q: Could it be 'allowScriptAccess=3D"sameDomain"' and =
+'value=3D"sameDomain"'=20
+issue?</P>
+<P>Thankx in advance,<BR>Arthur</P></DIV>
+<P>Posted by: Arthur Bahadourian at April 18, 2004 03:57 PM </P>
+<DIV id=3Dc5403>
+<P>Wow. I've spent the last week trying to get this working on a site =
+I'm=20
+building, and when I finally got it working on Friday, it was too slow =
+to load=20
+(my swf was about 34k compressed).</P>
+<P>I was using a MX 2004 'loader' component and I think that was causing =
+the=20
+bloat (man, those components seem pretty heavy). I sat down tonight to =
+try and=20
+optimize my code/file, and just before I started, I checked my =
+NetNewsWire=20
+Subs....</P>
+<P>Thank Goodness I did! 1-friggin'-'k'! Fantastic - I didn't know =
+whether to=20
+laugh or cry.... </P>
+<P>Thanks a lot for your generosity on this one Todd! (Just wish it was =
+a week=20
+earlier! ;) )</P></DIV>
+<P>Posted by: <A href=3D"http://www.radardigital.net/" =
+rel=3Dnofollow>Warren</A> at=20
+April 18, 2004 06:22 PM </P>
+<DIV id=3Dc5409>
+<P>/* update */</P>
+<P>I changes it to javascript/document.write, like your PGA site. And it =
+WORKS=20
+perfectly!!</P>
+<P>Thankx for sharing your knowledge...</P>
+<P>Cheers,<BR>Arthur</P></DIV>
+<P>Posted by: Arthur Bahadourian at April 18, 2004 08:01 PM </P>
+<DIV id=3Dc5417>
+<P>Thanks very much and long life to the open source</P></DIV>
+<P>Posted by: anton at April 19, 2004 10:15 AM </P>
+<DIV id=3Dc5420>
+<P>Todd, I wish I had seen this a few days ago. This site has something =
+similar=20
+- <A href=3D"http://www.airtightinteractive.com/simpleviewer/"=20
+rel=3Dnofollow>http://www.airtightinteractive.com/simpleviewer/</A> and =
+I have=20
+implemented it on my first "gallery". I can't wait to try yours =
+out!</P></DIV>
+<P>Posted by: <A=20
+href=3D"http://www.tristynfinncherian.com/retrospective/retrospective.htm=
+l"=20
+rel=3Dnofollow>DJSUBg</A> at April 19, 2004 11:46 AM </P>
+<DIV id=3Dc5426>
+<P>This is great, thanks for shareing. </P></DIV>
+<P>Posted by: <A href=3D"http://www.jinxy.net/" rel=3Dnofollow>Jared</A> =
+at April=20
+19, 2004 02:44 PM </P>
+<DIV id=3Dc5427>
+<P>Thanks, I might be using this in the future, awesome to see that =
+there are=20
+still people who don't minc sharing.. :)</P></DIV>
+<P>Posted by: <A href=3D"http://coolshit.org/" rel=3Dnofollow>Bart</A> =
+at April 19,=20
+2004 03:21 PM </P>
+<DIV id=3Dc5432>
+<P>Man, where were you a couple of weeks back... I made a huge =
+investment in=20
+time creating a flash image rotator for the main alienware.com homepage. =
+I have=20
+mine loading in swfs as name value pairs off of the HTML embedding =
+script.=20
+(check the source code). I wanted to do it in XML but did not have time. =
+Will=20
+check out your code and maybe implement some of it in my script... The =
+biggest=20
+problem i faced was with the links that are embeded in the SWFs, if a =
+user was=20
+to click during the fadein of a new swf or if an swf did not have a =
+link, then=20
+the user clicks would take them to a random url. I had to dynamically =
+disable=20
+the links as fades take place. </P>
+<P>I love your blog... keep it up...</P></DIV>
+<P>Posted by: <A href=3D"http://www.alienware.com/" =
+rel=3Dnofollow>Gianni</A> at=20
+April 19, 2004 11:40 PM </P>
+<DIV id=3Dc5438>
+<P>very nice todd. i did something similar a few months back. i've got =
+an=20
+example of it's features <A=20
+href=3D"http://www.burntmedia.org/portfolio/flash/tourApp/index.php"=20
+rel=3Dnofollow>here</A>, with the source and straight stand-alone linked =
+off <A=20
+href=3D"http://www.burntmedia.org/portfolio/flash/" =
+rel=3Dnofollow>here</A> (Tour=20
+App). with the right configuration you could do the same thing, but it's =
+got a=20
+whole lot of features in it for masking, moving, panning, text, etc. the =
+audio=20
+in it is a complete hack though.</P></DIV>
+<P>Posted by: mosquito at April 20, 2004 01:14 PM </P>
+<DIV id=3Dc5439>
+<P>Thanks, I need to start getting more in depth in flash, and =
+appreciate the=20
+source code. </P></DIV>
+<P>Posted by: natrost at April 20, 2004 02:19 PM </P>
+<DIV id=3Dc5449>
+<P>This is what I love about this community...wonderful people who like =
+to=20
+share.</P>
+<P>Thank you Todd ; )</P></DIV>
+<P>Posted by: Ray McKenzie at April 21, 2004 10:40 AM </P>
+<DIV id=3Dc5450>
+<P>Just want to add my thanks as well.</P>
+<P>Open Source =3D Good Things :-) you've inspired me to work harder and =
+share=20
+what I learn.</P>
+<P>Danke!<BR></P></DIV>
+<P>Posted by: Mark at April 21, 2004 02:05 PM </P>
+<DIV id=3Dc5451>
+<P>C'est fantastique! Been looking for open source flash galleries all =
+week, and=20
+coming up dry. Most are too complicated.. I mean "feature rich". Yours =
+is nice=20
+and simple with the classy cross-fade; a perfect platform from which to=20
+build.</P>
+<P>Muchas gracias compadre.<BR>j</P></DIV>
+<P>Posted by: jzerger at April 21, 2004 02:28 PM </P>
+<DIV id=3Dc5453>
+<P>I don't want to bash the commenters out here, but this doesn't seem =
+all that=20
+great.</P>
+<P>Yes, it does the whole xml thing and it has a fader in it, but to me =
+it does=20
+not deserve such praise.</P>
+<P>It seems that more akward when reading alot of great people saying =
+that flash=20
+is bad, don't use it and all that. Now those same people are rejoycing =
+about=20
+such a small piece of code? Hmm...</P>
+<P>I know some great flash coders that can do such wondeful things, but =
+never=20
+get any praise like this. They get turned down by sementic preachers, =
+telling=20
+that flash is 99% bad.</P>
+<P>I know that alot of coders like to share their code. Look at =
+www.bit-101.com=20
+and it's forums, or www.levitated.net , nothing but sharing going on =
+there. now=20
+THATt's a great community.</P>
+<P>Are people just too lazy to search? Learn? Yes, if you don't know =
+something=20
+you'll hit F1. If you can't do it yourself, or stuck in a rut, you can =
+ask=20
+someone via a forum or whatnot. I am sure that they will help you if you =
+state=20
+your problem clearly.</P>
+<P>About the only people who'll want an out-of-the-box solution, are =
+breezer=20
+chicks and guys with thier balls still lodged somewhere inbetween their=20
+intestine.</P>
+<P>Is it just me noticing this, or am I completely wrong and utterly =
+stupid and=20
+in need of a restraining jacket? You tell me. I just don't like this =
+two-faced=20
+situation.</P></DIV>
+<P>Posted by: <A href=3D"http://mantaworks.nl/" rel=3Dnofollow>[m]</A> =
+at April 21,=20
+2004 06:55 PM </P>
+<DIV id=3Dc5458>
+<P>Dude, some of like eating fancy food at restaurants because them =
+fancy chefs=20
+can work magic with foods whose names we can't even pronounce. Now we =
+could=20
+attempt to make the same thing in our small kitchen and come up with a =
+Big Mac=99=20
+instead of filet mignon. The chef here has made something for us and =
+decided to=20
+not only give us the recipe, but the ingredients, and put it all in a =
+pan. We=20
+just need to bake for a few minutes and it will be as good as his. We =
+are free=20
+to add salt, pepper and/or any other seasonings as necessary.</P>
+<P>Chill!</P></DIV>
+<P>Posted by: C. Powell at April 21, 2004 10:17 PM </P>
+<DIV id=3Dc5459>
+<P>Thanks for posting this! I'm trying to add another level to this by =
+adding a=20
+pixel text description below each photo. The pixel text will change (but =
+not=20
+fade) as each photo changes. Also, the text must match the correct photo =
+if=20
+"Random" is selected for the display order. Can anyone here solve this? =
+I've=20
+been working on it for about 4 hours and no luck yet. If you can solve =
+the=20
+problem and enhance what is already offered here, please post the =
+source.=20
+Thanks!!!</P></DIV>
+<P>Posted by: Steve at April 22, 2004 03:01 AM </P>
+<DIV id=3Dc5460>
+<P>go <A=20
+href=3D"http://www.twelvestone.com/forums/showthread.php?s=3D&amp;threadi=
+d=3D15950"=20
+rel=3Dnofollow>here</A> steve. i've posted a mod to handle text labels =
+(requires=20
+changing out some as and added a prop to the xml). bit-101 posts on the =
+board as=20
+well as brandon hall on occassion. most of us are "former" wh members. =
+again=20
+great work todd. i may keep playing with it to add more transition types =
+while=20
+trying to keep it simple.</P></DIV>
+<P>Posted by: mosquito at April 22, 2004 05:45 AM </P>
+<DIV id=3Dc5463>
+<P>"I don=92t want to bash the commenters out here, but this doesn=92t =
+seem all that=20
+great."</P>
+<P>Well, I would actually agree. It's simple, without a lot of fuss,=20
+mathematical brilliance, or whiz-bang dynamic functionality. But that =
+wasn't the=20
+point. I intentionally kept this light, and thus easily extensible, so =
+that=20
+Flash developers with less experience wouldn't have to swim through a =
+mountain=20
+of ActionScript to figure out the core mechanics. With this, I *hoped* =
+that=20
+others could extend it and customize it to fit their own needs. =
+Which...it would=20
+appear has already happened.</P></DIV>
+<P>Posted by: <A href=3D"http://whatdoiknow.org/" rel=3Dnofollow>Todd =
+Dominey</A> at=20
+April 22, 2004 08:53 AM </P>
+<DIV id=3Dc5464>
+<P>mosquito...</P>
+<P>Thanks much for the lightning fast response... I'll check this out =
+this=20
+evening after work. Thanks again!</P></DIV>
+<P>Posted by: Steve at April 22, 2004 10:39 AM </P>
+<DIV id=3Dc5465>
+<P>Wow, that is FUNtastic (which according to the Daily Show means =
+'F%#@ing=20
+Fantastic'). Thanks so much for making this available! I must say that =
+the PGA=20
+site is amazing; I am a somewhat avid golf fan and have enjoyed the site =
+in the=20
+past. Great work and cheers for the source.</P>
+<P>-ian</P></DIV>
+<P>Posted by: <A href=3D"http://www.ubiquitygallery.com/" =
+rel=3Dnofollow>ian</A> at=20
+April 22, 2004 12:45 PM </P>
+<DIV id=3Dc5470>
+<P>OK... it's working great with the text. Exactly what I was looking =
+for,=20
+Thanks again. I'm working to modify the text attributes and have =
+modified the=20
+code to the following but no dice... any ideas?</P>
+<P>// label<BR>xPos =3D 5;<BR>yPos =3D=20
+350;<BR>this.createEmptyMovieClip("mc_label",3);<BR>mc_label.createTextFi=
+eld("clip_label",0,xPos,yPos,300,20);<BR>myTextFormat=20
+=3D new TextFormat();<BR>myTextFormat.font =3D =
+Arial;<BR>myTextFormat.size =3D=20
+16;<BR>clip_label.setNewTextFormat(myTextFormat);</P></DIV>
+<P>Posted by: Steve at April 22, 2004 10:54 PM </P>
+<DIV id=3Dc5488>
+<P>this is good stuff. I love how light it is.</P>
+<P>question:<BR>how could this be modified to not play the slideshow and =
+use=20
+navigation to go FWD/BACK (if not random) or even have x-number of =
+buttons to go=20
+to each picture?</P></DIV>
+<P>Posted by: actor jim at April 23, 2004 04:49 PM </P>
+<DIV id=3Dc5489>
+<P>it's not hard to do, you'd just have to change the handled when the =
+xml=20
+loads, and add two buttons to step through the array of =
+images.</P></DIV>
+<P>Posted by: mosquito at April 23, 2004 05:31 PM </P>
+<DIV id=3Dc5505>
+<P>this is great! esp. for a non-flasher like me :)</P>
+<P>i wonder... how hard would it be to put in an 'optional' attribute on =
+the XML=20
+image tag for something like a 'link' ?</P>
+<P>just curious, cuz that would be pretty useful.</P></DIV>
+<P>Posted by: <A href=3D"http://www.forgetfoo.com/" =
+rel=3Dnofollow>forgetfoo</A> at=20
+April 26, 2004 12:35 PM </P>
+<DIV id=3Dc5506>
+<P>great implementation of flash without taking up so much =
+bandwitdh.</P>
+<P>one question though is the image size set in the actionscript?</P>
+<P>i don't have flash and am trying to implement this with some of my =
+images=20
+which need to stretch accross the whole page and was just curious.</P>
+<P>thanks again for posting this todd</P></DIV>
+<P>Posted by: jason stanfill at April 26, 2004 12:59 PM </P>
+<DIV id=3Dc5508>
+<P><EM>one question though is the image size set in the =
+actionscript?</EM></P>
+<P>No, it is set in the FLA. If you have Flash, or know someone with it, =
+all=20
+you'd have to do is open the FLA, change the movie dimensions to the =
+pixel w/h=20
+of your photos, and publish a new swf.</P>
+<P><EM>i wonder=85 how hard would it be to put in an =91optional=92 =
+attribute on the=20
+XML image tag for something like a =91link=92 ?</EM></P>
+<P>Not hard at all, as others in this thread have pointed out. You could =
+easily=20
+put a 'caption=3D"text"' attribute in the xml nodes, create a variable =
+for that=20
+text when the xml is parsed, and then apply the string to a text=20
+field.</P></DIV>
+<P>Posted by: <A href=3D"http://whatdoiknow.org/" rel=3Dnofollow>Todd =
+Dominey</A> at=20
+April 26, 2004 01:24 PM </P>
+<DIV id=3Dc5510>
+<P>Excuse my lack of knowledge pertaining to Flash, but is it possible =
+for the=20
+.swf to read in a .cfm or .php file in which an xml type structure would =
+be=20
+dynamically created by looping over a list, array or query object, or =
+does it=20
+have to be an .xml file?<BR>I am looking to implement this on a site =
+where each=20
+page would have it's own slideshow but the .swf file is used only =
+once.<BR>BTW:=20
+Great peice of code, much better than the other offerings I have come=20
+across.</P></DIV>
+<P>Posted by: Nate at April 26, 2004 02:16 PM </P>
+<DIV id=3Dc5511>
+<P>yes you can hit a .php file. there is a catch though.. if you hit say =
+
+myXML.php and then on the next page hit the same php file, then flash =
+will pull=20
+the file out of your browser cache, as opposed to the server. so if it's =
+a=20
+random collection, then throwing a "dummy" random value via a query =
+string=20
+eliminates the problem.</P></DIV>
+<P>Posted by: <A href=3D"http://burntmedia.org/" =
+rel=3Dnofollow>mosquito</A> at=20
+April 26, 2004 02:56 PM </P>
+<DIV id=3Dc5544>
+<P>Okay, what am I doing wrong? This is EXACTLY what I've been looking =
+for --=20
+very light-weight, no frills, just cycle through pictures. And it =
+includes the=20
+SOURCE!</P>
+<P>Unfortunately, whenever I try to actually use it on my site, the =
+pictures are=20
+showing up at about 40% their expected size. The slideshow width/height =
+is set=20
+to what I want, but the images show up in the upper-left corner of the =
+slideshow=20
+shrunk down to 40% of that. Is there some little setting that I've =
+missed?</P>
+<P>(Sorry, I hate asking for support for FREE software, but I'm =
+stumped.)=20
+:-(</P></DIV>
+<P>Posted by: Wally Hartshorn at April 27, 2004 06:05 PM </P>
+<DIV id=3Dc5571>
+<P>Wally, there are two spots in the html file where the size of the =
+flash=20
+object is set, make sure to update both of those places, or it will =
+still appear=20
+shrunken.</P>
+<P>i have added this flash show to my photo gallery site (click on the =
+View=20
+Slideshow link):</P>
+<P><A =
+href=3D"http://www.ryanaustin.com/Galleries/default.asp?FolderID=3D20"=20
+rel=3Dnofollow>http://www.ryanaustin.com/Galleries/default.asp?FolderID=3D=
+20</A></P>
+<P>the only thing that wasn't accounted for on this script, is that if =
+you have=20
+a mix of vertical and horizontal pictures, you end up seeing the =
+previous=20
+picture behind the new one. I am trying to crack this in the =
+actionscript, but=20
+haven't figured it out yet.</P>
+<P>Good work Todd on this!</P></DIV>
+<P>Posted by: <A href=3D"http://www.ryanaustin.com/" =
+rel=3Dnofollow>Ryan</A> at=20
+April 28, 2004 01:40 PM </P>
+<DIV id=3Dc5591>
+<P>Very nice, thanks a bucnh! :-) Its small, sexy and easy to implement. =
+Just=20
+how we like it ;-)<BR></P></DIV>
+<P>Posted by: <A href=3D"http://weblog.bergersen.net/" =
+rel=3Dnofollow>Jarle</A> at=20
+April 29, 2004 04:32 AM </P>
+<DIV id=3Dc5594>
+<P>Is there some way to keep the script from looping? I've set loop to =
+false in=20
+the HTML, but it's not stopping it. I've tried dinking inside the .fla =
+to tell=20
+it to stop when it reaches the final image in a sequential list (which =
+is all=20
+I'll be using), but it either then fails to run at all or fails to stop=20
+looping.</P>
+<P>Either way, many thanks for this. Despite the bizarre complaints of =
+the=20
+anonymous guy above, this is much appreciated by most.</P></DIV>
+<P>Posted by: Mike at April 29, 2004 05:50 AM </P>
+<DIV id=3Dc5596>
+<P>"Is there some way to keep the script from looping?"</P>
+<P>Good idea. I included a new attribute to control looping (when in =
+sequential=20
+mode) and updated the zip with the new stuff. Re-download if=20
+interested.</P></DIV>
+<P>Posted by: <A href=3D"http://whatdoiknow.org/" rel=3Dnofollow>Todd =
+Dominey</A> at=20
+April 29, 2004 08:40 AM </P>
+<DIV id=3Dc5603>
+<P>I would like to preface this with, todd great program and thanks for =
+do so=20
+much already. </P>
+<P>I was just wondering if it is possible to have one static image that =
+goes=20
+over the top of the slideshow, like in a corner or something that would =
+always=20
+stay the same as the underlying images changed.</P>
+<P>Thanks again</P></DIV>
+<P>Posted by: <A href=3D"http://www.jasonstanfill.com/" =
+rel=3Dnofollow>jason=20
+stanfill</A> at April 29, 2004 05:43 PM </P>
+<DIV id=3Dc5608>
+<P>This is a great feature and makes any website look dynamic, thanks =
+for all=20
+your hard work. </P>
+<P>But one question: I made the .fla to 120x120 and I made my images =
+120x120=20
+non-progressive, yet all I get is the black box. It works if I open=20
+slideshow.html, but not on the page I put the object code into. All =
+images are=20
+in the correct directory. I have rechecked everything, yet nothing. I =
+probably=20
+have overlooked a minor detail.</P></DIV>
+<P>Posted by: Matthew Kulak at April 29, 2004 07:17 PM </P>
+<DIV id=3Dc5624>
+<P>Jason </P>
+<P>Just import the image into the flash doc, convert it to a movie clip =
+and give=20
+it an instance name. then in the actions for layer A, under:</P>
+<P>this.createEmptyMovieClip("loader2_mc",1,{_x:0,_y:0});</P>
+<P>put:</P>
+<P>_root.yourMovieClipName.swapDepths(1000); </P>
+<P>I got it to work fine that way, but as I'm not a flash guy, someone =
+else=20
+probably has a much better way. =3D)</P></DIV>
+<P>Posted by: daniel at May 1, 2004 12:01 PM </P>
+<DIV id=3Dc5662>
+<P>Todd. Awesome. Thanks for sharing your work.</P>
+<P>Daniel, thanks for sharing your bit too. I played with putting a =
+shaded=20
+border over the images forever before I saw your post. Everything I =
+tried was=20
+still covered by the images.</P></DIV>
+<P>Posted by: <A href=3D"http://www.litzdesigns.com/" =
+rel=3Dnofollow>Brian</A> at=20
+May 4, 2004 01:33 PM </P>
+<DIV id=3Dc5743>
+<P>Hey Todd. <BR>Thanks for sharing your insight and knowledge. I have a =
+
+question about the how the images were being tracked. Granted this is =
+the scaled=20
+down version, but I noticeD on your PGA Championship site that you stop =
+the time=20
+interval when you "TAKE A TOUR" and are able to load different image by=20
+selecting the hole no. Is this just loading the images from your image =
+folder or=20
+is this referencing the images from an array or the xml file? I would =
+love to=20
+know how this was achieved. I especially like how it picks up from the =
+current=20
+hole when you "CLOSE TOUR."</P>
+<P>Well thanks again, and great work!<BR>--Currie</P></DIV>
+<P>Posted by: Currie Todd at May 12, 2004 11:48 AM </P>
+<DIV id=3Dc5745>
+<P>Thanks for distributing your work! You wrote that your code is a =
+"free=20
+download". Does that mean I can use it anyway I want. I'd like to use it =
+for a=20
+small corporate website.</P></DIV>
+<P>Posted by: <A href=3D"http://helenedegroote.com/" =
+rel=3Dnofollow>Helene=20
+Degroote</A> at May 12, 2004 04:11 PM </P>
+<DIV id=3Dc5757>
+<P>"You wrote that your code is a =93free download=94. Does that mean I =
+can use it=20
+anyway I want. I=92d like to use it for a small corporate website."</P>
+<P>Yes, you can use it any way you want, with one request -- drop me an =
+email=20
+when you launch something that uses the Flash source. I'd simply be =
+interested=20
+to see how other people use the source to fit their needs. </P></DIV>
+<P>Posted by: <A href=3D"http://whatdoiknow.org/" rel=3Dnofollow>Todd =
+Dominey</A> at=20
+May 13, 2004 09:18 AM </P>
+<DIV id=3Dc5767>
+<P>I don't want to rain on the parade, as I think this is an extremely =
+well done=20
+effect. But, has anyone else had trouble with the images not showing up =
+in AOL's=20
+browser? Before everyone jumps up to correctly point out that AOL is =
+built on=20
+IE, let me remind you that whereas this is true, they *do* take images =
+through a=20
+extra round of compression before sending them to the client. For some =
+reason=20
+imported jpgs will sometimes not render in Flash within the AOL browser. =
+I have=20
+tried to get around this by setting the jpgs to generic file extension, =
+and=20
+setting the MIME type on the server to something generic (I think this =
+is the=20
+recommended solution), but this still doesn't seem to work. </P>
+<P>Interestingly, Todd's Open Championship version doesn't render on my =
+AOL=20
+testing platform (AOL 8.0/Win98) either. I wonder if it's just my =
+testing=20
+enviroment, or if it's general. Can someone check it on browsercam or =
+something?=20
+I'm not sure how else to fix this, or if in fact there *is* a fix. This =
+is=20
+extremely annoying, as AOL is still extremely prevalent.</P>
+<P>Tim</P></DIV>
+<P>Posted by: Tim at May 13, 2004 04:03 PM </P>
+<DIV id=3Dc5787>
+<P>Thank you. It is very kind of you to share your hard work with =
+us.</P></DIV>
+<P>Posted by: Javan at May 15, 2004 09:32 PM </P>
+<DIV id=3Dc5829>
+<P>Great flash program. I've been looking for this for some 2 years. Is =
+there=20
+any way for the flash to pick a random image from a set? And can it fade =
+to=20
+black before fading into a picture?</P>
+<P>Thanks for your generosity by sharing this program.</P></DIV>
+<P>Posted by: Mark O at May 20, 2004 10:23 AM </P>
+<DIV id=3Dc5830>
+<P>Thanks very much for this. I've just started playing around with =
+Flash and=20
+coming from a programming background, I love this approach.</P>
+<P>I do have one question, though:</P>
+<P>How would I have to change the actionscript so that the first image =
+loads=20
+immediately, without any fade-in time? Is that possible? If not, is =
+there an=20
+easy way to generate some simple background text as a kind of =
+pre-loader?</P>
+<P>Again, thanks for all your help. </P></DIV>
+<P>Posted by: Adam at May 20, 2004 10:29 AM </P>
+<DIV id=3Dc5831>
+<P>I am creating a projector movie to play on a computer; however, I =
+would like=20
+to load the images on a server. Is there a way to do that?</P>
+<P>For example:<BR>in your XML<BR></P>
+<P>I would like to use full path like:<BR></P>
+<P>It won't load properly because of security reason. Is there a way to =
+get=20
+around that?</P></DIV>
+<P>Posted by: <A href=3D"http://www.visualgui.com/" =
+rel=3Dnofollow>donny</A> at May=20
+20, 2004 03:39 PM </P>
+<DIV id=3Dc5832>
+<P>I am creating a projector movie to play on a computer; however, I =
+would like=20
+to load the images on a server. Is there a way to do that?</P>
+<P>For example:<BR>in your XML<BR></P>
+<P>I would like to use full path like:<BR></P>
+<P>It won't load properly because of security reason. Is there a way to =
+get=20
+around that?</P></DIV>
+<P>Posted by: <A href=3D"http://www.visualgui.com/" =
+rel=3Dnofollow>donny</A> at May=20
+20, 2004 03:39 PM </P>
+<DIV id=3Dc5835>
+<P>Hi everyone,</P>
+<P>How could this be modified to include "prev, next and autoplay =
+buttons, some=20
+examples.</P>
+<P>And how to center movieclip on the stage. Thanks.</P></DIV>
+<P>Posted by: Zeljko at May 21, 2004 12:24 PM </P>
+<DIV id=3Dc5839>
+<P>This is really great. Unfortunetely I'm a Flash novice and I have no =
+idea how=20
+to make the entire movie link to another URL. Can anybody help me =
+out?</P>
+<P>You can see the rotator in use here:<BR><A=20
+href=3D"http://shop.nathansfamous.com/category.asp?cat=3Dhot1"=20
+rel=3Dnofollow>http://shop.nathansfamous.com/category.asp?cat=3Dhot1</A><=
+/P></DIV>
+<P>Posted by: John Farrell at May 21, 2004 04:25 PM </P>
+<DIV id=3Dc5907>
+<P>Todd,</P>
+<P>Thanks for the great program. I've implemented it on my home page =
+using 95=20
+images, and it does exactly what I needed. I'd originally tried a Java =
+program,=20
+but this is so much better in Flash. Thanks again!</P>
+<P>Kit Watkins<BR><A href=3D"http://kitwatkins.com/" rel=3Dnofollow>The =
+Official=20
+Website of Kit Watkins</A></P></DIV>
+<P>Posted by: <A href=3D"http://kitwatkins.com/" rel=3Dnofollow>Kit =
+Watkins</A> at=20
+June 2, 2004 01:41 PM </P>
+<DIV id=3Dc5915>
+<P>it works great and have a perfect script<BR>thanks</P>
+<P>here a suggest: i saw that the script don't take out the old image so =
+if the=20
+new is smaller, you see the old in the bottom; and the performance go =
+down if=20
+you have many images.</P>
+<P>so here a change that can help<BR>(the change i made are before=20
+///////////)</P>
+<P>------------------------------------<BR>function loadImages(data_arr, =
+num)=20
+{<BR>if (i =3D=3D undefined || i =3D=3D 2) {<BR>i =3D =
+2;<BR>///////////i2 =3D=20
+1;<BR>createLoader(i, ///////////i2, data_arr, num);<BR>i =3D 1;<BR>} =
+else if (i=20
+=3D=3D 1) {<BR>///////////i2 =3D 2;<BR>createLoader(i, ///////////i2, =
+data_arr,=20
+num);<BR>i =3D 2;<BR>}<BR>}<BR>function createLoader(i, ///////////i2, =
+data_arr,=20
+num) {<BR>thisLoader =3D =
+eval("loader"+i+"_mc");<BR>///////////thisLoader2 =3D=20
+eval("loader"+i2+"_mc");<BR>thisLoader._alpha =3D=20
+0;<BR>thisLoader.loadMovie(data_arr[num]);<BR>watcher_mc.onEnterFrame =
+=3D=20
+function() {<BR>var picLoaded =3D thisLoader.getBytesLoaded();<BR>var =
+picBytes =3D=20
+thisLoader.getBytesTotal();<BR>if (isNaN(picBytes) || picBytes=3D1)=20
+{<BR>swapPlace("loader2_mc",=20
+1);<BR>///////////thisLoader.alpha(_global.fadeTime,100);<BR>///////////t=
+hisLoader2.alpha(_global.fadeTime,100);<BR>timerInterval=20
+=3D setInterval(imageGen, _global.numPause, data_arr);<BR>delete=20
+this.onEnterFrame;<BR>}<BR>};<BR>}<BR>-----------------------------------=
+-<BR>and=20
+in the=20
+proto<BR>------------------------------------<BR>MovieClip.prototype.alph=
+a =3D=20
+function(vel, to) {<BR>///////////this._visible=3Dtrue<BR>this.vel =3D=20
+vel;<BR>this.to =3D to;<BR>this.alpha_init =3D =
+this._alpha;<BR>this.onEnterFrame =3D=20
+function() {<BR>updateAfterEvent();<BR>if (this.to !=3D undefined =
+&amp;&amp;=20
+this.vel !=3D undefined) {<BR>if (this.to&gt;this.alpha_init) {<BR>if=20
+(this._alphathis.to) {<BR>this._alpha -=3D this.vel;<BR>} else=20
+{<BR>///////////this._visible=3Dfalse<BR>this.onEnterFrame =3D =
+null;<BR>}<BR>}<BR>}=20
+else =
+{<BR>}<BR>};<BR>};<BR>------------------------------------</P></DIV>
+<P>Posted by: <A href=3D"http://www.beaver82.com/" =
+rel=3Dnofollow>beaver82</A> at=20
+June 3, 2004 05:12 PM </P>
+<DIV id=3Dc5916>
+<P>Hey,</P>
+<P>Great script.<BR>When I try to make a slide show with images of =
+different=20
+sizes, the images overlap and get in the way of each other. I tried to =
+edit the=20
+script so that as soon as the next image is displayed, the previous =
+image=20
+disappears, but I wasn't able to make it work. Is there an easy way to =
+do=20
+this?</P>
+<P>Thanks,<BR>Orhan</P></DIV>
+<P>Posted by: Orhan at June 4, 2004 01:47 PM </P>
+<DIV id=3Dc5917>
+<P>Hi. Does the slidshow work with flash player 7? Where is the bug. =
+Please=20
+anyone, help me!!</P></DIV>
+<P>Posted by: Martinez at June 4, 2004 04:21 PM </P>
+<DIV id=3Dc5918>
+<P>Hi. I use this script for a few galleries in one swf. Just calling =
+this=20
+function with diferent xml file. I have a strange problem. When I call =
+this=20
+function for the first time everything is ok. Then I click the button =
+and go to=20
+antoher frame which has no gallery and then very fast back to the frame =
+with=20
+gallery. And sometimes the function goes crazy and displays only =
+oneimage or the=20
+time and fade is not working. Could someone check this and give some =
+help???=20
+PLEASE. I'm just starting in as:(</P></DIV>
+<P>Posted by: Martinez at June 4, 2004 06:29 PM </P>
+<DIV id=3Dc5920>
+<P>Mr. Mosquito or Todd or To Whom it May Concern.</P>
+<P>Several people have asked about adding navigation to the code and I =
+for one=20
+am still rather lost.</P>
+<P>Mosquito wrote, "it=92s not hard to do, you=92d just have to change =
+the handled=20
+when the xml loads, and add two buttons to step through the array of=20
+images."</P>
+<P>Could you explain what this means, it sounds easy, but I have no idea =
+how to=20
+do it?</P>
+<P>Thanks so much. Todd thanks for putting this out there for =
+us.</P></DIV>
+<P>Posted by: Dylan at June 5, 2004 12:53 PM </P></DIV></DIV>
+<DIV id=3DcolLeft>
+<DIV class=3Dheadline><IMG height=3D10 alt=3Darchives=20
+src=3D"http://www.whatdoiknow.org/images/archives.gif" width=3D73> =
+</DIV>
+<P>You are reading "Flash slide show source" in the individual archives. =
+</P>
+<P>Check out other recent posts in the <A title=3D"Flash Category =
+Archive Page"=20
+href=3D"http://whatdoiknow.org/archives/cat_flash.shtml">Flash =
+category</A> </P>
+<P><A title=3D"What Do I Know" href=3D"http://whatdoiknow.org/">Return =
+to the front=20
+page.</A> </P></DIV></DIV></DIV>
+<DIV id=3Dfooter><IMG height=3D14 alt=3D"Dominey Design"=20
+src=3D"http://whatdoiknow.org/images/wdik_dominey.gif" width=3D74> =
+<BR><SPAN=20
+class=3Dsmallsans>A production of <A title=3D"Dominey Design"=20
+href=3D"http://www.domineydesign.com/">Dominey Design</A>.<BR>Written by =
+Todd=20
+Dominey.</SPAN> <BR><A title=3D"RSS Feed"=20
+href=3D"http://whatdoiknow.org/index.xml"><IMG height=3D10 alt=3DRSS=20
+src=3D"http://whatdoiknow.org/images/feed-icon-10x10.png" =
+width=3D10></A>=20
+</DIV></DIV></BODY></HTML>
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.whatdoiknow.org/images/header_script.gif
+
+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
+9UWP/OgETIGHH5AA/3CL/ViQNhABADs=
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.whatdoiknow.org/images/masthead.gif
+
+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
+O/jBEI6whCdM4Qpb+MIYzrCGN8zhDj84BAA7
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.whatdoiknow.org/images/widget_left.gif
+
+R0lGODlhGAAYAJECAMzMzDMzM////wAAACH5BAEAAAIALAAAAAAYABgAAAI5hI6pK2AMl4sUzUov
+hnrL530h041HKQTqGkToiLIyCZpnfciqi5ux3qLZEq9Q0XPcJDHLSjPTgxUAADs=
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.whatdoiknow.org/images/widget_just.gif
+
+R0lGODlhGAAYAJECADMzM8zMzP///wAAACH5BAEAAAIALAAAAAAYABgAAAIylI+pFuvenjxxymph
+vvvhjnwgswDmeS7iuKKuOiqtm8pxMpvWCvKdvwFmhLtbyEhBMgoAOw==
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.whatdoiknow.org/images/widget_typeSm.gif
+
+R0lGODlhGAAYALMPABAQEAAAANXV1f39/T8/P6GhofX19ZmZmR0dHcrKyry8vMLCwkNDQ/z8/Pr6
++v///yH5BAEAAA8ALAAAAAAYABgAAARL8MlJq5Xiap23n93nhSJXjudGptTKYprTDMM8mBcRAHtA
+4BZCYREoJBjAikISkBySFkMTtTEgPi4KD0B9tbyVLEucIp/MJbRIjY0AADs=
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.whatdoiknow.org/images/widget_typeNor.gif
+
+R0lGODlhGAAYALMIANXV1QAAAEBAQICAgO/v77+/vyAgIFBQUP///wAAAAAAAAAAAAAAAAAAAAAA
+AAAAACH5BAEAAAgALAAAAAAYABgAAARIEMlJq5Xgap23n93nhSJXjudGptTKYpoQzPRwuZJwIDNh
+2BYcQmCbDYEV4cSo+jBNG0KvqSnQAtRXS5vkbr0wMEJ5IpfMIkAEADs=
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.whatdoiknow.org/images/widget_typeLg.gif
+
+R0lGODlhGAAYALMKANXV1QAAAEBAQICAgL+/v5+fnxAQEO/v73BwcDAwMP///wAAAAAAAAAAAAAA
+AAAAACH5BAEAAAoALAAAAAAYABgAAARMUMlJq5Xgap23n93nhSJXjudGptQqDUEsB8LlKoNxwLVQ
+W7dBjYf7VW6EAo6mSNo8RBWUKd0gAgmUZhYgmFhAcFjcIpfNGHRafWMBIgA7
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.whatdoiknow.org/images/menu_home.gif
+
+R0lGODlhPQAYAMQUANXV1QAAAL+/vzMzM0BAQICAgP7+/hAQEN/f35+fn2BgYM/PzyAgIHBwcDAw
+MI+Pj+/v71BQUGbM/6+vr////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEA
+ABQALAAAAAA9ABgAAAX/IECNZGmeaKquJSCycCyn7mzfbI3vPKX3QNkvSFQNi8jWK8kcHU2D5u5J
+GhiiJoRAsFhsESQvhLQVjCllirYsAJ+oFKvhahIcAo9H4CCgQAgODQcJIwoBeBQThxFodw0FBwUo
+VHJzdCUEASMBBIUBYIYLaA4BDBQKpH0UmRQJBZJvSyVWA7WXJJmvnJuaFAUBkgIEhgIMv6qZDQQI
+biaUVxK0JplbuxR3I7+EwgKlusgBEwRbk7JV0NKYvdbHqwdjwhQMn+2rmguP5Si1/LUlCYcUGApA
+yBcDBxFEUXBwoMGDCAnumALIKZc+KUzgYOShcSOOjh5tgAwpxBzJKSZPB94YqXIFgBAAOw==
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.whatdoiknow.org/images/menu_about.gif
+
+R0lGODlhQQAYAMQTAAAAAL+/vzMzM9XV1UBAQICAgBAQEN/f3/7+/u/v7zAwMFBQUM/PzyAgIHBw
+cJ+fn2BgYK+vr4+Pj////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEA
+ABMALAAAAABBABgAAAX/4CSOZGmeaKqmw+q+MNzGdB3Pdq6X+O7bvZ/wFRwaUcWjcpRcKpsigfSU
+CBxGh4CWUWIEEiOtNRuYiMVXE3QiQAhOEAAhbAA4DApwgqC4P0QLAApaBgsTAAsNAAUGBSdNUm2R
+JQYEAGkTlhMFAGVxV3FcAYsiBGUAmagFjmoobQiwbiQRChEAEiOWjA4iAKibpKOsppupZmWtJ5Fu
+UyMLBJwNuZ0EBld1Ipx/wqXIxiwqkiUJnQFxyJqcEcBl1WAHiBMJBmClv0jhzSMKdgyK0g98VVtQ
+r0ADBQu4iHhwkMAfEXcEKUzmpOKENRZ9YMyoYyNHIB+XeAx5g+SRkSZdAwwIAQA7
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.whatdoiknow.org/images/menu_library.gif
+
+R0lGODlhTwAYAMQTAAAAAL+/v9XV1TMzM0BAQDAwMCAgIHBwcBAQEGBgYN/f3+/v78/Pz4CAgJ+f
+n4+Pj6+vr1BQUP7+/v///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEA
+ABMALAAAAABPABgAAAX/4CSOZGmeaKqurMC+cCyj7mzf+FjnfK/uvqAQKCzmiMakDKlsrpjOqAnK
+UgSuCxHjyphsr4rRFVyyZrXj7sSKxZ6og0EqgAAcwpMHAPDIAxAHAAkiEQAECXYkBgANI3oGDQAF
+EwGLCQoGBXglUHFxKQQAJaEjhhOklIwTeyMMBq8kpqEBqQkLCJucKHESnp4kqCPBAAYHCA4iAYJ6
+ByMHzwBqqwUQCJMioQWNNLu/cnLAohMHXcPUmcmGBAZnEwgJiIMixIjSCn/tUymfoOIFtAXErSJw
+CkAWZQ2UOaAF4V+AAgjOmBJEax7BFFRWONhTIGCAQIkQISAASERAAxAkMjVwdcxBnUGBjr2KgG3P
+xTdSVFiBsSBAvic5g+IUSlRExqJJjiItonRpkKZOe0CNeiQEADs=
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.whatdoiknow.org/images/menu_archives.gif
+
+R0lGODlhWAAYAMQUAAAAAL+/v9/f3/7+/jMzM4CAgNXV1UBAQDAwMBAQEO/v73BwcK+vryAgIFBQ
+UM/Pz5+fn2BgYI+Pj////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEA
+ABQALAAAAABYABgAAAX/ICWOZGmeaKqubGq0cCzP7EvfeI7aeu/LvJ9waAoSj0IjcplTMp9AqJTm
+pBCuhJUiIBgJAuBAaSvoUh7gL1ixXasfbYU6bKYE4HVSlTDoY68mEQAHIwEJAAUNCWYFAAsHACIS
+AAkBDgAIZQiYX4cSAgeZho4FCQVnCRELiCd7fa9+JgmQdZAUjacQrBSRIoN2uwG7kwwUDsUUthAF
+p6tiC6dFKHwTsANZJAwIDAASI5ABCIvGAGIlAA0FgtHC0QKOCgnfjgdlFNyUDgqt0wPV/tWwjXBw
+oFGDeY28kTMHwQymAJPY7aKAoAGECPMYHABDQcCyTQ74neBj7RoJBeUCcQgyZ+tAgzLcFlCI55BQ
+OxHcolGYlABZskgPoN0KSZFoiT1//pDYtOBBA3QUIBxaIMhBFwYNEGwTIQgAhKcJHjhF90DEO3ki
+dA2CdKqAVgQH9kl7wmVKjCp28+rRy3dH3797AQPGKxgK4cJMDiNGYiAEADs=
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.whatdoiknow.org/images/menu_folio.gif
+
+R0lGODlhQAAYAMQSADMzMwAAAL+/v9XV1UBAQICAgO/v7yAgIN/f38/PzxAQEDAwMFBQUJ+fn2Bg
+YHBwcK+vr4+Pj////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEA
+ABIALAAAAABAABgAAAXzoCSOZGmeaKqiw+q+8NvGdA3Pdq6T+O7XvZ/QFRwaT8WjUpRcHpsjAACF
+EFitBpFBkCBdu5ItdmRVQSVT9EmgCBQeAYGkoXgsCFkJI7BoiBALfAgSCQcMDAdgJk1SjY0mBAFV
+BAIIAQ4SlgwiAm5enhIHByIHCiwojo6QAQwFDQgFoAEBnKC1BRKdBCKRcouoqVKrBbgSEbKjuZ4J
+D8q4CQG7EpGDvyfBwiWRBtUGCrudxeESELsQoAQKBt7S1ibYaSMNs+2EBAsLxaEB39+FAYnCODiw
+wEEed06cnEnoYyFDHQ4f2ogokQbFijcwPtFoZEAIADs=
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.whatdoiknow.org/images/archives.gif
+
+R0lGODlhSQAKAMQAAP///wAAAL+/v9/f3zMzM4CAgEBAQDAwMBAQEO/v76+vr3BwcCAgIFBQUM/P
+z5+fn2BgYI+PjwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAA
+AAAALAAAAABJAAoAAAX/ICCOZGmeaKqubOu+sErMxJoIwzgIvFDegxzAwdvxErej0ZFMGHtCgICZ
+q4loMxMkYBgJEIECAyEsBBaGgCgSQAgagUPwEN+BIwOD/HsuIApDCBALYQBWJYcjCGlRaQBmgA+F
+AGoiXFKTApNsCgANnQCODwWAhD4LgIkjqgoHCgERI2kCB2SeAT4lAQwFW4CYvwNnCQiyZwZBAK9t
+DQmGJ6oNBmYMxmaxt7kPQnECbL+avwAHDA8QxgoGPAADo3QNzyaJCbgCW7mOBgxBrwsAxNy6hBPx
+ShwbBKBCqXGA6hG8cfCwSCRBZ4EDBrsAPACzYEuDHAoYHHAlYkuABxgRHDi4uMuBCGHFREjikgZQ
+gZEHDDiLkQIHz58oQgAAOw==
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://whatdoiknow.org/images/wdik_dominey.gif
+
+R0lGODlhSgAOAMQAAIyMjP///8XFxampqeLi4vj4+JOTk/Hx8aKiotTU1MzMzLCwsJqamre3t9vb
+2+np6b+/vwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAA
+AAAALAAAAABKAA4AAAX/oCCOxBGc6HkIy9AkBbqOppyQ8XmLBDH+QAXKRwMYj0aEI1VYII2GxImA
+HKAEhMGRldMaRc+wkXBiHA0F8VEYKCDUAEGAilweDNntAHHyxgVwVQEJSFKBAGQQhz1PDAVaeV9a
+DQF+YIdjZkZWAUgKCn4AC2lnDj5IC3RVY5ZeCZaAmyltmgAGSA8nSGQBTlAOuygNZ6phkXF+t1+x
+YgPAYZS6R7yEW0gpz2NwxwKhW8xhVt5oKMEBimtIOQEKu0jKRgeW6E+XzQEHT2zSY3PwAw+QRCtQ
+C0GxbHIsuQljz2CPHrkCDDPCYNYhKbUAMBgAD4CCYr0A8Km0pU3HP2cGVKhcmYsZp3JwRhYLwwdk
+AQMRLZ0IiMSeGDIuLaoZhaIazRgg8aHQqaMnOGMBgqZ4gmAAhIgpDjSAh2Bf0hRMT0xEuS3qkZez
+0qpVwWut27dw454IAQA7
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://whatdoiknow.org/images/feed-icon-10x10.png
+
+iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAAK/INwWK6QAAABl0RVh0
+U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFnSURBVHjaLJA7SBxRGIW/e2dmXXxjoa5a
+GAuRQAhqIT4QbAQrwcZWQUm7jY12pkkb0khA0iiIpYUgWKlgoWihKL6QVXzia9V1dmfm3puZXYvD
+33z/OYcjzia+jcSd2D+nyMFyRCiJDK+0Cwp8xfN9ZlRcTbYbu6yako5BzMMxOrWOFft8CEFhCdx3
+sCMnu6Kc+Nc+rJofmNwbwfYs5mAxD6mcRpqQieLExy3uyjTSvaWocxynO4mubsZb/YmXUWhtRaDE
+bmihZHgG83aD2vyNejnF6p3CnG7jby1hROgaFedul9zcEObpBLv/FyrzirezELqPEbiqEB8Vtqvq
+cXqSmJNl9PkadleSj415ZGUdsq4N5ZsCKCsTyMZeaBrAXf+LrEgQZDXq6RrnS3seFK9/uk282KCr
+vuNdHuE9pxG1rWTPD6E0gZ9OY7IPyGjMaCc/tY9yc2HxGP7FHmgf9ZjKQ8oJRv8LMACBZZm35JMm
+7gAAAABJRU5ErkJggg==
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.whatdoiknow.org/030828.css
+
+A IMG {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: =
+none; BORDER-BOTTOM-STYLE: none
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: small; BACKGROUND: =
+url(../images/back.gif) #fff; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: =
+#333; LINE-HEIGHT: 1.4; PADDING-TOP: 0px; FONT-FAMILY: georgia,times new =
+roman,times,serif; TEXT-ALIGN: center; voice-family: inherit
+}
+UNKNOWN {
+	FONT-SIZE: small
+}
+P {
+	PADDING-BOTTOM: 1em; MARGIN: 0px; LINE-HEIGHT: 140%; TEXT-ALIGN: left
+}
+H1 {
+	FONT-WEIGHT: normal; MARGIN: 0px; COLOR: #000; FONT-FAMILY: =
+palatino,times new roman,times,georgia,serif; TEXT-ALIGN: left
+}
+H2 {
+	FONT-WEIGHT: normal; MARGIN: 0px; COLOR: #000; FONT-FAMILY: =
+palatino,times new roman,times,georgia,serif; TEXT-ALIGN: left
+}
+H3 {
+	FONT-WEIGHT: normal; MARGIN: 0px; COLOR: #000; FONT-FAMILY: =
+palatino,times new roman,times,georgia,serif; TEXT-ALIGN: left
+}
+H4 {
+	FONT-WEIGHT: normal; MARGIN: 0px; COLOR: #000; FONT-FAMILY: =
+palatino,times new roman,times,georgia,serif; TEXT-ALIGN: left
+}
+H6 {
+	FONT-WEIGHT: normal; MARGIN: 0px; COLOR: #000; FONT-FAMILY: =
+palatino,times new roman,times,georgia,serif; TEXT-ALIGN: left
+}
+H1 {
+	FONT-SIZE: 154%
+}
+H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 12px; FONT-SIZE: 140%; MARGIN-BOTTOM: =
+12px; PADDING-BOTTOM: 2px; LINE-HEIGHT: 1.2; PADDING-TOP: 2px; =
+BORDER-BOTTOM: #ccc 1px dotted
+}
+H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 110%; PADDING-BOTTOM: 2px; COLOR: #963
+}
+H4 {
+	FONT-SIZE: 130%
+}
+H5 {
+	MARGIN: 6px 0px 2px; FONT: bold 100% 'Lucida Grande','Lucida Sans =
+Unicode',verdana,arial,sans-serif; COLOR: #333; TEXT-ALIGN: center
+}
+H6 {
+	FONT-SIZE: 140%; PADDING-BOTTOM: 4px; PADDING-TOP: 4px
+}
+Q {
+	PADDING-RIGHT: 8px; BORDER-TOP: #d5d5d5 1px dotted; DISPLAY: block; =
+PADDING-LEFT: 8px; PADDING-BOTTOM: 8px; MARGIN: 0px 0px 16px; FONT: =
+85%/1.4 'Lucida Grande','Lucida Sans Unicode',arial,verdana,sans-serif; =
+COLOR: #666; PADDING-TOP: 10px; BACKGROUND-COLOR: #f1f1f1; TEXT-ALIGN: =
+left
+}
+UL {
+	PADDING-LEFT: 14px; MARGIN: 0px 0px 1em
+}
+OL {
+	PADDING-LEFT: 14px; MARGIN: 0px 0px 1em
+}
+LI {
+	LIST-STYLE: square url(../images/listbullet.gif) outside; PADDING-LEFT: =
+0px; MARGIN-BOTTOM: 0.5em; MARGIN-LEFT: 4px; COLOR: #333; LINE-HEIGHT: =
+1.4
+}
+STRIKE {
+	TEXT-DECORATION: line-through
+}
+CODE {
+	FONT: 12px monospace; COLOR: #666; WHITE-SPACE: normal
+}
+PRE {
+	FONT: 12px monospace; COLOR: #666; WHITE-SPACE: normal
+}
+#dotframe {
+	BORDER-RIGHT: #999 1px dotted; BORDER-TOP: #999 0px; MARGIN-BOTTOM: =
+14px; MARGIN-LEFT: auto; BORDER-LEFT: #999 1px dotted; WIDTH: 618px; =
+MARGIN-RIGHT: auto; BORDER-BOTTOM: #999 1px dotted; BACKGROUND-COLOR: =
+#fff; TEXT-ALIGN: left; voice-family: inherit
+}
+#globalwrap {
+	MARGIN-LEFT: 2%; MARGIN-RIGHT: 2%
+}
+#header {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 10px; =
+PADDING-TOP: 18px; BORDER-BOTTOM: #d5d5d5 1px solid; TEXT-ALIGN: center
+}
+#header IMG {
+	MARGIN: 0px auto
+}
+#masthead {
+	BORDER-RIGHT: #d5d5d5 1px solid; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; =
+PADDING-BOTTOM: 1px; BORDER-LEFT: #d5d5d5 1px solid; PADDING-TOP: 1px; =
+HEIGHT: 24px; TEXT-ALIGN: center
+}
+#wrap {
+	CLEAR: both; MARGIN-TOP: 1px; BACKGROUND: url(../images/stripe.gif) =
+#fff; WIDTH: 594px; MARGIN-RIGHT: 0px; POSITION: relative
+}
+#colLeft {
+	BORDER-RIGHT: #ccc 1px dotted; PADDING-RIGHT: 0px; BORDER-TOP: #ccc 1px =
+dotted; DISPLAY: inline; PADDING-LEFT: 8px; LEFT: auto; PADDING-BOTTOM: =
+0px; FONT: 80%/124% 'Lucida Grande','Lucida Sans =
+Unicode',arial,verdana,sans-serif; BORDER-LEFT: #ccc 1px dotted; WIDTH: =
+29%; BOTTOM: 0px; PADDING-TOP: 12px; BORDER-BOTTOM: #ccc 1px dotted; =
+POSITION: absolute; TOP: 0px; BACKGROUND-COLOR: #fff; TEXT-ALIGN: left
+}
+#colRightTwo {
+	BORDER-RIGHT: #ccc 1px dotted; PADDING-RIGHT: 0px; BORDER-TOP: #ccc 1px =
+dotted; DISPLAY: inline; PADDING-LEFT: 8px; LEFT: auto; PADDING-BOTTOM: =
+0px; FONT: 80%/124% 'Lucida Grande','Lucida Sans =
+Unicode',arial,verdana,sans-serif; BORDER-LEFT: #ccc 1px dotted; WIDTH: =
+29%; BOTTOM: 0px; PADDING-TOP: 12px; BORDER-BOTTOM: #ccc 1px dotted; =
+POSITION: absolute; TOP: 0px; BACKGROUND-COLOR: #fff; TEXT-ALIGN: left
+}
+#colRightTwo {
+	RIGHT: 0px
+}
+#colRight {
+	BORDER-TOP-WIDTH: 1px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; =
+BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 100%; BORDER-LEFT-COLOR: #ccc; =
+BORDER-BOTTOM-WIDTH: 1px; BORDER-BOTTOM-COLOR: #ccc; PADDING-BOTTOM: =
+12px; WIDTH: 69%; BORDER-TOP-COLOR: #ccc; PADDING-TOP: 12px; =
+BACKGROUND-COLOR: #fff; TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 1px; =
+BORDER-RIGHT-COLOR: #ccc
+}
+#colLeftTwo {
+	BORDER-TOP-WIDTH: 1px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; =
+BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 100%; BORDER-LEFT-COLOR: #ccc; =
+BORDER-BOTTOM-WIDTH: 1px; BORDER-BOTTOM-COLOR: #ccc; PADDING-BOTTOM: =
+12px; WIDTH: 69%; BORDER-TOP-COLOR: #ccc; PADDING-TOP: 12px; =
+BACKGROUND-COLOR: #fff; TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 1px; =
+BORDER-RIGHT-COLOR: #ccc
+}
+#colRight {
+	MARGIN-LEFT: 183px; BORDER-TOP-STYLE: dotted; BORDER-RIGHT-STYLE: =
+dotted; BORDER-LEFT-STYLE: solid; BORDER-BOTTOM-STYLE: dotted
+}
+#colLeftTwo {
+	BORDER-TOP-STYLE: dotted; MARGIN-RIGHT: 31%; BORDER-RIGHT-STYLE: solid; =
+BORDER-LEFT-STYLE: dotted; BORDER-BOTTOM-STYLE: solid
+}
+#colLeft .headline {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 8px; =
+PADDING-BOTTOM: 3px; PADDING-TOP: 4px; BORDER-BOTTOM: #ccc 1px dotted
+}
+#colRightTwo .headline {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 8px; =
+PADDING-BOTTOM: 3px; PADDING-TOP: 4px; BORDER-BOTTOM: #ccc 1px dotted
+}
+#colRight .post {
+	MARGIN: 0px 12px 16px
+}
+#commentFrame .post {
+	MARGIN: 0px 12px 16px
+}
+.posted {
+	BORDER-TOP: #dcdcdc 1px dotted; MARGIN-TOP: -6px; PADDING-BOTTOM: 6px; =
+FONT: 10px 'Lucida Grande','Lucida Sans =
+Unicode',arial,verdana,sans-serif; COLOR: #999; PADDING-TOP: 6px; =
+TEXT-ALIGN: center
+}
+#footer {
+	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: =
+10px; MARGIN: 0px auto; PADDING-TOP: 10px; BACKGROUND-COLOR: #fff; =
+TEXT-ALIGN: center; voice-family: inherit
+}
+#colRightTwo P {
+	PADDING-RIGHT: 4px
+}
+#colLeft P {
+	PADDING-RIGHT: 4px
+}
+#colLeftTwo P {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 12px
+}
+#colLeftTwo H3 {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 12px
+}
+#colRight H1 {
+	MARGIN-TOP: 14px; PADDING-BOTTOM: 4px; TEXT-ALIGN: center
+}
+#colRight H4 {
+	MARGIN-TOP: 4px
+}
+#colLeftTwo P.bookdetails {
+	PADDING-BOTTOM: 4px; COLOR: #666
+}
+#colLeftTwo P.excerpt {
+	LINE-HEIGHT: 115%
+}
+#colLeftTwo .bookwrap {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 12px; PADDING-BOTTOM: 12px; =
+PADDING-TOP: 12px; BORDER-BOTTOM: #dcdcdc 1px dotted
+}
+#colLeftTwo .subject {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 8px; FONT-SIZE: 10px; =
+PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BACKGROUND-COLOR: #f1f1f1
+}
+#menu {
+	BORDER-RIGHT: #d5d5d5 0px; BORDER-TOP: #d5d5d5 1px solid; FONT-SIZE: =
+1px; BACKGROUND: url(../images/stripe.gif) #fff; BORDER-LEFT: #d5d5d5 =
+0px; BORDER-BOTTOM: #d5d5d5 1px solid; POSITION: relative; HEIGHT: 24px
+}
+#menu IMG {
+	BACKGROUND: #fff
+}
+#nav A:active {
+	BACKGROUND: #fff
+}
+#menu A:hover {
+	BACKGROUND: #eee
+}
+#menu A:hover IMG {
+	BACKGROUND: #eee
+}
+#menu .textwidgets {
+	DISPLAY: block; RIGHT: 0px; WIDTH: 130px; POSITION: absolute; TOP: 0px; =
+TEXT-ALIGN: right
+}
+A {
+	COLOR: #069; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #069; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #069; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #069; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #069; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #999
+}
+A:active {
+	COLOR: #69c
+}
+A:hover {
+	COLOR: #69c
+}
+#colRight A:hover {
+	BORDER-BOTTOM: #69c 1px solid
+}
+.smallsans {
+	FONT-SIZE: 85%; COLOR: #999; LINE-HEIGHT: 130%; FONT-FAMILY: 'Lucida =
+Grande','Lucida Sans Unicode',arial,verdana,sans-serif
+}
+P.boldsans {
+	FONT-SIZE: 85%; COLOR: #999; LINE-HEIGHT: 130%; FONT-FAMILY: 'Lucida =
+Grande','Lucida Sans Unicode',arial,verdana,sans-serif
+}
+.date {
+	FONT-SIZE: 85%; COLOR: #999; LINE-HEIGHT: 130%; FONT-FAMILY: 'Lucida =
+Grande','Lucida Sans Unicode',arial,verdana,sans-serif
+}
+.datearchive {
+	FONT-SIZE: 85%; COLOR: #999; LINE-HEIGHT: 130%; FONT-FAMILY: 'Lucida =
+Grande','Lucida Sans Unicode',arial,verdana,sans-serif
+}
+.smallsans {
+	PADDING-BOTTOM: 4px
+}
+P.boldsans {
+	FONT-WEIGHT: bold; MARGIN-BOTTOM: 8px; COLOR: #333
+}
+.date {
+	FONT-SIZE: 80%; TEXT-TRANSFORM: uppercase; LETTER-SPACING: 0.18em; =
+TEXT-ALIGN: center
+}
+.datearchive {
+	FONT-SIZE: 80%; TEXT-TRANSFORM: uppercase; LETTER-SPACING: 0.18em; =
+TEXT-ALIGN: center
+}
+.datearchive {
+	FONT-SIZE: 80%; PADDING-BOTTOM: 4px; TEXT-ALIGN: left
+}
+P.tight {
+	MARGIN-BOTTOM: 0px
+}
+P.right {
+	TEXT-ALIGN: right
+}
+IMG.pict {
+	BORDER-RIGHT: #d5d5d5 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: =
+#d5d5d5 1px solid; PADDING-LEFT: 3px; FLOAT: left; PADDING-BOTTOM: 3px; =
+MARGIN: 0px 4px 0px 0px; BORDER-LEFT: #d5d5d5 1px solid; PADDING-TOP: =
+3px; BORDER-BOTTOM: #d5d5d5 1px solid
+}
+IMG.pad {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 0px; =
+PADDING-TOP: 8px
+}
+IMG.botpad {
+	PADDING-BOTTOM: 6px
+}
+IMG.thumb {
+	FLOAT: left; MARGIN: 4px 6px 4px 0px
+}
+IMG.postpict {
+	BORDER-RIGHT: #d5d5d5 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#d5d5d5 1px solid; PADDING-LEFT: 2px; FLOAT: left; PADDING-BOTTOM: 2px; =
+MARGIN: 4px 6px 4px 0px; BORDER-LEFT: #d5d5d5 1px solid; PADDING-TOP: =
+2px; BORDER-BOTTOM: #d5d5d5 1px solid
+}
+IMG.pictnoborder {
+	FLOAT: left; MARGIN: 4px 6px 4px 0px
+}
+FORM {
+	MARGIN: 0px
+}
+FORM.comments {
+	MARGIN-TOP: 4px
+}
+INPUT {
+	CLEAR: right; BORDER-RIGHT: #999 1px solid; PADDING-RIGHT: 2px; =
+BORDER-TOP: #666 1px solid; MARGIN-TOP: 2px; PADDING-LEFT: 2px; =
+MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 2px; FONT: 10px 'Lucida =
+Grande','Lucida Sans Unicode',arial,verdana,sans-serif; MARGIN-LEFT: =
+0px; BORDER-LEFT: #666 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #999 =
+1px solid
+}
+INPUT.index {
+	PADDING-LEFT: 3px; WIDTH: 140px
+}
+INPUT.butt {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #666
+}
+INPUT.comment {
+	PADDING-LEFT: 2px; MARGIN-BOTTOM: 8px
+}
+TEXTAREA {
+	BORDER-RIGHT: #999 1px solid; BORDER-TOP: #666 1px solid; MARGIN-TOP: =
+2px; FONT: 10px 'Lucida Grande','Lucida Sans =
+Unicode',arial,verdana,sans-serif; MARGIN-LEFT: 0px; BORDER-LEFT: #666 =
+1px solid; BORDER-BOTTOM: #999 1px solid; BACKGROUND-COLOR: #fff
+}
+.radio {
+	MARGIN-RIGHT: 6px
+}
+.centerstar {
+	MARGIN-BOTTOM: -10px; FONT: 14px palatino,georgia,times new =
+roman,times,sans-serif; COLOR: #333; PADDING-TOP: 10px; LETTER-SPACING: =
+0.15em; TEXT-ALIGN: center
+}
+.update {
+	FONT-WEIGHT: bold; COLOR: #963
+}
+.updateBlock {
+	PADDING-RIGHT: 6px; BORDER-TOP: #d5d5d5 1px solid; PADDING-LEFT: 6px; =
+BACKGROUND: #ececec; PADDING-BOTTOM: 6px; MARGIN: 0px 0px 1em; =
+LINE-HEIGHT: 140%; PADDING-TOP: 6px; BORDER-BOTTOM: #d5d5d5 1px solid
+}
+.updateBlock STRONG {
+	FONT-WEIGHT: bold; COLOR: #000
+}
+#mailbox {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; =
+PADDING-TOP: 16px
+}
+#mailbox TEXTAREA {
+	WIDTH: 100%
+}
+#mailbox INPUT.comment {
+	WIDTH: 100%
+}
+#commentFrame {
+	BORDER-RIGHT: #999 1px dotted; PADDING-RIGHT: 0px; BORDER-TOP: #999 1px =
+dotted; PADDING-LEFT: 0px; FONT-SIZE: 98%; PADDING-BOTTOM: 18px; MARGIN: =
+8px 12px; BORDER-LEFT: #999 1px dotted; WIDTH: auto; PADDING-TOP: 2px; =
+BORDER-BOTTOM: #999 1px dotted; BACKGROUND-COLOR: #fff; TEXT-ALIGN: left
+}
+#commentFrame #header {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 8px; =
+PADDING-BOTTOM: 4px; PADDING-TOP: 8px
+}
+TABLE {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: =
+0px; WIDTH: 100%; BACKGROUND-COLOR: #fff; BORDER-RIGHT-WIDTH: 0px
+}
+TD.none {
+	BORDER-BOTTOM-WIDTH: 0px; LINE-HEIGHT: 180%
+}
+TABLE.contact {
+	MARGIN-LEFT: auto; WIDTH: 300px; MARGIN-RIGHT: auto; TEXT-ALIGN: center
+}
+TABLE.grid {
+	FONT: 85% 'Lucida Grande','Lucida Sans =
+Unicode',verdana,arial,sans-serif; COLOR: #333
+}
+TABLE.listen {
+	FONT: 85% 'Lucida Grande','Lucida Sans =
+Unicode',verdana,arial,sans-serif; COLOR: #333
+}
+TABLE.grid TR.even {
+	BACKGROUND-COLOR: #fff
+}
+TABLE.grid TR.odd {
+	BACKGROUND-COLOR: #f1f1f1
+}
+TABLE.grid {
+	BORDER-TOP: #d5d5d5 1px dotted; PADDING-TOP: 4px
+}
+TABLE.grid TR {
+	WIDTH: 100%
+}
+TABLE.grid TD {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 8px; =
+PADDING-TOP: 8px; BORDER-BOTTOM: #d5d5d5 1px solid
+}
+THEAD {
+	FONT-WEIGHT: bold
+}
+TABLE.listen TD {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; WIDTH: 33%; =
+PADDING-TOP: 4px
+}
+TABLE.head TD {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; =
+VERTICAL-ALIGN: top; PADDING-TOP: 2px; BORDER-BOTTOM: #d5d5d5 1px solid
+}
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+Content-Location: http://www.whatdoiknow.org/styles/master.css
+
+@import url( 030828.css );
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+Content-Location: http://www.whatdoiknow.org/styles/alignLeft.css
+
+#colRight P {
+	TEXT-ALIGN: left
+}
+#colLeftTwo P {
+	TEXT-ALIGN: left
+}
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+Content-Location: http://www.whatdoiknow.org/styles/alignJustify.css
+
+#colRight P {
+	TEXT-ALIGN: justify
+}
+#colLeftTwo P {
+	TEXT-ALIGN: justify
+}
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.whatdoiknow.org/styles/textLg.css
+
+#wrap {
+	CLEAR: both; MARGIN-TOP: 1px; FONT-SIZE: 110%; BACKGROUND: =
+url(../images/stripe.gif) #fff; WIDTH: 594px; MARGIN-RIGHT: 0px; =
+POSITION: relative
+}
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.whatdoiknow.org/styles/textLgest.css
+
+#wrap {
+	CLEAR: both; MARGIN-TOP: 1px; FONT-SIZE: 124%; BACKGROUND: =
+url(../images/stripe.gif) #fff; WIDTH: 594px; MARGIN-RIGHT: 0px; =
+POSITION: relative
+}
+
+------=_NextPart_000_0000_01C689B5.849745B0
+Content-Type: application/x-javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.whatdoiknow.org/scripts/global.js
+
+<!--=0A=
+function jumpMenu(targ,selObj,restore) { =
+eval(targ+".location=3D'"+selObj.options[selObj.selectedIndex].value+"'")=
+; if (restore) selObj.selectedIndex=3D0; }=0A=
+=0A=
+// StyleSwitcher functions written by Paul Sowden=0A=
+// http://www.alistapart.com/stories/alternate/=0A=
+function setActiveSS(title) { var i, a, main; for (i=3D0; (a =3D =
+document.getElementsByTagName("link")[i]); i++) { if =
+(a.getAttribute("rel") && a.getAttribute("rel").indexOf("style") !=3D -1 =
+&& a.getAttribute("title")) { a.disabled =3D true; =
+if(a.getAttribute("title") =3D=3D title) a.disabled =3D false; } } }=0A=
+function getActiveSS() { var i, a; for (i=3D0; (a =3D =
+document.getElementsByTagName("link")[i]); i++) { if =
+(a.getAttribute("rel") && a.getAttribute("rel").indexOf("style") !=3D -1 =
+&& a.getAttribute("title") && !a.disabled ) return =
+a.getAttribute("title"); } return null; }=0A=
+function getPreferredSS() { var i, a; for (i=3D0; (a =3D =
+document.getElementsByTagName("link")[i]); i++) { if =
+(a.getAttribute("rel") && a.getAttribute("rel").indexOf("style") !=3D -1 =
+&& a.getAttribute("rel").indexOf("alt") =3D=3D -1 && =
+a.getAttribute("title") ) return a.getAttribute("title"); } return null; =
+}=0A=
+function createCookie(name,value,days) { if (days) { var date =3D new =
+Date(); date.setTime(date.getTime()+(days*24*60*60*1000)); var expires =
+=3D "; expires=3D"+date.toGMTString(); } else expires =3D ""; =
+document.cookie =3D name+"=3D"+value+expires+"; path=3D/"; }=0A=
+function readCookie(name) { var nameEQ =3D name + "=3D"; var ca =3D =
+document.cookie.split(';'); for(var i=3D0;i < ca.length;i++) { var c =3D =
+ca[i]; while (c.charAt(0)=3D=3D' ') c =3D c.substring(1,c.length); if =
+(c.indexOf(nameEQ) =3D=3D 0) return c.substring(nameEQ.length,c.length); =
+} return null; }=0A=
+window.onload =3D function(e) { var cookie =3D readCookie("style"); var =
+title =3D cookie ? cookie : getPreferredSS(); setActiveSS(title); }=0A=
+window.onunload =3D function(e) { var title =3D getActiveSS(); =
+createCookie("style", title, 365); }=0A=
+var cookie =3D readCookie("style");=0A=
+var title =3D cookie ? cookie : getPreferredSS();=0A=
+setActiveSS(title);=0A=
+=0A=
+function leftAlign() { var elements =3D =
+document.getElementsByTagName("p"); for(var i =3D 0; i < =
+elements.length; i++) { elements.item(i).style.textAlign =3D "left"; } }=0A=
+function justifyAlign() { var elements =3D =
+document.getElementsByTagName("p"); for(var i =3D 0; i < =
+elements.length; i++) { elements.item(i).style.textAlign =3D "justify"; =
+} }=0A=
+//-->
+------=_NextPart_000_0000_01C689B5.849745B0--

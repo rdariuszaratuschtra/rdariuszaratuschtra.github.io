@@ -1,0 +1,36 @@
+H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+H3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+H1 {
+	FONT: bold 14px Verdana, Helvetica, Arial, sans-serif
+}
+H2 {
+	FONT: bold 13px Verdana, Helvetica, Arial, sans-serif
+}
+H3 {
+	FONT: bold 12px Verdana, Helvetica, Arial, sans-serif
+}
+IMG {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+TABLE {
+	BORDER-RIGHT: black 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: black 0px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; FONT: 11px Verdana, Helvetica, Arial, sans-serif; BORDER-LEFT: black 0px solid; PADDING-TOP: 0px; BORDER-BOTTOM: black 0px solid; BORDER-COLLAPSE: collapse
+}
+TD {
+	BORDER-RIGHT: black 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: black 0px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; FONT: 11px Verdana, Helvetica, Arial, sans-serif; BORDER-LEFT: black 0px solid; PADDING-TOP: 0px; BORDER-BOTTOM: black 0px solid; BORDER-COLLAPSE: collapse
+}
+TR {
+	BORDER-RIGHT: black 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: black 0px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; FONT: 11px Verdana, Helvetica, Arial, sans-serif; BORDER-LEFT: black 0px solid; PADDING-TOP: 0px; BORDER-BOTTOM: black 0px solid; BORDER-COLLAPSE: collapse
+}
+TH {
+	BORDER-RIGHT: black 0px solid; BORDER-TOP: black 0px solid; FONT: 11px Verdana, Helvetica, Arial, sans-serif; BORDER-LEFT: black 0px solid; COLOR: #2e3844; BORDER-BOTTOM: black 0px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #c0cad4
+}
+.pale {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}

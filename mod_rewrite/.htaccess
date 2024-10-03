@@ -1,0 +1,35 @@
+RewriteEngine on
+
+#RewriteRule ^qqq$ database.php?cat=0
+#RewriteRule ^qqq/xxx$ database.php?cat=0
+
+#RewriteBase   /
+
+#RewriteRule ^database/cultuurschappen$ http://www.rdariuszaratuschtra.nl/database.php?cat=0 [R]
+
+
+#RewriteCond     %{REQUEST_URI}  !.*\.jpg$
+
+#RewriteRule ^database/cultuurschappen$ database/cultuurschappen/ [R]
+
+#RewriteRule ^database/landschappen/gallery_landschappen/tn_01.jpg$ gallery_landschappen/tn_01.jpg
+
+
+
+# NOTE: make sure to attach query string
+RewriteRule ^database/cultuurschappen/$ database.php?cat=0 [QSA]
+RewriteRule ^database/landschappen/$ database.php?cat=1 [QSA]
+
+
+# make sure all images, scripts, and css can be found
+RewriteRule ^database/cultuurschappen/(.+)$ $1
+RewriteRule ^database/landschappen/(.+)$ $1
+
+
+
+# NOTE: when we allow the absence of a trailing / we need 
+# another rule to find all images, etc.
+RewriteRule ^database/cultuurschappen$ database.php?cat=0 [QSA]
+RewriteRule ^database/landschappen$ database.php?cat=1 [QSA]
+
+RewriteRule ^database/(.+)$ $1
