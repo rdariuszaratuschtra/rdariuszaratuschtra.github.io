@@ -53,7 +53,7 @@ function thumbOver(which) {
 	if (filename == escape("tn_01.jpg")) imgname = "Berglandschap Zwitserland";
 	if (filename == escape("tn_107.jpg")) imgname = "Zeelandschap";
 	if (filename == escape("tn_108.jpg")) imgname = "Stadsdroom";
-	if (filename == escape("tn_129.jpg")) imgname = "Odysseus’ land";
+	if (filename == escape("tn_129.jpg")) imgname = "Odysseus' land";
 	if (filename == escape("tn_2.jpg")) imgname = "Ottomaanse grafstenen";
 	if (filename == escape("tn_213 a.jpg")) imgname = "Golgotha 3-luik (deel 1)";
 	if (filename == escape("tn_213 b.jpg")) imgname = "Golgotha 3-luik (deel 2)";
@@ -105,7 +105,7 @@ function thumbOver(which) {
 	if (filename == escape("tn_105.jpg")) imgname = "Portret als zelfportret";
 	if (filename == escape("tn_106.jpg")) imgname = "Zelfportret als Michelangelo";
 	if (filename == escape("tn_122.jpg")) imgname = "Zelfportret (als gek)";
-	if (filename == escape("tn_127.png")) imgname = "Zelfportret à la Goya";
+	if (filename == escape("tn_127.png")) imgname = "Zelfportret ï¿½ la Goya";
 	if (filename == escape("tn_130.jpg")) imgname = "Zelfportret met rode achtergrond";
 	if (filename == escape("tn_136.jpg")) imgname = "Zelfportret met 1 arm";
 	if (filename == escape("tn_144.jpg")) imgname = "Zelfportret met hoed en ster";
@@ -200,7 +200,7 @@ function thumbOver(which) {
 	if (filename == escape("tn_196.jpg")) imgname = "Bokje springen III 2 pers.";
 	if (filename == escape("tn_197.jpg")) imgname = "Bokje springen IIII 5 pers.";	
 	//204.jpg -> weg	
-	if (filename == escape("tn_206.jpg")) imgname = "Drie gratiën";
+	if (filename == escape("tn_206.jpg")) imgname = "Drie gratiï¿½n";
 	if (filename == escape("tn_214 b.jpg")) imgname = "de Nacht";
 	if (filename == escape("tn_214.jpg")) imgname = "de Nacht";
 	if (filename == escape("tn_216.jpg")) imgname = "de Nachtmerrie";
@@ -215,7 +215,7 @@ function thumbOver(which) {
 	if (filename == escape("tn_29.jpg")) imgname = "Zwevenden III (tweeluik)";
 	if (filename == escape("tn_291.jpg")) imgname = "Trappen af";
 	if (filename == escape("tn_3.jpg")) imgname = "Het evenwicht in de relatie";
-	if (filename == escape("tn_309.jpg")) imgname = "Tweelingen / Tweeën";
+	if (filename == escape("tn_309.jpg")) imgname = "Tweelingen / Tweeï¿½n";
 	if (filename == escape("tn_315.jpg")) imgname = "Muze / Waternimpf / Marloes";
 	if (filename == escape("tn_317 II.jpg")) imgname = "Melaatse";
 	//317.jpg -> weg	
@@ -252,7 +252,7 @@ function thumbOver(which) {
 	if (filename == escape("tn_schilderijen 03 darius 095.jpg") ||
 	filename == escape("tn_schilderijen 03 darius 096.jpg") ||
 	filename == escape("tn_schilderijen 03 darius 103.jpg")) imgname = "Drie figuren";
-	if (filename == escape("tn_schilderijen 03 darius 118.jpg")) imgname = "Groen Café";
+	if (filename == escape("tn_schilderijen 03 darius 118.jpg")) imgname = "Groen Cafï¿½";
 	if (filename == escape("tn_schilderijen 03 darius 125.jpg")) imgname = "Naamlozen / de etalages (2-luik)";
 	if (filename == escape("tn_schilderijen 03 darius 132.jpg")) imgname = "Wanhopigen";
 	if (filename == escape("tn_schilderijen 03 darius 134.jpg")) imgname = "Melancholische vrouw";
@@ -299,8 +299,8 @@ function thumbOver(which) {
 	if (filename == escape("tn_259.jpg")) imgname = "Meisje met lingerie";
 	if (filename == escape("tn_260 A.jpg")) imgname = "Dierenstudie";
 	if (filename == escape("tn_260B.jpg")) imgname = "Dierenstudie";
-	if (filename == escape("tn_262 b.jpg")) imgname = "Model étude";
-	if (filename == escape("tn_262.jpg")) imgname = "Model étude II";
+	if (filename == escape("tn_262 b.jpg")) imgname = "Model ï¿½tude";
+	if (filename == escape("tn_262.jpg")) imgname = "Model ï¿½tude II";
 	if (filename == escape("tn_268.jpg")) imgname = "Afro man met rode achtergrond";
 	if (filename == escape("tn_310.jpg")) imgname = "Marloes op stoel";
 	if (filename == escape("tn_316.jpg")) imgname = "Marloes";
@@ -315,7 +315,7 @@ function thumbOver(which) {
 	if (filename == escape("tn_paarden schilderijen 104.jpg")) imgname = "Honden en buit";
 	if (filename == escape("tn_paarden schilderijen 105.jpg")) imgname = "Vrouw met stier";
 	if (filename == escape("tn_schilderijen 01 026.jpg")) imgname = "Gauguinesque vrouw";
-	if (filename == escape("tn_schilderijen 01 036.jpg")) imgname = "Slapende vrouw met mozaïkdekbed";
+	if (filename == escape("tn_schilderijen 01 036.jpg")) imgname = "Slapende vrouw met mozaï¿½kdekbed";
 	if (filename == escape("tn_schilderijen 01 037.jpg")) imgname = "Liggende vrouw met appel";
 	if (filename == escape("tn_schilderijen 01 038.jpg")) imgname = "Liggende vrouw met rood kapje";
 	if (filename == escape("tn_schilderijen 01 062.jpg")) imgname = "Aalscholverkopstudie";
@@ -357,7 +357,7 @@ function thumbOver(which) {
 	//schilderijen 02 169.jpg -> weg	
 	if (filename == escape("tn_schilderijen 03 darius 005.jpg")) imgname = "Modelstudie van achter gezien";
 	if (filename == escape("tn_schilderijen 03 darius 006.jpg")) imgname = "Modelstudie";
-	if (filename == escape("tn_schilderijen 03 darius 014.jpg")) imgname = "Model étude";	
+	if (filename == escape("tn_schilderijen 03 darius 014.jpg")) imgname = "Model ï¿½tude";	
 	//schilderijen 03 darius 019.jpg -> weg	
 	if (filename == escape("tn_schilderijen 03 darius 020.jpg")) imgname = "Vrouwelijk torsostudie";
 	if (filename == escape("tn_schilderijen 03 darius 022.jpg")) imgname = "Vrouwelijk naakt";
@@ -396,7 +396,7 @@ function thumbOver(which) {
 	if (filename == escape("tn_schilderijen 03 darius 175.jpg")) imgname = "Schaamte";
 	if (filename == escape("tn_schilderijen 03 darius 176.jpg")) imgname = "Wanhoop-gevallen";
 	if (filename == escape("tn_schilderijen 03 darius 177.jpg")) imgname = "Naar de verte starende";
-	if (filename == escape("tn_schilderijen 03 darius 181.jpg")) imgname = "Hülya";
+	if (filename == escape("tn_schilderijen 03 darius 181.jpg")) imgname = "Hï¿½lya";
 	if (filename == escape("tn_schilderijen 03 darius 182.jpg")) imgname = "Feith";
 	if (filename == escape("tn_schilderijen 03 darius 183.jpg")) imgname = "&Ouml;zden";
 	if (filename == escape("tn_schilderijen 03 darius 184.jpg")) imgname = "Model met een been op stoel";
@@ -419,7 +419,7 @@ function thumbOver(which) {
 	if (filename == escape("tn_220.jpg")) imgname = "Serie van Wachtenden";
 	if (filename == escape("tn_264.jpg")) imgname = "Serie van Wachtenden (vijf mannen)";
 	if (filename == escape("tn_294.jpg")) imgname = "Serie Wachtenden (rondom cirkel)";
-	if (filename == escape("tn_31.jpg")) imgname = "Torso’s  Naamlozen-etalage";
+	if (filename == escape("tn_31.jpg")) imgname = "Torsoï¿½s  Naamlozen-etalage";
 	//315.jpg -> weg	
 	if (filename == escape("tn_schilderijen 01 009.jpg")) imgname = "Wachtenden VII (vijf mannen en een vrouw)";
 	if (filename == escape("tn_schilderijen 01 010.jpg")) imgname = "Wachtenden (met zelfbeeld)";
@@ -437,8 +437,8 @@ function thumbOver(which) {
 	//schilderijen 03 darius 087.jpg -> weg
 	if (filename == escape("tn_schilderijen 03 darius 093.jpg")) imgname = "Parade";	
 	//schilderijen 04 en schilderijen amsterdam 045.jpg -> weg	
-	if (filename == escape("tn_schilderijen 04 en schilderijen amsterdam 046.jpg")) imgname = "De grote étalage";
-	if (filename == escape("tn_schilderijen 04 en schilderijen amsterdam 047.jpg")) imgname = "Drie gratiën";
+	if (filename == escape("tn_schilderijen 04 en schilderijen amsterdam 046.jpg")) imgname = "De grote ï¿½talage";
+	if (filename == escape("tn_schilderijen 04 en schilderijen amsterdam 047.jpg")) imgname = "Drie gratiï¿½n";
 	if (filename == escape("tn_schilderijen 04 en schilderijen amsterdam 048.jpg")) imgname = "Wachtenden in de rij (vier figuren)";
 	if (filename == escape("tn_schilderijen 04 en schilderijen amsterdam 049.jpg")) imgname = "Wachtenden in de rij (vijf figuren)";
 	if (filename == escape("tn_schilderijen 04 en schilderijen amsterdam 052.jpg")) imgname = "Wachtenden in binnenplaats";
@@ -550,7 +550,7 @@ function thumbOver(which) {
 	if (filename == escape("tn_schilderijen 03 darius 140.jpg")) imgname = "Naamloos";
 	if (filename == escape("tn_schilderijen 03 darius 141.jpg")) imgname = "Op het einde";
 	if (filename == escape("tn_schilderijen 03 darius 142.jpg")) imgname = "Verzet tegen val";
-	if (filename == escape("tn_schilderijen 03 darius 143.jpg")) imgname = "Archaïsche figuur";
+	if (filename == escape("tn_schilderijen 03 darius 143.jpg")) imgname = "Archaï¿½sche figuur";
 	if (filename == escape("tn_schilderijen 03 darius 144.jpg")) imgname = "Met zichzelf bezig";
 	if (filename == escape("tn_schilderijen 03 darius 145.jpg")) imgname = "Badende";
 	if (filename == escape("tn_schilderijen 03 darius 146.jpg")) imgname = "Slapende schoonheid";
@@ -691,7 +691,7 @@ function thumbOver(which) {
 	if (filename == escape("tn_paarden schilderijen 001.jpg")) imgname = "In nachtelijke eenzaamheid";
 	if (filename == escape("tn_paarden schilderijen 002.jpg")) imgname = "Twee strijdende paarden";
 	if (filename == escape("tn_paarden schilderijen 107.jpg")) imgname = "Verwonde ruiter op paard";
-	if (filename == escape("tn_schilderijen 04 en schilderijen amsterdam 034.jpg")) imgname = "Paard als nacht naar antieke ruïne toe";
+	if (filename == escape("tn_schilderijen 04 en schilderijen amsterdam 034.jpg")) imgname = "Paard als nacht naar antieke ruï¿½ne toe";
 	
 		
 	
