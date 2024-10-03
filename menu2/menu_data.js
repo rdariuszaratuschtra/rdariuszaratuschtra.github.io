@@ -4462,7 +4462,7 @@ if (filename == escape("paardenbeelden 001.jpg") ||
 filename == escape("paardenbeelden 003.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1997;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
@@ -4470,7 +4470,7 @@ if (filename == escape("paardenbeelden 004.jpg") ||
 filename == escape("paardenbeelden 005.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1997;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
@@ -4478,7 +4478,7 @@ if (filename == escape("paardenbeelden 006.jpg") ||
 filename == escape("paardenbeelden 007.jpg")) {
 document.getElementById("title").innerHTML = unescape("Robina");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1997;onfunction=closeAllMenus();");
 aI("text=&euro; 2200,-;onfunction=closeAllMenus();");
 } else   
@@ -4488,7 +4488,7 @@ filename == escape("paardenbeelden 010.jpg") ||
 filename == escape("paardenbeelden 011.jpg")) {
 document.getElementById("title").innerHTML = unescape("Veulen");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 20x10x28 (hxbxl);onfunction=closeAllMenus();");
+aI("text=20x10x28 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1998;onfunction=closeAllMenus();");
 aI("text=&euro; 1500,-;onfunction=closeAllMenus();");
 } else   
@@ -4498,7 +4498,7 @@ filename == escape("paardenbeelden 015.jpg") ||
 filename == escape("paardenbeelden 017.jpg")) {
 document.getElementById("title").innerHTML = unescape("Raksh");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 2700,-;onfunction=closeAllMenus();");
 } else   
@@ -4506,7 +4506,7 @@ if (filename == escape("paardenbeelden 018.jpg") ||
 filename == escape("paardenbeelden 019.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1997;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -4516,7 +4516,7 @@ filename == escape("paardenbeelden 023.jpg") ||
 filename == escape("paardenbeelden 024.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 2600,-;onfunction=closeAllMenus();");
 } else   
@@ -4525,7 +4525,7 @@ filename == escape("paardenbeelden 026.jpg") ||
 filename == escape("paardenbeelden 027.jpg")) {
 document.getElementById("title").innerHTML = unescape("Veulen");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 20x10x28 (hxbxl);onfunction=closeAllMenus();");
+aI("text=20x10x28 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1995;onfunction=closeAllMenus();");
 aI("text=&euro; 1350,-;onfunction=closeAllMenus();");
 } else   
@@ -4533,21 +4533,21 @@ if (filename == escape("paardenbeelden 028.jpg") ||
 filename == escape("paardenbeelden 029.jpg")) {
 document.getElementById("title").innerHTML = unescape("Veulen");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 20x10x28 (hxbxl);onfunction=closeAllMenus();");
+aI("text=20x10x28 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1995;onfunction=closeAllMenus();");
 aI("text=&euro; 1350,-;onfunction=closeAllMenus();");
 } else   
 if (filename == escape("paardenbeelden 030.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1998;onfunction=closeAllMenus();");
 aI("text=&euro; 2600,-;onfunction=closeAllMenus();");
 } else   
 if (filename == escape("paardenbeelden 033.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1997;onfunction=closeAllMenus();");
 aI("text=&euro; 2200,-;onfunction=closeAllMenus();");
 } else   
@@ -4556,7 +4556,7 @@ filename == escape("paardenbeelden 035.jpg") ||
 filename == escape("paardenbeelden 036.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1998;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
@@ -4565,7 +4565,7 @@ filename == escape("paardenbeelden 038.jpg") ||
 filename == escape("paardenbeelden 039.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1997;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
@@ -4573,7 +4573,7 @@ if (filename == escape("paardenbeelden 040.jpg") ||
 filename == escape("paardenbeelden 041.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1998;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
@@ -4581,7 +4581,7 @@ if (filename == escape("paardenbeelden 042.jpg") ||
 filename == escape("paardenbeelden 043.jpg")) {
 document.getElementById("title").innerHTML = unescape("Koppel");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=2x � 30x14x45 (hxbxl) ;onfunction=closeAllMenus();");
+aI("text=2x 30x14x45 (hxbxl) ;onfunction=closeAllMenus();");
 aI("text=1997;onfunction=closeAllMenus();");
 aI("text=&euro; 4900,-;onfunction=closeAllMenus();");
 } else   
@@ -4589,7 +4589,7 @@ if (filename == escape("paardenbeelden 044.jpg") ||
 filename == escape("paardenbeelden 045.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1995;onfunction=closeAllMenus();");
 aI("text=&euro; 2200,-;onfunction=closeAllMenus();");
 } else  
@@ -4597,7 +4597,7 @@ if (filename == escape("paardenbeelden 046.jpg") ||
 filename == escape("paardenbeelden 047.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1996;onfunction=closeAllMenus();");
 aI("text=&euro; 2300,-;onfunction=closeAllMenus();");
 } else   
@@ -4605,7 +4605,7 @@ if (filename == escape("paardenbeelden 048.jpg") ||
 filename == escape("paardenbeelden 049.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1998;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
@@ -4613,7 +4613,7 @@ if (filename == escape("paardenbeelden 050.jpg") ||
 filename == escape("paardenbeelden 051.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -4621,7 +4621,7 @@ if (filename == escape("paardenbeelden 052.jpg") ||
 filename == escape("paardenbeelden 053.jpg")) {
 document.getElementById("title").innerHTML = unescape("Sleepner");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -4629,7 +4629,7 @@ if (filename == escape("paardenbeelden 055.jpg") ||
 filename == escape("paardenbeelden 056.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
@@ -4639,7 +4639,7 @@ filename == escape("paardenbeelden 059.jpg") ||
 filename == escape("paardenbeelden 060.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -4647,14 +4647,14 @@ if (filename == escape("paardenbeelden 061.jpg") ||
 filename == escape("paardenbeelden 062.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1996;onfunction=closeAllMenus();");
 aI("text=&euro; 2200,-;onfunction=closeAllMenus();");
 } else   
 if (filename == escape("paardenbeelden 063.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1996;onfunction=closeAllMenus();");
 aI("text=&euro; 2200,-;onfunction=closeAllMenus();");
 } else   
@@ -4662,7 +4662,7 @@ if (filename == escape("paardenbeelden 065.jpg") ||
 filename == escape("paardenbeelden 066.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1997;onfunction=closeAllMenus();");
 aI("text=&euro; 2200,-;onfunction=closeAllMenus();");
 } else   
@@ -4670,14 +4670,14 @@ if (filename == escape("paardenbeelden 067.jpg") ||
 filename == escape("paardenbeelden 068.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
 if (filename == escape("paardenbeelden 070.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1996;onfunction=closeAllMenus();");
 aI("text=&euro; 2200,-;onfunction=closeAllMenus();");
 } else   
@@ -4685,7 +4685,7 @@ if (filename == escape("paardenbeelden 071.jpg") ||
 filename == escape("paardenbeelden 072.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1996;onfunction=closeAllMenus();");
 aI("text=&euro; 2300,-;onfunction=closeAllMenus();");
 } else   
@@ -4693,7 +4693,7 @@ if (filename == escape("paardenbeelden 073.jpg") ||
 filename == escape("paardenbeelden 074.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1996;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else 
@@ -4701,7 +4701,7 @@ if (filename == escape("paardenbeelden 075.jpg") ||
 filename == escape("paardenbeelden 076.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -4710,7 +4710,7 @@ filename == escape("paardenbeelden 078.jpg") ||
 filename == escape("paardenbeelden 079.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
@@ -4719,7 +4719,7 @@ filename == escape("paardenbeelden 081.jpg") ||
 filename == escape("paardenbeelden 082.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
@@ -4727,7 +4727,7 @@ if (filename == escape("paardenbeelden 084.jpg") ||
 filename == escape("paardenbeelden 085.jpg")) {
 document.getElementById("title").innerHTML = unescape("Branco");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -4735,7 +4735,7 @@ if (filename == escape("paardenbeelden 087.jpg") ||
 filename == escape("paardenbeelden 088.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1998;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
@@ -4744,7 +4744,7 @@ filename == escape("paardenbeelden 090.jpg") ||
 filename == escape("paardenbeelden 091.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=2000;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -4752,7 +4752,7 @@ if (filename == escape("paardenbeelden 092.jpg") ||
 filename == escape("paardenbeelden 093.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1996;onfunction=closeAllMenus();");
 aI("text=&euro; 2200,-;onfunction=closeAllMenus();");
 } else   
@@ -4760,7 +4760,7 @@ if (filename == escape("paardenbeelden 094.jpg") ||
 filename == escape("paardenbeelden 095.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1996;onfunction=closeAllMenus();");
 aI("text=&euro; 2300,-;onfunction=closeAllMenus();");
 } else   
@@ -4768,7 +4768,7 @@ if (filename == escape("paardenbeelden 096.jpg") ||
 filename == escape("paardenbeelden 097.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1997;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -4776,7 +4776,7 @@ if (filename == escape("paardenbeelden 098.jpg") ||
 filename == escape("paardenbeelden 099.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
@@ -4784,7 +4784,7 @@ if (filename == escape("paardenbeelden 100.jpg") ||
 filename == escape("paardenbeelden 101.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1996;onfunction=closeAllMenus();");
 aI("text=&euro; 2300,-;onfunction=closeAllMenus();");
 } else   
@@ -4792,7 +4792,7 @@ if (filename == escape("paardenbeelden 102.jpg") ||
 filename == escape("paardenbeelden 103.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1996;onfunction=closeAllMenus();");
 aI("text=&euro; 2300,-;onfunction=closeAllMenus();");
 } else   
@@ -4800,7 +4800,7 @@ if (filename == escape("paardenbeelden 104.jpg") ||
 filename == escape("paardenbeelden 105.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1996;onfunction=closeAllMenus();");
 aI("text=&euro; 2300,-;onfunction=closeAllMenus();");
 } else   
@@ -4808,7 +4808,7 @@ if (filename == escape("paardenbeelden 106.jpg") ||
 filename == escape("paardenbeelden 107.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1994;onfunction=closeAllMenus();");
 aI("text=&euro; 2200,-;onfunction=closeAllMenus();");
 } else   
@@ -4816,14 +4816,14 @@ if (filename == escape("paardenbeelden 108.jpg") ||
 filename == escape("paardenbeelden 109.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1995;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
 if (filename == escape("paardenbeelden 110.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1995;onfunction=closeAllMenus();");
 aI("text=&euro; 2300,-;onfunction=closeAllMenus();");
 } else   
@@ -4833,7 +4833,7 @@ filename == escape("paardenbeelden 114.jpg") ||
 filename == escape("paardenbeelden 116.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1998;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -4841,7 +4841,7 @@ if (filename == escape("paardenbeelden 117.jpg") ||
 filename == escape("paardenbeelden 118.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1995;onfunction=closeAllMenus();");
 aI("text=&euro; 2300,-;onfunction=closeAllMenus();");
 } else   
@@ -4849,21 +4849,21 @@ if (filename == escape("paardenbeelden 119.jpg") ||
 filename == escape("paardenbeelden 120.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1996;onfunction=closeAllMenus();");
 aI("text=&euro; 2200,-;onfunction=closeAllMenus();");
 } else   
 if (filename == escape("paardenbeelden 121.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1997;onfunction=closeAllMenus();");
 aI("text=&euro; 2300,-;onfunction=closeAllMenus();");
 } else   
 if (filename == escape("paardenbeelden 123.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1998;onfunction=closeAllMenus();");
 aI("text=&euro; 2200,-;onfunction=closeAllMenus();");
 } else   
@@ -4871,7 +4871,7 @@ if (filename == escape("paardenbeelden 124.jpg") ||
 filename == escape("paardenbeelden 125.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1998;onfunction=closeAllMenus();");
 aI("text=&euro; 2200,-;onfunction=closeAllMenus();");
 } else   
@@ -4881,7 +4881,7 @@ filename == escape("paardenbeelden 128.jpg") || // -> 90 naar links
 filename == escape("paardenbeelden 260.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=2000;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -4889,7 +4889,7 @@ if (filename == escape("paardenbeelden 129.jpg") ||
 filename == escape("paardenbeelden 130.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1994;onfunction=closeAllMenus();");
 aI("text=&euro; 2100,-;onfunction=closeAllMenus();");
 } else   
@@ -4897,7 +4897,7 @@ if (filename == escape("paardenbeelden 131.jpg") ||
 filename == escape("paardenbeelden 132.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1998;onfunction=closeAllMenus();");
 aI("text=&euro; 2200,-;onfunction=closeAllMenus();");
 } else   
@@ -4905,7 +4905,7 @@ if (filename == escape("paardenbeelden 133.jpg") ||
 filename == escape("paardenbeelden 134.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=2000;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -4913,7 +4913,7 @@ if (filename == escape("paardenbeelden 136.jpg") ||
 filename == escape("paardenbeelden 137.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=2000;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -4921,7 +4921,7 @@ if (filename == escape("paardenbeelden 138.jpg") ||
 filename == escape("paardenbeelden 139.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1996;onfunction=closeAllMenus();");
 aI("text=&euro; 2200,-;onfunction=closeAllMenus();");
 } else   
@@ -4929,7 +4929,7 @@ if (filename == escape("paardenbeelden 140.jpg") ||
 filename == escape("paardenbeelden 141.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1997;onfunction=closeAllMenus();");
 aI("text=&euro; 2200,-;onfunction=closeAllMenus();");
 } else   
@@ -4937,7 +4937,7 @@ if (filename == escape("paardenbeelden 143.jpg") ||
 filename == escape("paardenbeelden 144.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1997;onfunction=closeAllMenus();");
 aI("text=&euro; 2200,-;onfunction=closeAllMenus();");
 } else   
@@ -4945,7 +4945,7 @@ if (filename == escape("paardenbeelden 145.jpg") ||
 filename == escape("paardenbeelden 146.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 2300,-;onfunction=closeAllMenus();");
 } else   
@@ -4954,7 +4954,7 @@ filename == escape("paardenbeelden 148.jpg") ||
 filename == escape("paardenbeelden 149.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1998;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -4963,7 +4963,7 @@ filename == escape("paardenbeelden 151.jpg") ||
 filename == escape("paardenbeelden 152.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=2000;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -4971,7 +4971,7 @@ if (filename == escape("paardenbeelden 154.jpg") ||
 filename == escape("paardenbeelden 155.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -4979,7 +4979,7 @@ if (filename == escape("paardenbeelden 156.jpg") ||
 filename == escape("paardenbeelden 157.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1997;onfunction=closeAllMenus();");
 aI("text=&euro; 2300,-;onfunction=closeAllMenus();");
 } else   
@@ -4987,7 +4987,7 @@ if (filename == escape("paardenbeelden 158.jpg") ||
 filename == escape("paardenbeelden 159.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1997;onfunction=closeAllMenus();");
 aI("text=&euro; 2300,-;onfunction=closeAllMenus();");
 } else   
@@ -4995,7 +4995,7 @@ if (filename == escape("paardenbeelden 160.jpg") ||
 filename == escape("paardenbeelden 161.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1998;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -5003,7 +5003,7 @@ if (filename == escape("paardenbeelden 162.jpg") ||
 filename == escape("paardenbeelden 163.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1998;onfunction=closeAllMenus();");
 aI("text=&euro; 2300,-;onfunction=closeAllMenus();");
 } else   
@@ -5012,7 +5012,7 @@ filename == escape("paardenbeelden 165.jpg") ||
 filename == escape("paardenbeelden 166.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1998;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -5020,7 +5020,7 @@ if (filename == escape("paardenbeelden 167.jpg") ||
 filename == escape("paardenbeelden 168.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
@@ -5028,7 +5028,7 @@ if (filename == escape("paardenbeelden 169.jpg") ||
 filename == escape("paardenbeelden 170.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
@@ -5037,7 +5037,7 @@ filename == escape("paardenbeelden 172.jpg") ||
 filename == escape("paardenbeelden 173.jpg")) {
 document.getElementById("title").innerHTML = unescape("Veulen");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 20x10x28 (hxbxl);onfunction=closeAllMenus();");
+aI("text=20x10x28 (hxbxl);onfunction=closeAllMenus();");
 aI("text=2000;onfunction=closeAllMenus();");
 aI("text=&euro; 1500,-;onfunction=closeAllMenus();");
 } else   
@@ -5046,7 +5046,7 @@ filename == escape("paardenbeelden 175.jpg") ||
 filename == escape("paardenbeelden 176.jpg")) {
 document.getElementById("title").innerHTML = unescape("Veulen");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 20x10x28 (hxbxl);onfunction=closeAllMenus();");
+aI("text=20x10x28 (hxbxl);onfunction=closeAllMenus();");
 aI("text=2000;onfunction=closeAllMenus();");
 aI("text=&euro; 1500,-;onfunction=closeAllMenus();");
 } else   
@@ -5055,7 +5055,7 @@ filename == escape("paardenbeelden 178.jpg") ||
 filename == escape("paardenbeelden 179.jpg")) {
 document.getElementById("title").innerHTML = unescape("Veulen");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 20x10x28 (hxbxl);onfunction=closeAllMenus();");
+aI("text=20x10x28 (hxbxl);onfunction=closeAllMenus();");
 aI("text=2000;onfunction=closeAllMenus();");
 aI("text=&euro; 1350,-;onfunction=closeAllMenus();");
 } else   
@@ -5063,7 +5063,7 @@ if (filename == escape("paardenbeelden 180.jpg") ||
 filename == escape("paardenbeelden 181.jpg")) {
 document.getElementById("title").innerHTML = unescape("Veulen");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 20x10x28 (hxbxl);onfunction=closeAllMenus();");
+aI("text=20x10x28 (hxbxl);onfunction=closeAllMenus();");
 aI("text=2001;onfunction=closeAllMenus();");
 aI("text=&euro; 1500,-;onfunction=closeAllMenus();");
 } else   
@@ -5071,7 +5071,7 @@ if (filename == escape("paardenbeelden 182.jpg") ||
 filename == escape("paardenbeelden 183.jpg")) {
 document.getElementById("title").innerHTML = unescape("Veulen");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 20x10x28 (hxbxl);onfunction=closeAllMenus();");
+aI("text=20x10x28 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 1250,-;onfunction=closeAllMenus();");
 } else   
@@ -5080,7 +5080,7 @@ filename == escape("paardenbeelden 185.jpg") ||
 filename == escape("paardenbeelden 186.jpg")) {
 document.getElementById("title").innerHTML = unescape("Veulen");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 20x10x28 (hxbxl);onfunction=closeAllMenus();");
+aI("text=20x10x28 (hxbxl);onfunction=closeAllMenus();");
 aI("text=2000;onfunction=closeAllMenus();");
 aI("text=&euro; 1600,-;onfunction=closeAllMenus();");
 } else   
@@ -5089,7 +5089,7 @@ filename == escape("paardenbeelden 188.jpg") ||
 filename == escape("paardenbeelden 189.jpg")) {
 document.getElementById("title").innerHTML = unescape("Veulen");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 20x10x28 (hxbxl);onfunction=closeAllMenus();");
+aI("text=20x10x28 (hxbxl);onfunction=closeAllMenus();");
 aI("text=2000;onfunction=closeAllMenus();");
 aI("text=&euro; 1500,-;onfunction=closeAllMenus();");
 } else   
@@ -5099,7 +5099,7 @@ filename == escape("paardenbeelden 192.jpg") ||
 filename == escape("paardenbeelden 193.jpg")) {
 document.getElementById("title").innerHTML = unescape("Veulen");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 20x10x28 (hxbxl);onfunction=closeAllMenus();");
+aI("text=20x10x28 (hxbxl);onfunction=closeAllMenus();");
 aI("text=2001;onfunction=closeAllMenus();");
 aI("text=&euro; 1600,-;onfunction=closeAllMenus();");
 } else   
@@ -5109,7 +5109,7 @@ filename == escape("paardenbeelden 196.jpg") ||
 filename == escape("paardenbeelden 197.jpg")) {
 document.getElementById("title").innerHTML = unescape("Veulen");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 20x10x28 (hxbxl);onfunction=closeAllMenus();");
+aI("text=20x10x28 (hxbxl);onfunction=closeAllMenus();");
 aI("text=2000;onfunction=closeAllMenus();");
 aI("text=&euro; 1400,-;onfunction=closeAllMenus();");
 } else   
@@ -5119,7 +5119,7 @@ filename == escape("paardenbeelden 200.jpg") ||
 filename == escape("paardenbeelden 201.jpg")) {
 document.getElementById("title").innerHTML = unescape("Veulen");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 20x10x28 (hxbxl);onfunction=closeAllMenus();");
+aI("text=20x10x28 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 1800,-;onfunction=closeAllMenus();");
 } else   
@@ -5127,7 +5127,7 @@ if (filename == escape("paardenbeelden 202.jpg") ||
 filename == escape("paardenbeelden 203.jpg")) {
 document.getElementById("title").innerHTML = unescape("Veulen");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 20x10x28 (hxbxl);onfunction=closeAllMenus();");
+aI("text=20x10x28 (hxbxl);onfunction=closeAllMenus();");
 aI("text=2000;onfunction=closeAllMenus();");
 aI("text=&euro; 1500,-;onfunction=closeAllMenus();");
 } else   
@@ -5135,7 +5135,7 @@ if (filename == escape("paardenbeelden 204.jpg") ||
 filename == escape("paardenbeelden 205.jpg")) {
 document.getElementById("title").innerHTML = unescape("Veulen");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 20x10x28 (hxbxl);onfunction=closeAllMenus();");
+aI("text=20x10x28 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 1400,-;onfunction=closeAllMenus();");
 } else   
@@ -5144,7 +5144,7 @@ filename == escape("paardenbeelden 208.jpg") ||
 filename == escape("paardenbeelden 209.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 2600,-;onfunction=closeAllMenus();");
 } else   
@@ -5153,7 +5153,7 @@ filename == escape("paardenbeelden 211.jpg") ||
 filename == escape("paardenbeelden 212.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=2000;onfunction=closeAllMenus();");
 aI("text=&euro; 2600,-;onfunction=closeAllMenus();");
 } else   
@@ -5162,7 +5162,7 @@ filename == escape("paardenbeelden 214.jpg") ||
 filename == escape("paardenbeelden 215.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1998;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -5170,7 +5170,7 @@ if (filename == escape("paardenbeelden 216.jpg") ||
 filename == escape("paardenbeelden 217.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1997;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -5178,7 +5178,7 @@ if (filename == escape("paardenbeelden 218.jpg") ||
 filename == escape("paardenbeelden 219.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1995;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
@@ -5187,7 +5187,7 @@ filename == escape("paardenbeelden 221.jpg") ||
 filename == escape("paardenbeelden 222.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=2000;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -5197,7 +5197,7 @@ filename == escape("paardenbeelden 226.jpg") ||
 filename == escape("paardenbeelden 227.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=2000;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -5206,7 +5206,7 @@ filename == escape("paardenbeelden 229.jpg") ||
 filename == escape("paardenbeelden 230.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1995;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
@@ -5214,7 +5214,7 @@ if (filename == escape("paardenbeelden 232.jpg") ||
 filename == escape("paardenbeelden 233.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1994;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -5222,14 +5222,14 @@ if (filename == escape("paardenbeelden 234.jpg") ||
 filename == escape("paardenbeelden 235.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
 if (filename == escape("paardenbeelden 236.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1995;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
@@ -5238,7 +5238,7 @@ filename == escape("paardenbeelden 239.jpg") ||
 filename == escape("paardenbeelden 240.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1998;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -5246,14 +5246,14 @@ if (filename == escape("paardenbeelden 241.jpg") ||
 filename == escape("paardenbeelden 242.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=2000;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
 if (filename == escape("paardenbeelden 244.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1996;onfunction=closeAllMenus();");
 aI("text=&euro; 2300,-;onfunction=closeAllMenus();");
 } else   
@@ -5261,7 +5261,7 @@ if (filename == escape("paardenbeelden 245.jpg") ||
 filename == escape("paardenbeelden 246.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
@@ -5269,7 +5269,7 @@ if (filename == escape("paardenbeelden 247.jpg") ||
 filename == escape("paardenbeelden 248.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1998;onfunction=closeAllMenus();");
 aI("text=&euro; 2500,-;onfunction=closeAllMenus();");
 } else   
@@ -5277,7 +5277,7 @@ if (filename == escape("paardenbeelden 249.jpg") ||
 filename == escape("paardenbeelden 250.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1997;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
@@ -5288,7 +5288,7 @@ aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 if (filename == escape("paardenbeelden 254.jpg")) {
 document.getElementById("title").innerHTML = unescape("Hengst");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=2000;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
@@ -5299,7 +5299,7 @@ filename == escape("paardenbeelden 258.jpg") ||
 filename == escape("paardenbeelden 259.jpg")) {
 document.getElementById("title").innerHTML = unescape("Merrie");
 aI("text=Brons;onfunction=closeAllMenus();");
-aI("text=� 30x14x45 (hxbxl);onfunction=closeAllMenus();");
+aI("text=30x14x45 (hxbxl);onfunction=closeAllMenus();");
 aI("text=1999;onfunction=closeAllMenus();");
 aI("text=&euro; 2400,-;onfunction=closeAllMenus();");
 } else   
