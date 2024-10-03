@@ -1382,7 +1382,7 @@ aI("text=1992;onfunction=closeAllMenus();");
 aI("text=&euro; 850,-;onfunction=closeAllMenus();");
 } else   
 if (filename == escape("309.jpg")) {
-document.getElementById("title").innerHTML = unescape("Tweelingen / Tweeën");
+document.getElementById("title").innerHTML = unescape("Tweelingen / Twee&euml;n");
 aI("text=Aq. Kl.potl. acryl o.p.;onfunction=closeAllMenus();");
 aI("text=2-luik 2x 75x55;onfunction=closeAllMenus();");
 aI("text=1993;onfunction=closeAllMenus();");
@@ -2770,7 +2770,7 @@ aI("text=1995;onfunction=closeAllMenus();");
 aI("text=&euro; 6500,-;onfunction=closeAllMenus();");
 } else   
 if (filename == escape("schilderijen 04 en schilderijen amsterdam 047.jpg")) {
-document.getElementById("title").innerHTML = unescape("Drie gratiën");
+document.getElementById("title").innerHTML = unescape("Drie grati&euml;n");
 aI("text=Ol.o.p.;onfunction=closeAllMenus();");
 aI("text=32x41;onfunction=closeAllMenus();");
 aI("text=1995;onfunction=closeAllMenus();");
