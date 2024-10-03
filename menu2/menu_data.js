@@ -1277,7 +1277,7 @@ aI("text=&euro; 270,-;onfunction=closeAllMenus();");
 //204.jpg -> weg
 
 if (filename == escape("206.jpg")) {
-document.getElementById("title").innerHTML = unescape("Drie gratiën");
+document.getElementById("title").innerHTML = unescape("Drie grati&euml;n");
 aI("text=Houtskool.o.p.;onfunction=closeAllMenus();");
 aI("text=21x29,5;onfunction=closeAllMenus();");
 aI("text=1993;onfunction=closeAllMenus();");
