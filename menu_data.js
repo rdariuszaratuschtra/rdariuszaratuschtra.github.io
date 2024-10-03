@@ -226,7 +226,7 @@ itemwidth=140;
 margin=5;
 style=submenuStyle;
 aI("text=Paarden;showmenu=PaardenbeeldenSubMenu;;");
-aI("text=Mediétoriet;url=./medietoriet.html;");
+aI("text=Medi&euml;toriet;url=./medietoriet.html;");
 aI("text=Diversen;url=./gallery_diversen.html;");
 }
 
