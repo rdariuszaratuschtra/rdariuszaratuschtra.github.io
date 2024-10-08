@@ -9,7 +9,7 @@
 
 //*****************************************
 // Blending Image Slide Show Script- 
-// © Dynamic Drive (www.dynamicdrive.com)
+// ï¿½ Dynamic Drive (www.dynamicdrive.com)
 // For full source code, visit http://www.dynamicdrive.com/
 //*****************************************
 
@@ -87,7 +87,8 @@ function showFullSize(){
 <br>
   <table border="0" cellspacing="0" cellpadding="0">
     <tr><td align="center">
-      <img id="test" name="slide" src="Im001533.jpg" border=0 width=500 height=375 style="filter:blendTrans(duration=3)">
+      <!-- <img id="test" name="slide" src="Im001533.jpg" border=0 width=500 height=375 style="filter:blendTrans(duration=3)"> -->
+      <img id="test" name="slide" src="Im001533.jpg" border=0 width=500 height=375>
     </td></tr>
   </table>
   
@@ -96,12 +97,12 @@ function showFullSize(){
 
 var whichlink=0
 var whichimage=0
-var blenddelay=(ie)? document.images.slide.filters[0].duration*1000 : 0
+var blenddelay=0 //(ie)? document.images.slide.filters[0].duration*1000 : 0
 function slideit(){
-if (!document.images || !ie) return;	
-if (ie) document.images.slide.filters[0].apply();
+//if (!document.images || !ie) return;	
+//if (ie) document.images.slide.filters[0].apply();
 document.images.slide.src=imageholder[whichimage].src;
-if (ie) document.images.slide.filters[0].play();
+//if (ie) document.images.slide.filters[0].play();
 whichlink=whichimage;
 whichimage=(whichimage<slideimages.length-1)? whichimage+1 : 0;
 setTimeout("slideit()",slidespeed+blenddelay);
